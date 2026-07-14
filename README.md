@@ -11,7 +11,7 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-The site will be available at `http://127.0.0.1:8000/FPVWiki/`.
+The site will be available at `http://127.0.0.1:8000/`.
 
 ## Managing content
 

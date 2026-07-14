@@ -266,7 +266,7 @@ def replace_media(target: Path, uploaded_name: str, data: bytes) -> tuple[Path, 
 
 HTML = r'''<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
-<title>FPVWiki Medien</title><style>
+<title>KidCe FPV Media</title><style>
 :root{color-scheme:dark;--bg:#090b10;--card:#151923;--line:#32394a;--pink:#ff3c91;--text:#f4f6fb;--muted:#9da7ba}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#27132b,transparent 38%),var(--bg);font:16px system-ui;color:var(--text)}
 main{width:min(1180px,calc(100% - 32px));margin:45px auto}h1{font-size:clamp(30px,6vw,52px);margin:0 0 8px}h2{margin-top:55px}p,.meta{color:var(--muted)}
@@ -425,7 +425,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Drag-and-drop media manager for FPVWiki")
+    parser = argparse.ArgumentParser(description="Drag-and-drop media manager for the KidCe FPV website")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
