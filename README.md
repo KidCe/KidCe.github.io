@@ -94,6 +94,27 @@ The number of `../` segments depends on the depth of the Markdown file. The exam
 
 Before committing photos, consider converting them to WebP or JPEG and resizing them to about 1600 px wide.
 
+Images embedded in Markdown automatically open in a touch-friendly lightbox. Add
+`{ .no-lightbox }` to an image if it should not be enlarged.
+
+### Add a diagram
+
+Mermaid diagrams can be written directly in Markdown:
+
+````markdown
+```mermaid
+flowchart LR
+  Battery --> ESC --> Motors
+  ESC --> FC --> Receiver
+```
+````
+
+### Feeds and sharing
+
+The production build generates social preview cards for every page and RSS/JSON
+feeds for posts below `docs/articles/posts/`. Social cards are generated in
+GitHub Actions; they are disabled during local previews to keep startup fast.
+
 ## Enable GitHub Pages
 
 In the repository, open **Settings → Pages → Build and deployment** once. Select **Deploy from a branch**, then choose the `gh-pages` branch and `/(root)`. The workflow creates and updates this branch automatically.

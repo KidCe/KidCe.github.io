@@ -15,7 +15,7 @@ hide:
     </div>
   </div>
   <div class="hero__visual" aria-hidden="true">
-    <img src="assets/images/hero-drone.png" alt="">
+    <img class="no-lightbox" src="assets/images/hero-drone.png" alt="">
   </div>
 </section>
 

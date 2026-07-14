@@ -3,6 +3,8 @@
   --fpv-orange-bright: #ff7545;
   --fpv-ink: #111317;
   --fpv-muted: #6f747d;
+  --fpv-chart-qualifying: #6f747d;
+  --fpv-chart-grid: rgba(127, 127, 127, .18);
 }
 
 [data-md-color-scheme="fpv-light"] {
@@ -64,20 +66,7 @@
 .stat-grid > div { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .65rem; padding: 1rem; }
 .stat-grid strong, .stat-grid span { display: block; }
 .stat-grid span { color: var(--md-default-fg-color--light); font-size: .72rem; margin-top: .25rem; }
-.performance-chart { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .8rem; margin: 1rem 0 1.4rem; padding: .7rem 1.2rem .9rem; }
-.performance-year { align-items: center; border-bottom: 1px solid rgba(127,127,127,.12); display: grid; gap: .8rem; grid-template-columns: 4.2rem minmax(0,1fr); padding: .8rem 0; }
-.performance-year > strong { font-family: var(--md-code-font-family); font-size: .78rem; }
-.performance-year > strong small { color: var(--md-default-fg-color--light); display: block; font-size: .55rem; font-weight: 600; margin-top: .1rem; }
-.performance-year--current { border-bottom: 0; }
-.performance-bars { display: grid; gap: .45rem; }
-.performance-metric { align-items: center; display: grid; gap: .65rem; grid-template-columns: 5.8rem minmax(0,1fr) 6rem; }
-.performance-label { color: var(--md-default-fg-color--light); font-size: .68rem; }
-.performance-track { background: rgba(127,127,127,.16); border-radius: 99px; height: .65rem; overflow: hidden; position: relative; }
-.performance-track::after { border-left: 1px solid rgba(127,127,127,.5); bottom: 0; content: ""; left: 50%; position: absolute; top: 0; z-index: 2; }
-.performance-fill { background: var(--fpv-orange); border-radius: inherit; display: block; height: 100%; width: var(--score); }
-.performance-fill--qualifying { background: var(--md-default-fg-color--light); }
-.performance-value { font-family: var(--md-code-font-family); font-size: .62rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-.performance-scale { color: var(--md-default-fg-color--light); display: flex; font-size: .55rem; justify-content: space-between; margin: .1rem 6.65rem 0 11.45rem; }
+.performance-chart { height: clamp(19rem, 46vw, 28rem); margin: 1rem 0 1.4rem; position: relative; }
 .squad-grid { display: grid; gap: .8rem; grid-template-columns: repeat(4, 1fr); margin: 2rem 0 3rem; }
 .squad-card { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .8rem; padding: 1rem; text-align: center; }
 .squad-card__avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #c42d00); border-radius: 50%; color: #fff; display: inline-flex; font-family: var(--md-code-font-family); font-size: .72rem; font-weight: 800; height: 2.8rem; justify-content: center; width: 2.8rem; }
@@ -119,8 +108,4 @@
 @media (max-width: 520px) {
   .wiki-grid, .stat-grid, .setup-grid, .squad-grid, .squad-stats-grid { grid-template-columns: 1fr; }
   .profile-intro { grid-template-columns: 1fr; }
-  .performance-year { grid-template-columns: 1fr; }
-  .performance-year > strong small { display: inline; margin-left: .25rem; }
-  .performance-metric { gap: .45rem; grid-template-columns: 4.9rem minmax(0,1fr) 5.4rem; }
-  .performance-scale { margin-left: 5.35rem; margin-right: 5.85rem; }
 }
