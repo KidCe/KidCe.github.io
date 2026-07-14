@@ -53,74 +53,10 @@ final score improved from **39% in 2024** to **57% in 2025** and **67% in 2026
 so far**. In practical terms, my typical result moved from the lower half of the
 field to roughly the top third.
 
-<div class="performance-chart" role="group" aria-label="Median qualifying and final performance by year, measured as percentage of the field beaten">
-
-<div class="performance-year">
-  <strong>2024</strong>
-  <div class="performance-bars">
-    <div class="performance-metric">
-      <span class="performance-label">Qualifying</span>
-      <div class="performance-track" role="progressbar" aria-label="2024 qualifying median: 44.4 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="44.4">
-        <span class="performance-fill performance-fill--qualifying" style="--score: 44.4%"></span>
-      </div>
-      <span class="performance-value">44% · n=11</span>
-    </div>
-    <div class="performance-metric">
-      <span class="performance-label">Final</span>
-      <div class="performance-track" role="progressbar" aria-label="2024 final median: 38.9 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38.9">
-        <span class="performance-fill performance-fill--final" style="--score: 38.9%"></span>
-      </div>
-      <span class="performance-value">39% · n=3</span>
-    </div>
-  </div>
-</div>
-
-<div class="performance-year">
-  <strong>2025</strong>
-  <div class="performance-bars">
-    <div class="performance-metric">
-      <span class="performance-label">Qualifying</span>
-      <div class="performance-track" role="progressbar" aria-label="2025 qualifying median: 59 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="59">
-        <span class="performance-fill performance-fill--qualifying" style="--score: 59%"></span>
-      </div>
-      <span class="performance-value">59% · n=23</span>
-    </div>
-    <div class="performance-metric">
-      <span class="performance-label">Final</span>
-      <div class="performance-track" role="progressbar" aria-label="2025 final median: 57 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="57">
-        <span class="performance-fill performance-fill--final" style="--score: 57%"></span>
-      </div>
-      <span class="performance-value">57% · n=10</span>
-    </div>
-  </div>
-</div>
-
-<div class="performance-year performance-year--current">
-  <strong>2026 <small>YTD</small></strong>
-  <div class="performance-bars">
-    <div class="performance-metric">
-      <span class="performance-label">Qualifying</span>
-      <div class="performance-track" role="progressbar" aria-label="2026 qualifying median: 61.5 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="61.5">
-        <span class="performance-fill performance-fill--qualifying" style="--score: 61.5%"></span>
-      </div>
-      <span class="performance-value">62% · n=15</span>
-    </div>
-    <div class="performance-metric">
-      <span class="performance-label">Final</span>
-      <div class="performance-track" role="progressbar" aria-label="2026 final median: 66.7 percent of the field beaten" aria-valuemin="0" aria-valuemax="100" aria-valuenow="66.7">
-        <span class="performance-fill performance-fill--final" style="--score: 66.7%"></span>
-      </div>
-      <span class="performance-value">67% · n=11</span>
-    </div>
-  </div>
-</div>
-
-<div class="performance-scale" aria-hidden="true">
-  <span>0 · last</span>
-  <span>50 · midfield</span>
-  <span>100 · winner</span>
-</div>
-
+<div class="performance-chart">
+  <canvas id="race-performance-chart" role="img" aria-label="Line chart showing median qualifying performance improving from 44 percent in 2024 to 62 percent in 2026, and median final performance improving from 39 percent to 67 percent.">
+    Qualifying medians: 44% in 2024, 59% in 2025 and 62% in 2026. Final medians: 39% in 2024, 57% in 2025 and 67% in 2026.
+  </canvas>
 </div>
 
 In 2026, **9 of 11 event results (82%)** ended in the top half, compared with **1
