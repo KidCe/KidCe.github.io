@@ -44,7 +44,7 @@ place. Normalizing the position by field size makes different races comparable.
   <h3>KidCe</h3>
   <div class="squad-stat-row"><span>2024</span><div class="performance-track" role="progressbar" aria-label="KidCe 2024 median final score 38.9 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38.9"><span class="performance-fill squad-stat-fill--2024" style="--score:38.9%"></span></div><strong>39%</strong></div>
   <div class="squad-stat-row"><span>2025</span><div class="performance-track" role="progressbar" aria-label="KidCe 2025 median final score 57 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="57"><span class="performance-fill squad-stat-fill--2025" style="--score:57%"></span></div><strong>57%</strong></div>
-  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="KidCe 2026 median final score 66.7 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="66.7"><span class="performance-fill squad-stat-fill--2026" style="--score:66.7%"></span></div><strong>67%</strong></div>
+  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="KidCe 2026 median final score 63.2 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="63.2"><span class="performance-fill squad-stat-fill--2026" style="--score:63.2%"></span></div><strong>63%</strong></div>
   <p>Steady improvement into roughly the top third of the field.</p>
 </div>
 
@@ -76,7 +76,7 @@ place. Normalizing the position by field size makes different races comparable.
 
 | Pilot | 2024 median Q / Final | 2025 median Q / Final | 2026 YTD median Q / Final | 2026 top-half finals |
 | --- | ---: | ---: | ---: | ---: |
-| **KidCe** | 44% / 39% | 59% / 57% | 62% / 67% | **9 / 11 · 82%** |
+| **KidCe** | 44% / 39% | 59% / 57% | 62% / 63% | **7 / 9 · 78%** |
 | **MaxDax** | 60% / 35% | 68% / 69% | 68% / 75% | **9 / 9 · 100%** |
 | **bajo** | 21% / 14% | 82% / 71% | 92% / 88% | **6 / 6 · 100%** |
 | **ZeLaus** | 22% / 17% | 17% / 12% | 21% / 18% | **0 / 9 · 0%** |
@@ -86,7 +86,39 @@ strength still influence the numbers. A DCS multi-final weekend counts once in
 the final median through its official overall result; the child rounds are not
 counted again. Qualifying medians use the round-level qualifying tables because
 the combined PDFs do not publish one overall qualifying rank. Training, tests,
-fun races and season standings are excluded.
+fun races, unfinished events and season standings are excluded. A timing-page
+entry is not counted until a completed classification has been published.
+
+## Event-by-event trends
+
+Each chart uses completed events with an exact published final ranking. The
+dashed line is a trailing five-race moving average. Hover or tap a point for the
+event, date and original placement. DCS multi-final weekends count once through
+their official overall result.
+
+### MaxDax
+
+<div class="performance-chart performance-chart--squad">
+  <canvas id="maxdax-race-performance-chart" role="img" aria-label="MaxDax event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
+    MaxDax event-by-event final performance and trailing five-race moving average from 2024 through 2026.
+  </canvas>
+</div>
+
+### bajo
+
+<div class="performance-chart performance-chart--squad">
+  <canvas id="bajo-race-performance-chart" role="img" aria-label="bajo event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
+    bajo event-by-event final performance and trailing five-race moving average from 2024 through 2026.
+  </canvas>
+</div>
+
+### ZeLaus
+
+<div class="performance-chart performance-chart--squad">
+  <canvas id="zelaus-race-performance-chart" role="img" aria-label="ZeLaus event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
+    ZeLaus event-by-event final performance and trailing five-race moving average from 2024 through 2026.
+  </canvas>
+</div>
 
 ## DCS season placements
 

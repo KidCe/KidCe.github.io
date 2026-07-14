@@ -2,7 +2,9 @@
 
 This is my verified race archive under the pilot handle **KidCe**. The results were
 checked against MultiGP, FPVScores, Aircrasher LiveFPV, BMR LiveFPV and
-Copterrace. Training sessions, test events and placeholders are not included.
+Copterrace. Training sessions, test events, unfinished events and placeholders
+are not included. A timing-page entry only counts once a completed
+classification has been published.
 **Last checked:** 14 July 2026.
 
 [View my MultiGP profile](https://www.multigp.com/pilots/view/?pilot=38502){ .md-button .md-button--primary }
@@ -49,32 +51,33 @@ Best three-lap GQ time
 ## Performance over time
 
 **The trend is clearly upward rather than flat midfield performance.** My median
-final score improved from **39% in 2024** to **57% in 2025** and **67% in 2026
+final score improved from **39% in 2024** to **57% in 2025** and **63% in 2026
 so far**. In practical terms, my typical result moved from the lower half of the
 field to roughly the top third.
 
 <div class="performance-chart">
-  <canvas id="race-performance-chart" role="img" aria-label="Line chart showing median qualifying performance improving from 44 percent in 2024 to 62 percent in 2026, and median final performance improving from 39 percent to 67 percent.">
-    Qualifying medians: 44% in 2024, 59% in 2025 and 62% in 2026. Final medians: 39% in 2024, 57% in 2025 and 67% in 2026.
+  <canvas id="race-performance-chart" role="img" aria-label="Line chart showing median qualifying performance improving from 44 percent in 2024 to 62 percent in 2026, and median final performance improving from 39 percent to 63 percent.">
+    Qualifying medians: 44% in 2024, 59% in 2025 and 62% in 2026. Final medians: 39% in 2024, 57% in 2025 and 63% in 2026.
   </canvas>
 </div>
 
 ### Event-by-event performance
 
-This chart shows every event with an exact final ranking. Hover or tap a point
-to see the event, date and original placement. Official DCS weekend results are
-counted once; their individual multi-final rounds and result ranges are omitted.
+This chart shows every completed event with an exact published final ranking.
+Hover or tap a point to see the event, date and original placement. The dashed
+line is a trailing five-race moving average, which reduces event-to-event noise.
+Official DCS weekend results are counted once; their individual multi-final
+rounds, unfinished events and result ranges are omitted.
 
 <div class="performance-chart performance-chart--events">
   <canvas id="individual-race-performance-chart" role="img" aria-label="Line chart of normalized final performance at each race from May 2024 through July 2026.">
-    Event-by-event final performance ranges from 10% to 100% of the field beaten and trends upward overall between 2024 and 2026.
+    Event-by-event final performance and its trailing five-race moving average trend upward overall between 2024 and 2026.
   </canvas>
 </div>
 
-In 2026, **9 of 11 event results (82%)** ended in the top half, compared with **1
-of 3 (33%)** in 2024. The result is not just driven by the smaller Whoop fields:
-excluding Whoop races, the median final score still rises from **39% → 55% →
-63%** across the three seasons.
+In 2026, **7 of 9 event results (78%)** ended in the top half, compared with **1
+of 3 (33%)** in 2024. The median final score rises from **39% → 57% → 63%**
+across the three seasons.
 
 Individual results still vary with race format and field strength, so this is not
 a straight line or a formal skill rating. The season-level direction is positive.
@@ -85,8 +88,9 @@ standalone competition counts once. For a DCS multi-final weekend, only the
 official combined event result counts toward the final median; its round results
 remain visible in the table but are not counted again. Qualifying medians use the
 published round-level tables because the combined reports do not provide one
-overall qualifying rank. Fun races, season standings and finals without an exact
-position are excluded. `n` is the number of results included.
+overall qualifying rank. Fun races, unfinished events, season standings and
+finals without an exact position are excluded. `n` is the number of results
+included.
 
 !!! info "How to read the tables"
 
@@ -121,9 +125,7 @@ position are excluded. `n` is the number of results included.
 |  | ↳ Round 1 · Central Europe RQ | [12 / 40](https://aircrasher.livefpv.com/results/?p=view_points&id=7433314) | [13 / 40](https://aircrasher.livefpv.com/results/?p=event_overall_ranking&id=501611) |
 |  | ↳ Round 2 · DCS 1 | [12 / 40](https://aircrasher.livefpv.com/results/?p=view_points&id=7434455) | [17 / 40](https://aircrasher.livefpv.com/results/?p=event_overall_ranking&id=501634) |
 |  | ↳ Round 3 · DCS 2 | [11 / 40](https://aircrasher.livefpv.com/results/?p=view_points&id=7434814) | [9 / 40](https://aircrasher.livefpv.com/results/?p=event_overall_ranking&id=501692) |
-| 5 Apr | Rotormaniacs – Central Europe RQ · Whoop | — | [2 / 8](https://www.multigp.com/races/view/?race=31517) |
 | 28–29 Mar | Open Belgian Championship · Heat 1 | [13 / 39](https://fpvscores.com/events/EqRMWNRgpu/results/pilot-20705) | [15 / 39](https://fpvscores.com/events/EqRMWNRgpu/final-ranking) |
-| 21 Feb | Spring Whooprace · Whoop | — | [1 / 6](https://www.multigp.com/races/view/?race=31397) |
 
 ## 2025
 
