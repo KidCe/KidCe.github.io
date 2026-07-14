@@ -1,8 +1,8 @@
 site_name: KidCe FPV
 site_description: FPV racing, builds, repairs and notes by KidCe
-site_url: https://kidce.github.io/FPVWiki/
-repo_url: https://github.com/KidCe/FPVWiki
-repo_name: KidCe/FPVWiki
+site_url: https://kidce.github.io/
+repo_url: https://github.com/KidCe/KidCe.github.io
+repo_name: KidCe/KidCe.github.io
 
 theme:
   name: material
