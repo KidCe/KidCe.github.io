@@ -1,25 +1,62 @@
-# Welcome to KidCe's FPV Wiki
+---
+hide:
+  - navigation
+  - toc
+---
 
-Hello and welcome. 
-This is my smoll little wiki where i try to document all the stuff i find out along the way in the FPV Hobby.
+<section class="hero">
+  <div class="hero__copy">
+    <span class="eyebrow">FPV · RACING · BUILDING</span>
+    <h1>FPV racing.<br><span>Builds & repairs.</span></h1>
+    <p>My place for race reports, builds, repairs and everything I learn about FPV along the way.</p>
+    <div class="hero__actions">
+      <a class="md-button md-button--primary" href="artikel/">Read articles</a>
+      <a class="md-button" href="wiki/">Explore the wiki</a>
+    </div>
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <img src="assets/images/hero-drone.png" alt="">
+  </div>
+</section>
 
+<div class="section-heading">
+  <span class="eyebrow">EXPLORE</span>
+  <h2>Everything FPV in one place</h2>
+</div>
 
-## General
-[Repair](./Repair/)
+<div class="feature-grid" markdown>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<a class="feature-card feature-card--articles" href="artikel/">
+  <span class="feature-card__number">01</span>
+  <h3>Articles & stories</h3>
+  <p>Race weekends, new builds, lessons learned and personal thoughts from the FPV world.</p>
+  <span class="feature-card__link">Read the articles →</span>
+</a>
 
-## Project layout
+<a class="feature-card feature-card--wiki" href="wiki/">
+  <span class="feature-card__number">02</span>
+  <h3>FPV wiki</h3>
+  <p>Practical reference material on components, setup, Betaflight, repairs and troubleshooting.</p>
+  <span class="feature-card__link">Browse the wiki →</span>
+</a>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<a class="feature-card feature-card--builds" href="builds/">
+  <span class="feature-card__number">03</span>
+  <h3>Quad builds</h3>
+  <p>Complete component lists, build notes, setup decisions and lessons from the workbench.</p>
+  <span class="feature-card__link">Explore my builds →</span>
+</a>
 
+<a class="feature-card feature-card--profile" href="ueber-mich/">
+  <span class="feature-card__number">04</span>
+  <h3>Pilot & rankings</h3>
+  <p>Who I am, what I fly and how I perform on the race track.</p>
+  <span class="feature-card__link">View my profile →</span>
+</a>
 
-## Commands Test
-    this.is.code
-    block.is.here
+</div>
+
+<div class="home-quote">
+  <p>„Build. Fly. Crash. Repair. Repeat.“</p>
+  <span>— the natural FPV cycle</span>
+</div>
