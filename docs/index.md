@@ -10,7 +10,7 @@ hide:
     <h1>FPV racing.<br><span>Builds & repairs.</span></h1>
     <p>My place for race reports, builds, repairs and everything I learn about FPV along the way.</p>
     <div class="hero__actions">
-      <a class="md-button md-button--primary" href="artikel/">Read articles</a>
+      <a class="md-button md-button--primary" href="articles/">Read articles</a>
       <a class="md-button" href="wiki/">Explore the wiki</a>
     </div>
   </div>
@@ -26,7 +26,7 @@ hide:
 
 <div class="feature-grid" markdown>
 
-<a class="feature-card feature-card--articles" href="artikel/">
+<a class="feature-card feature-card--articles" href="articles/">
   <span class="feature-card__number">01</span>
   <h3>Articles & stories</h3>
   <p>Race weekends, new builds, lessons learned and personal thoughts from the FPV world.</p>
@@ -47,7 +47,7 @@ hide:
   <span class="feature-card__link">Explore my builds →</span>
 </a>
 
-<a class="feature-card feature-card--profile" href="ueber-mich/">
+<a class="feature-card feature-card--profile" href="about-me/">
   <span class="feature-card__number">04</span>
   <h3>Pilot & rankings</h3>
   <p>Who I am, what I fly and how I perform on the race track.</p>

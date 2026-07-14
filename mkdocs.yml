@@ -29,8 +29,8 @@ plugins:
   - search:
       lang: en
   - blog:
-      blog_dir: artikel
-      post_dir: artikel/posts
+      blog_dir: articles
+      post_dir: articles/posts
       archive: true
       archive_name: Archive
       categories: true
@@ -40,7 +40,7 @@ plugins:
 nav:
   - Home: index.md
   - Articles:
-      - artikel/index.md
+      - articles/index.md
   - Builds:
       - Overview: builds/index.md
       - Budget Build: builds/budget-build.md
@@ -56,12 +56,12 @@ nav:
   - Wiki:
       - Overview: wiki/index.md
       - Fundamentals:
-          - Understanding rates: wiki/grundlagen/rates.md
-          - ESC capacitors: wiki/grundlagen/esc-capacitors.md
+          - Understanding rates: wiki/fundamentals/rates.md
+          - ESC capacitors: wiki/fundamentals/esc-capacitors.md
       - Repairs:
-          - Happymodel 2G4: wiki/reparaturen/happymodel-2g4.md
+          - Happymodel 2G4: wiki/repairs/happymodel-2g4.md
   - About:
-      - About me: ueber-mich.md
+      - About me: about-me.md
       - Race results: race-results.md
       - "My Squad - Holy*s*quad": my-squad.md
 

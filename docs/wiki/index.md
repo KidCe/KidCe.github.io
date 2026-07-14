@@ -8,13 +8,13 @@ Short, practical and based on first-hand experience: this is where I collect kno
 
 Concepts, settings and terminology explained clearly.
 
-[Understanding rates →](grundlagen/rates.md)
+[Understanding rates →](fundamentals/rates.md)
 
 ### :material-tools: Repairs
 
 Symptoms, diagnostic steps and repair notes from the workbench.
 
-[Happymodel 2G4 →](reparaturen/happymodel-2g4.md)
+[Happymodel 2G4 →](repairs/happymodel-2g4.md)
 
 </div>
 
