@@ -9,7 +9,7 @@ hide:
 <div class="profile-avatar">
   <span>NK</span>
 </div>
-<div>
+<div markdown>
 
 ## Hi, I'm Nikos Kitsikoudis.
 
