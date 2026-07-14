@@ -5,6 +5,7 @@
   --fpv-muted: #6f747d;
   --fpv-chart-qualifying: #6f747d;
   --fpv-chart-grid: rgba(127, 127, 127, .18);
+  --fpv-chart-midfield: rgba(127, 127, 127, .5);
 }
 
 [data-md-color-scheme="fpv-light"] {
@@ -67,6 +68,7 @@
 .stat-grid strong, .stat-grid span { display: block; }
 .stat-grid span { color: var(--md-default-fg-color--light); font-size: .72rem; margin-top: .25rem; }
 .performance-chart { height: clamp(19rem, 46vw, 28rem); margin: 1rem 0 1.4rem; position: relative; }
+.performance-chart--events { height: clamp(22rem, 52vw, 32rem); }
 .squad-grid { display: grid; gap: .8rem; grid-template-columns: repeat(4, 1fr); margin: 2rem 0 3rem; }
 .squad-card { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .8rem; padding: 1rem; text-align: center; }
 .squad-card__avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #c42d00); border-radius: 50%; color: #fff; display: inline-flex; font-family: var(--md-code-font-family); font-size: .72rem; font-weight: 800; height: 2.8rem; justify-content: center; width: 2.8rem; }

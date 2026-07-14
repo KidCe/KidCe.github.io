@@ -59,6 +59,18 @@ field to roughly the top third.
   </canvas>
 </div>
 
+### Event-by-event performance
+
+This chart shows every event with an exact final ranking. Hover or tap a point
+to see the event, date and original placement. Official DCS weekend results are
+counted once; their individual multi-final rounds and result ranges are omitted.
+
+<div class="performance-chart performance-chart--events">
+  <canvas id="individual-race-performance-chart" role="img" aria-label="Line chart of normalized final performance at each race from May 2024 through July 2026.">
+    Event-by-event final performance ranges from 10% to 100% of the field beaten and trends upward overall between 2024 and 2026.
+  </canvas>
+</div>
+
 In 2026, **9 of 11 event results (82%)** ended in the top half, compared with **1
 of 3 (33%)** in 2024. The result is not just driven by the smaller Whoop fields:
 excluding Whoop races, the median final score still rises from **39% → 55% →
