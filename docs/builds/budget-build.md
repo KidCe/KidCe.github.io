@@ -26,7 +26,7 @@ I flew the JHEMCU F722 NOXE for around one and a half years and have been extrem
 
 I previously had bad experiences with a 65A AM32 ESC, although I was flying it without a capacitor at the time. I later tried the 70A Blueson A1. It uses the proven Toshiba TPHR8504PL MOSFETs, which were also used on my all-time favorite ESC, the Foxeer 60A Slim.
 
-I experienced one hiccup with the Blueson as well, but I am fairly confident that the issue has been resolved since fitting a good capacitor. See [ESC capacitors: why they matter](../wiki/grundlagen/esc-capacitors.md) for selection and installation guidance.
+I experienced one hiccup with the Blueson as well, but I am fairly confident that the issue has been resolved since fitting a good capacitor. See [ESC capacitors: why they matter](../wiki/fundamentals/esc-capacitors.md) for selection and installation guidance.
 
 ## Build notes
 
