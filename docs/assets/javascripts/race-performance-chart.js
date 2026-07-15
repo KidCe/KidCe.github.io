@@ -1,4 +1,6 @@
 (() => {
+  const squadRaceSeries = {};
+
   const trailingAverage = (values, windowSize = 5) =>
     values.map((_, index) => {
       if (index < windowSize - 1) {
@@ -110,11 +112,6 @@
 
   const renderIndividualRacePerformanceChart = () => {
     const canvas = document.getElementById("individual-race-performance-chart");
-
-    if (!canvas || canvas.dataset.chartReady === "true" || !window.Chart) {
-      return;
-    }
-
     const races = [
       { date: "11 May 2024", label: "May '24", event: "Aircrasher Aichtal · DCS overall", position: 75, field: 90 },
       { date: "14 Jul 2024", label: "Jul '24", event: "BMR Adelsried · DCS overall", position: 23, field: 37 },
@@ -142,6 +139,12 @@
       ...race,
       score: Math.round(((race.field - race.position) / (race.field - 1)) * 1000) / 10
     }));
+
+    squadRaceSeries.kidce = races;
+
+    if (!canvas || canvas.dataset.chartReady === "true" || !window.Chart) {
+      return;
+    }
 
     canvas.dataset.chartReady = "true";
     const styles = getComputedStyle(document.body);
@@ -254,17 +257,20 @@
     });
   };
 
-  const renderSquadPilotChart = (canvasId, sourceRaces) => {
+  const renderSquadPilotChart = (canvasId, sourceRaces, pilotKey) => {
     const canvas = document.getElementById(canvasId);
-
-    if (!canvas || canvas.dataset.chartReady === "true" || !window.Chart) {
-      return;
-    }
 
     const races = sourceRaces.map((race) => ({
       ...race,
       score: Math.round(((race.field - race.position) / (race.field - 1)) * 1000) / 10
     }));
+
+    squadRaceSeries[pilotKey] = races;
+
+    if (!canvas || canvas.dataset.chartReady === "true" || !window.Chart) {
+      return;
+    }
+
     const scores = races.map((race) => race.score);
 
     canvas.dataset.chartReady = "true";
@@ -377,6 +383,12 @@
   };
 
   const renderSquadRacePerformanceCharts = () => {
+    renderSquadPilotChart(
+      "kidce-squad-race-performance-chart",
+      squadRaceSeries.kidce || [],
+      "kidce"
+    );
+
     renderSquadPilotChart("maxdax-race-performance-chart", [
       { date: "14 Jul 2024", label: "Jul '24", event: "BMR Adelsried · DCS overall", position: 35, field: 37 },
       { date: "2 Nov 2024", label: "Nov '24", event: "Friedrichshafen · DCS overall", position: 19, field: 51 },
@@ -397,7 +409,7 @@
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 4, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 21, field: 53 },
       { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 12, field: 37 }
-    ]);
+    ], "maxdax");
 
     renderSquadPilotChart("bajo-race-performance-chart", [
       { date: "10 May 2024", label: "May '24", event: "Aircrasher Aichtal · FAI", position: 85, field: 90 },
@@ -416,7 +428,7 @@
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 3, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 10, field: 53 },
       { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 2, field: 37 }
-    ]);
+    ], "bajo");
 
     renderSquadPilotChart("zelaus-race-performance-chart", [
       { date: "11 Feb 2024", label: "Feb '24", event: "Modell Leben Erfurt · DCS overall", position: 30, field: 34 },
@@ -442,13 +454,152 @@
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 30, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 48, field: 53 },
       { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 25, field: 37 }
-    ]);
+    ], "zelaus");
+  };
+
+  const dateToTimestamp = (date) => {
+    const months = {
+      Jan: 0,
+      Feb: 1,
+      Mar: 2,
+      Apr: 3,
+      May: 4,
+      Jun: 5,
+      Jul: 6,
+      Aug: 7,
+      Sep: 8,
+      Oct: 9,
+      Nov: 10,
+      Dec: 11
+    };
+    const match = date.match(/^(\d{1,2}) ([A-Z][a-z]{2}) (\d{4})$/);
+
+    if (!match || months[match[2]] === undefined) {
+      return null;
+    }
+
+    return Date.UTC(Number(match[3]), months[match[2]], Number(match[1]));
+  };
+
+  const renderSquadComparisonChart = () => {
+    const canvas = document.getElementById("squad-trend-comparison-chart");
+
+    if (!canvas || canvas.dataset.chartReady === "true" || !window.Chart) {
+      return;
+    }
+
+    canvas.dataset.chartReady = "true";
+    const styles = getComputedStyle(document.body);
+    const color = (name, fallback) =>
+      styles.getPropertyValue(name).trim() || fallback;
+    const dateFormatter = new Intl.DateTimeFormat("en", {
+      month: "short",
+      year: "2-digit",
+      timeZone: "UTC"
+    });
+    const pilots = [
+      { key: "kidce", label: "KidCe", color: "--fpv-chart-kidce", fallback: "#ff5a1f", pointStyle: "circle" },
+      { key: "maxdax", label: "MaxDax", color: "--fpv-chart-maxdax", fallback: "#1976c9", pointStyle: "rectRot" },
+      { key: "bajo", label: "bajo", color: "--fpv-chart-bajo", fallback: "#238a62", pointStyle: "triangle" },
+      { key: "zelaus", label: "ZeLaus", color: "--fpv-chart-zelaus", fallback: "#8e57b5", pointStyle: "rect" }
+    ];
+    const datasets = pilots.map((pilot) => {
+      const races = squadRaceSeries[pilot.key] || [];
+      const averages = trailingAverage(races.map((race) => race.score));
+      const seriesColor = color(pilot.color, pilot.fallback);
+
+      return {
+        label: pilot.label,
+        data: races
+          .map((race, index) => ({
+            x: dateToTimestamp(race.date),
+            y: averages[index],
+            race
+          }))
+          .filter((point) => point.x !== null && point.y !== null),
+        parsing: false,
+        borderColor: seriesColor,
+        backgroundColor: seriesColor,
+        pointStyle: pilot.pointStyle,
+        pointRadius: 4,
+        pointHoverRadius: 7,
+        borderWidth: 2.5,
+        tension: 0.25
+      };
+    });
+
+    new window.Chart(canvas, {
+      type: "line",
+      data: { datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        interaction: {
+          mode: "nearest",
+          intersect: false
+        },
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              color: color("--md-default-fg-color", "#111317"),
+              usePointStyle: true,
+              padding: 18
+            }
+          },
+          tooltip: {
+            callbacks: {
+              title: (items) => items[0].raw.race.date,
+              label: (context) =>
+                `${context.dataset.label}: ${context.parsed.y}% five-race average`,
+              afterLabel: (context) => context.raw.race.event
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: "linear",
+            grid: {
+              display: false
+            },
+            ticks: {
+              color: color("--md-default-fg-color--light", "#6f747d"),
+              maxRotation: 0,
+              maxTicksLimit: 9,
+              callback: (value) => dateFormatter.format(new Date(value))
+            }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              stepSize: 25,
+              color: color("--md-default-fg-color--light", "#6f747d"),
+              callback: (value) => `${value}%`
+            },
+            title: {
+              display: true,
+              text: "Field beaten · 5-race average",
+              color: color("--md-default-fg-color--light", "#6f747d")
+            },
+            grid: {
+              color: (context) =>
+                context.tick.value === 50
+                  ? color("--fpv-chart-midfield", "rgba(127, 127, 127, 0.5)")
+                  : color("--fpv-chart-grid", "rgba(127, 127, 127, 0.18)")
+            }
+          }
+        }
+      }
+    });
   };
 
   const renderCharts = () => {
     renderRacePerformanceChart();
     renderIndividualRacePerformanceChart();
     renderSquadRacePerformanceCharts();
+    renderSquadComparisonChart();
   };
 
   if (document.readyState === "loading") {

@@ -96,7 +96,39 @@ dashed line is a trailing five-race moving average. Hover or tap a point for the
 event, date and original placement. DCS multi-final weekends count once through
 their official overall result.
 
+### Squad trend comparison
+
+This view puts all four trailing five-race averages on one real calendar
+timeline. Each line begins after that pilot's fifth completed event, so short
+spikes matter less and the longer-term direction is easier to compare.
+
+<div class="performance-chart performance-chart--comparison">
+  <canvas id="squad-trend-comparison-chart" role="img" aria-label="Comparison of the trailing five-race performance averages for KidCe, MaxDax, bajo and ZeLaus from 2024 through 2026.">
+    Comparison of the trailing five-race performance averages for KidCe, MaxDax, bajo and ZeLaus from 2024 through 2026.
+  </canvas>
+</div>
+
+### KidCe
+
+!!! success "Momentum to build on"
+    The typical result has moved from the lower half in 2024 to roughly the top
+    third in 2026, while the calendar now includes stronger international
+    fields. The consistency work is showing—keep stacking clean race laps and
+    the next step is turning more of those solid weekends into deep finals runs.
+
+<div class="performance-chart performance-chart--squad">
+  <canvas id="kidce-squad-race-performance-chart" role="img" aria-label="KidCe event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
+    KidCe event-by-event final performance and trailing five-race moving average from 2024 through 2026.
+  </canvas>
+</div>
+
 ### MaxDax
+
+!!! success "A strong upward trajectory"
+    A 35% median in 2024 has become 75% in 2026, with every recorded 2026 final
+    landing in the top half. That is real, repeatable progress. Keep refining
+    race-day consistency—the pace is already there to challenge further up the
+    order.
 
 <div class="performance-chart performance-chart--squad">
   <canvas id="maxdax-race-performance-chart" role="img" aria-label="MaxDax event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
@@ -106,6 +138,12 @@ their official overall result.
 
 ### bajo
 
+!!! success "Proof that the training works"
+    The rise from a 14% median in 2024 to 88% in 2026 is the squad's biggest
+    jump, and the recent results are regularly near the front. Keep protecting
+    that speed with clean, controlled runs; the data says the work is converting
+    into results.
+
 <div class="performance-chart performance-chart--squad">
   <canvas id="bajo-race-performance-chart" role="img" aria-label="bajo event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
     bajo event-by-event final performance and trailing five-race moving average from 2024 through 2026.
@@ -113,6 +151,12 @@ their official overall result.
 </div>
 
 ### ZeLaus
+
+!!! success "Keep building the recovery"
+    The 2026 median has climbed back from 12% to 18% while the schedule includes
+    larger international fields and valuable high-pressure race experience.
+    Every completed event adds useful laps. Keep training for clean, repeatable
+    runs—the recovery is a base to build the next step on.
 
 <div class="performance-chart performance-chart--squad">
   <canvas id="zelaus-race-performance-chart" role="img" aria-label="ZeLaus event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
