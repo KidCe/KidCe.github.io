@@ -82,6 +82,8 @@ nav:
       - Fundamentals:
           - Understanding rates: wiki/fundamentals/rates.md
           - ESC capacitors: wiki/fundamentals/esc-capacitors.md
+      - Equipment & field setup:
+          - FPV gate padding: wiki/equipment/fpv-gate-padding.md
       - Repairs:
           - Happymodel 2G4: wiki/repairs/happymodel-2g4.md
   - About:

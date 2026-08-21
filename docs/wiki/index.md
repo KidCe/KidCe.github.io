@@ -16,6 +16,12 @@ Symptoms, diagnostic steps and repair notes from the workbench.
 
 [Happymodel 2G4 →](repairs/happymodel-2g4.md)
 
+### :material-flag-checkered: Equipment & field setup
+
+Materials and practical setup notes for race infrastructure.
+
+[FPV gate padding →](equipment/fpv-gate-padding.md)
+
 </div>
 
 !!! tip "A wiki that grows with the hobby"

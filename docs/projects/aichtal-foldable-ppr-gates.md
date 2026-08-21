@@ -9,5 +9,7 @@ Foldable PPR race gates intended for the Aichtal track. The design focuses on co
 - Transport and track setup
 - Build photos and design files
 
+For material guidance, see the [FPV gate padding notes](../wiki/equipment/fpv-gate-padding.md).
+
 !!! note "Project page in progress"
     Links, files and detailed build notes will be added as the project develops.

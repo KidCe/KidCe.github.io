@@ -9,5 +9,7 @@ Custom FPV race gates for the 2026 MultiGP Championship. This page will collect 
 - Transport and on-site setup
 - Photos, design files and lessons learned
 
+For material guidance, see the [FPV gate padding notes](../wiki/equipment/fpv-gate-padding.md).
+
 !!! note "Project page in progress"
     Links and technical details will be added as they become available.
