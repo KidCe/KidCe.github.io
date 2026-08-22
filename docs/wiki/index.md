@@ -4,6 +4,12 @@ Short, practical and based on first-hand experience: this is where I collect kno
 
 <div class="wiki-grid" markdown>
 
+### :material-notebook-edit: Daily notes
+
+A running block for quick thoughts, observations and follow-up items.
+
+[Open the Daily Note Block →](daily-note-block.md)
+
 ### :material-tune-variant: Fundamentals
 
 Concepts, settings and terminology explained clearly.
