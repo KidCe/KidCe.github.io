@@ -14,7 +14,7 @@ A running block for quick thoughts, observations and follow-up items.
 
 Concepts, settings and terminology explained clearly.
 
-[Understanding rates →](fundamentals/rates.md)
+[ESC capacitors →](fundamentals/esc-capacitors.md)
 
 ### :material-tools: Repairs
 
