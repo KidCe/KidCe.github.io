@@ -81,7 +81,6 @@ nav:
       - Overview: wiki/index.md
       - Daily Note Block: wiki/daily-note-block.md
       - Fundamentals:
-          - Understanding rates: wiki/fundamentals/rates.md
           - ESC capacitors: wiki/fundamentals/esc-capacitors.md
       - Equipment & field setup:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
