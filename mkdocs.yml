@@ -18,6 +18,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.sections
     - navigation.top
     - navigation.footer
@@ -55,7 +56,7 @@ plugins:
       categories:
         - categories
   - social:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ CI, false ]
       cards_layout: default
       cards_layout_options:
         background_color: "#15171b"
@@ -77,6 +78,20 @@ nav:
       - Aichtal Foldable PPR Gates: projects/aichtal-foldable-ppr-gates.md
       - MultiGP Champs 2026 Gates: projects/multigp-champs-2026-gates.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
+      - 3D Printing:
+          - Flashforge Creator 5:
+              - Knowledge Base:
+                  - Architecture:
+                      - Stock And Target Architecture: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Architecture/Stock and Target
+                          Architecture.md
+                      - Single Points Of Truth: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Architecture/Single Points of Truth.md
+      - Fusion Heat Insert Add In: projects/Fusion Heat Insert Add-In.md
+      - FPV:
+          - Race Infrastructure:
+              - MultiGP Champs 2026 Gates: projects/FPV/Race Infrastructure/MultiGP Champs 2026 Gates.md
+              - Aichtal Foldable PPR Gates: projects/FPV/Race Infrastructure/Aichtal Foldable PPR Gates.md
   - Wiki:
       - Overview: wiki/index.md
       - Fundamentals:
@@ -89,7 +104,33 @@ nav:
   - About:
       - About me: about-me.md
       - Race results: race-results.md
-      - "My Squad - Holy*s*quad": my-squad.md
+      - My Squad - Holy*s*quad: my-squad.md
+  - Web Tools:
+      - Index: Web Tools/index.md
+      - Betaflight RX Monitor: Web Tools/Betaflight RX Monitor.md
+  - Obsidian To MKDocs Testing Sandbox:
+      - Private:
+          - Published Exception:
+              - Visible Private Test: Obsidian to MKDocs Testing Sandbox/Private/Published
+                  Exception/Visible Private Test.md
+      - Move Tests:
+          - After Move:
+              - Moved Page: Obsidian to MKDocs Testing Sandbox/Move Tests/After Move/Moved
+                  Page.md
+      - Engineering:
+          - Engineering File Formats: Obsidian to MKDocs Testing
+              Sandbox/Engineering/Engineering File Formats.md
+      - 01 Foundations:
+          - Public Overview: Obsidian to MKDocs Testing Sandbox/01 Foundations/Public
+              Overview.md
+          - Deep:
+              - Nested Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Nested
+                  Page.md
+              - Level 4:
+                  - Very Deep Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Level
+                      4/Very Deep Page.md
+              - Level 3 Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Level 3
+                  Page.md
 
 markdown_extensions:
   - abbr
@@ -102,8 +143,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji ""
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg ""
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -111,7 +152,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_code_format ""
   - pymdownx.tabbed:
       alternate_style: true
 
