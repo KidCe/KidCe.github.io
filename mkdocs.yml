@@ -280,9 +280,6 @@ nav:
                   Creator 5.md
   - Wiki:
       - Overview: wiki/index.md
-      - Daily Note Block: wiki/daily-note-block.md
-      - Daily Notes:
-          - 2026-08-23 — KAACK Cloud Builder Handoff: wiki/daily-notes/2026-08-23-kaack-cloud-builder-handoff.md
       - Fundamentals:
           - Capacitor for FPV Racing: wiki/fundamentals/capacitor-for-fpv-racing.md
       - Equipment & field setup:

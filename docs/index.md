@@ -57,7 +57,7 @@ hide:
   <h3><a class="feature-card__title" href="wiki/">Practical FPV wiki</a></h3>
   <p>Short reference pages for the things that matter at the bench, in the field and during repairs.</p>
   <ul class="feature-card__list">
-    <li>ESC capacitors, gate padding and daily notes</li>
+    <li>ESC capacitors, gate padding and field setup</li>
     <li>Receiver troubleshooting from the workbench</li>
   </ul>
   <a class="feature-card__link" href="wiki/">Browse the wiki →</a>
