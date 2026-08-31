@@ -167,6 +167,3 @@ Our current favorite is **inexpensive PE roll foam in multiple layers, fully enc
 The construction is affordable, flexible and easy to repair. Based on our experience so far, the decisive weakness of inexpensive PE foam is its **UV sensitivity**. Foam should therefore never be left permanently exposed.
 
 ## Related pages
-
-- [Aichtal Foldable PPR Gates](../../projects/aichtal-foldable-ppr-gates.md)
-- [MultiGP Champs 2026 Gates](../../projects/multigp-champs-2026-gates.md)

@@ -25,7 +25,7 @@ flowchart TD
     FFE --> Cloud[Optional cloud and MQTT]
 ~~~
 
-The central failure boundary is app_startup.sh: the local factory-rootfs inspection shows that init checks for the file and executes it directly. The file then mixes platform setup, update handling, and application startup. See Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout for the exact observed permission failure.
+The central failure boundary is app_startup.sh: the local factory-rootfs inspection shows that init checks for the file and executes it directly. The file then mixes platform setup, update handling, and application startup. See [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](../Recovery/Device Evidence and Partition Layout.md) for the exact observed permission failure.
 
 ## Target architecture
 

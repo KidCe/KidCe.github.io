@@ -16,20 +16,6 @@ FPV projects beyond regular quad builds: electronics, race infrastructure, custo
   <span>View project →</span>
 </a>
 
-<a class="build-card" href="aichtal-foldable-ppr-gates/">
-  <span class="eyebrow">RACING · GATES</span>
-  <h2>Aichtal Foldable PPR Gates</h2>
-  <p>Foldable PPR race gates designed for compact transport and quick setup in Aichtal.</p>
-  <span>View project →</span>
-</a>
-
-<a class="build-card" href="multigp-champs-2026-gates/">
-  <span class="eyebrow">MULTIGP · 2026</span>
-  <h2>MultiGP Champs 2026 Gates</h2>
-  <p>Custom race-gate work prepared for the 2026 MultiGP Championship.</p>
-  <span>View project →</span>
-</a>
-
 <a class="build-card" href="35-inch-1s-endurance-drone/">
   <span class="eyebrow">ENDURANCE · 1S</span>
   <h2>3.5&quot; 1S Endurance Drone</h2>

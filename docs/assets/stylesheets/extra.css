@@ -1,12 +1,12 @@
 :root {
-  --fpv-orange: #ff5a1f;
-  --fpv-orange-bright: #ff7545;
+  --fpv-orange: #e34d36;
+  --fpv-orange-bright: #ef6a53;
   --fpv-ink: #111317;
   --fpv-muted: #6f747d;
   --fpv-chart-qualifying: #6f747d;
   --fpv-chart-grid: rgba(127, 127, 127, .18);
   --fpv-chart-midfield: rgba(127, 127, 127, .5);
-  --fpv-chart-kidce: #ff5a1f;
+  --fpv-chart-kidce: #e34d36;
   --fpv-chart-maxdax: #1976c9;
   --fpv-chart-bajo: #238a62;
   --fpv-chart-zelaus: #8e57b5;
@@ -65,7 +65,7 @@
 .wiki-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); margin: 2rem 0; }
 .wiki-grid > div { border: 1px solid rgba(127,127,127,.2); border-radius: .8rem; padding: .5rem 1.2rem 1.2rem; }
 .profile-intro { align-items: center; display: grid; gap: 2rem; grid-template-columns: auto 1fr; margin: 2rem 0 4rem; }
-.profile-avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #c42d00); border-radius: 50%; box-shadow: 0 14px 30px rgba(255,90,31,.25); color: white; display: flex; font-size: 2rem; font-weight: 850; height: 8rem; justify-content: center; width: 8rem; }
+.profile-avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #b83228); border-radius: 50%; box-shadow: 0 14px 30px rgba(227,77,54,.25); color: white; display: flex; font-size: 2rem; font-weight: 850; height: 8rem; justify-content: center; width: 8rem; }
 .profile-intro h2 { margin-top: 0; }
 .stat-grid { display: grid; gap: .7rem; grid-template-columns: repeat(2, 1fr); margin: 1rem 0 3rem; }
 .stat-grid > div { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .65rem; padding: 1rem; }
@@ -77,7 +77,7 @@
 .performance-chart--comparison { height: clamp(23rem, 55vw, 34rem); margin-bottom: 3rem; }
 .squad-grid { display: grid; gap: .8rem; grid-template-columns: repeat(4, 1fr); margin: 2rem 0 3rem; }
 .squad-card { background: var(--md-code-bg-color, #fff); border: 1px solid rgba(127,127,127,.18); border-radius: .8rem; padding: 1rem; text-align: center; }
-.squad-card__avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #c42d00); border-radius: 50%; color: #fff; display: inline-flex; font-family: var(--md-code-font-family); font-size: .72rem; font-weight: 800; height: 2.8rem; justify-content: center; width: 2.8rem; }
+.squad-card__avatar { align-items: center; background: linear-gradient(135deg, var(--fpv-orange), #b83228); border-radius: 50%; color: #fff; display: inline-flex; font-family: var(--md-code-font-family); font-size: .72rem; font-weight: 800; height: 2.8rem; justify-content: center; width: 2.8rem; }
 .squad-card h2 { font-size: .95rem; margin: .75rem 0 .1rem; }
 .squad-card p { color: var(--md-default-fg-color--light); font-size: .65rem; margin: 0; }
 .squad-stats-grid { display: grid; gap: .8rem; grid-template-columns: repeat(2, 1fr); margin: 1rem 0 1.5rem; }

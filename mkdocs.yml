@@ -75,28 +75,215 @@ nav:
   - Projects:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
-      - Aichtal Foldable PPR Gates: projects/aichtal-foldable-ppr-gates.md
-      - MultiGP Champs 2026 Gates: projects/multigp-champs-2026-gates.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
+      - Fusion Heat Insert Add In: projects/Fusion Heat Insert Add-In.md
       - 3D Printing:
           - Flashforge Creator 5:
               - Knowledge Base:
+                  - Sources:
+                      - Recovery Kits:
+                          - Recovery:
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Recovery Kits/recovery/README.md
+                          - SOURCES: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Recovery Kits/SOURCES.md
+                          - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Recovery Kits/README.md
+                          - C5p Usb Unbrick Kit:
+                              - Docs:
+                                  - REPAIR WORKFLOW: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Recovery
+                                      Kits/c5p-usb-unbrick-kit/docs/REPAIR-WORKFLOW.md
+                              - AGENTS: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Recovery
+                                  Kits/c5p-usb-unbrick-kit/AGENTS.md
+                          - C5p Image Kit:
+                              - RECOVERY GATES: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Recovery
+                                  Kits/c5p-image-kit/RECOVERY-GATES.md
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Recovery
+                                  Kits/c5p-image-kit/README.md
+                              - MANIFEST: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Recovery
+                                  Kits/c5p-image-kit/MANIFEST.md
+                      - Repository And Revision Registry: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Sources/Repository and Revision
+                          Registry.md
+                      - Legacy Vault Notes: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Sources/Legacy Vault Notes.md
+                      - Deep Unbrick:
+                          - UNBRICK GUIDE: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/UNBRICK-GUIDE.md
+                          - UART GATING ANALYSIS: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/UART-GATING-ANALYSIS.md
+                          - SOURCES: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep
+                              Unbrick/SOURCES.md
+                          - REPAIR PLAN: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/REPAIR-PLAN.md
+                          - README: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep
+                              Unbrick/README.md
+                          - RECOVERY ACCESS: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/RECOVERY-ACCESS.md
+                          - OPEN FIRMWARE ROADMAP: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/OPEN-FIRMWARE-ROADMAP.md
+                          - EVIDENCE: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep
+                              Unbrick/EVIDENCE.md
+                          - EMMC REGION BUNDLE: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/EMMC-REGION-BUNDLE.md
+                          - AUTOMATION ROADMAP: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/AUTOMATION-ROADMAP.md
+                          - ADB RECOVERY ACCESS: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Deep Unbrick/ADB-RECOVERY-ACCESS.md
+                      - Creator 5 Scripts:
+                          - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Creator-5-Scripts/README.md
+                      - Creator 5 Mods:
+                          - Research:
+                              - Open Firmware Migration:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Research/Open-Firmware-Migration/README.md
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Creator-5-Mods/Research/README.md
+                          - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                              Base/Sources/Creator-5-Mods/README.md
+                          - Hard:
+                              - Update Moonraker:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Hard/Update
+                                      Moonraker/README.md
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Creator-5-Mods/Hard/README.md
+                          - Intermediate:
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Creator-5-Mods/Intermediate/README.md
+                              - Update Mainsail:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Intermediate/Update
+                                      Mainsail/README.md
+                              - Enable Legacy NaN:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Intermediate/Enable
+                                      Legacy NaN/README.md
+                              - Add Entware Package Manager:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Intermediate/Add
+                                      Entware Package Manager/README.md
+                          - Basic:
+                              - SSH Persist:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/SSH
+                                      Persist/README.md
+                              - Unlock Camera To 720p:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Unlock
+                                      camera to 720p/README.md
+                              - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                  Base/Sources/Creator-5-Mods/Basic/README.md
+                              - Orca Updates & Slicer Settings:
+                                  - SlicerSettings: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Orca
+                                      Updates & Slicer
+                                      Settings/SlicerSettings.md
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Orca
+                                      Updates & Slicer Settings/README.md
+                                  - OrcaFork: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Orca
+                                      Updates & Slicer Settings/OrcaFork.md
+                              - Moonraker Updater:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Moonraker
+                                      Updater/README.md
+                              - Loop Script:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Loop
+                                      Script/README.md
+                              - Make SSH Host Key Persist:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Make SSH
+                                      host key persist/README.md
+                              - How To Use Scripts:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/How to
+                                      use scripts/README.md
+                              - Enable Moonraker & Mainsail:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Enable
+                                      Moonraker & Mainsail/README.md
+                              - Allow For Heating Without Cooling:
+                                  - README: projects/3D Printing/Flashforge Creator 5/Knowledge
+                                      Base/Sources/Creator-5-Mods/Basic/Allow
+                                      for Heating Without Cooling/README.md
+                      - Binary Artifact Inventory: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Sources/Binary Artifact Inventory.md
+                      - Archive And Copy Manifest: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Sources/Archive and Copy Manifest.md
+                  - Recovery:
+                      - Temporary ADB Access: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Recovery/Temporary ADB Access.md
+                      - USBCloner Read Only Acquisition: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Recovery/USBCloner Read-only
+                          Acquisition.md
+                      - Recovery Overview: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Recovery/Recovery Overview.md
+                      - Offline Repair And Validation: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Recovery/Offline Repair and
+                          Validation.md
+                      - Device Evidence And Partition Layout: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Recovery/Device Evidence and
+                          Partition Layout.md
+                  - Guides:
+                      - SSH Host Key Persistence: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Guides/SSH Host Key Persistence.md
+                      - Print Workflow Adaptive Mesh And OrcaSlicer: projects/3D Printing/Flashforge
+                          Creator 5/Knowledge Base/Guides/Print Workflow
+                          Adaptive Mesh and OrcaSlicer.md
+                      - Optional Mod Matrix: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Guides/Optional Mod Matrix.md
+                      - Modding Baseline   Root Loop And Mainsail: projects/3D Printing/Flashforge
+                          Creator 5/Knowledge Base/Guides/Modding Baseline -
+                          Root Loop and Mainsail.md
+                      - Heat And Fan Routing: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Guides/Heat and Fan Routing.md
+                      - Entware Moonraker And Mainsail Updates: projects/3D Printing/Flashforge Creator
+                          5/Knowledge Base/Guides/Entware Moonraker and Mainsail
+                          Updates.md
+                      - Camera And Remote Screen: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Guides/Camera and Remote Screen.md
+                  - Firmware:
+                      - Vendor Firmware And Klipper: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Firmware/Vendor Firmware and Klipper.md
+                      - Open Firmware Migration: projects/3D Printing/Flashforge Creator 5/Knowledge
+                          Base/Firmware/Open Firmware Migration.md
                   - Architecture:
                       - Stock And Target Architecture: projects/3D Printing/Flashforge Creator
                           5/Knowledge Base/Architecture/Stock and Target
                           Architecture.md
                       - Single Points Of Truth: projects/3D Printing/Flashforge Creator 5/Knowledge
                           Base/Architecture/Single Points of Truth.md
-      - Fusion Heat Insert Add In: projects/Fusion Heat Insert Add-In.md
-      - FPV:
-          - Race Infrastructure:
-              - MultiGP Champs 2026 Gates: projects/FPV/Race Infrastructure/MultiGP Champs 2026 Gates.md
-              - Aichtal Foldable PPR Gates: projects/FPV/Race Infrastructure/Aichtal Foldable PPR Gates.md
+                  - 00 Index   Flashforge Creator 5: projects/3D Printing/Flashforge Creator
+                      5/Knowledge Base/00 Index - Flashforge Creator 5.md
+              - Root:
+                  - README: projects/3D Printing/Flashforge Creator 5/Root/README.md
+                  - Repository Check: projects/3D Printing/Flashforge Creator 5/Root/Repository
+                      Check.md
+                  - Open Firmware Feasibility And Migration Report: projects/3D Printing/Flashforge
+                      Creator 5/Root/Open Firmware Feasibility and Migration
+                      Report.md
+                  - Discord Mods Dump: projects/3D Printing/Flashforge Creator 5/Root/Discord Mods
+                      Dump.md
+                  - Important Notes: projects/3D Printing/Flashforge Creator 5/Root/Important
+                      Notes.md
+                  - How To Install: projects/3D Printing/Flashforge Creator 5/Root/How to Install.md
+                  - Chat Knowledge: projects/3D Printing/Flashforge Creator 5/Root/Chat Knowledge.md
+              - Flashforge Creator 5: projects/3D Printing/Flashforge Creator 5/Flashforge
+                  Creator 5.md
   - Wiki:
       - Overview: wiki/index.md
       - Fundamentals:
           - Understanding rates: wiki/fundamentals/rates.md
-          - ESC capacitors: wiki/fundamentals/esc-capacitors.md
+          - Capacitor for FPV Racing: wiki/fundamentals/capacitor-for-fpv-racing.md
       - Equipment & field setup:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
       - Repairs:
@@ -108,29 +295,9 @@ nav:
   - Web Tools:
       - Index: Web Tools/index.md
       - Betaflight RX Monitor: Web Tools/Betaflight RX Monitor.md
-  - Obsidian To MKDocs Testing Sandbox:
-      - Private:
-          - Published Exception:
-              - Visible Private Test: Obsidian to MKDocs Testing Sandbox/Private/Published
-                  Exception/Visible Private Test.md
-      - Move Tests:
-          - After Move:
-              - Moved Page: Obsidian to MKDocs Testing Sandbox/Move Tests/After Move/Moved
-                  Page.md
-      - Engineering:
-          - Engineering File Formats: Obsidian to MKDocs Testing
-              Sandbox/Engineering/Engineering File Formats.md
-      - 01 Foundations:
-          - Public Overview: Obsidian to MKDocs Testing Sandbox/01 Foundations/Public
-              Overview.md
-          - Deep:
-              - Nested Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Nested
-                  Page.md
-              - Level 4:
-                  - Very Deep Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Level
-                      4/Very Deep Page.md
-              - Level 3 Page: Obsidian to MKDocs Testing Sandbox/01 Foundations/Deep/Level 3
-                  Page.md
+      - KAACK Cloud Build: Web Tools/KAACK Cloud Build.md
+      - KidCe Configurator: Web Tools/KidCe Configurator.md
+      - RatesManager: Web Tools/RatesManager.md
 
 markdown_extensions:
   - abbr

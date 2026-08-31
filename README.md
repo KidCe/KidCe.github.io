@@ -2,6 +2,10 @@
 
 A personal FPV website with articles, a wiki and a racing profile. The site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and automatically published to GitHub Pages on every push to `main` or `master`.
 
+## AI assistance disclosure
+
+This project was updated with substantial assistance from OpenAI Codex. The repository maintainer directed the work, made the project decisions, and is responsible for reviewing and using the result.
+
 ## Run locally
 
 ```powershell

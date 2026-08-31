@@ -7,18 +7,18 @@ This note defines the information-ownership rules for the Flashforge Creator 5 k
 
 | Fact class | Owner | Allowed elsewhere |
 | --- | --- | --- |
-| Project status and archive relationship | Projects/3D Printing/Flashforge Creator 5/Flashforge Creator 5 | Short link only |
-| Measured board, USB, eMMC, GPT, file metadata, and device hashes | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout | Evidence label and link |
-| Recovery safety gates | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Recovery Overview | Warnings plus link |
-| Read-only acquisition details | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/USBCloner Read-only Acquisition | Gate reference |
-| Repair design and read-back requirements | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Offline Repair and Validation | Link only |
-| Stock root/loop/Mainsail procedure | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Modding Baseline - Root Loop and Mainsail | Link only |
-| Feature-specific mod instructions and status | The relevant page under Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Optional Mod Matrix | Link only |
+| Project status and archive relationship | [Projects/3D Printing/Flashforge Creator 5/Flashforge Creator 5](../../Flashforge Creator 5.md) | Short link only |
+| Measured board, USB, eMMC, GPT, file metadata, and device hashes | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](../Recovery/Device Evidence and Partition Layout.md) | Evidence label and link |
+| Recovery safety gates | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Recovery Overview](../Recovery/Recovery Overview.md) | Warnings plus link |
+| Read-only acquisition details | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/USBCloner Read-only Acquisition](../Recovery/USBCloner Read-only Acquisition.md) | Gate reference |
+| Repair design and read-back requirements | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Offline Repair and Validation](../Recovery/Offline Repair and Validation.md) | Link only |
+| Stock root/loop/Mainsail procedure | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Modding Baseline - Root Loop and Mainsail](../Guides/Modding Baseline - Root Loop and Mainsail.md) | Link only |
+| Feature-specific mod instructions and status | The relevant page under [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Optional Mod Matrix](../Guides/Optional Mod Matrix.md) | Link only |
 | Stock service graph and future architecture | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Architecture/Stock and Target Architecture](Stock and Target Architecture.md) | Link only |
-| Vendor firmware structure and custom Klipper files | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Vendor Firmware and Klipper | Link and evidence label |
-| Open-firmware sequencing and exit criteria | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Open Firmware Migration | Link only |
-| Repository URL, revision, branch, and inspection date | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Repository and Revision Registry | Use the registry entry |
-| Local copied-file status and exclusions | Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Archive and Copy Manifest | Use the manifest |
+| Vendor firmware structure and custom Klipper files | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Vendor Firmware and Klipper](../Firmware/Vendor Firmware and Klipper.md) | Link and evidence label |
+| Open-firmware sequencing and exit criteria | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Open Firmware Migration](../Firmware/Open Firmware Migration.md) | Link only |
+| Repository URL, revision, branch, and inspection date | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Repository and Revision Registry](../Sources/Repository and Revision Registry.md) | Use the registry entry |
+| Local copied-file status and exclusions | [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Archive and Copy Manifest](../Sources/Archive and Copy Manifest.md) | Use the manifest |
 
 ## Update protocol
 
@@ -34,7 +34,7 @@ For a conflict, use this order:
 
 1. A fresh physical observation on the target printer, recorded as P1.
 2. A read-only local artifact from that printer, recorded as S1.
-3. The exact repository revision recorded in Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Repository and Revision Registry.
+3. The exact repository revision recorded in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Repository and Revision Registry](../Sources/Repository and Revision Registry.md).
 4. A dated community report, recorded as C1.
 5. An inference, recorded as I1, which remains open until tested.
 
