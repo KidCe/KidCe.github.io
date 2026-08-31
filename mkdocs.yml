@@ -76,7 +76,6 @@ nav:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
-      - Fusion Heat Insert Add In: projects/Fusion Heat Insert Add-In.md
       - 3D Printing:
           - Flashforge Creator 5:
               - Knowledge Base:
@@ -281,8 +280,10 @@ nav:
                   Creator 5.md
   - Wiki:
       - Overview: wiki/index.md
+      - Daily Note Block: wiki/daily-note-block.md
+      - Daily Notes:
+          - 2026-08-23 — KAACK Cloud Builder Handoff: wiki/daily-notes/2026-08-23-kaack-cloud-builder-handoff.md
       - Fundamentals:
-          - Understanding rates: wiki/fundamentals/rates.md
           - Capacitor for FPV Racing: wiki/fundamentals/capacitor-for-fpv-racing.md
       - Equipment & field setup:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
