@@ -21,5 +21,39 @@ The board is designed around a single-cell (1S) LiPo supply for the LED section.
 
 The repository contains the firmware, Keil project, release scripts, wiring-related documentation, and an interactive user guide. Hardware verification should still be completed on the intended PCB revision before distributing binaries broadly.
 
+## Gallery
+
+These photos show the controller board and the lighting setups used while testing the project.
+
+<div class="project-gallery">
+  <figure>
+    <a href="../../assets/media/projects/addressable-balancer-leds/pxl-20260714-223039002-edit.jpg">
+      <img src="../../assets/media/projects/addressable-balancer-leds/pxl-20260714-223039002-edit.jpg" alt="Addressable Balancer LEDs controller board overview" loading="lazy">
+    </a>
+    <figcaption><strong>Controller board overview</strong> The compact board with its mirrored LED layout, control buttons and programming pads.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-board-closeup.png">
+      <img src="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-board-closeup.png" alt="Close-up of the Addressable Balancer LEDs controller board" loading="lazy">
+    </a>
+    <figcaption><strong>Board close-up</strong> PY32F002B controller, buttons, LED row and exposed test pads in detail.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-lit-test.png">
+      <img src="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-lit-test.png" alt="Addressable Balancer LEDs lighting test with battery packs" loading="lazy">
+    </a>
+    <figcaption><strong>Lighting test</strong> A practical test setup showing the controller driving illuminated LED modules from battery packs.</figcaption>
+  </figure>
+
+  <figure>
+    <a href="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-multi-battery-test.png">
+      <img src="../../assets/media/projects/addressable-balancer-leds/addressable-balancer-leds-multi-battery-test.png" alt="Multiple Addressable Balancer LEDs modules tested with batteries" loading="lazy">
+    </a>
+    <figcaption><strong>Multiple setups</strong> Several battery and LED combinations used to check the different colors and indication modes.</figcaption>
+  </figure>
+</div>
+
 - [Read the interactive user guide](https://kidce.github.io/adressable-balancer-led/USER_GUIDE.html)
 - [View the project on GitHub](https://github.com/KidCe/adressable-balancer-led)

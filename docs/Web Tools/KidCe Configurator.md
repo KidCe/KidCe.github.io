@@ -1,8 +1,8 @@
 # KidCe Configurator
 
-KidCe Configurator is an independent, monochrome browser build based on the Betaflight Configurator / Betaflight App `2025.12.2` source line.
+KidCe Configurator is an independent, compatibility-focused browser build based on the Betaflight Configurator / Betaflight App `2025.12.2` source line.
 
-The upstream version is pinned during the build, so the hosted application does not silently move to a different firmware-compatibility line. It is intended for pilots who want this independent visual build and workflow while retaining the familiar Betaflight configurator experience.
+Its purpose is to keep support for older flight-controller firmware available. Newer Configurator releases, including the `2026.6` line, introduce compatibility blocks for some older firmware versions and can no longer configure the KAACK `4.5.3.KAACK_V19` firmware. By staying on the older source line, KidCe Configurator restores that compatibility for KAACK builds.
 
 The project is not an official Betaflight product and is not endorsed or supported by the Betaflight team. For official support, use the official Betaflight releases and support channels. A Chromium-based browser with WebSerial/WebUSB support is required for flight-controller hardware access.
 
