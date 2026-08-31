@@ -1,0 +1,8058 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FPV racing, builds, repairs and notes by KidCe">
+      
+      
+        <meta name="author" content="Nikos Kitsikoudis">
+      
+      
+        <link rel="canonical" href="https://kidce.github.io/projects/3D%20Printing/Flashforge%20Creator%205/Root/Open%20Firmware%20Feasibility%20and%20Migration%20Report/">
+      
+      
+        <link rel="prev" href="../Repository%20Check/">
+      
+      
+        <link rel="next" href="../Discord%20Mods%20Dump/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Open Firmware Feasibility And Migration Report - KidCe FPV</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Open Firmware Feasibility And Migration Report - KidCe FPV">
+<meta property="og:description" content="FPV racing, builds, repairs and notes by KidCe">
+<meta property="og:image" content="https://kidce.github.io/assets/images/social/projects/3D%20Printing/Flashforge%20Creator%205/Root/Open%20Firmware%20Feasibility%20and%20Migration%20Report.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://kidce.github.io/projects/3D%20Printing/Flashforge%20Creator%205/Root/Open%20Firmware%20Feasibility%20and%20Migration%20Report/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Open Firmware Feasibility And Migration Report - KidCe FPV">
+<meta property="twitter:description" content="FPV racing, builds, repairs and notes by KidCe">
+<meta property="twitter:image" content="https://kidce.github.io/assets/images/social/projects/3D%20Printing/Flashforge%20Creator%205/Root/Open%20Firmware%20Feasibility%20and%20Migration%20Report.png">
+<link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="fpv-light" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#for-future-claude" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="KidCe FPV" class="md-header__button md-logo" aria-label="KidCe FPV" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            KidCe FPV
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Open Firmware Feasibility And Migration Report
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/KidCe/KidCe.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    KidCe/KidCe.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../articles/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Articles
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../builds/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Builds
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../wiki/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Wiki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../about-me/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../Web%20Tools/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Web Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="KidCe FPV" class="md-nav__button md-logo" aria-label="KidCe FPV" data-md-component="logo">
+      
+  <img src="../../../../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    KidCe FPV
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/KidCe/KidCe.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    KidCe/KidCe.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../articles/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../articles/archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3">
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../articles/category/behind-the-scenes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Behind the scenes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../builds/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Builds
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Builds
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../builds/budget-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Budget Build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../builds/2026-racing-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026 Racing Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../builds/dji-o4-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DJI O4 Build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../builds/analog-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analog Build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../addressable-balancer-leds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Addressable Balancer LEDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../35-inch-1s-endurance-drone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5-inch 1S Endurance Drone
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3D Printing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3D Printing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashforge Creator 5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flashforge Creator 5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1" id="__nav_4_4_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Base
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Knowledge Base
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_1" id="__nav_4_4_1_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_4_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery Kits
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_1" id="__nav_4_4_1_1_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_4_4_1_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recovery Kits
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_1_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/recovery/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recovery
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/SOURCES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOURCES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_1_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_1_1_4" id="__nav_4_4_1_1_1_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C5p Usb Unbrick Kit
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C5p Usb Unbrick Kit
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_1_4_1">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_1_1_4_1" id="__nav_4_4_1_1_1_1_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_1_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_1_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Docs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/c5p-usb-unbrick-kit/docs/REPAIR-WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REPAIR WORKFLOW
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/c5p-usb-unbrick-kit/AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AGENTS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_1_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/c5p-image-kit/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C5p Image Kit
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_1_5" id="__nav_4_4_1_1_1_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C5p Image Kit
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/c5p-image-kit/RECOVERY-GATES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RECOVERY GATES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Recovery%20Kits/c5p-image-kit/MANIFEST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MANIFEST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Repository%20and%20Revision%20Registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repository And Revision Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Legacy%20Vault%20Notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Vault Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Unbrick
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_4" id="__nav_4_4_1_1_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_4_4_1_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Unbrick
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/UNBRICK-GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UNBRICK GUIDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/UART-GATING-ANALYSIS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UART GATING ANALYSIS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/SOURCES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOURCES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/REPAIR-PLAN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REPAIR PLAN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/RECOVERY-ACCESS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RECOVERY ACCESS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/OPEN-FIRMWARE-ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OPEN FIRMWARE ROADMAP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/EVIDENCE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EVIDENCE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/EMMC-REGION-BUNDLE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EMMC REGION BUNDLE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/AUTOMATION-ROADMAP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AUTOMATION ROADMAP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Deep%20Unbrick/ADB-RECOVERY-ACCESS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADB RECOVERY ACCESS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Scripts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creator 5 Scripts
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_4_4_1_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Creator 5 Scripts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creator 5 Mods
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6" id="__nav_4_4_1_1_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_4_4_1_1_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Creator 5 Mods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Research/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6_1" id="__nav_4_4_1_1_1_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_1_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Research/Open-Firmware-Migration/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Firmware Migration
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Open Firmware Migration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Hard/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hard
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6_3" id="__nav_4_4_1_1_1_6_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hard
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_3_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Hard/Update%20Moonraker/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Moonraker
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Update Moonraker
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Intermediate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6_4" id="__nav_4_4_1_1_1_6_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_4_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Intermediate/Update%20Mainsail/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Update Mainsail
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Update Mainsail
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_4_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Intermediate/Enable%20Legacy%20NaN/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enable Legacy NaN
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Enable Legacy NaN
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_4_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Intermediate/Add%20Entware%20Package%20Manager/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Add Entware Package Manager
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Add Entware Package Manager
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6_5" id="__nav_4_4_1_1_1_6_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_4_4_1_1_1_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/SSH%20Persist/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH Persist
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SSH Persist
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Unlock%20camera%20to%20720p/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unlock Camera To 720p
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Unlock Camera To 720p
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Orca%20Updates%20%26%20Slicer%20Settings/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orca Updates &amp; Slicer Settings
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_1_1_6_5_4" id="__nav_4_4_1_1_1_6_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orca Updates &amp; Slicer Settings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Orca%20Updates%20%26%20Slicer%20Settings/SlicerSettings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SlicerSettings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Orca%20Updates%20%26%20Slicer%20Settings/OrcaFork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OrcaFork
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Moonraker%20Updater/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Moonraker Updater
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Moonraker Updater
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_6">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Loop%20Script/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Script
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Loop Script
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_7">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Make%20SSH%20host%20key%20persist/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Make SSH Host Key Persist
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Make SSH Host Key Persist
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_8">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/How%20to%20use%20scripts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How To Use Scripts
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    How To Use Scripts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_9">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Enable%20Moonraker%20%26%20Mainsail/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enable Moonraker &amp; Mainsail
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Enable Moonraker &amp; Mainsail
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_1_6_5_10">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Knowledge%20Base/Sources/Creator-5-Mods/Basic/Allow%20for%20Heating%20Without%20Cooling/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Allow For Heating Without Cooling
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_4_4_1_1_1_6_5_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_1_6_5_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Allow For Heating Without Cooling
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Binary%20Artifact%20Inventory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Artifact Inventory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Sources/Archive%20and%20Copy%20Manifest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive And Copy Manifest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_2">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_2" id="__nav_4_4_1_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_4_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recovery
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Recovery/Temporary%20ADB%20Access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temporary ADB Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Recovery/USBCloner%20Read-only%20Acquisition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    USBCloner Read Only Acquisition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Recovery/Recovery%20Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Recovery/Offline%20Repair%20and%20Validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Offline Repair And Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Recovery/Device%20Evidence%20and%20Partition%20Layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Device Evidence And Partition Layout
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_3" id="__nav_4_4_1_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_4_1_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/SSH%20Host%20Key%20Persistence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH Host Key Persistence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Print%20Workflow%20Adaptive%20Mesh%20and%20OrcaSlicer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Print Workflow Adaptive Mesh And OrcaSlicer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Optional%20Mod%20Matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optional Mod Matrix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Modding%20Baseline%20-%20Root%20Loop%20and%20Mainsail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modding Baseline   Root Loop And Mainsail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Heat%20and%20Fan%20Routing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heat And Fan Routing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Entware%20Moonraker%20and%20Mainsail%20Updates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entware Moonraker And Mainsail Updates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Guides/Camera%20and%20Remote%20Screen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera And Remote Screen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_4" id="__nav_4_4_1_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Firmware
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_4_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Firmware
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Firmware/Vendor%20Firmware%20and%20Klipper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendor Firmware And Klipper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Firmware/Open%20Firmware%20Migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Firmware Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_1_5">
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1_1_5" id="__nav_4_4_1_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_4_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Architecture/Stock%20and%20Target%20Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock And Target Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/Architecture/Single%20Points%20of%20Truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Single Points Of Truth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Knowledge%20Base/00%20Index%20-%20Flashforge%20Creator%205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00 Index   Flashforge Creator 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1_2" checked="">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Root
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4_1_2" id="__nav_4_4_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_4_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Root
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Repository%20Check/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repository Check
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Firmware Feasibility And Migration Report
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open Firmware Feasibility And Migration Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#for-future-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For future Claude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creator-5-pro-feasibility-of-an-open-clean-firmware-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creator 5 Pro: Feasibility of an Open, Clean Firmware Stack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creator 5 Pro: Feasibility of an Open, Clean Firmware Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-target-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Target outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-evidence-legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Evidence legend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-most-important-existing-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Most important existing findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Most important existing findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-recovery-and-offline-laboratory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Recovery and offline laboratory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-operating-system-and-startup-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Operating system and startup chain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-responsibilities-currently-mixed-into-app_startupsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Responsibilities currently mixed into app_startup.sh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-firmwareexe-is-more-than-the-local-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 firmwareExe is more than the local UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-the-existing-klipper-is-a-vendor-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 The existing Klipper is a vendor fork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-mcu-bootstrap-before-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 MCU bootstrap before Klipper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-current-and-target-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Current and target architectures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Current and target architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-simplified-stock-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Simplified stock architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-recommended-target-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Recommended target architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-what-macros-can-and-cannot-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. What macros can and cannot replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-a-practical-replacement-plan-for-firmwareexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. A practical replacement plan for firmwareExe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. A practical replacement plan for firmwareExe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-functions-that-standard-components-can-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Functions that standard components can replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-functions-that-still-require-research-or-porting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Functions that still require research or porting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-functions-that-can-intentionally-disappear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Functions that can intentionally disappear
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-recommended-linux-service-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Recommended Linux service split
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Recommended Linux service split">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-build-system-choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Build-system choice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-recommended-migration-phases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Recommended migration phases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Recommended migration phases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-0-freeze-the-evidence-and-complete-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 0 - Freeze the evidence and complete recovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-observe-firmwareexe-do-not-replace-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 - Observe firmwareExe; do not replace it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-run-the-open-stack-alongside-the-stock-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 - Run the open stack alongside the stock system
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-boot-without-firmwareexe-with-heaters-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 - Boot without firmwareExe, with heaters disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-validate-safety-functions-and-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4 - Validate safety functions and motion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-implement-native-print-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5 - Implement native print functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-6-replace-the-vendor-klipper-host-with-a-maintained-fork-or-upstream-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 6 - Replace the vendor Klipper host with a maintained fork or upstream port
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-7-build-a-clean-reproducible-root-filesystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 7 - Build a clean, reproducible root filesystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-8-open-kernel-and-bootloader-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 8 - Open kernel and bootloader work
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-realistic-feasibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Realistic feasibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-effort-estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Effort estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-required-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Required infrastructure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Required infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project organization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-highest-value-next-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Highest-value next experiments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-concrete-community-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Concrete community backlog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Concrete community backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-a-recovery-and-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track A - Recovery and platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-b-firmwareexe-reverse-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track B - firmwareExe reverse engineering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-c-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track C - Klipper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-d-moonraker-and-mainsail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track D - Moonraker and Mainsail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-e-image-and-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track E - Image and releases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-risks-and-possible-showstoppers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Risks and possible showstoppers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-licensing-and-publication-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Licensing and publication boundaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-sources-and-inspected-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Sources and inspected revisions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Sources and inspected revisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-primary-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local primary evidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Community repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upstream-primary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upstream primary sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assistance-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI assistance disclosure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Discord%20Mods%20Dump/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discord Mods Dump
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Important%20Notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Important Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How%20to%20Install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How To Install
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chat%20Knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat Knowledge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Flashforge%20Creator%205/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashforge Creator 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../wiki/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiki
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Wiki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2">
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../wiki/fundamentals/capacitor-for-fpv-racing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capacitor for FPV Racing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3">
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipment &amp; field setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Equipment &amp; field setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../wiki/equipment/fpv-gate-padding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FPV gate padding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4">
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repairs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Repairs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../wiki/repairs/happymodel-2g4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Happymodel 2G4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../about-me/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About me
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../race-results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Race results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../my-squad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Squad - Holy*s*quad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../Web%20Tools/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Tools
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web Tools
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Web%20Tools/Betaflight%20RX%20Monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Betaflight RX Monitor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Web%20Tools/KAACK%20Cloud%20Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KAACK Cloud Build
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Web%20Tools/KidCe%20Configurator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KidCe Configurator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Web%20Tools/RatesManager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RatesManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#for-future-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For future Claude
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creator-5-pro-feasibility-of-an-open-clean-firmware-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creator 5 Pro: Feasibility of an Open, Clean Firmware Stack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creator 5 Pro: Feasibility of an Open, Clean Firmware Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-target-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Target outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-evidence-legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Evidence legend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-most-important-existing-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Most important existing findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Most important existing findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-recovery-and-offline-laboratory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Recovery and offline laboratory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-operating-system-and-startup-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Operating system and startup chain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-responsibilities-currently-mixed-into-app_startupsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Responsibilities currently mixed into app_startup.sh
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-firmwareexe-is-more-than-the-local-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 firmwareExe is more than the local UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-the-existing-klipper-is-a-vendor-fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 The existing Klipper is a vendor fork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-mcu-bootstrap-before-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 MCU bootstrap before Klipper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-current-and-target-architectures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Current and target architectures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Current and target architectures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-simplified-stock-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Simplified stock architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-recommended-target-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Recommended target architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-what-macros-can-and-cannot-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. What macros can and cannot replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-a-practical-replacement-plan-for-firmwareexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. A practical replacement plan for firmwareExe
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. A practical replacement plan for firmwareExe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-functions-that-standard-components-can-replace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Functions that standard components can replace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-functions-that-still-require-research-or-porting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Functions that still require research or porting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-functions-that-can-intentionally-disappear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Functions that can intentionally disappear
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-recommended-linux-service-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Recommended Linux service split
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Recommended Linux service split">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-build-system-choice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Build-system choice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-recommended-migration-phases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Recommended migration phases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Recommended migration phases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-0-freeze-the-evidence-and-complete-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 0 - Freeze the evidence and complete recovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-observe-firmwareexe-do-not-replace-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 - Observe firmwareExe; do not replace it
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-run-the-open-stack-alongside-the-stock-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 - Run the open stack alongside the stock system
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-boot-without-firmwareexe-with-heaters-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 - Boot without firmwareExe, with heaters disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-validate-safety-functions-and-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4 - Validate safety functions and motion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-implement-native-print-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5 - Implement native print functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-6-replace-the-vendor-klipper-host-with-a-maintained-fork-or-upstream-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 6 - Replace the vendor Klipper host with a maintained fork or upstream port
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-7-build-a-clean-reproducible-root-filesystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 7 - Build a clean, reproducible root filesystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-8-open-kernel-and-bootloader-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 8 - Open kernel and bootloader work
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-realistic-feasibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Realistic feasibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-effort-estimate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Effort estimate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-required-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Required infrastructure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Required infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project organization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-highest-value-next-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Highest-value next experiments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-concrete-community-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Concrete community backlog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Concrete community backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-a-recovery-and-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track A - Recovery and platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-b-firmwareexe-reverse-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track B - firmwareExe reverse engineering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-c-klipper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track C - Klipper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-d-moonraker-and-mainsail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track D - Moonraker and Mainsail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-e-image-and-releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track E - Image and releases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-risks-and-possible-showstoppers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Risks and possible showstoppers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-licensing-and-publication-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Licensing and publication boundaries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-sources-and-inspected-revisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Sources and inspected revisions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Sources and inspected revisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-primary-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local primary evidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Community repositories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upstream-primary-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upstream primary sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-assistance-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI assistance disclosure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h2 id="for-future-claude">For future Claude<a class="headerlink" href="#for-future-claude" title="Permanent link">¶</a></h2>
+<p>This research note evaluates replacing the Flashforge Creator 5 Pro vendor control stack with a clean, debuggable Linux, Klipper, Moonraker, and Mainsail architecture. It combines physical findings from one recovered printer, offline analysis of firmware 1.9.8, repository evidence, and upstream primary documentation checked on 2026-08-27. The staged migration plan is actionable, but stock-free heating, motion, printing, and a replacement image have not yet been validated on physical hardware.</p>
+<h1 id="creator-5-pro-feasibility-of-an-open-clean-firmware-stack">Creator 5 Pro: Feasibility of an Open, Clean Firmware Stack<a class="headerlink" href="#creator-5-pro-feasibility-of-an-open-clean-firmware-stack" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>[!summary] Executive conclusion
+A largely open Creator 5 Pro platform controlled natively through Klipper, Moonraker, and Mainsail is technically realistic. The sensible route is not to replace the kernel, bootloader, and every Flashforge component at once. The first target should be a reversible, <code>firmwareExe</code>-free control path on the known vendor kernel. The vendor Klipper changes can then be ported, followed by the root filesystem, kernel, and boot chain.</p>
+<p>[!warning] Safety status
+This report is a feasibility and research foundation. It does not confirm safe operation without <code>firmwareExe</code>. Heaters, axes, tool changes, MCU firmware updates, and fault shutdown must each be validated on real hardware. Until then, all replacement experiments must keep heater and motor enables disabled.</p>
+</blockquote>
+<h2 id="1-target-outcome">1. Target outcome<a class="headerlink" href="#1-target-outcome" title="Permanent link">¶</a></h2>
+<p>The desired result is not another patch layered onto the existing Flashforge system. It is a traceable platform with clear ownership boundaries:</p>
+<ul>
+<li>a reproducible Linux image instead of a manually modified system partition;</li>
+<li>separately supervised services instead of one central <code>app_startup.sh</code>;</li>
+<li>Klipper as the sole printer-control authority;</li>
+<li>Moonraker as the documented API and integration layer;</li>
+<li>Mainsail as the primary web interface;</li>
+<li>Klipper macros for print workflows and operator-level behavior;</li>
+<li>small Klipper modules only where macros are insufficient;</li>
+<li>separate Linux services for pre-Klipper duties such as MCU bootstrap, networking, camera, and updates;</li>
+<li>explicit logs, health checks, restart rules, and dependencies;</li>
+<li>safe recovery with a stock fallback before any permanent replacement;</li>
+<li>no mandatory Flashforge cloud or undocumented telemetry;</li>
+<li>no closed component in the safety-critical print path wherever technically and legally achievable.</li>
+</ul>
+<h2 id="2-evidence-legend">2. Evidence legend<a class="headerlink" href="#2-evidence-legend" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1 - physically confirmed</strong></td>
+<td>Measured or successfully executed on one Creator 5 Pro.</td>
+</tr>
+<tr>
+<td><strong>S1 - statically confirmed</strong></td>
+<td>Directly supported by the read-only image, scripts, configurations, ELF metadata, or symbols.</td>
+</tr>
+<tr>
+<td><strong>R1 - repository source</strong></td>
+<td>Supported by a linked repository at a recorded revision, but not necessarily tested on this printer.</td>
+</tr>
+<tr>
+<td><strong>U1 - upstream source</strong></td>
+<td>Supported by official Klipper, Moonraker, Mainsail, or Linux build-system documentation.</td>
+</tr>
+<tr>
+<td><strong>C1 - community report</strong></td>
+<td>Taken from Discord or community documentation and not independently confirmed.</td>
+</tr>
+<tr>
+<td><strong>I1 - inference</strong></td>
+<td>Technical conclusion derived from evidence; requires a confirming test.</td>
+</tr>
+<tr>
+<td><strong>TBD</strong></td>
+<td>Unknown or not investigated sufficiently.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-most-important-existing-findings">3. Most important existing findings<a class="headerlink" href="#3-most-important-existing-findings" title="Permanent link">¶</a></h2>
+<h3 id="31-recovery-and-offline-laboratory">3.1 Recovery and offline laboratory<a class="headerlink" href="#31-recovery-and-offline-laboratory" title="Permanent link">¶</a></h3>
+<p>The largest achievement so far is that firmware research no longer has to take place only on the sole physical printer.</p>
+<ul>
+<li><strong>P1:</strong> Bridging K4/<code>BOOT</code> at power-on places the X2600 in Ingenic BootROM/USBCloner mode.</li>
+<li><strong>P1:</strong> J29 exposes the working USB data connection.</li>
+<li><strong>P1:</strong> A complete read-only readback of the normal MMC0 user area was acquired: <code>7,837,581,312</code> bytes, SHA-256 <code>373EA4DA6CB579978FF49F592E4F025BFA6CFEA523AAC092D5D3F2ED4A79A087</code>.</li>
+<li><strong>P1:</strong> <code>boot0</code>, <code>boot1</code>, and RPMB are not included in that image.</li>
+<li><strong>P1:</strong> Temporary unauthenticated root ADB access through J29 was confirmed after a normal Linux boot. It disappears after reboot and must never be enabled automatically without an explicit physical opt-in.</li>
+<li><strong>S1:</strong> The image contains two kernel and two rootfs partitions, plus separate <code>usershare</code> and <code>userdata</code> partitions.</li>
+<li><strong>S1:</strong> The partition layout could support A/B updates. The bootloader's actual slot-selection and rollback behavior still has to be demonstrated before either slot is repurposed.</li>
+</ul>
+<p>This foundation enables controlled offline diffs, reproducible patches, symbol-assisted analysis, and rollback artifacts. Personal raw images must not be published because they may contain keys, device identifiers, logs, and copyrighted vendor files.</p>
+<h3 id="32-operating-system-and-startup-chain">3.2 Operating system and startup chain<a class="headerlink" href="#32-operating-system-and-startup-chain" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>P1/S1:</strong> The inspected printer uses Buildroot 2020.02.1, Linux 5.10.186+, and MIPS on an Ingenic X2600-family SoC.</li>
+<li><strong>S1:</strong> The rootfs is SquashFS. Persistent vendor programs are stored on <code>usershare</code> under <code>/usr/prog</code>; user data and configuration are stored under <code>/usr/data</code>.</li>
+<li><strong>S1:</strong> <code>/usr/prog/etc</code> is mounted over <code>/etc</code>. Changes that appear to be ordinary <code>/etc</code> changes therefore do not behave like changes on a conventional Linux distribution.</li>
+<li><strong>S1:</strong> The rootfs init path only checks whether <code>/usr/prog/app_startup.sh</code> exists and then executes it directly.</li>
+<li><strong>P1/S1:</strong> Accidentally changing <code>app_startup.sh</code> to mode <code>600</code> blocked the entire application startup. The result was a frozen logo, no network, no touch UI, and no normal USB update detection.</li>
+</ul>
+<p>This confirms that <code>app_startup.sh</code> is currently a single point of failure. A clean target system must separate its responsibilities and make each service independently observable.</p>
+<h3 id="33-responsibilities-currently-mixed-into-app_startupsh">3.3 Responsibilities currently mixed into <code>app_startup.sh</code><a class="headerlink" href="#33-responsibilities-currently-mixed-into-app_startupsh" title="Permanent link">¶</a></h3>
+<p>The firmware 1.9.8 script performs at least the following duties (<strong>S1</strong>):</p>
+<ol>
+<li>Loads <code>soc_mcu.ko</code>, touch, and Wi-Fi kernel modules.</li>
+<li>Creates and mounts the persistent <code>/etc</code>.</li>
+<li>Searches for, extracts, and executes USB firmware or service packages.</li>
+<li>Executes control-board updates and forces a reboot.</li>
+<li>Stops DHCP and ADB processes.</li>
+<li>Detects the touchscreen input device.</li>
+<li>Sets numerous global library paths.</li>
+<li>Starts a GPIO toggle script.</li>
+<li>Starts <code>firmwareExe</code> and attempts a basic fallback copy if it exits.</li>
+</ol>
+<p>This combination explains why a small shell error can make the entire printer unusable. It is also difficult to test because startup order, error handling, recovery, and application logic are coupled in one file.</p>
+<p>Additional concrete technical debt (<strong>S1</strong>): <code>sys_start.sh</code> toggles <code>PC11</code> forever at one-second intervals without a documented purpose. The vendor update script copies and deletes files live under <code>/usr/prog</code>, directly replaces Klipper files and <code>firmwareExe</code>, and exposes no visible transactional rollback boundary in the inspected flow. Both behaviors should be explained before reimplementation and then replaced with declarative hardware initialization and atomic image updates.</p>
+<h3 id="34-firmwareexe-is-more-than-the-local-ui">3.4 <code>firmwareExe</code> is more than the local UI<a class="headerlink" href="#34-firmwareexe-is-more-than-the-local-ui" title="Permanent link">¶</a></h3>
+<p>The file extracted locally from the inspected 1.9.8 package has SHA-256 <code>09564BEFDB3C39B32DC05647656C9A4636C01BB60F9364D61FE5AABD1012CAB9</code>. It is a 32-bit little-endian MIPS32r2/o32 ELF executable. It is dynamically linked, not stripped, and contains DWARF debug information and named C++ symbols (<strong>S1</strong>).</p>
+<p>The same-sized file in the public C5P firmware archive at revision <code>1f9d55e...</code> instead has SHA-256 <code>BF0599DC0B533FC7411464A1EA02222D42BBF2F7C4D5DD9B52AA0E5714128935</code> (<strong>R1</strong>, checked 2026-08-27). Filename and size are therefore not sufficient version identifiers. Every test and release path needs hashes for <code>firmwareExe</code>, host Klipper, configuration, MCU images, and board revision.</p>
+<p>The local ELF requires libraries including <code>libssl.so.1.0.0</code>, <code>libcrypto.so.1.0.0</code>, OpenCV 4.2, FFmpeg, x264, and numerous other multimedia dependencies. It also contains an absolute build RPATH from a developer workspace (<code>/home/chenhe/work/...</code>) (<strong>S1</strong>). Even if the executable were functionally replaceable, its large and difficult-to-reproduce dependency surface is an additional reason not to retain it as the permanent system core.</p>
+<p>Statically supported responsibilities include:</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Evidence from file or symbols</th>
+<th>Replacement direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klipper startup</td>
+<td>String <code>/usr/prog/klipper/start.sh &amp;</code></td>
+<td>dedicated service with explicit dependencies</td>
+</tr>
+<tr>
+<td>Klipper communication</td>
+<td><code>/tmp/uds</code>, <code>KlipperAPI::clientOpen</code>, <code>clientSend</code>, <code>clientRecv</code></td>
+<td>Moonraker plus Klipper API; trace the existing protocol</td>
+</tr>
+<tr>
+<td>Print communication</td>
+<td><code>CommMgr::sendGcodeCmd</code>, <code>serialPrint</code>, <code>klipperOpen</code></td>
+<td>Klipper Virtual SD, G-code macros, Moonraker</td>
+</tr>
+<tr>
+<td>Orca network API</td>
+<td><code>OrcaServer::request_upload_gcode</code>, <code>request_gcode_list</code>, <code>request_print_gcode</code></td>
+<td>Moonraker file and print APIs; point the slicer there directly</td>
+</tr>
+<tr>
+<td>MCU handling</td>
+<td><code>bootSerialHeatMcu</code>, <code>bootSerialMainEboardMcu</code>, <code>bootSerialLevelBoardMcu</code></td>
+<td>separate, documented MCU bootstrap service</td>
+</tr>
+<tr>
+<td>Firmware update</td>
+<td><code>UpdateManager</code>, <code>UpdateFirmware</code>, control directories</td>
+<td>signed, versioned update service with rollback</td>
+</tr>
+<tr>
+<td>Display and touch</td>
+<td><code>/dev/fb0</code>, <code>/dev/input/event*</code>, numerous LVGL widgets</td>
+<td>Mainsail in a browser; optional local kiosk or lightweight local UI</td>
+</tr>
+<tr>
+<td>Camera and media</td>
+<td>camera directories, FFmpeg, OpenCV, x264</td>
+<td>dedicated camera service plus Moonraker webcam configuration</td>
+</tr>
+<tr>
+<td>Cloud and telemetry</td>
+<td>MQTT, HTTP, account, and cloud symbols</td>
+<td>omit by default; isolate optional integrations</td>
+</tr>
+<tr>
+<td>3MF/G-code processing</td>
+<td><code>Parase3mfFile</code>, thumbnail and file functions</td>
+<td>slicer, Moonraker metadata, and a documented import path</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!important]
+The binary cannot be removed safely until it is known which MCU bootstrap, update, G-code preprocessing, and fault-handling functions are mandatory for an operational printer. The fact that standard components can replace many UI and cloud functions does not prove complete hardware parity.</p>
+</blockquote>
+<h3 id="35-the-existing-klipper-is-a-vendor-fork">3.5 The existing Klipper is a vendor fork<a class="headerlink" href="#35-the-existing-klipper-is-a-vendor-fork" title="Permanent link">¶</a></h3>
+<p>The stock configuration uses four serial Klipper MCUs (<strong>S1</strong>):</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Device</th>
+<th style="text-align: right;">Baud rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extruder/E-board</td>
+<td><code>/dev/ttyS5</code></td>
+<td style="text-align: right;">460800</td>
+</tr>
+<tr>
+<td>Main motion MCU</td>
+<td><code>/dev/ttyS2</code></td>
+<td style="text-align: right;">230400</td>
+</tr>
+<tr>
+<td>Heater board</td>
+<td><code>/dev/ttyS4</code></td>
+<td style="text-align: right;">230400</td>
+</tr>
+<tr>
+<td>Level board</td>
+<td><code>/dev/ttyS7</code></td>
+<td style="text-align: right;">230400</td>
+</tr>
+</tbody>
+</table>
+<p>The host fork contains Flashforge-specific or substantially modified modules and core paths (<strong>S1</strong>):</p>
+<ul>
+<li><code>mclib.py</code> with custom MCU commands for motor current, stall detection, and resonance damping;</li>
+<li><code>ff_eddy.py</code> with custom eddy, peel, and threshold commands;</li>
+<li><code>pa_adjust.py</code> with <code>get_emcu_pa_value</code> and <code>pa_action</code>;</li>
+<li><code>hd_home.py</code> and <code>e_stop.py</code> for vendor-specific home and stop workflows;</li>
+<li>an extended <code>stepper_resonance_tester.py</code>;</li>
+<li>modifications in <code>mcu.py</code>, <code>toolhead.py</code>, <code>homing.py</code>, <code>heaters.py</code>, <code>probe.py</code>, <code>virtual_sdcard.py</code>, and other upstream files;</li>
+<li>the additional <code>GET_MCU_VERSION</code> G-code command and a vendor-specific MCU-version handshake.</li>
+</ul>
+<p>The stock configuration already includes many native Klipper building blocks: <code>virtual_sdcard</code>, <code>pause_resume</code>, <code>exclude_object</code>, <code>bed_mesh</code>, <code>input_shaper</code>, four extruder heaters, bed and chamber heaters, fans, door sensors, filament sensors, a probe, and macros. That is a major advantage. At the same time, settings such as <code>min_temp: -200</code> and unusually broad safety limits show that the existing files must not be adopted unchanged as a safe open configuration.</p>
+<h3 id="36-mcu-bootstrap-before-klipper">3.6 MCU bootstrap before Klipper<a class="headerlink" href="#36-mcu-bootstrap-before-klipper" title="Permanent link">¶</a></h3>
+<p><code>/usr/prog/klipper/start.sh</code> performs the following steps before starting Klipper (<strong>S1</strong>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cmd_mcu write_firmware /usr/prog/libmcu-bare.bin
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cmd_mcu bootup
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sleep 2
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>checkEboard
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>klipperDaemon start
+</code></pre></div>
+<p>In addition, <code>firmwareExe</code> contains named functions for several serial MCU firmware paths. This supports the following conclusions:</p>
+<ul>
+<li><strong>I1:</strong> At least some subordinate boards require a Flashforge-specific startup or firmware handshake before or alongside Klipper.</li>
+<li><strong>I1:</strong> That work does not belong in a G-code macro because Klipper is not yet operational at that point.</li>
+<li><strong>TBD:</strong> Whether <code>cmd_mcu</code>, <code>checkEboard</code>, and the <code>firmwareExe</code> MCU functions are redundant, complementary, or used only in specific update states.</li>
+<li><strong>TBD:</strong> Which binary protocols and version rules are used on <code>/dev/ttyS4</code>, <code>/dev/ttyS5</code>, and <code>/dev/ttyS7</code>.</li>
+</ul>
+<h2 id="4-current-and-target-architectures">4. Current and target architectures<a class="headerlink" href="#4-current-and-target-architectures" title="Permanent link">¶</a></h2>
+<h3 id="41-simplified-stock-architecture">4.1 Simplified stock architecture<a class="headerlink" href="#41-simplified-stock-architecture" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    Init[Buildroot init] --&gt; App[app_startup.sh]
+    App --&gt; Mounts[Persistent /etc and mounts]
+    App --&gt; Modules[Kernel modules and GPIO setup]
+    App --&gt; UsbUpdate[USB and control-board update path]
+    App --&gt; FFE[firmwareExe]
+    FFE --&gt;|starts| KStart[Klipper start.sh]
+    KStart --&gt; Bootstrap[cmd_mcu + checkEboard]
+    KStart --&gt; Klippy[Vendor Klipper host]
+    FFE &lt;--&gt;|private UDS /tmp/uds| Klippy
+    Klippy --&gt; M0[Motion MCU ttyS2]
+    Klippy --&gt; M1[E-board ttyS5]
+    Klippy --&gt; M2[Heater board ttyS4]
+    Klippy --&gt; M3[Level board ttyS7]
+    FFE --&gt; UI[Framebuffer and touch UI]
+    FFE --&gt; Orca[Orca HTTP endpoints]
+    FFE --&gt; Camera[Camera and media]
+    FFE --&gt; Cloud[MQTT and cloud]
+    FFE --&gt; Updates[Vendor updates]</code></pre>
+<p>Text fallback: The rootfs init starts a central shell file. That file loads platform components and starts <code>firmwareExe</code>. The binary starts and controls the vendor Klipper host through a private Unix socket while also bundling the UI, network API, camera, cloud, and update functions.</p>
+<h3 id="42-recommended-target-architecture">4.2 Recommended target architecture<a class="headerlink" href="#42-recommended-target-architecture" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    Init[Small init or service supervisor] --&gt; Platform[c5p-platform service]
+    Init --&gt; Recovery[c5p-recovery service]
+    Platform --&gt; Bootstrap[c5p-mcu-bootstrap]
+    Bootstrap --&gt; Klipper[Klipper host with reviewed C5P modules]
+    Klipper --&gt; MCUs[Four subordinate MCUs]
+    Klipper &lt;--&gt; Moonraker[Moonraker API and orchestration]
+    Moonraker &lt;--&gt; Mainsail[Mainsail web UI]
+    Moonraker &lt;--&gt; Slicer[OrcaSlicer or other clients]
+    Init --&gt; Camera[Independent camera service]
+    Camera --&gt; Mainsail
+    Init --&gt; LocalUI[Optional local display client]
+    LocalUI &lt;--&gt; Moonraker
+    Init --&gt; Updater[Signed A/B update service]
+    Recovery --&gt; Fallback[Known-good stock or rescue slot]
+    Health[Watchdog and health checks] --&gt; Platform
+    Health --&gt; Bootstrap
+    Health --&gt; Klipper
+    Health --&gt; Moonraker</code></pre>
+<p>Text fallback: A small init or supervisor process starts separate platform, MCU, Klipper, Moonraker, camera, update, and recovery services. Each service has its own logs, readiness checks, and restart policy. Mainsail, slicers, and an optional local UI communicate through Moonraker instead of a proprietary binary.</p>
+<h2 id="5-what-macros-can-and-cannot-replace">5. What macros can and cannot replace<a class="headerlink" href="#5-what-macros-can-and-cannot-replace" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th style="text-align: center;">Klipper macro</th>
+<th style="text-align: center;">Klipper module</th>
+<th style="text-align: center;">Moonraker component</th>
+<th style="text-align: center;">Linux service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PRINT_START</code>, <code>PRINT_END</code>, pause, resume, cancel</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+<td style="text-align: center;">rarely</td>
+<td style="text-align: center;">UI/API</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>M106/M107 fan mapping and chamber logic</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+<td style="text-align: center;">optional</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Tool selection, parking, purge, wipe</td>
+<td style="text-align: center;"><strong>yes</strong>, if hardware commands exist</td>
+<td style="text-align: center;">for additional state</td>
+<td style="text-align: center;">optional</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Gear lock/unlock sequence</td>
+<td style="text-align: center;">probably</td>
+<td style="text-align: center;">for custom MCU protocol</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Filament-runout response</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+<td style="text-align: center;">sensor support required</td>
+<td style="text-align: center;">notification</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Adaptive mesh and object exclusion</td>
+<td style="text-align: center;"><strong>yes</strong>, plus existing Klipper functions</td>
+<td style="text-align: center;">only for custom data</td>
+<td style="text-align: center;">file metadata</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Eddy, PA, and MCLIB custom commands</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+<td style="text-align: center;">optional</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Load subordinate MCU firmware and check versions</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">possibly in part</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Kernel modules, pinmux, power enable, mounts</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Print upload, file list, queue, and history</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">Virtual SD</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Slicer/Orca network API</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;"><strong>yes</strong> or a thin adapter</td>
+<td style="text-align: center;">no</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">configuration</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Local display</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">status source</td>
+<td style="text-align: center;">API</td>
+<td style="text-align: center;"><strong>yes</strong>, optional</td>
+</tr>
+<tr>
+<td>System update, A/B slot, rollback</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">optional trigger</td>
+<td style="text-align: center;"><strong>yes</strong></td>
+</tr>
+<tr>
+<td>Recovery ADB or USB rescue</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;">no</td>
+<td style="text-align: center;"><strong>yes</strong>, physical opt-in only</td>
+</tr>
+</tbody>
+</table>
+<p>The key design rule is that macros orchestrate printer functions that already exist. They do not replace pre-Klipper hardware initialization, kernel work, or unknown binary protocols.</p>
+<p>Klipper also explicitly warns that a Jinja macro is fully evaluated before its generated G-code commands execute (<strong>U1</strong>, Klipper <code>Command_Templates.md</code>, revision <code>ac2a7f8...</code>, checked 2026-08-27). A macro must therefore not imitate a timing-critical feedback loop or safety monitor that would have to inspect state between generated commands. Such behavior belongs in a Klipper module, MCU firmware, or a narrowly scoped service.</p>
+<h2 id="6-a-practical-replacement-plan-for-firmwareexe">6. A practical replacement plan for <code>firmwareExe</code><a class="headerlink" href="#6-a-practical-replacement-plan-for-firmwareexe" title="Permanent link">¶</a></h2>
+<h3 id="61-functions-that-standard-components-can-replace">6.1 Functions that standard components can replace<a class="headerlink" href="#61-functions-that-standard-components-can-replace" title="Permanent link">¶</a></h3>
+<p><strong>High feasibility:</strong></p>
+<ul>
+<li>file upload, listing, selection, and G-code start through Moonraker;</li>
+<li>status, temperatures, axes, fans, and print progress through Klipper objects;</li>
+<li>Mainsail as the browser UI;</li>
+<li>pause, resume, cancel, filament change, start/end workflows, and chamber control through macros;</li>
+<li>object exclusion and adaptive mesh workflows;</li>
+<li>webcam service through a separate streamer;</li>
+<li>local and slicer-side operation without the Flashforge cloud;</li>
+<li>logs, configuration management, and update visibility through standard services.</li>
+</ul>
+<h3 id="62-functions-that-still-require-research-or-porting">6.2 Functions that still require research or porting<a class="headerlink" href="#62-functions-that-still-require-research-or-porting" title="Permanent link">¶</a></h3>
+<p><strong>Medium or unresolved feasibility:</strong></p>
+<ul>
+<li>initialization and firmware checks for all four MCU boards;</li>
+<li>tool magazine, extruder positions, locking, and safety interlocks;</li>
+<li>Flashforge-specific eddy, PA, home, E-stop, and MCLIB protocols;</li>
+<li>calibration data and storage formats;</li>
+<li>behavior after MCU restart, communication loss, or inconsistent versions;</li>
+<li>proprietary 3MF, thumbnail, and material metadata not covered by Orca or Mainsail;</li>
+<li>the local 800x480 touch experience if it must run directly on the printer.</li>
+</ul>
+<h3 id="63-functions-that-can-intentionally-disappear">6.3 Functions that can intentionally disappear<a class="headerlink" href="#63-functions-that-can-intentionally-disappear" title="Permanent link">¶</a></h3>
+<ul>
+<li>mandatory Flashforge accounts and cloud services;</li>
+<li>vendor telemetry and MQTT connections;</li>
+<li>proprietary OTA logic without traceable rollback;</li>
+<li>internal video and cloud-slicing functions when local standard paths are sufficient;</li>
+<li>the Flashforge-specific UI if Mainsail and an optional local interface cover the required operator functions.</li>
+</ul>
+<p>Feature parity should not mean reproducing every cloud and UI detail. The target is safe printer parity with better maintainability.</p>
+<h2 id="7-recommended-linux-service-split">7. Recommended Linux service split<a class="headerlink" href="#7-recommended-linux-service-split" title="Permanent link">¶</a></h2>
+<p>Even a minimal Buildroot system does not need a large general-purpose distribution. The critical property is separation of responsibilities.</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Responsibility</th>
+<th>Start condition</th>
+<th>Health check</th>
+<th>Failure response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c5p-mounts</code></td>
+<td>Data partitions and persistent paths</td>
+<td>block devices present</td>
+<td>expected read-write/read-only mount state</td>
+<td>enter rescue mode</td>
+</tr>
+<tr>
+<td><code>c5p-platform</code></td>
+<td>Kernel modules, GPIO, touch, Wi-Fi</td>
+<td>mounts ready</td>
+<td>expected devices and modules present</td>
+<td>do not start Klipper</td>
+</tr>
+<tr>
+<td><code>c5p-mcu-bootstrap</code></td>
+<td>MCU images, boot, version checks</td>
+<td>UARTs present</td>
+<td>every expected MCU responds</td>
+<td>keep heaters and motors locked</td>
+</tr>
+<tr>
+<td><code>klipper</code></td>
+<td>Printer control</td>
+<td>MCU bootstrap ready</td>
+<td>API socket and <code>ready</code> state</td>
+<td>controlled shutdown</td>
+</tr>
+<tr>
+<td><code>moonraker</code></td>
+<td>API, files, queue, history, integrations</td>
+<td>Klipper socket present</td>
+<td><code>/server/info</code> and WebSocket</td>
+<td>restart independently</td>
+</tr>
+<tr>
+<td><code>web-ui</code></td>
+<td>Mainsail assets and web server</td>
+<td>Moonraker ready or degraded</td>
+<td>HTTP response</td>
+<td>restart independently</td>
+</tr>
+<tr>
+<td><code>camera</code></td>
+<td>MJPEG/WebRTC/frame capture</td>
+<td>camera present</td>
+<td>frame age and process state</td>
+<td>restart without stopping a print</td>
+</tr>
+<tr>
+<td><code>local-ui</code></td>
+<td>optional touch UI</td>
+<td>display and touch present</td>
+<td>rendering and API connection</td>
+<td>LAN Mainsail remains usable</td>
+</tr>
+<tr>
+<td><code>c5p-updater</code></td>
+<td>signed A/B updates</td>
+<td>explicitly requested only</td>
+<td>hash, signature, slot status</td>
+<td>retain old slot</td>
+</tr>
+<tr>
+<td><code>c5p-recovery</code></td>
+<td>boot selection and physical rescue access</td>
+<td>boot flag, USB action, or jumper</td>
+<td>local recovery shell reachable</td>
+<td>never grant normal print control</td>
+</tr>
+<tr>
+<td><code>watchdog</code></td>
+<td>overall state and safe shutdown</td>
+<td>always</td>
+<td>heartbeats plus hardware state</td>
+<td>heaters off, optionally roll back</td>
+</tr>
+</tbody>
+</table>
+<p>Separate BusyBox or SysV init scripts may be sufficient for the first transition stage. A later image can use a small supervisor with declarative dependencies. The specific init system matters less than ensuring that no single shell script contains the entire platform's logic.</p>
+<p>Moonraker's official documentation supports file management, G-code start, a FIFO queue, HTTP/WebSocket status, allow-listed system services, power components, and software-update information (<strong>U1</strong>, Moonraker <code>v0.11.0</code>, revision <code>985c1d0...</code>, checked 2026-08-27). These capabilities do not replace C5P hardware analysis. Power topology, service privileges, and complete image updates must still be designed specifically for this printer and must fail safely.</p>
+<h3 id="71-build-system-choice">7.1 Build-system choice<a class="headerlink" href="#71-build-system-choice" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Advantage</th>
+<th>Disadvantage</th>
+<th>C5P recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buildroot with <code>br2-external</code></td>
+<td>small, appliance-oriented, board layer, overlays, custom packages, and init integration</td>
+<td>less distribution and package governance</td>
+<td>preferred starting point for a minimal C5P image</td>
+</tr>
+<tr>
+<td>Yocto layer</td>
+<td>strong BSP/product separation, custom images, init selection, reproducibility tooling</td>
+<td>substantially higher learning and build complexity</td>
+<td>useful for several boards and long-term product maintenance</td>
+</tr>
+<tr>
+<td>Debian-like system</td>
+<td>familiar package management</td>
+<td>unresolved resource, MIPS, update, and reproducibility questions</td>
+<td>do not choose without a resource and lifecycle evaluation</td>
+</tr>
+</tbody>
+</table>
+<p>Buildroot and Yocto do not provide a C5P board-support package automatically. Device tree, bootloader integration, kernel modules, Wi-Fi, display, touch, MCU firmware, and recovery layout remain separate workstreams (<strong>I1</strong>, derived from the official build-system scope and the absence of C5P board support in the inspected repositories).</p>
+<h2 id="8-recommended-migration-phases">8. Recommended migration phases<a class="headerlink" href="#8-recommended-migration-phases" title="Permanent link">¶</a></h2>
+<h3 id="phase-0-freeze-the-evidence-and-complete-recovery">Phase 0 - Freeze the evidence and complete recovery<a class="headerlink" href="#phase-0-freeze-the-evidence-and-complete-recovery" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Every later change can be reversed.</p>
+<ul>
+<li>Version the MMC0 user-area image, partition images, hashes, and GPT manifest.</li>
+<li>Read <code>boot0</code> and <code>boot1</code> before changing the bootloader or slot logic.</li>
+<li>Record BootROM, Stage 2, eMMC, and board revisions in a hardware manifest.</li>
+<li>Capture the stock process tree, mounts, open ports, kernel modules, device nodes, and logs.</li>
+<li>Prepare a rescue image or RAM-resident recovery path.</li>
+<li>Ensure the stock fallback does not depend on the same untested startup path.</li>
+</ul>
+<p><strong>Exit criterion:</strong> A deliberately damaged test partition image can be detected and restored offline. No real write test is allowed without exact identity and hash verification.</p>
+<h3 id="phase-1-observe-firmwareexe-do-not-replace-it">Phase 1 - Observe <code>firmwareExe</code>; do not replace it<a class="headerlink" href="#phase-1-observe-firmwareexe-do-not-replace-it" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Build a complete responsibility and interface map.</p>
+<ul>
+<li>Use <code>strace -ff</code> or equivalent tracing for files, processes, sockets, and IOCTLs.</li>
+<li>Capture the process tree before, during, and after Klipper startup.</li>
+<li>Observe <code>/tmp/uds</code> through a transparent proxy or logging wrapper.</li>
+<li>Correlate access to <code>/dev/ttyS3</code>, <code>/dev/ttyS4</code>, <code>/dev/ttyS5</code>, <code>/dev/ttyS7</code>, <code>/dev/fb0</code>, and input devices.</li>
+<li>Use inotify to capture changes under <code>/usr/data/config</code>, <code>/usr/data/firmwareRes</code>, and G-code directories.</li>
+<li>Tag <code>firmwareExe</code> symbols by subsystem in Ghidra instead of blindly decompiling the entire binary.</li>
+<li>Document MCU firmware and version paths separately.</li>
+</ul>
+<p><strong>Exit criterion:</strong> Every <code>firmwareExe</code> responsibility has an observed input, output, state, and planned replacement or an explicit decision to omit it.</p>
+<h3 id="phase-2-run-the-open-stack-alongside-the-stock-system">Phase 2 - Run the open stack alongside the stock system<a class="headerlink" href="#phase-2-run-the-open-stack-alongside-the-stock-system" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Connect Moonraker and Mainsail without transferring printer ownership.</p>
+<ul>
+<li>Run Moonraker against the existing Klipper socket.</li>
+<li>Start Mainsail on a separate port.</li>
+<li>Test file, status, and configuration functions read-only.</li>
+<li>Do not let stock and Moonraker write to the same managed file paths simultaneously.</li>
+<li>Start the camera separately and measure system load.</li>
+<li>Run every component through an independent startup script with its own logs.</li>
+</ul>
+<p><strong>Exit criterion:</strong> Mainsail displays printer state reliably. The new path still has no authority to move, heat, or start a print.</p>
+<h3 id="phase-3-boot-without-firmwareexe-with-heaters-disabled">Phase 3 - Boot without <code>firmwareExe</code>, with heaters disabled<a class="headerlink" href="#phase-3-boot-without-firmwareexe-with-heaters-disabled" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Start the platform, MCU bootstrap, Klipper, and Moonraker without the vendor binary.</p>
+<ul>
+<li>Use a reversible boot selector with a timeout and automatic stock fallback.</li>
+<li>Build <code>c5p-platform</code> and <code>c5p-mcu-bootstrap</code> from the observed stock steps.</li>
+<li>Initially retain the vendor Klipper host so Linux migration and Klipper migration remain separate problems.</li>
+<li>Block heaters through configuration, hardware enable, or a separate safety path.</li>
+<li>Read only the four MCU connections, sensor values, doors, endstops, and probe.</li>
+</ul>
+<p><strong>Exit criterion:</strong> Repeated cold boots bring every MCU to <code>ready</code>, all temperatures are plausible, and a service crash cannot activate a heater.</p>
+<h3 id="phase-4-validate-safety-functions-and-motion">Phase 4 - Validate safety functions and motion<a class="headerlink" href="#phase-4-validate-safety-functions-and-motion" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Enable hardware in the smallest possible steps.</p>
+<ol>
+<li>Ambient temperatures and sensor open/short detection.</li>
+<li>Fans and relays without heating.</li>
+<li>Endstops, doors, probe, and emergency stop.</li>
+<li>Individual motors at low speed with mechanically safe axes.</li>
+<li>Homing with a physical emergency stop available.</li>
+<li>One heater at a time with reduced power, external temperature monitoring, and a short timeout.</li>
+<li>MCU disconnect, Klipper crash, Moonraker crash, and power loss.</li>
+</ol>
+<p><strong>Exit criterion:</strong> Every tested fault class demonstrably reaches a safe state. Configuration limits are realistic and do not use test bypasses such as <code>min_temp: -200</code>.</p>
+<h3 id="phase-5-implement-native-print-functions">Phase 5 - Implement native print functions<a class="headerlink" href="#phase-5-implement-native-print-functions" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Normal LAN printing without the vendor binary.</p>
+<ul>
+<li>Implement <code>PRINT_START</code>, <code>PRINT_END</code>, pause, resume, cancel, and fault macros.</li>
+<li>Implement tool selection, locking, park positions, and purge sequences.</li>
+<li>Implement filament and door sensor behavior.</li>
+<li>Enable bed mesh, input shaping, print progress, and object exclusion.</li>
+<li>Point OrcaSlicer directly at Moonraker.</li>
+<li>Add material and thumbnail metadata only where standard paths are insufficient.</li>
+<li>Keep print history and queue in Moonraker instead of vendor files.</li>
+</ul>
+<p><strong>Exit criterion:</strong> Several supervised test prints, including pause, filament fault, cancel, MCU restart, and cold-start recovery, are reproducible.</p>
+<h3 id="phase-6-replace-the-vendor-klipper-host-with-a-maintained-fork-or-upstream-port">Phase 6 - Replace the vendor Klipper host with a maintained fork or upstream port<a class="headerlink" href="#phase-6-replace-the-vendor-klipper-host-with-a-maintained-fork-or-upstream-port" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Make every Flashforge-specific change transparent, reviewable, and testable.</p>
+<ul>
+<li>Determine the exact vendor baseline revision.</li>
+<li>Diff every deviation against the matching Klipper upstream revision.</li>
+<li>Port changes as small, focused commits.</li>
+<li>Move pure sequencing into macros.</li>
+<li>Isolate actual protocol extensions in clearly named modules.</li>
+<li>Remove unused, unsafe, or incomplete vendor behavior.</li>
+<li>Test MCU compatibility for each board firmware version.</li>
+<li>Evaluate whether generic parts can be upstreamed.</li>
+</ul>
+<p><strong>Exit criterion:</strong> A documented patch stack explains every remaining divergence. CI validates syntax, imports, configuration startup, and simulated protocols.</p>
+<h3 id="phase-7-build-a-clean-reproducible-root-filesystem">Phase 7 - Build a clean, reproducible root filesystem<a class="headerlink" href="#phase-7-build-a-clean-reproducible-root-filesystem" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Eliminate the manually grown vendor userspace.</p>
+<ul>
+<li>Initially retain the known vendor kernel, DTB, and required modules.</li>
+<li>Generate the rootfs with Buildroot or an equivalent reproducible builder.</li>
+<li>Keep the rootfs read-only where practical.</li>
+<li>Place configuration, G-code, logs, and update state explicitly on a data partition.</li>
+<li>Build Python, Klipper, Moonraker, the web server, and camera service from pinned versions.</li>
+<li>Generate an SBOM, source revision list, toolchain manifest, and license bundle.</li>
+<li>Introduce A/B updates with atomic slot switching and a boot-success marker.</li>
+</ul>
+<p><strong>Exit criterion:</strong> A build from a clean checkout produces the same image bit-for-bit or a fully explained and versioned equivalent. A failed update automatically boots the last known-good slot.</p>
+<h3 id="phase-8-open-kernel-and-bootloader-work">Phase 8 - Open kernel and bootloader work<a class="headerlink" href="#phase-8-open-kernel-and-bootloader-work" title="Permanent link">¶</a></h3>
+<p><strong>Goal:</strong> Control the BSP and boot path as well.</p>
+<ul>
+<li>Reconstruct the X2600 board description, pinmux, clocks, UARTs, eMMC, USB, display, touch, Wi-Fi, and camera.</li>
+<li>Replace vendor kernel modules with source-built or upstream drivers.</li>
+<li>Test custom U-Boot and kernel builds only from RAM or a safe alternate slot at first.</li>
+<li>Establish a serial console or equivalent early debug path.</li>
+<li>Document the Secure Boot or Verified Boot decision.</li>
+</ul>
+<p><strong>Exit criterion:</strong> The printer boots reproducibly without the proprietary vendor kernel path and remains recoverable through an independent interface.</p>
+<p>This phase is a separate BSP project. It is not required to obtain a clean open printer stack in the earlier phases.</p>
+<h2 id="9-realistic-feasibility">9. Realistic feasibility<a class="headerlink" href="#9-realistic-feasibility" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>Feasibility</th>
+<th>Main reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add Mainsail and Moonraker to the stock system</td>
+<td>high</td>
+<td>components are already present, disabled, or anticipated by the existing stack</td>
+</tr>
+<tr>
+<td>LAN printing through Moonraker and Mainsail</td>
+<td>high to medium</td>
+<td>the standard path is available, but stock file ownership must be separated</td>
+</tr>
+<tr>
+<td><code>firmwareExe</code>-free operation with vendor Klipper</td>
+<td>medium to high</td>
+<td>static architecture is favorable, but MCU bootstrap and safety ownership remain open</td>
+</tr>
+<tr>
+<td>Stock print functions without cloud/UI parity</td>
+<td>medium</td>
+<td>core functions are Klipper-adjacent; tool and special modules require work</td>
+</tr>
+<tr>
+<td>Port vendor Klipper to a maintained upstream line</td>
+<td>medium</td>
+<td>Python sources are available, but MCU protocols and the baseline require exact comparison</td>
+</tr>
+<tr>
+<td>Clean Buildroot image with vendor kernel</td>
+<td>medium</td>
+<td>userspace is tractable; toolchain, libraries, and modules must be reproduced</td>
+</tr>
+<tr>
+<td>Fully open kernel, BSP, and bootloader</td>
+<td>low to unresolved</td>
+<td>board documentation, driver status, and early debugging remain incomplete</td>
+</tr>
+<tr>
+<td>Complete Flashforge UI and cloud parity</td>
+<td>technically possible but not worthwhile</td>
+<td>high effort for functions the target system intentionally avoids</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-effort-estimate">10. Effort estimate<a class="headerlink" href="#10-effort-estimate" title="Permanent link">¶</a></h2>
+<p>The estimates below are person-weeks of experienced embedded Linux, Klipper, and reverse-engineering work. Calendar time can be much longer for part-time development and hardware-dependent testing.</p>
+<table>
+<thead>
+<tr>
+<th>Work package</th>
+<th style="text-align: right;">Rough range</th>
+<th>Uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runtime inventory and UDS/process/file tracing</td>
+<td style="text-align: right;">2 to 6 weeks</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>Reversible boot selector and service split on stock system</td>
+<td style="text-align: right;">3 to 8 weeks</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>Understand and isolate MCU bootstrap</td>
+<td style="text-align: right;">4 to 12 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td><code>firmwareExe</code>-free Klipper startup with heaters disabled</td>
+<td style="text-align: right;">3 to 8 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Safety, sensor, motion, and heater validation</td>
+<td style="text-align: right;">6 to 16 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Implement tool, filament, and calibration functions natively</td>
+<td style="text-align: right;">6 to 18 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Vendor Klipper diff and port to a maintained fork</td>
+<td style="text-align: right;">8 to 24 weeks</td>
+<td>very high</td>
+</tr>
+<tr>
+<td>Reproducible rootfs with vendor kernel</td>
+<td style="text-align: right;">8 to 20 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Update, A/B, rollback, CI, and release hardening</td>
+<td style="text-align: right;">6 to 16 weeks</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Custom kernel, BSP, and bootloader</td>
+<td style="text-align: right;">20 to 60+ weeks</td>
+<td>very high</td>
+</tr>
+</tbody>
+</table>
+<p>Practical project sizes:</p>
+<ul>
+<li><strong>First credible clean-userspace boot under favorable assumptions:</strong> 18 to 42 person-weeks. This narrower range assumes working recovery, a test printer, no signing lock, and partially overlapping workstreams.</li>
+<li><strong>Community MVP:</strong> Mainsail/Moonraker plus <code>firmwareExe</code>-free operation on the vendor kernel and vendor Klipper for one hardware revision: roughly 6 to 12 person-months.</li>
+<li><strong>Robust open userspace:</strong> reviewed Klipper patch stack, reproducible rootfs, A/B updates, and release testing: roughly 12 to 24 person-months.</li>
+<li><strong>Largely open platform:</strong> custom BSP, kernel, boot path, and multiple hardware revisions: roughly 24 to 48+ person-months.</li>
+</ul>
+<p>These ranges can shrink substantially if Flashforge or a supplier provides source code, board documentation, and MCU protocols. They can expand substantially if subordinate MCU images are signed, encrypted, revision-dependent, or tightly coupled to <code>firmwareExe</code>.</p>
+<h2 id="11-required-infrastructure">11. Required infrastructure<a class="headerlink" href="#11-required-infrastructure" title="Permanent link">¶</a></h2>
+<h3 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">¶</a></h3>
+<ul>
+<li>one recoverable or second Creator 5 Pro;</li>
+<li>reliable mechanical access to J29 and K4;</li>
+<li>USB-UART plus logic analyzer or oscilloscope;</li>
+<li>physical emergency stop or safe mains isolation;</li>
+<li>external temperature measurement for heater tests;</li>
+<li>a way to keep motors and heaters independently unpowered;</li>
+<li>ideally a spare board or test fixture for MCU protocol work.</li>
+</ul>
+<h3 id="software">Software<a class="headerlink" href="#software" title="Permanent link">¶</a></h3>
+<ul>
+<li>a versioned firmware-evidence repository without private raw images;</li>
+<li>a Ghidra project with symbol and subsystem tags;</li>
+<li>a MIPS cross-toolchain and QEMU-user for safe host testing;</li>
+<li>image and partition tools that default to read-only;</li>
+<li>a reproducible Buildroot or equivalent image build;</li>
+<li>CI for shell, Python, Klipper configuration, images, SBOM, and hash manifests;</li>
+<li>a hardware-in-the-loop test protocol with manual approval gates.</li>
+</ul>
+<h3 id="project-organization">Project organization<a class="headerlink" href="#project-organization" title="Permanent link">¶</a></h3>
+<ul>
+<li>one hardware manifest per board revision;</li>
+<li>a capability matrix instead of a blanket "C5P works" claim;</li>
+<li>one issue for each current <code>firmwareExe</code> responsibility;</li>
+<li>explicit labels for stock-observed, statically found, simulated, and physically confirmed evidence;</li>
+<li>no publication of personal eMMC images, credentials, or vendor keys.</li>
+</ul>
+<h2 id="12-highest-value-next-experiments">12. Highest-value next experiments<a class="headerlink" href="#12-highest-value-next-experiments" title="Permanent link">¶</a></h2>
+<p>Ordered by effort, risk, and expected information gain:</p>
+<ol>
+<li><strong>Stock runtime snapshot:</strong> process tree, ports, mounts, modules, UART owners, file descriptors, and Klipper state immediately after boot.</li>
+<li><strong><code>/tmp/uds</code> protocol map:</strong> record messages during boot, idle, upload, print start, pause, tool change, cancel, and fault.</li>
+<li><strong>MCU boot timeline:</strong> correlate <code>cmd_mcu</code>, <code>checkEboard</code>, <code>bootSerial*</code>, and actual UART activity.</li>
+<li><strong>Heater-disabled boot without <code>firmwareExe</code>:</strong> start vendor Klipper manually with locked outputs and inspect only MCU and sensor state.</li>
+<li><strong>Determine the vendor Klipper baseline:</strong> compare files against historical Klipper revisions and classify each as upstream, modified, or new.</li>
+<li><strong>Audit custom modules:</strong> review <code>mclib</code>, <code>ff_eddy</code>, <code>pa_adjust</code>, <code>e_stop</code>, <code>hd_home</code>, and the resonance tester for protocols, bugs, safety limits, and upstream dependencies.</li>
+<li><strong>Run Moonraker in parallel:</strong> read-only status and file metadata without changing the stock print path.</li>
+<li><strong>Analyze boot slots:</strong> read, but do not write, the U-Boot environment and kernel/rootfs slot selection.</li>
+<li><strong>Read <code>boot0</code> and <code>boot1</code>:</strong> complete this before any bootloader or slot experiment.</li>
+<li><strong>Minimal rootfs probe:</strong> vendor kernel plus only mounts, SSH or physically enabled ADB, and diagnostics; no printing yet.</li>
+</ol>
+<p>Experiments 2 through 4 provide the highest immediate information value. They determine whether <code>firmwareExe</code> is only a Klipper client in the active print path or whether it owns additional mandatory hardware logic.</p>
+<h2 id="13-concrete-community-backlog">13. Concrete community backlog<a class="headerlink" href="#13-concrete-community-backlog" title="Permanent link">¶</a></h2>
+<h3 id="track-a-recovery-and-platform">Track A - Recovery and platform<a class="headerlink" href="#track-a-recovery-and-platform" title="Permanent link">¶</a></h3>
+<ul>
+<li>[ ] Read <code>boot0</code> and <code>boot1</code> safely.</li>
+<li>[ ] Document the U-Boot environment and slot logic.</li>
+<li>[ ] Record hardware revisions.</li>
+<li>[ ] Develop a RAM rescue system or independent recovery slot.</li>
+<li>[ ] Define a physical opt-in for debug access.</li>
+</ul>
+<h3 id="track-b-firmwareexe-reverse-engineering">Track B - <code>firmwareExe</code> reverse engineering<a class="headerlink" href="#track-b-firmwareexe-reverse-engineering" title="Permanent link">¶</a></h3>
+<ul>
+<li>[ ] Produce a publishable symbol and source-path index.</li>
+<li>[ ] Document the UDS protocol.</li>
+<li>[ ] Document Orca endpoints and file semantics.</li>
+<li>[ ] Document MCU boot and update functions.</li>
+<li>[ ] Document configuration and calibration files.</li>
+<li>[ ] Record cloud and telemetry paths separately.</li>
+</ul>
+<h3 id="track-c-klipper">Track C - Klipper<a class="headerlink" href="#track-c-klipper" title="Permanent link">¶</a></h3>
+<ul>
+<li>[ ] Determine the vendor baseline.</li>
+<li>[ ] Classify custom modules.</li>
+<li>[ ] Redefine safe operating limits.</li>
+<li>[ ] Establish the macro/module boundary.</li>
+<li>[ ] Build a maintained C5P Klipper fork.</li>
+<li>[ ] Add tests and protocol fixtures.</li>
+</ul>
+<h3 id="track-d-moonraker-and-mainsail">Track D - Moonraker and Mainsail<a class="headerlink" href="#track-d-moonraker-and-mainsail" title="Permanent link">¶</a></h3>
+<ul>
+<li>[ ] Define a minimal Moonraker setup.</li>
+<li>[ ] Normalize file paths and metadata.</li>
+<li>[ ] Test the OrcaSlicer connection.</li>
+<li>[ ] Test queue, history, timelapse, and camera.</li>
+<li>[ ] Build a compatibility adapter only for slicer functions that are genuinely missing.</li>
+</ul>
+<h3 id="track-e-image-and-releases">Track E - Image and releases<a class="headerlink" href="#track-e-image-and-releases" title="Permanent link">¶</a></h3>
+<ul>
+<li>[ ] Select a reproducible toolchain.</li>
+<li>[ ] Clarify vendor kernel and module licensing.</li>
+<li>[ ] Define a read-only rootfs and persistent data layout.</li>
+<li>[ ] Implement A/B update and rollback.</li>
+<li>[ ] Generate an SBOM and build manifest.</li>
+<li>[ ] Build a release and HIL matrix across hardware revisions.</li>
+</ul>
+<h2 id="14-risks-and-possible-showstoppers">14. Risks and possible showstoppers<a class="headerlink" href="#14-risks-and-possible-showstoppers" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unknown MCU boot or update path</td>
+<td>no stable Klipper startup</td>
+<td>UART tracing, symbol analysis, dedicated bootstrap service</td>
+</tr>
+<tr>
+<td>Vendor MCU protocol diverges substantially from Klipper</td>
+<td>high porting effort</td>
+<td>retain vendor host initially; isolate protocol extensions</td>
+</tr>
+<tr>
+<td>Heater or motor enable exists outside Klipper</td>
+<td>safety risk</td>
+<td>prove hardware path and default state independently</td>
+</tr>
+<tr>
+<td>Different board revisions</td>
+<td>image only works on one device</td>
+<td>hardware manifest and strict compatibility checks</td>
+</tr>
+<tr>
+<td>No early debug path</td>
+<td>new images can deeply brick the board</td>
+<td>acquire boot regions, RAM rescue, stock slot, BootROM recovery first</td>
+</tr>
+<tr>
+<td>Vendor kernel modules without matching source</td>
+<td>long-term maintenance boundary</td>
+<td>investigate source obligations, inventory modules, prioritize replacements</td>
+</tr>
+<tr>
+<td>MIPS resource limits</td>
+<td>current Python or web components may be too heavy</td>
+<td>pin versions, cross-build, load-test, keep services small</td>
+</tr>
+<tr>
+<td>Stock and Moonraker both manage files</td>
+<td>damaged queue or metadata</td>
+<td>define exactly one writing owner in each phase</td>
+</tr>
+<tr>
+<td>Blind reuse of community configurations</td>
+<td>crash or heater risk</td>
+<td>validate every limit and pin mapping physically</td>
+</tr>
+<tr>
+<td>Legal limits around vendor binaries and images</td>
+<td>no public distribution</td>
+<td>share only manifests, specifications, permitted diffs, and original implementation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="15-licensing-and-publication-boundaries">15. Licensing and publication boundaries<a class="headerlink" href="#15-licensing-and-publication-boundaries" title="Permanent link">¶</a></h2>
+<ul>
+<li>Klipper extensions and modified Klipper files must retain accurate license and source history.</li>
+<li>Moonraker, Mainsail, Buildroot, the kernel, BusyBox, libraries, and toolchains require a complete license and source manifest.</li>
+<li>Community releases must not contain vendor binaries, complete Flashforge rootfs images, keys, certificates, serial numbers, or private logs.</li>
+<li>A clean-room split may become useful: one team documents observable behavior and protocols; another implements from that specification.</li>
+<li>Whether Flashforge or its suppliers must provide source for GPL components, and to what extent, requires legal review. This report is not legal advice.</li>
+</ul>
+<h2 id="16-sources-and-inspected-revisions">16. Sources and inspected revisions<a class="headerlink" href="#16-sources-and-inspected-revisions" title="Permanent link">¶</a></h2>
+<h3 id="local-primary-evidence">Local primary evidence<a class="headerlink" href="#local-primary-evidence" title="Permanent link">¶</a></h3>
+<ul>
+<li>Creator 5 Pro firmware 1.9.8: extracted update files, <code>app_startup.sh</code>, Klipper startup script, Klipper Python source, and configurations; inspected 2026-08-27.</li>
+<li><code>firmwareExe</code> 1.9.8: SHA-256 <code>09564BEFDB3C39B32DC05647656C9A4636C01BB60F9364D61FE5AABD1012CAB9</code>; ELF, string, and symbol analysis performed 2026-08-27.</li>
+<li>MMC0 user-area readback: SHA-256 <code>373EA4DA6CB579978FF49F592E4F025BFA6CFEA523AAC092D5D3F2ED4A79A087</code>; physically confirmed 2026-08-26.</li>
+<li>Temporary J29 root ADB path: physically confirmed 2026-08-27.</li>
+<li>Additional safety and community history: <a href="../Important%20Notes/">Important Notes</a>, <a href="../Chat%20Knowledge/">Chat Knowledge</a>, and <a href="../Repository%20Check/">Repository Check</a>.</li>
+</ul>
+<h3 id="community-repositories">Community repositories<a class="headerlink" href="#community-repositories" title="Permanent link">¶</a></h3>
+<ul>
+<li>Creator-5-Scripts, currently inspected revision <code>6bd0bef71cab7f544900f25bfab27b370f8004b3</code>, main, checked 2026-08-27: https://github.com/FlashForge-C5-Modding-Group/Creator-5-Scripts/tree/6bd0bef71cab7f544900f25bfab27b370f8004b3</li>
+<li>Local Creator-5-Scripts snapshot used for deeper file analysis: revision <code>fbd8b09d07355eb88dfdf96f193dd30bbe69fa19</code>.</li>
+<li>Creator-5-Mods, revision <code>cc9ea5532563715d736ef1370a51425d7016c402</code>, main: https://github.com/FlashForge-C5-Modding-Group/Creator-5-Mods/tree/cc9ea5532563715d736ef1370a51425d7016c402</li>
+<li>Creator-5-Pro firmware archive, revision <code>1f9d55ebdffbb47705751398c68383e71742954e</code>: https://github.com/FlashForge-C5-Modding-Group/creator-5-pro-firmware-archive/tree/1f9d55ebdffbb47705751398c68383e71742954e</li>
+<li><code>app_startup.sh</code> from that archive: https://github.com/FlashForge-C5-Modding-Group/creator-5-pro-firmware-archive/blob/1f9d55ebdffbb47705751398c68383e71742954e/software/app_startup.sh</li>
+<li>C5P Klipper extras from that archive: https://github.com/FlashForge-C5-Modding-Group/creator-5-pro-firmware-archive/tree/1f9d55ebdffbb47705751398c68383e71742954e/software/klipper/extras</li>
+<li>ZMOD, revision <code>fcea6bc14dccb7c1eb93099b04d331cd83c5a377</code>, main: https://github.com/ghzserg/zmod/tree/fcea6bc14dccb7c1eb93099b04d331cd83c5a377</li>
+<li>Creator 5 Pro Remote Screen, revision <code>77ad1268869c8d2a1f7f25d810dd31e976b2ee33</code>: https://github.com/xenupy/creator5pro-remote-screen/tree/77ad1268869c8d2a1f7f25d810dd31e976b2ee33</li>
+</ul>
+<h3 id="upstream-primary-sources">Upstream primary sources<a class="headerlink" href="#upstream-primary-sources" title="Permanent link">¶</a></h3>
+<ul>
+<li>Klipper host/MCU model, revision <code>ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa</code>: https://github.com/Klipper3d/klipper/blob/ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa/docs/Features.md</li>
+<li>Klipper Code Overview and dynamic host modules, same revision: https://github.com/Klipper3d/klipper/blob/ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa/docs/Code_Overview.md</li>
+<li>Klipper macro semantics, same revision: https://github.com/Klipper3d/klipper/blob/ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa/docs/Command_Templates.md</li>
+<li>Klipper API Server, same revision: https://github.com/Klipper3d/klipper/blob/ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa/docs/API_Server.md</li>
+<li>Klipper host/MCU protocol and data dictionary, same revision: https://github.com/Klipper3d/klipper/blob/ac2a7f8b0e1ba61afe51e7e25583772d6e65e1fa/docs/Protocol.md</li>
+<li>Moonraker API introduction, tag <code>v0.11.0</code>, revision <code>985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d</code>: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/external_api/introduction.md</li>
+<li>Moonraker configuration, same revision: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/configuration.md</li>
+<li>Moonraker file and server API, same revision: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/external_api/server.md</li>
+<li>Moonraker job queue, same revision: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/external_api/job_queue.md</li>
+<li>Moonraker machine and service API, same revision: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/external_api/machine.md</li>
+<li>Moonraker Update Manager, same revision: https://github.com/Arksine/moonraker/blob/985c1d0bbeb90bc057d34a232c9dc3b05e0c6c8d/docs/external_api/update_manager.md</li>
+<li>Mainsail browser/Moonraker architecture, revision <code>e2ab7537a453e2a479606ed334717b783c0dacb6</code>: https://github.com/mainsail-crew/docs/blob/e2ab7537a453e2a479606ed334717b783c0dacb6/docs/data-privacy.md</li>
+<li>Mainsail Klipper requirements, same revision: https://github.com/mainsail-crew/docs/blob/e2ab7537a453e2a479606ed334717b783c0dacb6/docs/configuration/mainsail-cfg.md</li>
+<li>Buildroot <code>br2-external</code>, revision <code>b4b1de1f7f1865af25f5dc47beac06a37b929c4a</code>: https://gitlab.com/buildroot.org/buildroot/-/blob/b4b1de1f7f1865af25f5dc47beac06a37b929c4a/docs/manual/customize-outside-br.adoc</li>
+<li>Buildroot rootfs overlays and hooks, same revision: https://gitlab.com/buildroot.org/buildroot/-/blob/b4b1de1f7f1865af25f5dc47beac06a37b929c4a/docs/manual/customize-rootfs.adoc</li>
+<li>Buildroot init and service integration, same revision: https://gitlab.com/buildroot.org/buildroot/-/blob/b4b1de1f7f1865af25f5dc47beac06a37b929c4a/docs/manual/adding-packages-generic.adoc</li>
+<li>Yocto layer model, revision <code>9955b0f099b6b42a9750f0d544944a2d8e5a39b2</code>: https://git.yoctoproject.org/yocto-docs/tree/documentation/overview-manual/concepts.rst?id=9955b0f099b6b42a9750f0d544944a2d8e5a39b2</li>
+<li>Yocto reproducible builds, same revision: https://git.yoctoproject.org/yocto-docs/tree/documentation/test-manual/reproducible-builds.rst?id=9955b0f099b6b42a9750f0d544944a2d8e5a39b2</li>
+</ul>
+<h2 id="17-conclusion">17. Conclusion<a class="headerlink" href="#17-conclusion" title="Permanent link">¶</a></h2>
+<p>The Creator 5 Pro is not a hopelessly closed system. It already contains Klipper, a clear Linux and data partition layout, serial Klipper MCUs, and an analyzable, non-stripped vendor application. Those properties make a staged opening substantially more realistic than on a printer with an entirely proprietary motion stack.</p>
+<p>The hardest part is not Mainsail. It is the boundary between <code>firmwareExe</code>, MCU bootstrap, vendor Klipper extensions, and physical safety. Once runtime traces and heater-disabled tests document that boundary, the remaining work can be divided into controlled work packages.</p>
+<p>The recommended order is therefore:</p>
+<ol>
+<li>Complete recovery.</li>
+<li>Observe <code>firmwareExe</code> and specify its interfaces.</li>
+<li>Start vendor Klipper without <code>firmwareExe</code>, but also without heaters or motion.</li>
+<li>Make Moonraker and Mainsail the sole operator and file-control path.</li>
+<li>Move functions individually into macros, Klipper modules, and Linux services.</li>
+<li>Build a clean rootfs only after the service graph is proven.</li>
+<li>Treat the kernel and bootloader as a separate, later BSP project.</li>
+</ol>
+<p>This approach produces more than a working mod. It creates an auditable platform in which no single hidden binary or shell script controls the entire printer.</p>
+<h2 id="ai-assistance-disclosure">AI assistance disclosure<a class="headerlink" href="#ai-assistance-disclosure" title="Permanent link">¶</a></h2>
+<p>This research report was produced with substantial assistance from OpenAI Codex. The maintainer directed the investigation, supplied the hardware evidence and project context, and remains responsible for technical review, safety validation, licensing review, and any use on physical hardware.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../Repository%20Check/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Repository Check">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Repository Check
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Discord%20Mods%20Dump/" class="md-footer__link md-footer__link--next" aria-label="Next: Discord Mods Dump">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Discord Mods Dump
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 KidCe · Built with MkDocs Material
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/KidCe" target="_blank" rel="noopener" title="KidCe on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://kidce.github.io/feed_rss_created.xml" target="_blank" rel="noopener" title="Subscribe to new articles" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tooltips"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+      
+        <script src="../../../../../assets/javascripts/race-performance-chart.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
