@@ -286,6 +286,7 @@ nav:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
       - Repairs:
           - Happymodel 2G4: wiki/repairs/happymodel-2g4.md
+          - IP2368 USB-C PD reset: wiki/repairs/ip2368-usb-c-pd-reset.md
   - About:
       - About me: about-me.md
       - Race results: race-results.md

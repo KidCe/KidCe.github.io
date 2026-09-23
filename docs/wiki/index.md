@@ -16,6 +16,8 @@ Symptoms, diagnostic steps and repair notes from the workbench.
 
 [Happymodel 2G4 →](repairs/happymodel-2g4.md)
 
+[IP2368 USB-C PD reset →](repairs/ip2368-usb-c-pd-reset.md)
+
 ### :material-flag-checkered: Equipment & field setup
 
 Materials and practical setup notes for race infrastructure.
