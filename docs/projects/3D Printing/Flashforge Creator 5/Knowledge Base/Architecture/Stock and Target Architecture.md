@@ -1,5 +1,4 @@
-
-## For future Claude
+# Stock and Target Architecture
 
 This architecture note separates the stock Creator 5 Pro control graph from the proposed staged open stack, based on local firmware evidence and repository documentation checked on 2026-08-27. The target architecture is a design direction, not proof that a printer can already operate safely without the vendor binary.
 
@@ -25,7 +24,7 @@ flowchart TD
     FFE --> Cloud[Optional cloud and MQTT]
 ~~~
 
-The central failure boundary is app_startup.sh: the local factory-rootfs inspection shows that init checks for the file and executes it directly. The file then mixes platform setup, update handling, and application startup. See [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](../Recovery/Device Evidence and Partition Layout.md) for the exact observed permission failure.
+The central failure boundary is app_startup.sh: the local factory-rootfs inspection shows that init checks for the file and executes it directly. The file then mixes platform setup, update handling, and application startup. See [Device Evidence and Partition Layout](../Recovery/Device Evidence and Partition Layout.md) for the exact observed permission failure.
 
 ## Target architecture
 

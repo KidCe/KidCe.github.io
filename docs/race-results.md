@@ -5,7 +5,8 @@ checked against MultiGP, FPVScores, Aircrasher LiveFPV, BMR LiveFPV and
 Copterrace. Training sessions, test events, unfinished events and placeholders
 are not included. A timing-page entry only counts once a completed
 classification has been published.
-**Last checked:** 14 July 2026.
+**Latest result update:** 30 September 2026 (European Championship and Modellflugtage).
+The GQ and DCS season snapshots below retain their separately stated July check dates.
 
 [View my MultiGP profile](https://www.multigp.com/pilots/view/?pilot=38502){ .md-button .md-button--primary }
 [Meet Holy\*s\*quad](my-squad.md){ .md-button }
@@ -70,12 +71,12 @@ Official DCS weekend results are counted once; their individual multi-final
 rounds, unfinished events and result ranges are omitted.
 
 <div class="performance-chart performance-chart--events">
-  <canvas id="individual-race-performance-chart" role="img" aria-label="Line chart of normalized final performance at each race from May 2024 through July 2026.">
+  <canvas id="individual-race-performance-chart" role="img" aria-label="Line chart of normalized final performance at each race from May 2024 through September 2026.">
     Event-by-event final performance and its trailing five-race moving average trend upward overall between 2024 and 2026.
   </canvas>
 </div>
 
-In 2026, **7 of 9 event results (78%)** ended in the top half, compared with **1
+In 2026, **8 of 11 event results (73%)** ended in the top half, compared with **1
 of 3 (33%)** in 2024. The median final score rises from **39% → 57% → 63%**
 across the three seasons.
 
@@ -107,6 +108,8 @@ included.
 
 | Date | Event | Qualifying | Final |
 | --- | --- | ---: | ---: |
+| 26–27 Sep | LVB Modellflugtage Oberschleißheim[^modell-2026] | [2 / 13](https://bmr.livefpv.com/results/?p=view_points&id=7830358) | [4 / 13](https://bmr.livefpv.com/results/?p=event_overall_ranking&id=519294) |
+| 11–13 Sep | MultiGP European Championship[^euro-2026] | [50 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) | [59 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) |
 | 11–12 Jul | FAI World Drone Cup Italy · provisional[^fai-italy] | — | [13 / 37](https://f9u.it/world-drone-cup-italy-2026/) |
 | 27–28 Jun | FAI World Drone Cup Belgium[^fai-belgium] | [27 / 53](https://fpvscores.com/events/GGVbU9ZxeD/results) | [23 / 53](https://fpvscores.com/events/GGVbU9ZxeD/heats) |
 | 20 Jun | **BMR Adelsried · DCS overall** | — | **[9 / 33](https://aircrasher.de/wp-content/uploads/2026/06/SeriesResultReport-BMR-DCS-2026.pdf)** |
@@ -226,3 +229,7 @@ competitive archive.
 [^fall-whoop]: Copterrace does not publish an exact overall final rank for this double-elimination bracket. The verified elimination path places KidCe between 9th and 12th, so the archive shows the supported range instead of treating the unrelated race-time statistic as a final position.
 [^fai-belgium]: FPVScores publishes the 53-pilot qualifying order and the elimination heats, but its aggregate “Race Time” list is not a bracket result. The final position was reconstructed from those heats using the [official FAI Scenario B classification rule](https://www.fai.org/page/documents-and-rules): pilots eliminated at the same stage are ordered by their provisional qualifying rank.
 [^fai-italy]: The result comes from the organiser's provisional classification sheet photographed at the venue. The [official event page](https://f9u.it/world-drone-cup-italy-2026/) confirms the date, venue and Scenario B format; a public final result document was not available when this archive was updated.
+
+
+[^euro-2026]: MultiGP race 32813 publishes the event-wide Qualifying Ranking and Race Results for 106 listed pilots. These are championship ranks, not the positions within the separate 16-pilot bracket events.
+[^modell-2026]: The organiser’s BMR LiveFPV classification is used: 13 pilots in the cumulative qualifying and final bracket tables. MultiGP lists 14 registrations and displays the fastest single three-lap result under “Race Results”; that time-trial list is not the final bracket classification.

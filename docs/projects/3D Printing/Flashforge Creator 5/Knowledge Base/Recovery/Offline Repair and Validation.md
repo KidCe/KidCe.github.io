@@ -1,18 +1,17 @@
-
-## For future Claude
+# Offline Repair and Validation
 
 This note is the canonical offline repair and read-back workflow for the Flashforge Creator 5 Pro recovery package, consolidated on 2026-08-27. It deliberately stops at a reviewed, case-specific write design and does not provide a generic flash command. The known startup-permission repair was prepared but not written in the recorded evidence.
 
 ## 1. Freeze the evidence
 
 - Keep the original MMC0 user-area image on independent storage.
-- Record its byte size and SHA-256 in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
+- Record its byte size and SHA-256 in [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
 - Mark the original read-only and work from a copy or extracted partition.
 - Never mount the only image read-write and never use repairing fsck on it.
 
 ## 2. Prove the target layout
 
-Parse the target image's GPT and derive each partition offset from start LBA times 512. Compare the result with the device-specific table in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](Device Evidence and Partition Layout.md). Do not copy offsets from another printer.
+Parse the target image's GPT and derive each partition offset from start LBA times 512. Compare the result with the device-specific table in [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md). Do not copy offsets from another printer.
 
 ## 3. Diagnose narrowly
 

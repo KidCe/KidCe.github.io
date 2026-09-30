@@ -1,5 +1,4 @@
-
-## For future Claude
+# Open Firmware Migration
 
 This note is the staged roadmap for moving the Flashforge Creator 5 Pro toward a debuggable Linux/Klipper/Moonraker/Mainsail stack, based on local evidence and upstream documentation checked on 2026-08-27. It is a feasibility foundation, not a claim that stock-free heaters, motion, printing, MCU updates, or fault handling are already safe.
 

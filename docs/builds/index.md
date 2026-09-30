@@ -5,7 +5,7 @@ hide:
 
 # My quad builds
 
-This is where I document the quads I build and fly: complete component lists, design decisions, setup notes and what I would change next time.
+This is where I document the quads I build and fly: component selections, design decisions, setup notes and what I would change next time.
 
 <div class="build-grid" markdown>
 
@@ -23,21 +23,4 @@ This is where I document the quads I build and fly: complete component lists, de
   <span>View build →</span>
 </a>
 
-<a class="build-card" href="dji-o4-build/">
-  <span class="eyebrow">DIGITAL · DJI O4</span>
-  <h2>DJI O4 Build</h2>
-  <p>A prepared build log for one of my DJI O4-equipped quads.</p>
-  <span>View build →</span>
-</a>
-
-<a class="build-card" href="analog-build/">
-  <span class="eyebrow">LIGHTWEIGHT · ANALOG</span>
-  <h2>Analog Build</h2>
-  <p>A place to document an analog quad, its purpose and the parts that make it work.</p>
-  <span>View build →</span>
-</a>
-
 </div>
-
-!!! tip "Adding a new build"
-    Copy one of the existing pages, replace the component list and add it to the `Builds` navigation in `mkdocs.yml`.

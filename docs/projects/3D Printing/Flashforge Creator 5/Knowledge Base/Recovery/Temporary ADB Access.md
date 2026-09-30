@@ -1,5 +1,4 @@
-
-## For future Claude
+# Temporary ADB Access
 
 This note documents the temporary, owner-initiated root ADB maintenance path over J29 after a normal Creator 5 Pro Linux boot, confirmed on 2026-08-27. It is not a BootROM recovery path and must not be made persistent by default because the tested adbd exposed an unauthenticated root shell to the physically connected host.
 
@@ -11,7 +10,7 @@ This note documents the temporary, owner-initiated root ADB maintenance path ove
 - Linking the existing FunctionFS ADB function, starting one adbd, and running the vendor USB helper produced a temporary ADB device.
 - The shell returned uid=0(root) gid=0(root) groups=0(root).
 
-Source snapshot: [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep Unbrick/ADB-RECOVERY-ACCESS](../Sources/Deep Unbrick/ADB-RECOVERY-ACCESS.md).
+Source snapshot: [ADB-RECOVERY-ACCESS](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Deep%20Unbrick/ADB-RECOVERY-ACCESS.md).
 
 ## Preconditions
 

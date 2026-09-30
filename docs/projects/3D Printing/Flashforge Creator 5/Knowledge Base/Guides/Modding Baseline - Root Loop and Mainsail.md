@@ -1,13 +1,12 @@
-
-## For future Claude
+# Modding Baseline — Root Loop and Mainsail
 
 This note is the canonical baseline for the community root, loop-launcher, and Mainsail path on Flashforge Creator 5 family printers, consolidated on 2026-08-27. It separates the repository's current entry point from the older Discord procedure and does not reproduce the shared root credential. Compatibility and physical success remain device- and firmware-specific.
 
 ## Scope and gate
 
-Use this page only after two clean stock boots, a printer-specific backup, confirmed firmware/model identity, and a recovery path. A broken main startup shell can prevent the normal USB update path, so follow [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Recovery Overview](../Recovery/Recovery Overview.md) before any edit.
+Use this page only after two clean stock boots, a printer-specific backup, confirmed firmware/model identity, and a recovery path. A broken main startup shell can prevent the normal USB update path, so follow [Recovery Overview](../Recovery/Recovery Overview.md) before any edit.
 
-The root bootstrap in the community source creates a UID 0 account with a shared password. The exact credential is intentionally not stored in the Second Brain. Treat it as compromised, use a trusted LAN only, and replace or remove it immediately if the path is used. The redacted source boundary is documented in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Archive and Copy Manifest](../Sources/Archive and Copy Manifest.md).
+The root bootstrap in the community source creates a UID 0 account with a shared password. The exact credential is intentionally not stored in the Second Brain. Treat it as compromised, use a trusted LAN only, and replace or remove it immediately if the path is used. The redacted source boundary is documented in [Archive and Copy Manifest](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Archive%20and%20Copy%20Manifest.md).
 
 ## Current repository entry point
 
@@ -20,7 +19,7 @@ Run: chmod +xwr tweaks-c5.sh
 Run: ./tweaks-c5.sh
 ~~~
 
-Source file: research-sources\Creator-5-Scripts\README.md. The local snapshot contains VERSION 2.0.2 in tweaks-c5.sh. Other dated checks in the archive record later repository revisions and different displayed versions, so the authoritative version and feature labels must be taken from the exact repository revision in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Repository and Revision Registry](../Sources/Repository and Revision Registry.md).
+Source file: research-sources\Creator-5-Scripts\README.md. The local snapshot contains VERSION 2.0.2 in tweaks-c5.sh. Other dated checks in the archive record later repository revisions and different displayed versions, so the authoritative version and feature labels must be taken from the exact repository revision in [Repository and Revision Registry](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Repository%20and%20Revision%20Registry.md).
 
 ## Loop launcher model
 
@@ -38,7 +37,7 @@ The older manual tutorial places loop.sh under /usr/prog/scripts/loop, creates /
 
 The community enable-msmr.sh source waits for a klippy process, then starts the stock Nginx configuration and moonrakerDaemon. Its source path is research-sources\Creator-5-Scripts\scripts\scripts\enable-msmr.sh. The older guide reports Mainsail on port 80 and Moonraker on port 7125, but those ports are not treated as universal facts here; verify the target configuration after boot.
 
-The Mainsail path is a service overlay on the vendor stack. It does not prove that Flashforge's own UI, firmwareExe, camera integration, or print API has been removed. For print ownership and slicer routing, use [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Print Workflow Adaptive Mesh and OrcaSlicer](Print Workflow Adaptive Mesh and OrcaSlicer.md).
+The Mainsail path is a service overlay on the vendor stack. It does not prove that Flashforge's own UI, firmwareExe, camera integration, or print API has been removed. For print ownership and slicer routing, use [Print Workflow Adaptive Mesh and OrcaSlicer](Print Workflow Adaptive Mesh and OrcaSlicer.md).
 
 ## Safe operational sequence
 

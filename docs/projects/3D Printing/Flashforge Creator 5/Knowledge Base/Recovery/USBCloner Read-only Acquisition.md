@@ -1,7 +1,6 @@
+# USBCloner Read-only Acquisition
 
-## For future Claude
-
-This note is the canonical no-write BootROM and USBCloner acquisition workflow for the Flashforge Creator 5 Pro evidence package, consolidated on 2026-08-27. It stops at read-only acquisition and validation; it contains no active write profile. Device-specific constants are owned by [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
+This note is the canonical no-write BootROM and USBCloner acquisition workflow for the Flashforge Creator 5 Pro evidence package, consolidated on 2026-08-27. It stops at read-only acquisition and validation; it contains no active write profile. Device-specific constants are owned by [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
 
 ## Required hardware and software
 
@@ -11,14 +10,14 @@ This note is the canonical no-write BootROM and USBCloner acquisition workflow f
 - At least 20 GB free space for readback, hashes, and working copies.
 - USBLogView or Device Manager for enumeration evidence.
 
-The original vendor tool package is not redistributed in this Second Brain package. See [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Archive and Copy Manifest](../Sources/Archive and Copy Manifest.md).
+The original vendor tool package is not redistributed in this Second Brain package. See [Archive and Copy Manifest](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Archive%20and%20Copy%20Manifest.md).
 
 ## Gate 1 - enumerate only
 
 1. Disconnect mains power before board work.
 2. Connect only J29 ground and data pads. Do not connect USB 5 V.
 3. Bridge K4/BOOT and power the printer.
-4. Record the USB event and compare it with the exact tested identifier in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
+4. Record the USB event and compare it with the exact tested identifier in [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
 5. If the event differs or is absent, stop and inspect wiring, ground, driver, and board identity.
 
 ## Gate 2 - RAM-only Stage 2
@@ -50,4 +49,4 @@ The local archive's c5p-usb-unbrick-kit\README.md and docs\c5p-deep-unbrick\UNBR
 
 ## Recovery boundary
 
-This workflow reads and validates data. It does not diagnose every brick, acquire RPMB, prove boot0/boot1 bootability, or authorize writing. For any repair decision continue with [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Recovery/Offline Repair and Validation](Offline Repair and Validation.md).
+This workflow reads and validates data. It does not diagnose every brick, acquire RPMB, prove boot0/boot1 bootability, or authorize writing. For any repair decision continue with [Offline Repair and Validation](Offline Repair and Validation.md).

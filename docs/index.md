@@ -26,7 +26,7 @@ hide:
     <p>The site is still compact, but the useful parts are already here: real build notes, practical wiki pages, hardware projects, race data and tools that can be opened directly in the browser.</p>
   </div>
   <div class="home-signals" aria-label="What is already documented">
-    <div class="home-signal"><strong>4</strong><span>build pages</span></div>
+    <div class="home-signal"><strong>2</strong><span>build pages</span></div>
     <div class="home-signal"><strong>4</strong><span>web tools</span></div>
     <div class="home-signal"><strong>FPV</strong><span>wiki & repairs</span></div>
     <div class="home-signal"><strong>DATA</strong><span>race archive</span></div>
@@ -46,7 +46,7 @@ hide:
   <h3><a class="feature-card__title" href="builds/">Build bench</a></h3>
   <p>Concrete quad documentation, from an affordable 5-inch build to the current HDZero racing setup.</p>
   <ul class="feature-card__list">
-    <li>Budget, racing, DJI O4 and analog builds</li>
+    <li>Budget build and current HDZero racing setup</li>
     <li>Parts, weight comparisons and setup notes</li>
   </ul>
   <a class="feature-card__link" href="builds/">Open the build logs →</a>
@@ -58,7 +58,7 @@ hide:
   <p>Short reference pages for the things that matter at the bench, in the field and during repairs.</p>
   <ul class="feature-card__list">
     <li>ESC capacitors, gate padding and field setup</li>
-    <li>Receiver troubleshooting from the workbench</li>
+    <li>IP2368 USB-C power-board troubleshooting</li>
   </ul>
   <a class="feature-card__link" href="wiki/">Browse the wiki →</a>
 </article>

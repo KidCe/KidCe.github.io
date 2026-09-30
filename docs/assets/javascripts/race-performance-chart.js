@@ -31,7 +31,7 @@
           {
             label: "Qualifying median",
             data: [44.4, 59, 61.5],
-            samples: [11, 23, 15],
+            samples: [11, 23, 17],
             borderColor: color("--fpv-chart-qualifying", "#6f747d"),
             backgroundColor: color("--fpv-chart-qualifying", "#6f747d"),
             pointStyle: "circle",
@@ -43,7 +43,7 @@
           {
             label: "Final median",
             data: [38.9, 57, 63.2],
-            samples: [3, 10, 9],
+            samples: [3, 10, 11],
             borderColor: color("--fpv-orange", "#ff5a1f"),
             backgroundColor: color("--fpv-orange", "#ff5a1f"),
             pointStyle: "triangle",
@@ -134,7 +134,9 @@
       { date: "14 Jun 2026", label: "Jun '26", event: "TSV Feldkirchen · Central Europe RQ", position: 3, field: 15 },
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 9, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 23, field: 53 },
-      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 13, field: 37 }
+      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 13, field: 37 },
+      { date: "13 Sep 2026", label: "Sep '26", event: "MultiGP European Championship", position: 59, field: 106 },
+      { date: "27 Sep 2026", label: "Sep '26", event: "LVB Modellflugtage Oberschleißheim", position: 4, field: 13 }
     ].map((race) => ({
       ...race,
       score: Math.round(((race.field - race.position) / (race.field - 1)) * 1000) / 10
@@ -408,7 +410,8 @@
       { date: "14 Jun 2026", label: "Jun '26", event: "TSV Feldkirchen · Central Europe RQ", position: 4, field: 15 },
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 4, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 21, field: 53 },
-      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 12, field: 37 }
+      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 12, field: 37 },
+      { date: "13 Sep 2026", label: "Sep '26", event: "MultiGP European Championship", position: 18, field: 106 }
     ], "maxdax");
 
     renderSquadPilotChart("bajo-race-performance-chart", [
@@ -427,7 +430,9 @@
       { date: "17 May 2026", label: "May '26", event: "Aircrasher Aichtal · DCS overall", position: 9, field: 96 },
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 3, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 10, field: 53 },
-      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 2, field: 37 }
+      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 2, field: 37 },
+      { date: "13 Sep 2026", label: "Sep '26", event: "MultiGP European Championship", position: 23, field: 106 },
+      { date: "27 Sep 2026", label: "Sep '26", event: "LVB Modellflugtage Oberschleißheim", position: 1, field: 13 }
     ], "bajo");
 
     renderSquadPilotChart("zelaus-race-performance-chart", [
@@ -453,7 +458,9 @@
       { date: "14 Jun 2026", label: "Jun '26", event: "TSV Feldkirchen · Central Europe RQ", position: 12, field: 15 },
       { date: "20 Jun 2026", label: "Jun '26", event: "BMR Adelsried · DCS overall", position: 30, field: 33 },
       { date: "28 Jun 2026", label: "Jun '26", event: "FAI World Drone Cup Belgium", position: 48, field: 53 },
-      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 25, field: 37 }
+      { date: "12 Jul 2026", label: "Jul '26", event: "FAI World Drone Cup Italy · provisional", position: 25, field: 37 },
+      { date: "13 Sep 2026", label: "Sep '26", event: "MultiGP European Championship", position: 98, field: 106 },
+      { date: "27 Sep 2026", label: "Sep '26", event: "LVB Modellflugtage Oberschleißheim", position: 13, field: 13 }
     ], "zelaus");
   };
 
@@ -612,3 +619,4 @@
     document$.subscribe(renderCharts);
   }
 })();
+

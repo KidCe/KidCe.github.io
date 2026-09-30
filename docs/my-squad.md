@@ -32,6 +32,9 @@ the same field-normalized statistics as my personal [race archive](race-results.
   </div>
 </div>
 
+**Latest result update:** 30 September 2026 (European Championship and Modellflugtage).
+DCS season standings below remain the separately dated July snapshot.
+
 ## Performance comparison
 
 The bars show each pilot's **median final score** for the regular competitive
@@ -52,7 +55,7 @@ place. Normalizing the position by field size makes different races comparable.
   <h3>MaxDax</h3>
   <div class="squad-stat-row"><span>2024</span><div class="performance-track" role="progressbar" aria-label="MaxDax 2024 median final score 34.8 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="34.8"><span class="performance-fill squad-stat-fill--2024" style="--score:34.8%"></span></div><strong>35%</strong></div>
   <div class="squad-stat-row"><span>2025</span><div class="performance-track" role="progressbar" aria-label="MaxDax 2025 median final score 69.1 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="69.1"><span class="performance-fill squad-stat-fill--2025" style="--score:69.1%"></span></div><strong>69%</strong></div>
-  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="MaxDax 2026 median final score 75 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span class="performance-fill squad-stat-fill--2026" style="--score:75%"></span></div><strong>75%</strong></div>
+  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="MaxDax 2026 median final score 75.6 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75.6"><span class="performance-fill squad-stat-fill--2026" style="--score:75.6%"></span></div><strong>76%</strong></div>
   <p>A clear rise from the lower half to a typical top-quarter result.</p>
 </div>
 
@@ -61,25 +64,25 @@ place. Normalizing the position by field size makes different races comparable.
   <div class="squad-stat-row"><span>2024</span><div class="performance-track" role="progressbar" aria-label="bajo 2024 median final score 14.2 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="14.2"><span class="performance-fill squad-stat-fill--2024" style="--score:14.2%"></span></div><strong>14%</strong></div>
   <div class="squad-stat-row"><span>2025</span><div class="performance-track" role="progressbar" aria-label="bajo 2025 median final score 71.2 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="71.2"><span class="performance-fill squad-stat-fill--2025" style="--score:71.2%"></span></div><strong>71%</strong></div>
   <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="bajo 2026 median final score 88.1 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88.1"><span class="performance-fill squad-stat-fill--2026" style="--score:88.1%"></span></div><strong>88%</strong></div>
-  <p>The strongest jump in the squad, now regularly near the front.</p>
+  <p>The strongest jump in the squad, regularly near the front.</p>
 </div>
 
 <div class="squad-stat-card">
   <h3>ZeLaus</h3>
   <div class="squad-stat-row"><span>2024</span><div class="performance-track" role="progressbar" aria-label="ZeLaus 2024 median final score 17.1 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="17.1"><span class="performance-fill squad-stat-fill--2024" style="--score:17.1%"></span></div><strong>17%</strong></div>
   <div class="squad-stat-row"><span>2025</span><div class="performance-track" role="progressbar" aria-label="ZeLaus 2025 median final score 11.7 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="11.7"><span class="performance-fill squad-stat-fill--2025" style="--score:11.7%"></span></div><strong>12%</strong></div>
-  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="ZeLaus 2026 median final score 17.9 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="17.9"><span class="performance-fill squad-stat-fill--2026" style="--score:17.9%"></span></div><strong>18%</strong></div>
-  <p>A 2026 recovery after the 2025 dip, with room to convert it into top-half finishes.</p>
+  <div class="squad-stat-row"><span>2026</span><div class="performance-track" role="progressbar" aria-label="ZeLaus 2026 median final score 12.8 percent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="12.8"><span class="performance-fill squad-stat-fill--2026" style="--score:12.8%"></span></div><strong>13%</strong></div>
+  <p>The 2026 median is close to 2025, with room to convert experience into top-half finishes.</p>
 </div>
 
 </div>
 
 | Pilot | 2024 median Q / Final | 2025 median Q / Final | 2026 YTD median Q / Final | 2026 top-half finals |
 | --- | ---: | ---: | ---: | ---: |
-| **KidCe** | 44% / 39% | 59% / 57% | 62% / 63% | **7 / 9 · 78%** |
-| **MaxDax** | 60% / 35% | 68% / 69% | 68% / 75% | **9 / 9 · 100%** |
-| **bajo** | 21% / 14% | 82% / 71% | 92% / 88% | **6 / 6 · 100%** |
-| **ZeLaus** | 22% / 17% | 17% / 12% | 21% / 18% | **0 / 9 · 0%** |
+| **KidCe** | 44% / 39% | 59% / 57% | 62% / 63% | **8 / 11 · 73%** |
+| **MaxDax** | 60% / 35% | 68% / 69% | 64% / 76% | **10 / 10 · 100%** |
+| **bajo** | 21% / 14% | 82% / 71% | 92% / 88% | **8 / 8 · 100%** |
+| **ZeLaus** | 22% / 17% | 17% / 12% | 18% / 13% | **0 / 11 · 0%** |
 
 These are descriptive trends, not a formal skill rating. Race formats and field
 strength still influence the numbers. A DCS multi-final weekend counts once in
@@ -125,7 +128,7 @@ spikes matter less and the longer-term direction is easier to compare.
 ### MaxDax
 
 !!! success "A strong upward trajectory"
-    A 35% median in 2024 has become 75% in 2026, with every recorded 2026 final
+    A 35% median in 2024 has become 76% in 2026, with every recorded 2026 final
     landing in the top half. That is real, repeatable progress. Keep refining
     race-day consistency—the pace is already there to challenge further up the
     order.
@@ -152,11 +155,10 @@ spikes matter less and the longer-term direction is easier to compare.
 
 ### ZeLaus
 
-!!! success "Keep building the recovery"
-    The 2026 median has climbed back from 12% to 18% while the schedule includes
-    larger international fields and valuable high-pressure race experience.
-    Every completed event adds useful laps. Keep training for clean, repeatable
-    runs—the recovery is a base to build the next step on.
+!!! info "2026 results so far"
+    The median final score is 13%, compared with 12% in 2025. The archive now
+    includes the European Championship and Modellflugtage. Larger international
+    fields and differing race formats affect the comparison.
 
 <div class="performance-chart performance-chart--squad">
   <canvas id="zelaus-race-performance-chart" role="img" aria-label="ZeLaus event-by-event final performance and trailing five-race moving average from 2024 through 2026.">
@@ -205,6 +207,7 @@ For my own detailed results, see the separate [KidCe race archive](race-results.
 
 | Date | Event | Qualifying | Final |
 | --- | --- | ---: | ---: |
+| 11–13 Sep | MultiGP European Championship[^euro-2026] | [47 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) | [18 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) |
 | 11–12 Jul | FAI World Drone Cup Italy · provisional[^fai-italy] | — | [12 / 37](https://f9u.it/world-drone-cup-italy-2026/) |
 | 27–28 Jun | FAI World Drone Cup Belgium[^fai-belgium] | [24 / 53](https://fpvscores.com/events/GGVbU9ZxeD/results) | [21 / 53](https://fpvscores.com/events/GGVbU9ZxeD/heats) |
 | 20 Jun | **BMR Adelsried · DCS overall** | — | **[4 / 33](https://aircrasher.de/wp-content/uploads/2026/06/SeriesResultReport-BMR-DCS-2026.pdf)** |
@@ -278,6 +281,8 @@ For my own detailed results, see the separate [KidCe race archive](race-results.
 
 | Date | Event | Qualifying | Final |
 | --- | --- | ---: | ---: |
+| 26–27 Sep | LVB Modellflugtage Oberschleißheim[^modell-2026] | [13 / 13](https://bmr.livefpv.com/results/?p=view_points&id=7830358) | [13 / 13](https://bmr.livefpv.com/results/?p=event_overall_ranking&id=519294) |
+| 11–13 Sep | MultiGP European Championship[^euro-2026] | [98 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) | [98 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) |
 | 11–12 Jul | FAI World Drone Cup Italy · provisional[^fai-italy] | — | [25 / 37](https://f9u.it/world-drone-cup-italy-2026/) |
 | 27–28 Jun | FAI World Drone Cup Belgium[^fai-belgium] | [48 / 53](https://fpvscores.com/events/GGVbU9ZxeD/results) | [48 / 53](https://fpvscores.com/events/GGVbU9ZxeD/results) |
 | 20 Jun | **BMR Adelsried · DCS overall** | — | **[30 / 33](https://aircrasher.de/wp-content/uploads/2026/06/SeriesResultReport-BMR-DCS-2026.pdf)** |
@@ -367,6 +372,8 @@ For my own detailed results, see the separate [KidCe race archive](race-results.
 
 | Date | Event | Qualifying | Final |
 | --- | --- | ---: | ---: |
+| 26–27 Sep | LVB Modellflugtage Oberschleißheim[^modell-2026] | [1 / 13](https://bmr.livefpv.com/results/?p=view_points&id=7830358) | [1 / 13](https://bmr.livefpv.com/results/?p=event_overall_ranking&id=519294) |
+| 11–13 Sep | MultiGP European Championship[^euro-2026] | [14 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) | [23 / 106](https://www.multigp.com/races/view/?race=32813/MGP-EU-Champs-by-Aircrasher-2026) |
 | 11–12 Jul | FAI World Drone Cup Italy · provisional[^fai-italy] | — | [2 / 37](https://f9u.it/world-drone-cup-italy-2026/) |
 | 27–28 Jun | FAI World Drone Cup Belgium[^fai-belgium] | [20 / 53](https://fpvscores.com/events/GGVbU9ZxeD/results) | [10 / 53](https://fpvscores.com/events/GGVbU9ZxeD/heats) |
 | 20 Jun | **BMR Adelsried · DCS overall** | — | **[3 / 33](https://aircrasher.de/wp-content/uploads/2026/06/SeriesResultReport-BMR-DCS-2026.pdf)** |
@@ -434,3 +441,7 @@ For my own detailed results, see the separate [KidCe race archive](race-results.
 [^dcs-ytd]: The 2026 championship is still running. Friedrichshafen is scheduled as the final scoring event, so these are interim positions checked on 14 July 2026.
 [^fai-belgium]: FPVScores publishes the 53-pilot qualifying order and the elimination heats, but its aggregate “Race Time” list is not a bracket result. The final positions were reconstructed from those heats using the [official FAI Scenario B classification rule](https://www.fai.org/page/documents-and-rules): pilots eliminated at the same stage are ordered by their provisional qualifying rank; pilots outside the top 32 retain their qualifying order.
 [^fai-italy]: These results come from the organiser's provisional classification sheet photographed at the venue. The [official event page](https://f9u.it/world-drone-cup-italy-2026/) confirms the date, venue and Scenario B format; a public final result document was not available when this archive was updated.
+
+
+[^euro-2026]: MultiGP race 32813 publishes the event-wide Qualifying Ranking and Race Results for 106 listed pilots. These are championship ranks, not the positions within the separate 16-pilot bracket events.
+[^modell-2026]: The organiser’s BMR LiveFPV classification is used: 13 pilots in the cumulative qualifying and final bracket tables. MultiGP lists 14 registrations and displays the fastest single three-lap result under “Race Results”; that time-trial list is not the final bracket classification.

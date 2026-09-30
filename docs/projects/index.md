@@ -5,7 +5,7 @@ hide:
 
 # Projects
 
-FPV projects beyond regular quad builds: electronics, race infrastructure, custom gates and experimental aircraft.
+Projects beyond regular quad builds: electronics, experimental aircraft and 3D-printer hardware, firmware and recovery research.
 
 <div class="build-grid" markdown>
 
@@ -23,4 +23,12 @@ FPV projects beyond regular quad builds: electronics, race infrastructure, custo
   <span>View project →</span>
 </a>
 
+<a class="build-card" href="3D%20Printing/Flashforge%20Creator%205/Flashforge%20Creator%205/">
+  <span class="eyebrow">3D PRINTING · HARDWARE &amp; FIRMWARE</span>
+  <h2>Flashforge Creator 5</h2>
+  <p>A curated knowledge base covering modifications, firmware architecture and recovery evidence for the Creator 5 family.</p>
+  <span>Explore the knowledge base →</span>
+</a>
+
 </div>
+

@@ -1,5 +1,4 @@
-
-## For future Claude
+# SSH Host Key Persistence
 
 This note owns the community SSH host-key persistence procedure for Flashforge Creator 5 printers, consolidated on 2026-08-27. The procedure changes persistent system state after the /etc bind mount is active; it is not part of the minimum loop baseline and must be backed up before use.
 

@@ -1,5 +1,4 @@
-
-## For future Claude
+# Print Workflow Adaptive Mesh and OrcaSlicer
 
 This note owns print-start, layer metadata, adaptive-mesh, and OrcaSlicer routing information for the Flashforge Creator 5 project, consolidated on 2026-08-27. It keeps snippets and repository status in one place so slicer commands are not copied into several guides. The procedures are community-derived unless a separate physical result is recorded.
 
@@ -12,7 +11,7 @@ SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
 SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}
 ~~~
 
-The exact placement around the slicer's BEFORE_LAYER_CHANGE marker and the printer's supported macro set must be checked before use. The source is the former vault note [Projects/3D Printing/Flashforge Creator 5/Root/How to Install](../../Root/How to Install.md) and the local community guide material.
+The exact placement around the slicer's BEFORE_LAYER_CHANGE marker and the printer's supported macro set must be checked before use. The source is the former vault note [How to Install](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Root/How%20to%20Install.md) and the local community guide material.
 
 ## Adaptive mesh
 

@@ -1,5 +1,4 @@
-
-## For future Claude
+# Vendor Firmware and Klipper
 
 This note is the canonical static view of the vendor firmware and Klipper surface for the Flashforge Creator 5 Pro, based on the local 1.9.8 extraction inspected on 2026-08-27. It identifies what is visible in files and binaries, but it does not claim that any component can be removed safely on a physical printer.
 
@@ -7,7 +6,7 @@ This note is the canonical static view of the vendor firmware and Klipper surfac
 
 The local extraction indicates Buildroot 2020.02.1, Linux 5.10.186+, MIPS on an Ingenic X2600-family system. Persistent vendor programs are under /usr/prog and persistent user/configuration data under /usr/data. The root filesystem is SquashFS; usershare and userdata are writable ext4 partitions.
 
-The source evidence is under research-sources\flashforge-firmware-1.9.8-extracted. Vendor archives and binaries remain outside the copy-safe package; see [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Archive and Copy Manifest](../Sources/Archive and Copy Manifest.md).
+The source evidence is under research-sources\flashforge-firmware-1.9.8-extracted. Vendor archives and binaries remain outside the copy-safe package; see [Archive and Copy Manifest](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Archive%20and%20Copy%20Manifest.md).
 
 ## Startup chain
 

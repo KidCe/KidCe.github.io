@@ -1,5 +1,4 @@
-
-## For future Claude
+# Device Evidence and Partition Layout
 
 This note is the single source of truth for measured Creator 5 Pro recovery evidence recorded on 2026-08-26 and 2026-08-27. It describes one physically tested unit and separates physical confirmation, static inspection, repository evidence, and inference. Do not apply its geometry or hashes to another printer without a fresh read-only inventory.
 
@@ -87,6 +86,6 @@ A repaired partition 6 image was prepared offline, passed a non-modifying ext4 c
 
 ## Source pointers
 
-- [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep Unbrick/EVIDENCE](../Sources/Deep Unbrick/EVIDENCE.md)
-- [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/Deep Unbrick/EMMC-REGION-BUNDLE](../Sources/Deep Unbrick/EMMC-REGION-BUNDLE.md)
+- [EVIDENCE](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Deep%20Unbrick/EVIDENCE.md)
+- [EMMC-REGION-BUNDLE](https://github.com/KidCe/KidCe.github.io/blob/main/docs/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Sources/Deep%20Unbrick/EMMC-REGION-BUNDLE.md)
 - Local archive path: docs\c5p-deep-unbrick\EVIDENCE.md

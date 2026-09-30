@@ -1,7 +1,6 @@
+# Entware Moonraker and Mainsail Updates
 
-## For future Claude
-
-This note owns the Entware, Moonraker-update, and Mainsail-update material for the Flashforge Creator 5 project, consolidated on 2026-08-27. These procedures are historical community material and source snapshots, not an approved current installer. The supported baseline remains the guarded path in [Projects/3D Printing/Flashforge Creator 5/Knowledge Base/Guides/Modding Baseline - Root Loop and Mainsail](Modding Baseline - Root Loop and Mainsail.md).
+This note owns the Entware, Moonraker-update, and Mainsail-update material for the Flashforge Creator 5 project, consolidated on 2026-08-27. These procedures are historical community material and source snapshots, not an approved current installer. The supported baseline remains the guarded path in [Modding Baseline - Root Loop and Mainsail](Modding Baseline - Root Loop and Mainsail.md).
 
 ## Entware
 
