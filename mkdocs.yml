@@ -82,6 +82,7 @@ nav:
   - Projects:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
+      - Tinywhoop LED Gate: projects/tinywhoop-led-gate.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
       - 3D Printing:
           - Flashforge Creator 5:

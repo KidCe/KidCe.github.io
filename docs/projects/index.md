@@ -16,6 +16,13 @@ Projects beyond regular quad builds: electronics, experimental aircraft and 3D-p
   <span>View project →</span>
 </a>
 
+<a class="build-card" href="tinywhoop-led-gate/">
+  <span class="eyebrow">RACE INFRASTRUCTURE · CAD CONCEPT</span>
+  <h2>Tinywhoop LED Gate</h2>
+  <p>A visual assembly gallery for a modular LED gate with printed connectors, clip-on diffusers and reusable offcut feet.</p>
+  <span>View the concept →</span>
+</a>
+
 <a class="build-card" href="35-inch-1s-endurance-drone/">
   <span class="eyebrow">ENDURANCE · 1S</span>
   <h2>3.5&quot; 1S Endurance Drone</h2>
