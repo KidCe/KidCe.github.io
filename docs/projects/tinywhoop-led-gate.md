@@ -188,9 +188,9 @@ Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. Th
 
   <figure>
     <a href="../../assets/media/projects/tinywhoop-led-gate/20-foot-cap.png">
-      <img src="../../assets/media/projects/tinywhoop-led-gate/20-foot-cap.png" alt="Foot end cap — A printed shoe covers each exposed foot end." title="Foot end cap — A printed shoe covers each exposed foot end." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain">
+      <img src="../../assets/media/projects/tinywhoop-led-gate/20-foot-cap.png" alt="Foot end cap — A full-surround trapezoid cap provides a wider ground contact at each foot end." title="Foot end cap — A full-surround trapezoid cap provides a wider ground contact at each foot end." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain">
     </a>
-    <figcaption><strong>Foot end cap</strong> A printed shoe covers each exposed foot end.</figcaption>
+    <figcaption><strong>Foot end cap</strong> A full-surround trapezoid cap provides a wider ground contact at each foot end.</figcaption>
   </figure>
 
 </div>
