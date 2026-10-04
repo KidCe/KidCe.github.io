@@ -1,15 +1,62 @@
 ---
 title: Tinywhoop LED Gate
-description: A visual CAD concept for a modular Tinywhoop racing gate using LED aluminum profiles, printed connectors, clip-on diffusers and reusable offcut feet.
+hide:
+  - toc
+description: Three modular LED-gate concepts, from tested U profiles to a V-profile study and a planned 15 x 15 x 1 mm square-tube frame.
 ---
 
 # Tinywhoop LED Gate
 
-A modular racing-gate concept built from LED aluminum profiles, 3D-printed connectors and segmented clip-on diffusers. Blue parts form the corners; orange T pieces support the feet or join stacked gates. The LEDs face the incoming drone.
+A modular racing gate with aluminum rails, 3D-printed connectors and segmented diffusers. The aim is a stable frame that is easy to assemble and visible from several directions.
 
-**CAD concept · October 2026.** Electrical components are not shown. Click any image to enlarge it.
+**Project status · 4 October 2026.** U-profile prototypes have been tested. The V-profile and square-tube versions are untested concepts. All images below are CAD views, not photographs or proof of physical performance.
 
-## Aluminum profile
+**Planned lighting:** WS2812 strips with 60 LEDs per meter, giving a 16.67 mm center spacing. The CAD views show 5 × 5 mm 5050 housings; 10 mm PCB width, 0.4 mm PCB thickness and roughly 1.6 mm housing height are illustrative until the actual strip is selected. [WS2812 family, Worldsemi](https://www.world-semi.com/products/ws2812b-v6.html).
+
+| Concept | Status | Main finding / next question |
+| --- | --- | --- |
+| U-profile LED rail | Tested; not pursued further | Too easy to twist, including the inward-facing variant |
+| V-profile LED rail | CAD concept; physical test pending | Test stiffness, retention and diffuser visibility from behind |
+| 15 × 15 × 1 mm square tube | Preferred next experiment | Test the closed-section frame, then develop connectors and a diffuser |
+
+<details class="concept-stage" markdown="1">
+<summary>1 · U-profile prototypes — tested, insufficient stiffness</summary>
+
+The original prototype used shallow U-profile LED rails with the LEDs facing the incoming drone. During the project owner's physical assembly tests, the rails twisted easily and the gate did not stand sufficiently rigidly.
+
+A second prototype rotated the U profile by 90°, placing the LEDs toward the gate opening. The owner reported some improvement in the assembled frame, but it was still too flexible. Rotation changes the bending orientation; it does not increase the rail's intrinsic torsional rigidity.
+
+U-shaped profiles remain useful LED carriers, but this section was not satisfactory as the structural rail for this gate.
+
+<div class="project-gallery">
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-led-detail.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-led-detail.png" alt="LED strip inside the U rail — Thin PCB and 5050 packages on the original LED bed; 16.67 mm spacing represents 60 LEDs per meter." title="LED strip inside the U rail — Thin PCB and 5050 packages on the original LED bed; 16.67 mm spacing represents 60 LEDs per meter." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>LED strip inside the U rail</strong>Thin PCB and 5050 packages on the original LED bed; 16.67 mm spacing represents 60 LEDs per meter.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/01-profile-section.png"><img src="../../assets/media/projects/tinywhoop-led-gate/01-profile-section.png" alt="Original U profile — An open, shallow section carries the LED strip." title="Original U profile — An open, shallow section carries the LED strip." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Original U profile</strong>An open, shallow section carries the LED strip.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/22-finished-oblique.png"><img src="../../assets/media/projects/tinywhoop-led-gate/22-finished-oblique.png" alt="Original gate layout — Printed connectors, segmented diffusers and four offcut feet. CAD illustration of the tested concept." title="Original gate layout — Printed connectors, segmented diffusers and four offcut feet. CAD illustration of the tested concept." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Original gate layout</strong>Printed connectors, segmented diffusers and four offcut feet. CAD illustration of the tested concept.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-inward-profile.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-inward-profile.png" alt="U profile rotated by 90° — The LEDs face the opening. This variant was also built and tested." title="U profile rotated by 90° — The LEDs face the opening. This variant was also built and tested." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>U profile rotated by 90°</strong>The LEDs face the opening. This variant was also built and tested.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-inward-gate.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/u-inward-gate.png" alt="Inward-facing U-profile frame — CAD layout with dedicated foot brackets. The physical prototype remained too flexible." title="Inward-facing U-profile frame — CAD layout with dedicated foot brackets. The physical prototype remained too flexible." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Inward-facing U-profile frame</strong>CAD layout with dedicated foot brackets. The physical prototype remained too flexible.</figcaption>
+</figure>
+</div>
+
+<details markdown="1">
+<summary>Original U-profile CAD assembly gallery · archive</summary>
+
+These images document the earlier connector and foot arrangement. They are retained as design history; they are not a current build recommendation.
+
+### Aluminum profile
 
 LED aluminum profile, based visually on the [Jopassy U profile](https://www.kaufland.de/product/443322053/). The modeled contour is approximate.
 
@@ -31,7 +78,7 @@ LED aluminum profile, based visually on the [Jopassy U profile](https://www.kauf
 
 </div>
 
-## Printed 90° connector · blue
+### Printed 90° connector · blue
 
 <div class="project-gallery">
 
@@ -58,7 +105,7 @@ LED aluminum profile, based visually on the [Jopassy U profile](https://www.kauf
 
 </div>
 
-## Printed T connector · orange
+### Printed T connector · orange
 
 <div class="project-gallery">
 
@@ -85,7 +132,7 @@ LED aluminum profile, based visually on the [Jopassy U profile](https://www.kauf
 
 </div>
 
-## 1 · Build the frame
+### 1 · Build the frame
 
 <div class="project-gallery">
 
@@ -119,7 +166,7 @@ LED aluminum profile, based visually on the [Jopassy U profile](https://www.kauf
 
 </div>
 
-## 2 · Add the feet
+### 2 · Add the feet
 
 Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. The feet stand on edge for stiffness.
 
@@ -155,7 +202,7 @@ Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. Th
 
 </div>
 
-## 3 · Clip on the diffusers
+### 3 · Clip on the diffusers
 
 <div class="project-gallery">
 
@@ -182,7 +229,7 @@ Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. Th
 
 </div>
 
-## 4 · Fit the foot caps
+### 4 · Fit the foot caps
 
 <div class="project-gallery">
 
@@ -195,7 +242,7 @@ Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. Th
 
 </div>
 
-## The complete gate
+### The complete gate
 
 <div class="project-gallery">
 
@@ -229,7 +276,7 @@ Each 1 m profile supplies a 600 mm gate bar and a roughly 400 mm foot offcut. Th
 
 </div>
 
-## Extension · Double gate
+### Extension · Double gate
 
 The T connector also links two stacked frames. Diffuser details at the shared junction still need refinement.
 
@@ -258,4 +305,88 @@ The T connector also links two stacked frames. Diffuser details at the shared ju
 
 </div>
 
-The gallery illustrates the mechanical layout and assembly sequence; it is not a final manufacturing or electrical specification. CAD and gallery prepared with substantial OpenAI Codex assistance under project-owner direction.
+
+</details>
+</details>
+
+<details class="concept-stage" markdown="1">
+<summary>2 · V-profile concept — awaiting a physical test</summary>
+
+The [Jopassy V-profile rail](https://www.kaufland.de/product/443322038/) adds a closed triangular chamber below the LED bed. The hope is greater torsional rigidity than the shallow open U rail; the complete gate still needs a physical test.
+
+Printed 90° and T junctions use solid blocks with profile sockets, end stops and retaining lips. Their central LED support remains flat. The aluminum rim geometry is estimated from the listing's 16 mm flank dimension and is adjustable in Fusion; the dimensions are not yet verified against the delivered rail.
+
+**Main challenge: the diffuser.** The wide metal section obscures the cover from behind. A printed cover must extend beyond the profile's silhouette to expose illuminated shoulders. The revised 0.8 mm cover wraps around the F-shaped rims and widens into a balloon chamber. Wrap depth, clearance and chamber dimensions are adjustable in Fusion; rear glow, printability and clip fit remain untested.
+
+<div class="project-gallery">
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-led-detail.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-led-detail.png" alt="LED strip on the V-profile bed — The strip lies on the flat LED support above the closed triangular cell. Packages remain below the upper clip rims." title="LED strip on the V-profile bed — The strip lies on the flat LED support above the closed triangular cell. Packages remain below the upper clip rims." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>LED strip on the V-profile bed</strong>The strip lies on the flat LED support above the closed triangular cell. Packages remain below the upper clip rims.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-retained-section.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-retained-section.png" alt="V-profile retention — Continuous F-shaped rims sit beneath the matched retaining lips. Final fit awaits the real extrusion." title="V-profile retention — Continuous F-shaped rims sit beneath the matched retaining lips. Final fit awaits the real extrusion." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>V-profile retention</strong>Continuous F-shaped rims sit beneath the matched retaining lips. Final fit awaits the real extrusion.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-retained-corner.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-retained-corner.png" alt="Profiles in the corner — Axial insertion under the retaining lips; a solid junction continues the flat LED support." title="Profiles in the corner — Axial insertion under the retaining lips; a solid junction continues the flat LED support." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Profiles in the corner</strong>Axial insertion under the retaining lips; a solid junction continues the flat LED support.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-tee.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-tee.png" alt="Three-way junction — The T connector provides the shared crossbar junction for stacked gates." title="Three-way junction — The T connector provides the shared crossbar junction for stacked gates." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Three-way junction</strong>The T connector provides the shared crossbar junction for stacked gates.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-diffuser-section.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-diffuser-section.png" alt="Diffuser cross-section — The 0.8 mm balloon wall wraps around both outer F-rim corners. Clip retention and rear glow need physical tests." title="Diffuser cross-section — The 0.8 mm balloon wall wraps around both outer F-rim corners. Clip retention and rear glow need physical tests." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Diffuser cross-section</strong>The 0.8 mm balloon wall wraps around both outer F-rim corners. Clip retention and rear glow need physical tests.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-diffuser-oblique.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-diffuser-oblique.png" alt="Diffuser over the V profile — A continuous extruded section returns along the outside flanks, with 0.25 mm nominal clearance around the rims." title="Diffuser over the V profile — A continuous extruded section returns along the outside flanks, with 0.25 mm nominal clearance around the rims." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Diffuser over the V profile</strong>A continuous extruded section returns along the outside flanks, with 0.25 mm nominal clearance around the rims.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-frame-layout.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/v-frame-layout.png" alt="V-profile gate layout — Assembly overview with four feet; mechanical stability has not yet been tested." title="V-profile gate layout — Assembly overview with four feet; mechanical stability has not yet been tested." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>V-profile gate layout</strong>Assembly overview with four feet; mechanical stability has not yet been tested.</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="concept-stage" open markdown="1">
+<summary>3 · Square-tube concept — preferred next experiment</summary>
+
+Use a **closed aluminum tube, 15 × 15 mm outside with a 1 mm wall**, as the structural rail. The LED strip can adhere to a flat outer face; a separate printed diffuser provides the light shape.
+
+A continuous closed section is expected to resist twisting much better than the shallow open U section at comparable dimensions. That makes it the preferred next experiment, rather than a validated final solution. Printed connector stiffness and clearance can still determine how rigid the assembled gate feels. [Background: torsion of closed sections, MIT](https://ocw.mit.edu/courses/16-20-structural-mechanics-fall-2002/resources/unit12/).
+
+The starting layout remains four roughly 600 mm frame rails and four roughly 400 mm offcut feet from meter lengths, allowing for saw kerf.
+
+**Wraparound diffuser:** the project owner's new section combines a 20 mm round light chamber with side arms and hooks behind the tube. The 0.8 mm optical wall is retained. It widens beyond the 15 mm tube to leave plastic visible around the metal silhouette; rear illumination remains to be tested.
+
+The refinement adds **0.15 mm clearance per tube face** and **0.4 mm entry ramps** to a **180 mm module**. Both rear hooks remain continuous: one 2D section is extruded along the whole module, with no intermediate steps for upright printing. Length, clearance and ramp depth are editable in Fusion; the section stays linked to the owner's original diffuser. These are starting values for a print trial, not proven fit tolerances.
+
+**Next test:** print the separate 20 mm fit coupon and check installation force, retention and removal on the real tube. Then test a full module for rear glow and layer strength. Corner interfaces and the complete square-tube gate remain to be developed.
+
+<div class="project-gallery">
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-section.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-section.png" alt="Wraparound clip section — The owner-designed 20 mm round light chamber sits in front of the 15 mm tube. Continuous rear hooks retain the cover; orange marks the LED-strip PCB." title="Wraparound clip section — The owner-designed 20 mm round light chamber sits in front of the 15 mm tube. Continuous rear hooks retain the cover; orange marks the LED-strip PCB." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Wraparound clip section</strong>The owner-designed 20 mm round light chamber sits in front of the 15 mm tube. Continuous rear hooks retain the cover; orange marks the LED-strip PCB.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-assembled.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-assembled.png" alt="Continuous light surface — A 180 mm module retains the original 0.8 mm optical wall. The cover widens beyond the tube, while its arms reach around the sides." title="Continuous light surface — A 180 mm module retains the original 0.8 mm optical wall. The cover widens beyond the tube, while its arms reach around the sides." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Continuous light surface</strong>A 180 mm module retains the original 0.8 mm optical wall. The cover widens beyond the tube, while its arms reach around the sides.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-rear-hooks.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-rear-hooks.png" alt="Continuous retaining edges — The rear hooks run the full module length. The same 2D section is extruded throughout, avoiding intermediate steps when printed upright." title="Continuous retaining edges — The rear hooks run the full module length. The same 2D section is extruded throughout, avoiding intermediate steps when printed upright." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Continuous retaining edges</strong>The rear hooks run the full module length. The same 2D section is extruded throughout, avoiding intermediate steps when printed upright.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-rear-assembled.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-clip-rear-assembled.png" alt="Retained behind the tube — The rear hooks overlap the tube edges. Wider illuminated shoulders may remain visible from behind; actual glow and snap performance still need a physical test." title="Retained behind the tube — The rear hooks overlap the tube edges. Wider illuminated shoulders may remain visible from behind; actual glow and snap performance still need a physical test." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>Retained behind the tube</strong>The rear hooks overlap the tube edges. Wider illuminated shoulders may remain visible from behind; actual glow and snap performance still need a physical test.</figcaption>
+</figure>
+<figure>
+<a href="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-led-strip.png"><img src="../../assets/media/projects/tinywhoop-led-gate/concept-evolution/square-led-strip.png" alt="WS2812 strip on a flat face — 5050 housings and optical windows are shown at 16.67 mm pitch for 60 LEDs per meter. PCB dimensions and package height are illustrative." title="WS2812 strip on a flat face — 5050 housings and optical windows are shown at 16.67 mm pitch for 60 LEDs per meter. PCB dimensions and package height are illustrative." loading="lazy" width="1600" height="1200" style="aspect-ratio:4/3;object-fit:contain"></a>
+<figcaption><strong>WS2812 strip on a flat face</strong>5050 housings and optical windows are shown at 16.67 mm pitch for 60 LEDs per meter. PCB dimensions and package height are illustrative.</figcaption>
+</figure>
+</div>
+</details>
+
+The square-tube diffuser base section was designed by the project owner. CAD refinements and documentation were prepared with substantial OpenAI Codex assistance under owner direction. Physical prototype observations are reported by the project owner; dimensions, fit and lighting of the unbuilt concepts remain provisional.
