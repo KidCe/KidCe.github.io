@@ -1,0 +1,12 @@
+{
+  "name": "fpv-wiki-nkon-cell-selector",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test_variants.cjs && node tests/test_wiki.cjs",
+    "test:browser": "node tests/test_browser.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "^27.0.0",
+    "playwright": "^1.55.0"
+  }
+}

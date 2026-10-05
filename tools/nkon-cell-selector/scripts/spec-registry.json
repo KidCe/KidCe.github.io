@@ -1,0 +1,290 @@
+{
+  "BAK|50D2": [
+    6,
+    2.475,
+    15,
+    60,
+    "80 °C Entladeabschaltung; Shopbeschreibung nennt zusätzlich 15 A.",
+    null
+  ],
+  "BAK|45D": [
+    29,
+    2.2,
+    13.2,
+    60,
+    "30 A ohne / 60 A mit 80 °C Abschaltung.",
+    null
+  ],
+  "BAK|CD-53E": [
+    15,
+    2.575,
+    5.15,
+    10.3,
+    "Maximalwerte bei 25 °C; nicht für zugesicherte Zyklenlebensdauer.",
+    null
+  ],
+  "BAK|CH-58E": [
+    43,
+    2.8,
+    5.6,
+    11.2,
+    "Maximalwerte bei 25 °C; nicht für zugesicherte Zyklenlebensdauer.",
+    null
+  ],
+  "BAK|N21700CG-50E": [
+    21,
+    2.5,
+    5,
+    15,
+    "C-Raten aus 5 Ah umgerechnet. Datenblatt 15 A; Shop 14,7 A.",
+    13
+  ],
+  "BAK|N21700CG": [
+    23,
+    2.5,
+    5,
+    15,
+    "C-Raten aus 5 Ah umgerechnet. Datenblatt 15 A; Shop 10,2 A. Revision prüfen.",
+    null
+  ],
+  "Tenpower|60XG": [
+    0,
+    3,
+    16,
+    60,
+    "Entladung nur mit 75 °C Abschaltung; Datenblatt V0.1 draft.",
+    5
+  ],
+  "Tenpower|30SG": [
+    7,
+    1.5,
+    6,
+    30,
+    "Hersteller-Produktdatenblatt v1.4.",
+    15
+  ],
+  "Tenpower|40XG": [
+    34,
+    2,
+    12,
+    45,
+    "Entladebedingungen und Temperaturgrenzen im Datenblatt beachten.",
+    null
+  ],
+  "Tenpower|50XG": [
+    40,
+    2.5,
+    15,
+    40,
+    "Entladebedingungen und Temperaturgrenzen im Datenblatt beachten.",
+    null
+  ],
+  "Tenpower|40TG": [
+    26,
+    2,
+    6,
+    35,
+    "Hersteller-Produktdatenblatt v1.4.1.",
+    10
+  ],
+  "Tenpower|50SG": [
+    42,
+    2.5,
+    6,
+    20,
+    "Standard 2500 mA; maximal 6 A.",
+    null
+  ],
+  "EVE|50E": [
+    19,
+    1,
+    2.5,
+    15,
+    "Herstellerdatenblatt: Standard 1000 mA; maximal 2500 mA.",
+    null
+  ],
+  "EVE|58E": [
+    13,
+    1.12,
+    5.6,
+    16.8,
+    "Datenblatt bezieht sich auf 5600 mAh; Shop nennt 5700 mAh. Maximalwerte nicht für Zyklenlebensdauer.",
+    null
+  ],
+  "EVE|40PL": [
+    16,
+    2,
+    8,
+    70,
+    "75 °C Abschaltung empfohlen; 80 °C absoluter Grenzwert.",
+    null
+  ],
+  "EVE|40P": [
+    20,
+    2,
+    null,
+    50,
+    "6 A ist als Schnellladeprofil angegeben, nicht ausdrücklich als Maximum; 80 °C Entladeabschaltung.",
+    null
+  ],
+  "EVE|50PL": [
+    31,
+    2.5,
+    10,
+    125,
+    "75 °C Abschaltung empfohlen; 80 °C maximal. Revision A, neue Version.",
+    null
+  ],
+  "DMEGC|50E": [
+    12,
+    2.5,
+    5,
+    15,
+    "0,5 C / 1 C aus 5 Ah umgerechnet.",
+    null
+  ],
+  "Molicel|M65A": [
+    2,
+    6.5,
+    6.5,
+    26,
+    "Vorläufige Spezifikation 0.1; 80 °C Entladeabschaltung empfohlen; Zelloberfläche beim Laden ≤70 °C.",
+    14.5
+  ],
+  "Molicel|P50B": [
+    24,
+    5,
+    25,
+    60,
+    "70 °C Ladeabschaltung / 80 °C Entladeabschaltung; Datenblatt Version 1.1.",
+    6.5
+  ],
+  "Molicel|P45B": [
+    41,
+    4.5,
+    13.5,
+    45,
+    "70 °C Ladeabschaltung / 80 °C Entladeabschaltung; Version 1.2.",
+    7
+  ],
+  "Molicel|P42A": [
+    38,
+    4.2,
+    null,
+    45,
+    "Einseitiges Datenblatt nennt nur Standardladestrom. Zusätzliche Spezifikation ergänzt Maximum.",
+    10
+  ],
+  "Molicel|M50A": [
+    39,
+    2.5,
+    null,
+    15,
+    "Maximaler Ladestrom im gefundenen Produktdatenblatt nicht ausdrücklich spezifiziert.",
+    15
+  ],
+  "Samsung|50G": [
+    1,
+    1.6,
+    4.85,
+    9.7,
+    "Tentative Version 0.1; 1 C = 4850 mA.",
+    null
+  ],
+  "Samsung|50GB": [
+    28,
+    2.45,
+    4.9,
+    9.7,
+    "Maximaler Ladestrom nicht für zugesicherte Zyklenlebensdauer.",
+    null
+  ],
+  "Samsung|53G2": [
+    32,
+    1.749,
+    5.3,
+    15.9,
+    "Maximalwerte nicht für zugesicherte Zyklenlebensdauer.",
+    null
+  ],
+  "Samsung|50E": [
+    37,
+    2.45,
+    4.9,
+    9.8,
+    "Maximaler Ladestrom nicht für zugesicherte Zyklenlebensdauer.",
+    null
+  ],
+  "Samsung|45T": [
+    36,
+    2.25,
+    6,
+    50,
+    "35 A ohne / 50 A mit 80 °C Abschaltung. 9 A nur für Step-Charge, nicht kontinuierlich.",
+    null
+  ],
+  "XTAR|6000": [
+    11,
+    3,
+    4.2,
+    10,
+    "Geschützte Zelle; Innenwiderstand ≤45 mΩ.",
+    45
+  ],
+  "Keeppower|P2160TC": [
+    27,
+    1.2,
+    4.2,
+    10,
+    "Externer Li-Ion-Lader; USB-C-Ladung separat. Standardstrom im PDF als 1200mAh geschrieben (Einheitenfehler).",
+    45
+  ],
+  "Keeppower|P2150TC": [
+    17,
+    0.97,
+    4.85,
+    8,
+    "Externer Li-Ion-Lader. USB-Eingang und interner Ladestrom sind separate Angaben.",
+    null
+  ],
+  "Reliance|RS60": [
+    5,
+    3,
+    12,
+    50,
+    "80 °C Entladeabschaltung; max. Ladestrom 12 A ab 15 °C, unter 15 °C nur 3 A.",
+    null
+  ],
+  "Reliance|RH60": [
+    9,
+    3,
+    6,
+    20,
+    "80 °C Entladeabschaltung.",
+    null
+  ],
+  "Reliance|RS50": [
+    "extra-2",
+    2.5,
+    15,
+    70,
+    "80 °C Entladeabschaltung; temperaturabhängige Ladegrenzen siehe Spezifikation.",
+    null
+  ],
+  "Ampace|JP50": [
+    "extra-0",
+    2.5,
+    15,
+    60,
+    "40 A ohne / 60 A mit 80 °C Abschaltung. Maximaler Ladestrom laut Herstellerseite 15 A.",
+    4
+  ],
+  "Ampace|JP40": [
+    "extra-1",
+    2,
+    8,
+    45,
+    "Verlinkte Spezifikation nennt 45 A; aktuelle Herstellerseite 40 A Full-Discharge / 60 A Maximum. Shop 70 A. Revisionen unterscheiden sich.",
+    null
+  ]
+}

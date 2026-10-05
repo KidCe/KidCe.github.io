@@ -1,0 +1,197 @@
+/* All styles are scoped to the embedded Wiki tool. */
+#fpv-nkon-tool{--ink:#151619;--muted:#757b84;--line:#e2e5e9;--panel:#f5f6f8;container:nkon / inline-size;position:relative;isolation:isolate;color:var(--ink);font:15px/1.5 Inter,Arial,sans-serif;min-width:0}
+#fpv-nkon-tool *{box-sizing:border-box}
+#fpv-nkon-tool [hidden]{display:none!important}
+#fpv-nkon-tool h2,#fpv-nkon-tool h3{margin:0;color:inherit;font:600 20px/1.3 Inter,Arial,sans-serif;letter-spacing:-.4px}
+#fpv-nkon-tool p{margin:10px 0;font-size:13px;line-height:1.6}
+#fpv-nkon-tool button,#fpv-nkon-tool input,#fpv-nkon-tool select{font:inherit;min-width:0;max-width:100%;outline-offset:3px}
+#fpv-nkon-tool button,#fpv-nkon-tool summary{cursor:pointer}
+#fpv-nkon-tool button{border:1px solid var(--line);border-radius:6px;background:white;color:inherit;padding:8px 12px;min-height:38px;font-size:13px}
+#fpv-nkon-tool button:hover{background:#f0f2f4}
+#fpv-nkon-tool input,#fpv-nkon-tool select{color:var(--ink)}
+#fpv-nkon-tool input[type=checkbox]{width:18px;height:18px;accent-color:#17191b;margin:0;flex-shrink:0}
+#fpv-nkon-tool a{color:inherit}
+#fpv-nkon-tool main{padding:0;min-width:0}
+#fpv-nkon-tool .tool-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 16px}
+#fpv-nkon-tool .snapshot{font-size:12px;color:var(--muted);margin-right:auto}
+#fpv-nkon-tool .snapshot strong{font-weight:500}
+#fpv-nkon-tool .quantity-control,#fpv-nkon-tool .sheet-quantity{display:flex;align-items:center;gap:8px;font-size:13px}
+#fpv-nkon-tool .quantity-control input,#fpv-nkon-tool .sheet-quantity input{width:75px;padding:7px;border:1px solid var(--line);border-radius:5px;background:#fff;font-size:16px}
+#fpv-nkon-tool .text-button{border:0;background:none;padding:4px 0;color:var(--muted);min-height:36px}
+#fpv-nkon-tool .workspace{display:grid;grid-template-columns:230px minmax(0,1fr);align-items:start;gap:16px;min-width:0}
+#fpv-nkon-tool .filters{padding:16px;border:1px solid var(--line);border-radius:8px;background:#fff;min-width:0}
+#fpv-nkon-tool .section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+#fpv-nkon-tool .section-heading h2{font-size:16px}
+#fpv-nkon-tool .search{display:flex;gap:6px;align-items:center;padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:5px}
+#fpv-nkon-tool .search input{width:100%;padding:2px 0;border:0;background:transparent;font-size:14px}
+#fpv-nkon-tool .stock,#fpv-nkon-tool .condition-filter{border:0;margin:18px 0;padding:0}
+#fpv-nkon-tool .stock legend,#fpv-nkon-tool .condition-filter legend{font-size:13px;font-weight:600;margin-bottom:6px}
+#fpv-nkon-tool .stock label,#fpv-nkon-tool .condition-filter label{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:13px;min-height:28px}
+#fpv-nkon-tool .stock small,#fpv-nkon-tool .condition-filter small{margin-left:auto;color:var(--muted);font-size:12px}
+#fpv-nkon-tool .condition-filter label>span{flex:1;min-width:0}
+#fpv-nkon-tool .range-filter{padding:14px 0;border-top:1px solid var(--line)}
+#fpv-nkon-tool .range-label{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:7px}
+#fpv-nkon-tool .range-label>span{color:var(--muted)}
+#fpv-nkon-tool .range-values{display:flex;justify-content:space-between;gap:10px}
+#fpv-nkon-tool .range-values input{width:75px;border:1px solid var(--line);border-radius:4px;padding:6px;background:#fafbfc;font-size:14px}
+#fpv-nkon-tool .range-track{position:relative;height:36px;margin-top:5px}
+#fpv-nkon-tool .range-track input{position:absolute;inset:0;width:100%;margin:0;height:36px;background:none;pointer-events:none;appearance:none}
+#fpv-nkon-tool .range-track input::-webkit-slider-runnable-track{height:3px;background:#d3d7dd}
+#fpv-nkon-tool .range-track input:last-child::-webkit-slider-runnable-track{background:transparent}
+#fpv-nkon-tool .range-track input::-webkit-slider-thumb{appearance:none;pointer-events:auto;width:22px;height:22px;border:2px solid #17191b;border-radius:50%;background:white;margin-top:-9px;cursor:ew-resize;position:relative;z-index:2}
+#fpv-nkon-tool .range-track input::-moz-range-track{height:3px;background:transparent}
+#fpv-nkon-tool .range-track input::-moz-range-thumb{pointer-events:auto;width:20px;height:20px;border:2px solid #17191b;border-radius:50%;background:#fff;cursor:ew-resize}
+#fpv-nkon-tool details{margin:0;border:0;padding:0;background:transparent;box-shadow:none}
+#fpv-nkon-tool details>summary{margin:0;background:transparent;border-radius:0;display:list-item;list-style:disclosure-closed inside}
+#fpv-nkon-tool details[open]>summary{list-style-type:disclosure-open}
+#fpv-nkon-tool summary::before,#fpv-nkon-tool summary::after{display:none}
+#fpv-nkon-tool summary{font-size:13px;line-height:1.5;color:var(--muted);padding:8px 0;min-height:36px}
+#fpv-nkon-tool .advanced{border-top:1px solid var(--line)}
+#fpv-nkon-tool .extra-filters{display:grid;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+#fpv-nkon-tool .extra-filters>label:not(.check-line){display:grid;gap:7px;font-size:13px}
+#fpv-nkon-tool .extra-filters select,#fpv-nkon-tool #sort{padding:8px;border:1px solid var(--line);border-radius:5px;background:#fff;font-size:13px;width:100%}
+#fpv-nkon-tool .check-line{display:flex;align-items:center;gap:8px;font-size:13px}
+#fpv-nkon-tool .filter-note{color:var(--muted);font-size:12px}
+#fpv-nkon-tool .filter-bottom{display:flex;gap:7px;align-items:baseline;font-size:12px;color:var(--muted);padding-top:12px;margin-top:12px;border-top:1px solid var(--line)}
+#fpv-nkon-tool .filter-bottom strong{font-size:18px;color:var(--ink)}
+#fpv-nkon-tool .compare{min-width:0;padding:18px;background:#0d0e10;color:#e9edf2;border-radius:8px}
+#fpv-nkon-tool .chart-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+#fpv-nkon-tool .chart-top h2{font-size:19px}
+#fpv-nkon-tool .chart-actions{display:flex;gap:7px}
+#fpv-nkon-tool .chart-actions button{color:#bcc5ce;border-color:#343b43;background:transparent}
+#fpv-nkon-tool #filterToggle{display:none}
+#fpv-nkon-tool .radar-wrap{position:relative;width:100%;min-width:0;margin:8px 0}
+#fpv-nkon-tool #radar{display:block;width:100%;height:auto;max-width:100%;overflow:hidden}
+#fpv-nkon-tool #radar text{font-family:Arial,sans-serif}
+#fpv-nkon-tool #radar .point{cursor:pointer}
+#fpv-nkon-tool #radar .point:hover,#fpv-nkon-tool #radar .point:focus{r:6;outline:none;stroke:white}
+#fpv-nkon-tool #tooltip{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);max-width:90%;padding:8px 12px;font-size:12px;background:#fafbfc;color:#151619;border-radius:5px;pointer-events:none;z-index:2}
+#fpv-nkon-tool #chartEmpty{position:absolute;inset:35% 10%;text-align:center;color:#a1aab5;font-size:14px}
+#fpv-nkon-tool .chart-foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#929ca7;font-size:11px;padding:8px 0;border-top:1px solid #303740}
+#fpv-nkon-tool .chart-legend>summary{color:#a8b2be}
+#fpv-nkon-tool .legend{display:grid;gap:8px;max-height:250px;overflow-y:auto;margin-top:5px}
+#fpv-nkon-tool .legend-item{display:flex;gap:10px;align-items:center;padding:10px;border:1px solid #303740;border-radius:5px;background:#171a1e}
+#fpv-nkon-tool .legend-item>div{min-width:0;flex:1}
+#fpv-nkon-tool .legend-item strong{display:block;font-size:13px;overflow-wrap:anywhere}
+#fpv-nkon-tool .legend-item small{font-size:11px;color:#8f9aa7}
+#fpv-nkon-tool .legend-item>button{border:0;color:#a0adb9;background:transparent;font-size:20px}
+#fpv-nkon-tool .swatch{width:3px;height:28px;flex-shrink:0}
+#fpv-nkon-tool #axisPanel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px;padding:12px;background:#1b1e23;border:1px solid #333b43;border-radius:5px}
+#fpv-nkon-tool .axis-option{min-width:0;display:grid;gap:5px;font-size:12px}
+#fpv-nkon-tool .axis-option label{display:flex;gap:6px;align-items:center}
+#fpv-nkon-tool .axis-option input{accent-color:#a7d7df}
+#fpv-nkon-tool .axis-option select{border:1px solid #444e58;background:#242930;color:#cdd5de;width:100%;border-radius:4px;padding:7px;font-size:12px}
+#fpv-nkon-tool .curve-notice{color:#d4c79f;background:#23221d;padding:9px;border-radius:4px;font-size:12px}
+#fpv-nkon-tool .catalog{margin-top:22px}
+#fpv-nkon-tool .catalog-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+#fpv-nkon-tool .catalog-top h2>span{color:var(--muted);font-size:16px;font-weight:400;margin-left:6px}
+#fpv-nkon-tool #sort{width:auto;min-height:38px}
+#fpv-nkon-tool .offer-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#fpv-nkon-tool .offer-card{border:1px solid var(--line);border-radius:7px;padding:12px 14px;background:#fff;min-width:0;border-left:3px solid var(--offer-color)}
+#fpv-nkon-tool .offer-heading{display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+#fpv-nkon-tool .offer-heading>strong{font-size:14px;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+#fpv-nkon-tool .details-button{border:0;background:transparent;padding:0;width:32px;min-height:28px;font-size:20px;color:#7c8794;flex-shrink:0}
+#fpv-nkon-tool .offer-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+#fpv-nkon-tool .status{font-size:11px;color:#576370}
+#fpv-nkon-tool .status.out_of_stock{color:#8d939a}
+#fpv-nkon-tool .cell-actions{display:flex;gap:5px;flex-shrink:0}
+#fpv-nkon-tool .cell-actions button{padding:3px 7px;min-height:30px;font-size:14px;background:transparent;color:#7c8794}
+#fpv-nkon-tool .cell-actions button>span{display:none}
+#fpv-nkon-tool .cell-actions button[data-favorite][aria-pressed=true]{color:#937a26;background:#fcf9ed;border-color:#d4c17b}
+#fpv-nkon-tool .cell-actions button[data-emphasize][aria-pressed=true]{color:#327d93;background:#edf7fa;border-color:#a0c3cf}
+#fpv-nkon-tool .legend .cell-actions button{color:#b1bdc9;border-color:#3a4651}
+#fpv-nkon-tool .legend .cell-actions button[data-favorite][aria-pressed=true]{color:#f0d578;background:#292516;border-color:#736234}
+#fpv-nkon-tool .legend .cell-actions button[data-emphasize][aria-pressed=true]{color:#a1e1eb;background:#132e35;border-color:#497a87}
+#fpv-nkon-tool .core-specs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#fpv-nkon-tool .spec-value{min-width:0}
+#fpv-nkon-tool .spec-number{display:flex;flex-direction:column-reverse;gap:3px;margin-bottom:6px}
+#fpv-nkon-tool .spec-caption{color:var(--muted);font-size:10px;line-height:1.4}
+#fpv-nkon-tool .num{font:13px/1.4 'Courier New',monospace;overflow-wrap:anywhere}
+#fpv-nkon-tool .spec-track{height:5px;background:#e9ecf0;border-radius:2px;overflow:hidden}
+#fpv-nkon-tool .spec-track>span{display:block;height:100%;background:var(--spec-color)}
+#fpv-nkon-tool .spec-track.missing{background:repeating-linear-gradient(135deg,#edf0f3,#edf0f3 3px,#dce1e6 3px,#dce1e6 4px)}
+#fpv-nkon-tool .extra-specs{margin-top:10px;border-top:1px solid #edf0f3}
+#fpv-nkon-tool .extra-specs>summary{font-size:11px;padding:6px 0;min-height:28px}
+#fpv-nkon-tool .extra-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:8px 0}
+#fpv-nkon-tool #noResults{padding:24px 16px;text-align:center;border:1px solid var(--line);border-radius:6px}
+#fpv-nkon-tool #noResults h3{font-size:16px}
+#fpv-nkon-tool footer{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px;font-size:11px;color:var(--muted)}
+#fpv-nkon-tool footer button{font-size:11px}
+#fpv-nkon-tool dialog{border:1px solid var(--line);border-radius:8px;padding:24px;background:#fff;color:var(--ink);width:min(720px,94vw);max-height:88dvh;overflow-y:auto;box-shadow:0 18px 80px #0004}
+#fpv-nkon-tool dialog::backdrop{background:#0008}
+#fpv-nkon-tool .dialog-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+#fpv-nkon-tool .eyebrow{font-size:11px;color:var(--muted);letter-spacing:1.4px}
+#fpv-nkon-tool .close{border:0;min-width:36px;font-size:20px;padding:0}
+#fpv-nkon-tool .dialog-title{font-size:24px;overflow-wrap:anywhere}
+#fpv-nkon-tool .dialog-name{color:var(--muted);font-size:13px;margin-top:8px;overflow-wrap:anywhere}
+#fpv-nkon-tool .detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:18px 0}
+#fpv-nkon-tool .detail-grid>div{min-width:0;background:#fafbfc;padding:12px}
+#fpv-nkon-tool .detail-grid span{display:block;font-size:11px;color:var(--muted)}
+#fpv-nkon-tool .detail-grid strong{display:block;font:16px 'Courier New',monospace;margin-top:5px;overflow-wrap:anywhere}
+#fpv-nkon-tool .notes{font-size:13px;line-height:1.7}
+#fpv-nkon-tool .discontinued-note{padding:10px 12px;background:#fff4ed;border-left:3px solid #bf7955}
+#fpv-nkon-tool .sibling-offers{border-block:1px solid var(--line);padding:12px 0;margin:16px 0}
+#fpv-nkon-tool .sibling-offers button{display:block;width:100%;text-align:left;margin-top:7px;white-space:normal}
+#fpv-nkon-tool .source-list{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:12px;margin-top:16px;font-size:13px}
+#fpv-nkon-tool .source-list a,#fpv-nkon-tool dialog p{overflow-wrap:anywhere}
+#fpv-nkon-tool .data-stats{display:flex;flex-wrap:wrap;gap:20px;margin:18px 0}
+#fpv-nkon-tool .data-stats strong{display:block;font-size:22px}
+#fpv-nkon-tool .data-stats span{font-size:11px;color:var(--muted)}
+#fpv-nkon-tool .data-buttons{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0;font-size:13px}
+#fpv-nkon-tool .import-button{padding:8px 12px;border:1px solid var(--line);border-radius:5px;cursor:pointer}
+#fpv-nkon-tool .primary{background:#16191d;color:white}
+#fpv-nkon-tool #dataDialog details{border-top:1px solid var(--line);padding-top:8px}
+#fpv-nkon-tool #toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1d242d;color:white;padding:12px 18px;border-radius:5px;font-size:13px;z-index:30;max-width:90vw}
+#fpv-nkon-tool .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+#fpv-nkon-tool #filterDialog{margin:0;inset:0;max-width:none;width:100%;height:100dvh;max-height:none;border:0;border-radius:0;padding:0;overflow:hidden}
+#fpv-nkon-tool #filterDialog[open]{display:grid;grid-template-rows:56px minmax(180px,36dvh) minmax(0,1fr)}
+#fpv-nkon-tool #filterDialog:not([open]){display:none}
+#fpv-nkon-tool .filter-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;border-bottom:1px solid var(--line)}
+#fpv-nkon-tool .filter-dialog-top h2{font-size:17px}
+#fpv-nkon-tool #mobileResultCount{font-size:12px;color:var(--muted);font-weight:400;margin-left:7px}
+#fpv-nkon-tool .filter-preview{background:#0d0e10;color:#e9edf2;overflow:hidden;min-height:0;padding:0 6px}
+#fpv-nkon-tool .filter-preview .radar-wrap{height:100%;margin:0}
+#fpv-nkon-tool .filter-preview{display:grid;grid-template-rows:minmax(0,1fr) auto}
+#fpv-nkon-tool #mobileCurveNotice{font-size:11px;color:#d4c79f;text-align:center;margin:0;padding:3px 8px}
+#fpv-nkon-tool .filter-body.editing-axes .sheet-quantity{display:none}
+#fpv-nkon-tool .filter-body #axisPanel{margin:0;color:#dce5ee}
+#fpv-nkon-tool .filter-preview #radar{height:100%;width:100%;max-height:100%}
+#fpv-nkon-tool .filter-body{overflow-y:auto;min-height:0;overscroll-behavior:contain;padding:12px 14px max(14px,env(safe-area-inset-bottom));scrollbar-gutter:stable}
+#fpv-nkon-tool .filter-body .filters{display:block;border:0;padding:0;border-radius:0}
+#fpv-nkon-tool .sheet-quantity{justify-content:space-between;margin-bottom:12px}
+#fpv-nkon-tool .filter-body .filter-bottom{display:none}
+@container nkon (max-width:760px){
+ #fpv-nkon-tool .workspace{display:block}
+ #fpv-nkon-tool .workspace>.filters{display:none}
+ #fpv-nkon-tool .compare{padding:14px 10px}
+ #fpv-nkon-tool #filterToggle{display:block}
+ #fpv-nkon-tool .chart-top h2{font-size:18px}
+ #fpv-nkon-tool .offer-list{grid-template-columns:minmax(0,1fr)}
+ #fpv-nkon-tool .offer-card{padding:12px}
+ #fpv-nkon-tool .offer-heading>strong{font-size:14px}
+ #fpv-nkon-tool .cell-actions button{min-width:38px;min-height:38px}
+ #fpv-nkon-tool .details-button{min-width:38px;min-height:38px}
+ #fpv-nkon-tool .core-specs{gap:8px}
+ #fpv-nkon-tool .num{font-size:13px}
+ #fpv-nkon-tool #axisPanel{grid-template-columns:minmax(0,1fr)}
+ #fpv-nkon-tool .axis-option{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;font-size:13px}
+ #fpv-nkon-tool .axis-option select{font-size:14px;min-height:40px}
+ #fpv-nkon-tool .range-values input,#fpv-nkon-tool .search input,#fpv-nkon-tool .extra-filters select{font-size:16px;min-height:42px}
+ #fpv-nkon-tool .stock label,#fpv-nkon-tool .condition-filter label{min-height:36px;font-size:14px}
+ #fpv-nkon-tool .range-track{height:44px}
+ #fpv-nkon-tool .range-track input{height:44px}
+ #fpv-nkon-tool .range-track input::-webkit-slider-thumb{width:28px;height:28px;margin-top:-12px}
+ #fpv-nkon-tool .range-track input::-moz-range-thumb{width:26px;height:26px}
+ #fpv-nkon-tool .detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #fpv-nkon-tool dialog{padding:18px 14px}
+ #fpv-nkon-tool .extra-specs>summary{min-height:36px}
+}
+@media(prefers-reduced-motion:reduce){#fpv-nkon-tool *{transition:none!important}}
+
+#fpv-nkon-tool .scale-reference{margin:8px 0 6px;color:#aeb7c1;font-size:11px}
+#fpv-nkon-tool .scale-reference label{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#fpv-nkon-tool .scale-reference output{font:inherit;color:#929ca7}
+#fpv-nkon-tool .scale-reference input{display:block;width:100%;height:32px;margin:0;accent-color:#a7bacd;cursor:ew-resize}
+#fpv-nkon-tool #scaleReferenceHint{display:flex;justify-content:space-between;color:#929ca7;font-size:10px}
+#fpv-nkon-tool .display-settings>summary{font-size:11px;color:#929ca7;font-weight:400}
+#fpv-nkon-tool .display-settings>#axisBtn{margin:4px 0;font-size:12px;min-height:32px}

@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-01",
+  "offers": 72,
+  "verifiedIndexedPages": 71,
+  "unavailable": [
+    {
+      "id": "cell-067",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html"
+    }
+  ],
+  "changes": [
+    {
+      "id": "cell-018",
+      "name": "Tenpower INR21700-40XG 4000mAh - 45A",
+      "field": "delivery",
+      "before": "28-09-2026",
+      "after": "09-10-2026"
+    },
+    {
+      "id": "cell-022",
+      "name": "DMEGC INR21700-50E 5000mAh - 15A",
+      "field": "stock",
+      "before": "out_of_stock",
+      "after": "in_stock"
+    },
+    {
+      "id": "cell-025",
+      "name": "Ampace INR21700-JP40 4000mAh - 70A",
+      "field": "stock",
+      "before": "orderable",
+      "after": "in_stock"
+    },
+    {
+      "id": "cell-025",
+      "name": "Ampace INR21700-JP40 4000mAh - 70A",
+      "field": "delivery",
+      "before": "2-10-2026",
+      "after": null
+    },
+    {
+      "id": "cell-027",
+      "name": "Tenpower INR21700-30SG 3000mAh - 30A - renoviert",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "pricePack",
+      "before": 1.95,
+      "after": 1.75
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "price",
+      "before": 1.95,
+      "after": 1.75
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "minCapacity",
+      "before": null,
+      "after": 3950.0
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "weight",
+      "before": null,
+      "after": 67.0
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "voltage",
+      "before": null,
+      "after": 3.6
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "height",
+      "before": null,
+      "after": 70.0
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "diameter",
+      "before": null,
+      "after": 21.1
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "field": "terminal",
+      "before": "",
+      "after": "zurückgefordert"
+    },
+    {
+      "id": "cell-029",
+      "name": "Tenpower INR21700-50ME 5000mAh - 15A - Renoviert",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-032",
+      "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A (mixed batch)",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-038",
+      "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A - Reclaimed",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-042",
+      "name": "** INR21700-M52VT 5200mAh - 15A",
+      "field": "stock",
+      "before": "orderable",
+      "after": "in_stock"
+    },
+    {
+      "id": "cell-042",
+      "name": "** INR21700-M52VT 5200mAh - 15A",
+      "field": "delivery",
+      "before": "03-09-2026",
+      "after": null
+    },
+    {
+      "id": "cell-053",
+      "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-055",
+      "name": "Samsung INR21700-53G2 5300mAh - 15.9A",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-056",
+      "name": "Molicel INR21700-P42A 4200mAh - 45A - Renoviert",
+      "field": "weight",
+      "before": null,
+      "after": 64.0
+    },
+    {
+      "id": "cell-058",
+      "name": "Tenpower INR21700-50ME 5000mAh - 15A",
+      "field": "delivery",
+      "before": "28-09-2026",
+      "after": "09-10-2026"
+    },
+    {
+      "id": "cell-060",
+      "name": "XTAR 21700 4900 mAh (geschützt) - 10 A",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-066",
+      "name": "Samsung INR21700-30T 3000mAh - 35A - Reclaimed",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "out_of_stock"
+    },
+    {
+      "id": "cell-067",
+      "name": "BAK N21700CG-50E 5000mAh - 14.7A",
+      "field": "stock",
+      "before": "in_stock",
+      "after": "unknown"
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "id": "cell-004",
+      "note": "NKON-Quellenwiderspruch: Beschreibung 4000 mAh, Spezifikationstabelle 5000 mAh. Tabellenwert verwendet."
+    },
+    {
+      "id": "cell-014",
+      "note": "NKON-Quellenwiderspruch: Beschreibung 4800 mAh, Spezifikationstabelle 4930 mAh. Tabellenwert verwendet."
+    },
+    {
+      "id": "cell-058",
+      "note": "NKON-Quellenwiderspruch: Beschreibung 4000 mAh, Spezifikationstabelle 5000 mAh. Tabellenwert verwendet."
+    },
+    {
+      "id": "cell-065",
+      "note": "NKON-Quellenwiderspruch: Beschreibung 5060 mAh, Spezifikationstabelle 4930 mAh. Tabellenwert verwendet."
+    },
+    {
+      "id": "cell-070",
+      "note": "NKON-Quellenwiderspruch: Beschreibung 5000 mAh, Spezifikationstabelle 4900 mAh. Tabellenwert verwendet."
+    }
+  ],
+  "statusCounts": {
+    "in_stock": 26,
+    "out_of_stock": 36,
+    "orderable": 9,
+    "unknown": 1
+  },
+  "subsequentCorrections": [
+    {
+      "id": "cell-006",
+      "before": "in_stock",
+      "after": "out_of_stock",
+      "discontinued": true,
+      "source": "NKON-Seite: Nutzer-Screenshot, Index bestätigt Nicht auf Lager",
+      "ean": "6097330531520",
+      "date": "2026-10-01"
+    }
+  ]
+}

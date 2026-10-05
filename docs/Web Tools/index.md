@@ -5,6 +5,10 @@ Browser-based utilities for FPV setup, diagnostics, and workshop tasks. These to
 
 ## Available tools
 
+### [NKON Cell Selector](../tools/cell-selector.md)
+
+Compare 72 exact NKON 21700 offers with quantity-aware pricing, condition filters, favorites, radar curves and linked visual audit evidence. Runs directly in this Wiki.
+
 ### [Betaflight RX Monitor](Betaflight RX Monitor.md)
 
 Connect to a Betaflight flight controller over USB, monitor receiver status, and receive configurable audio alerts for receiver and USB connection problems.

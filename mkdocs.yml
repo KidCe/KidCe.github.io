@@ -120,6 +120,7 @@ nav:
       - My Squad - Holy*s*quad: my-squad.md
   - Web Tools:
       - Index: Web Tools/index.md
+      - NKON Cell Selector: tools/cell-selector.md
       - Betaflight RX Monitor: Web Tools/Betaflight RX Monitor.md
       - KAACK Cloud Build: Web Tools/KAACK Cloud Build.md
       - KidCe Configurator: Web Tools/KidCe Configurator.md
@@ -151,10 +152,12 @@ markdown_extensions:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/cell-selector/style.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js
   - assets/javascripts/race-performance-chart.js
+  - assets/cell-selector/app.js
 
 extra:
   social:
