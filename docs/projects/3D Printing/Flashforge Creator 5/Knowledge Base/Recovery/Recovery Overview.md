@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Recovery Overview
 
 This note is the canonical recovery decision tree for the Flashforge Creator 5 Pro knowledge base, consolidated on 2026-08-27. It defines the order from physical inspection through read-only acquisition, diagnosis, and any separately reviewed repair. It does not authorize a write and does not generalize one board's measurements to other printers.
@@ -48,3 +53,4 @@ flowchart TD
 ## Evidence status
 
 The working C5P archive contains a physically confirmed BootROM read-only path, a complete MMC0 user-area readback, and a temporary post-boot ADB path for one unit. See [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md) for the owned evidence and its limits.
+

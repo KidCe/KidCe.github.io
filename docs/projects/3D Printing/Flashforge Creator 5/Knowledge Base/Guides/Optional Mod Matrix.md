@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Optional Mod Matrix
 
 This note is the feature index for optional Flashforge Creator 5 and Creator 5 Pro modifications, consolidated on 2026-08-27. It is a routing page rather than a second installation manual. Each feature owns its detailed status in a linked note, and repository labels are not treated as physical validation.
@@ -20,3 +25,4 @@ This note is the feature index for optional Flashforge Creator 5 and Creator 5 P
 ## Selection rule
 
 Start with the baseline in [Modding Baseline - Root Loop and Mainsail](Modding Baseline - Root Loop and Mainsail.md). Select one optional feature at a time, preserve a rollback, and record the exact firmware, board, source revision, and physical result. A feature marked experimental or INDEV is not an approval.
+

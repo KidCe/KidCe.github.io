@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # USBCloner Read-only Acquisition
 
 This note is the canonical no-write BootROM and USBCloner acquisition workflow for the Flashforge Creator 5 Pro evidence package, consolidated on 2026-08-27. It stops at read-only acquisition and validation; it contains no active write profile. Device-specific constants are owned by [Device Evidence and Partition Layout](Device Evidence and Partition Layout.md).
@@ -50,3 +55,4 @@ The local archive's c5p-usb-unbrick-kit\README.md and docs\c5p-deep-unbrick\UNBR
 ## Recovery boundary
 
 This workflow reads and validates data. It does not diagnose every brick, acquire RPMB, prove boot0/boot1 bootability, or authorize writing. For any repair decision continue with [Offline Repair and Validation](Offline Repair and Validation.md).
+

@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Open Firmware Migration
 
 This note is the staged roadmap for moving the Flashforge Creator 5 Pro toward a debuggable Linux/Klipper/Moonraker/Mainsail stack, based on local evidence and upstream documentation checked on 2026-08-27. It is a feasibility foundation, not a claim that stock-free heaters, motion, printing, MCU updates, or fault handling are already safe.
@@ -50,3 +55,4 @@ Macros can orchestrate print start/end, pause/resume, fan logic, tool parking, f
 ## Current conclusion
 
 A staged open userspace is technically plausible because the printer already exposes Linux, Klipper, separate MCUs, and a recoverable storage layout. The hardest boundary is firmwareExe, MCU bootstrap, vendor Klipper extensions, and physical safety. The next correct step is observation and heater-disabled validation, not a replacement image.
+

@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # KAACK Cloud Build
 
 KAACK Cloud Build is an independent browser-based firmware builder for KAACK Community and official Betaflight release lines.
@@ -8,3 +13,4 @@ Use it when you need a reproducible custom firmware build. Always verify the tar
 
 - [Open KAACK Cloud Build](https://kidce.github.io/KAACKCloudBuild/)
 - [View the project on GitHub](https://github.com/KidCe/KAACKCloudBuild)
+

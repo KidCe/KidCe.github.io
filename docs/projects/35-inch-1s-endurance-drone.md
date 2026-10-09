@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-07-15
+---
+
 # 3.5" 1S Endurance Drone
 
 An experimental 3.5-inch drone optimized for long flight times on a single-cell battery. Its lightweight frame is 3D-printed from PPA-CF.
@@ -63,3 +68,4 @@ The first measurements already show the direction of the project:
 
 !!! note "More data to follow"
     The component list, frame files, print settings and additional test results will be added during development.
+

@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Print Workflow Adaptive Mesh and OrcaSlicer
 
 This note owns print-start, layer metadata, adaptive-mesh, and OrcaSlicer routing information for the Flashforge Creator 5 project, consolidated on 2026-08-27. It keeps snippets and repository status in one place so slicer commands are not copied into several guides. The procedures are community-derived unless a separate physical result is recorded.
@@ -43,3 +48,4 @@ Source: https://github.com/OrcaSlicer/OrcaSlicer/pull/14933
 ## Status
 
 No physical print, pause, cancel, filament-fault, or recovery test is claimed by this note. Any test must record firmware, source revision, slicer version, configuration hash, and a supervised acceptance result.
+

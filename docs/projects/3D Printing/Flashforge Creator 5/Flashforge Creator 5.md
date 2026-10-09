@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Flashforge Creator 5
 
 Hardware, firmware, modification and recovery documentation for the Flashforge Creator 5 and Creator 5 Pro. Most physical findings come from one Creator 5 Pro; model and firmware compatibility are stated on the individual pages.
@@ -18,4 +23,5 @@ Historical notes and source snapshots are retained in the [GitHub repository](ht
 ## AI assistance disclosure
 
 This documentation was prepared with substantial assistance from OpenAI Codex. The maintainer directed the work and remains responsible for technical review and use on physical hardware.
+
 

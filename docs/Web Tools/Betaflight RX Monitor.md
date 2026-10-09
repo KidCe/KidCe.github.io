@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-27
+---
+
 
 # Betaflight RX Monitor
 
@@ -52,3 +57,4 @@ The included Demo mode can be used to test alarm behavior without connected hard
 - License: https://github.com/KidCe/BetaflightStatusReadout/blob/main/LICENSE
 
 The project is independent and is not affiliated with or endorsed by the Betaflight project.
+

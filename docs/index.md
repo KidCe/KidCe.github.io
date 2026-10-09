@@ -12,6 +12,7 @@ hide:
     <div class="hero__actions">
       <a class="md-button md-button--primary" href="builds/">Browse the builds</a>
       <a class="md-button" href="wiki/">Start with the wiki</a>
+      <a class="md-button" href="all-articles/">All Articles</a>
     </div>
   </div>
   <div class="hero__visual" aria-hidden="true">
@@ -137,3 +138,4 @@ hide:
   <p>„Build. Fly. Crash. Repair. Repeat.“</p>
   <span>— the natural FPV cycle</span>
 </div>
+

@@ -1,3 +1,9 @@
+---
+article:
+  published: 2026-09-24
+  summary: A 10 kΩ bleed resistor discharges the input capacitors of an IP2368 USB-C PD module that fails to restart after reconnecting.
+---
+
 # IP2368 USB-C PD module appears dead after reconnecting
 
 **Module:** AliExpress 100 W bidirectional buck-boost board with IP2368 and XT60 battery input.
@@ -29,3 +35,4 @@ Voltage remained on the input capacitors after disconnecting the battery. A **10
 - **Promising bench result; not yet a confirmed long-term fix.**
 
 With approximately **330 µF** of input capacitance, 10 kΩ takes about **11 seconds** to discharge from **25.2 V to 1 V** (ideal RC estimate). The resistor draws about **2.5 mA continuously** while a fully charged 6S battery remains connected. Check the resistor's continuous power rating; dissipation at 25.2 V is approximately **64 mW**.
+

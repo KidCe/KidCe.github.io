@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Capacitor for FPV Racing
 
 A good capacitor is still an important part of a reliable 5-inch FPV racing quad. If motors become unusually hot, the video system shows noise, the flight controller resets, or the quad suddenly feels inconsistent, a damaged, missing, or undersized ESC capacitor is worth checking. It is not a cure-all, but replacing it with a good low-ESR hybrid capacitor often helps.
@@ -53,3 +58,4 @@ Hybrid does not mean surge-proof. The capacitor still has a 35 V maximum rating 
 - For a custom SMD board, provide the correct footprint and mechanical strain relief. Do not attach an SMD can to long unsupported wires.
 
 The technical comparison used manufacturer datasheets and product pages from [Panasonic](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/142649/model/142864), [KEMET/YAGEO](https://content.kemet.com/datasheets/KEM_A4143_A7C3.pdf), [Rubycon](https://www.rubycon.co.jp/information/20250716-1/), and [TDK](https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/hybrid-polymer/info?part_no=B40950A7687M000). Full solid-polymer capacitors were excluded from this hybrid-only selection.
+

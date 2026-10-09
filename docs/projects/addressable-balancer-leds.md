@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-07-15
+---
+
 # Addressable Balancer LEDs
 
 Addressable Balancer LED is a compact PY32F002B-based electronics and firmware project for FPV lighting and battery-status indication. It is more than a simple LED strip: the board combines mirrored addressable lighting, battery monitoring, selectable color profiles, and low-power operating modes in a small FPV-oriented controller.
@@ -57,3 +62,4 @@ These photos show the controller board and the lighting setups used while testin
 
 - [Read the interactive user guide](https://kidce.github.io/adressable-balancer-led/USER_GUIDE.html)
 - [View the project on GitHub](https://github.com/KidCe/adressable-balancer-led)
+

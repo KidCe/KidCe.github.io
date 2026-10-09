@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-27
+---
+
 # Stock and Target Architecture
 
 This architecture note separates the stock Creator 5 Pro control graph from the proposed staged open stack, based on local firmware evidence and repository documentation checked on 2026-08-27. The target architecture is a design direction, not proof that a printer can already operate safely without the vendor binary.
@@ -67,3 +72,4 @@ The target moves operator and file-control functions into Moonraker and Mainsail
 - Do not make Moonraker and Flashforge both own the same print files.
 - Put boot, update, and recovery changes behind explicit physical and operator gates.
 - Keep external clients behind the documented API boundary; do not infer a hybrid Orca protocol.
+

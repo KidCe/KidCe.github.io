@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-07-15
+---
+
 # Budget Build
 
 An affordable 5-inch FPV build focused on solid components, durability and a good flight feel. Choose the video system that best fits your budget and existing equipment.
@@ -37,3 +42,4 @@ I experienced one hiccup with the Blueson as well, but I am fairly confident tha
 
 !!! note "Prices"
     Prices are approximate and may change depending on the seller, sale and shipping costs.
+

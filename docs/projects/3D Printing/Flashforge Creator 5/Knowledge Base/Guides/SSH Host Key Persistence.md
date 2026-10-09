@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # SSH Host Key Persistence
 
 This note owns the community SSH host-key persistence procedure for Flashforge Creator 5 printers, consolidated on 2026-08-27. The procedure changes persistent system state after the /etc bind mount is active; it is not part of the minimum loop baseline and must be backed up before use.
@@ -28,3 +33,4 @@ The source procedure must not be applied blindly. First inspect the target symli
 - Do not infer that passwordless SSH or key persistence is supported by the installed Dropbear build.
 - Record the before/after path and exact firmware.
 - If the key is missing, stop rather than generating or overwriting unknown state.
+

@@ -1,3 +1,10 @@
+---
+article:
+  image: builds/PXL_20260628_071435340.jpg
+  image_alt: 5-inch FPV racing quad on a scale
+  published: 2026-07-15
+---
+
 # 2026 Racing Setup
 
 My main race quad is built for a direct, consistent feel and the low-latency HDZero video system.
@@ -26,3 +33,4 @@ I am currently testing the T-Hobby F50 motors and considering switching the enti
 | T-Hobby Velox V3 2050KV | No front brace | 279 g |
 | T-Hobby F50 | One front brace | 268 g |
 | T-Hobby F50 | No front brace | 262 g |
+

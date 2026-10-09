@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Modding Baseline — Root Loop and Mainsail
 
 This note is the canonical baseline for the community root, loop-launcher, and Mainsail path on Flashforge Creator 5 family printers, consolidated on 2026-08-27. It separates the repository's current entry point from the older Discord procedure and does not reproduce the shared root credential. Compatibility and physical success remain device- and firmware-specific.
@@ -55,3 +60,4 @@ The Mainsail path is a service overlay on the vendor stack. It does not prove th
 - C1: manual root and loop steps from research-sources\Creator-5-Mods.
 - S1: local firmware and recovery analysis showing that app_startup.sh is a startup failure boundary.
 - P1: no claim of physical success is made by this note.
+

@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Temporary ADB Access
 
 This note documents the temporary, owner-initiated root ADB maintenance path over J29 after a normal Creator 5 Pro Linux boot, confirmed on 2026-08-27. It is not a BootROM recovery path and must not be made persistent by default because the tested adbd exposed an unauthenticated root shell to the physically connected host.
@@ -75,3 +80,4 @@ printf 'none\n' > "$SW"
 ~~~
 
 This path cannot repair SPL/U-Boot, kernel, early userspace, or an unreadable usershare partition. It is a maintenance transport, not a permanent backdoor.
+

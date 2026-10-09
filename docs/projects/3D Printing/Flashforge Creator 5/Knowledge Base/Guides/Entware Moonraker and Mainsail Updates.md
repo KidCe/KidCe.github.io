@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Entware Moonraker and Mainsail Updates
 
 This note owns the Entware, Moonraker-update, and Mainsail-update material for the Flashforge Creator 5 project, consolidated on 2026-08-27. These procedures are historical community material and source snapshots, not an approved current installer. The supported baseline remains the guarded path in [Modding Baseline - Root Loop and Mainsail](Modding Baseline - Root Loop and Mainsail.md).
@@ -41,3 +46,4 @@ No current Moonraker update recipe is canonical here. The safe status is: preser
 - C1: copied community recipes and Discord reports.
 - R1: current source snapshot menu labels and scripts.
 - P1: no physical validation claimed.
+

@@ -71,8 +71,12 @@ exclude_docs: |
   projects/3D Printing/Flashforge Creator 5/Knowledge Base/Sources/**
   projects/3D Printing/Flashforge Creator 5/Knowledge Base/Architecture/Single Points of Truth.md
 
+hooks:
+  - hooks/all_articles.py
+
 nav:
   - Home: index.md
+  - All Articles: all-articles.md
   - Articles:
       - articles/index.md
   - Builds:
@@ -170,4 +174,5 @@ extra:
   generator: false
 
 copyright: © 2026 KidCe · Built with MkDocs Material
+
 

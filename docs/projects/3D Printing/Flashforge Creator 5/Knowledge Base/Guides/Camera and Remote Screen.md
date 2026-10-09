@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Camera and Remote Screen
 
 This note owns camera and remote-screen information for the Flashforge Creator 5 project, consolidated on 2026-08-27. It combines a community 720p streamer recipe with the separate Creator 5 Pro remote-screen repository report. The camera and touch paths are not claimed as validated on the target printer during this refactor.
@@ -29,3 +34,4 @@ Port 8091 can generate touchscreen events. Both ports must remain on a trusted L
 - TBD: target-printer camera sensor, stable FPS, thermal impact, and cloud behavior.
 - TBD: whether the target's firmware and board revision match the remote-screen test.
 - Do not combine camera, touch injection, and firmwareExe changes in one first experiment.
+

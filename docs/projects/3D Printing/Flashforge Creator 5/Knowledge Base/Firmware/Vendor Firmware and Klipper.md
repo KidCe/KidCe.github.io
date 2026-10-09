@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Vendor Firmware and Klipper
 
 This note is the canonical static view of the vendor firmware and Klipper surface for the Flashforge Creator 5 Pro, based on the local 1.9.8 extraction inspected on 2026-08-27. It identifies what is visible in files and binaries, but it does not claim that any component can be removed safely on a physical printer.
@@ -61,3 +66,4 @@ This makes analysis realistic, but not redistribution or removal. The mandatory 
 - research-sources\flashforge-firmware-1.9.8-extracted\klipper\config\printer.base.cfg
 - research-sources\flashforge-firmware-1.9.8-extracted\klipper\extras\
 - research-sources\flashforge-firmware-1.9.8-extracted\firmwareExe
+

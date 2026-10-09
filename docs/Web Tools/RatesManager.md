@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # RatesManager
 
 RatesManager is an EdgeTX tool for managing Betaflight rate profiles directly from a radio.
@@ -7,3 +12,4 @@ It keeps a local profile library, edits the active flight-controller profile, an
 Always remove propellers before testing a flight-controller write. RatesManager is an independent community project and is not affiliated with or endorsed by Betaflight, EdgeTX, ExpressLRS, or RadioMaster.
 
 - [View RatesManager on GitHub](https://github.com/KidCe/RatesManager)
+

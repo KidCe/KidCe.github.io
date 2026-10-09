@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Offline Repair and Validation
 
 This note is the canonical offline repair and read-back workflow for the Flashforge Creator 5 Pro recovery package, consolidated on 2026-08-27. It deliberately stops at a reviewed, case-specific write design and does not provide a generic flash command. The known startup-permission repair was prepared but not written in the recorded evidence.
@@ -52,3 +57,4 @@ Read the exact written range into a new file and compare byte-for-byte with the 
 - [ ] Read-back compared byte-for-byte
 - [ ] UI, storage, network, temperature, MCU, and emergency-stop checks passed
 - [ ] No heat, homing, motion, or printing before the no-motion baseline is accepted
+

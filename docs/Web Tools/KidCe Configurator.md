@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # KidCe Configurator
 
 KidCe Configurator is an independent, compatibility-focused browser build based on the Betaflight Configurator / Betaflight App `2025.12.2` source line.
@@ -8,3 +13,4 @@ The project is not an official Betaflight product and is not endorsed or support
 
 - [Open KidCe Configurator](https://kidce.github.io/KidCe-Configurator/)
 - [View the project on GitHub](https://github.com/KidCe/KidCe-Configurator)
+

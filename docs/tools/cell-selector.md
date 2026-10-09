@@ -1,4 +1,9 @@
 ---
+article:
+  summary: Compare 21700 cells with quantity-aware prices, manufacturer data and a mobile radar chart.
+  published: 2026-10-05
+  image: assets/images/tools/cell-selector/radar.jpg
+  image_alt: Screenshot of the six-axis radar graph comparing 21700 cells in the NKON Cell Selector
 hide:
   - toc
 ---
@@ -21,3 +26,4 @@ Compare 72 NKON 21700 offers. Historical snapshot from 1 October 2026; check NKO
 <div id="toast" role="status" hidden></div></div>
 
 <noscript>This comparison requires JavaScript. <a href="../../assets/cell-selector/data/cells.json">Download the snapshot</a> and <a href="../../assets/cell-selector/data/visual-audit.json">visual audit</a>.</noscript>
+

@@ -1,3 +1,8 @@
+---
+article:
+  published: 2026-08-31
+---
+
 # Heat and Fan Routing
 
 This note owns the community heat/fan routing modification for the Flashforge Creator 5 Pro, consolidated on 2026-08-27. The goal is to decouple the cooling fan from the auxiliary chamber recirculation fan while the chamber heater is active. The source macro is preserved as a referenced attachment, not promoted to a safety-approved configuration.
@@ -19,3 +24,4 @@ Source: research-sources\Creator-5-Mods\Basic\Allow for Heating Without Cooling\
 ## Status
 
 C1 community procedure; no physical validation claim. The canonical next step is a supervised, instrumented test on a recoverable printer with an independent temperature measurement and a documented abort procedure.
+

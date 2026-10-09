@@ -1,4 +1,6 @@
 ---
+article:
+  published: 2026-10-02
 title: Tinywhoop LED Gate
 hide:
   - toc
@@ -390,3 +392,4 @@ The refinement adds **0.15 mm clearance per tube face** and **0.4 mm entry ramps
 </details>
 
 The square-tube diffuser base section was designed by the project owner. CAD refinements and documentation were prepared with substantial OpenAI Codex assistance under owner direction. Physical prototype observations are reported by the project owner; dimensions, fit and lighting of the unbuilt concepts remain provisional.
+
