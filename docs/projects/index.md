@@ -37,5 +37,12 @@ Projects beyond regular quad builds: electronics, experimental aircraft and 3D-p
   <span>Explore the knowledge base →</span>
 </a>
 
+<a class="build-card" href="hdzero-monitor-favorites/">
+  <span class="eyebrow">HDZERO · UNOFFICIAL FIRMWARE</span>
+  <h2>HDZero Monitor Favorites</h2>
+  <p>Eight race-channel favorites, matching scan coverage and a shorter scan trigger for the HDZero Monitor.</p>
+  <span>View project →</span>
+</a>
+
 </div>
 
