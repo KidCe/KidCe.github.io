@@ -1,0 +1,28 @@
+.md-typeset .video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 0.8rem 0 1.2rem;
+}
+.md-typeset .video-grid figure {
+  min-width: 0;
+  margin: 0;
+  text-align: left;
+}
+.md-typeset .video-grid iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.md-typeset .video-grid figcaption {
+  margin: 0.3rem 0 0;
+  font-size: 0.7rem;
+  font-style: normal;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  .md-typeset .video-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

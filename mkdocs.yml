@@ -119,6 +119,9 @@ nav:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
       - Repairs:
           - IP2368 USB-C PD reset: wiki/repairs/ip2368-usb-c-pd-reset.md
+  - Tools and Gadgets:
+      - Overview: tools-and-gadgets/index.md
+      - Microscope Equipment: tools-and-gadgets/microscope-equipment.md
   - About:
       - About me: about-me.md
       - Race results: race-results.md
@@ -156,6 +159,7 @@ markdown_extensions:
       alternate_style: true
 
 extra_css:
+  - assets/stylesheets/video-grid.css
   - assets/stylesheets/extra.css
   - assets/stylesheets/all-articles.css
   - assets/cell-selector/style.css
