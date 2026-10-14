@@ -1,0 +1,5322 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-01",
+  "retrieval": "Alle 72 exakten NKON-Angebote am 01.10.2026 zwischen 22:45 und 22:53 Uhr (Europe/Berlin) visuell geprüft, mit Screenshot pro Angebot. Datierter Snapshot; kein laufender Live-Bestand.",
+  "categoryUrl": "https://www.nkon.nl/de/rechargeable/li-ion/21700-20700-size.html",
+  "expectedCount": 72,
+  "completeCatalog": true,
+  "cells": [
+    {
+      "id": "cell-001",
+      "name": "BAK INR21700-50D2 5000mAh - 60A",
+      "pricePack": 3.85,
+      "capacity": 5000.0,
+      "dischargeShop": 60.0,
+      "stock": "in_stock",
+      "brand": "BAK",
+      "model": "INR2170-50D2",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 3.85,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.75,
+      "diameter": 21.45,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html",
+      "chargeStandard": 2.475,
+      "chargeMax": 15,
+      "chargeFast": null,
+      "dischargeSheet": 60,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "80 °C Entladeabschaltung; Shopbeschreibung nennt zusätzlich 15 A."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1946/product/6119/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.65
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 3.59
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 3.39
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 3.28
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316313362",
+      "stockCheckedAt": "2026-10-01T20:45:19.216Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html",
+      "modelKey": "bak:inr217050d2",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:45:19.216Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-001.jpg",
+      "visualEvidenceSha256": "68177a7246ae1e3e7c52906cb4aa031d15c2b04273731b66d540ef9bd1219741",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-002",
+      "name": "Tenpower INR21700-30SG 3000mAh - 30A - Clear Wrap Reclaimed",
+      "pricePack": 1.75,
+      "capacity": 3000.0,
+      "dischargeShop": 30.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-30SG",
+      "minCapacity": 2900.0,
+      "packSize": 1,
+      "price": 1.75,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.3,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert, Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a-clear-wrap-reclaimed.html",
+      "chargeStandard": 1.5,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 30,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 15,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a-clear-wrap-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/404/product/6118/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 1.55
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097324567528",
+      "stockCheckedAt": "2026-10-01T20:46:05.277Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a-clear-wrap-reclaimed.html",
+      "modelKey": "tenpower:inr2170030sg",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:05.277Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-002.jpg",
+      "visualEvidenceSha256": "df0abfd107862abfc6ff950fc51bfccbd7e47f9ea6aa6c681b57898fa9da370c",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-003",
+      "name": "EVE INR21700-50E 5000mAh - 15A - Renoviert",
+      "pricePack": 2.65,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "out_of_stock",
+      "brand": "EVE",
+      "model": "INR21700-50E",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 2.65,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.15,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html",
+      "chargeStandard": 1,
+      "chargeMax": 2.5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Herstellerdatenblatt: Standard 1000 mA; maximal 2500 mA.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/275/product/5496/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.25
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097318729772",
+      "stockCheckedAt": "2026-10-01T20:46:06.743Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html",
+      "modelKey": "eve:inr2170050e",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:06.743Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-003.jpg",
+      "visualEvidenceSha256": "da93a239d4f33122c03dc62acbe2b080293450dd9c8dbd100aa3da6eae8fd4b6",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-004",
+      "name": "Tenpower INR21700-50ME 5000mAh - 15A (mixed batch)",
+      "pricePack": 2.65,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "in_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-50ME",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 2.65,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.7,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "mixed",
+      "terminal": "Mischcharge, Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten.",
+        "NKON-Quellenwiderspruch: Beschreibung 4000 mAh, Spezifikationstabelle 5000 mAh. Tabellenwert verwendet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.25
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "mixed",
+      "conditionEvidence": "NKON kennzeichnet das Angebot als Mischcharge; individuelle Vorgeschichte nicht belegt.",
+      "ean": "6097320756711",
+      "stockCheckedAt": "2026-10-01T20:46:07.816Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html",
+      "modelKey": "tenpower:inr2170050me",
+      "offerVariant": "Mixed Batch",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:07.816Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-004.jpg",
+      "visualEvidenceSha256": "18e16ce4d74409fecd08a419150aea84972a926c624b2695c23227c75cdf04a4",
+      "shopReviewFindings": [
+        "NKON-Beschreibung nennt 4000 mAh, Titel und Spezifikationstabelle 5000 mAh. Widerspruch nicht aufgelöst."
+      ]
+    },
+    {
+      "id": "cell-005",
+      "name": "Reliance INR21700-RS60 6000mAh - 50A",
+      "pricePack": 17.99,
+      "capacity": 6000.0,
+      "dischargeShop": 50.0,
+      "stock": "out_of_stock",
+      "brand": "Reliance",
+      "model": "INR21700-RS60",
+      "minCapacity": 5850.0,
+      "packSize": 1,
+      "price": 17.99,
+      "weight": 73.0,
+      "voltage": 3.6,
+      "height": 70.9,
+      "diameter": 21.6,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rs60-6000mah-50a.html",
+      "chargeStandard": 3,
+      "chargeMax": 12,
+      "chargeFast": null,
+      "dischargeSheet": 50,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "80 °C Entladeabschaltung; max. Ladestrom 12 A ab 15 °C, unter 15 °C nur 3 A."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/reliance-inr21700-rs60-6000mah-50a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1882/product/6085/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097315772771",
+      "stockCheckedAt": "2026-10-01T20:46:09.225Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/reliance-inr21700-rs60-6000mah-50a.html",
+      "modelKey": "reliance:inr21700rs60",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:09.225Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-005.jpg",
+      "visualEvidenceSha256": "4e806ccd7c689d50c9bbb6796b3596cbb1182c093cc7a91a49d17e96752aa285",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-006",
+      "name": "Lishen INR21700-55E2 5500mAh - 11A (TerraE label)",
+      "pricePack": 2.25,
+      "capacity": 5400.0,
+      "dischargeShop": 11.0,
+      "stock": "out_of_stock",
+      "brand": "Lishen",
+      "model": "INR21700-55E2",
+      "minCapacity": 5500.0,
+      "packSize": 1,
+      "price": 2.25,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Produkttitel und Tabelle widersprechen sich: Titel 5500 mAh, Tabelle 5400.0 mAh.",
+        "NKON-Tabelle widersprüchlich: Mindestkapazität 5500 mAh liegt über typischer Kapazität 5400 mAh. Beide Shopangaben sind unbestätigt; keine Datenblattwerte."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097330531520",
+      "stockCheckedAt": "2026-10-01T20:46:10.333Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html",
+      "modelKey": "lishen:inr2170055e2",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:10.333Z",
+      "visualEvidence": "data/visual-evidence/cell-006.jpg",
+      "visualEvidenceSha256": "d963cbb975e72ca19be747b3abdb72b3ac4c3bcf467f99482085d332e8e6ab8c",
+      "shopReviewFindings": [
+        "NKON-Tabelle nennt 5500 mAh Mindestkapazität und 5400 mAh typische Kapazität; Titel und Beschreibung nennen 5500 mAh. Widerspruch nicht aufgelöst."
+      ]
+    },
+    {
+      "id": "cell-007",
+      "name": "Tenpower INR21700-60XG 6000mAh - 60A",
+      "pricePack": 5.45,
+      "capacity": 6000.0,
+      "dischargeShop": 60.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-60XG",
+      "minCapacity": 5900.0,
+      "packSize": 1,
+      "price": 5.45,
+      "weight": 76.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.5,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html",
+      "chargeStandard": 3,
+      "chargeMax": 16,
+      "chargeFast": null,
+      "dischargeSheet": 60,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 5,
+      "notes": [
+        "Entladung nur mit 75 °C Abschaltung; Datenblatt V0.1 draft."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1843/product/6073/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 5.25
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 4.95
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317536579",
+      "stockCheckedAt": "2026-10-01T20:46:11.432Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html",
+      "modelKey": "tenpower:inr2170060xg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:11.432Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-007.jpg",
+      "visualEvidenceSha256": "9f4549b13d2ca4acca021bc621bcca2ba559d25f1b273f0d3474bc46784730b7",
+      "shopReviewFindings": [
+        "Angebotsadresse enthält 50XG; Produkttitel und Modellfeld nennen 60XG. EAN und sichtbare Identität stimmen mit diesem Angebot überein."
+      ]
+    },
+    {
+      "id": "cell-008",
+      "name": "Samsung INR21700-50G 4850mAh - 9.7A",
+      "pricePack": 2.75,
+      "capacity": 4850.0,
+      "dischargeShop": 9.7,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-50G",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 2.75,
+      "weight": 69.5,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.2,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html",
+      "chargeStandard": 1.6,
+      "chargeMax": 4.85,
+      "chargeFast": null,
+      "dischargeSheet": 9.7,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Tentative Version 0.1; 1 C = 4850 mA."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/183/product/6043/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097332054096",
+      "stockCheckedAt": "2026-10-01T20:46:12.858Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html",
+      "modelKey": "samsung:inr2170050g",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:12.858Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-008.jpg",
+      "visualEvidenceSha256": "efa91dfe9da0b420d1381eed0ddeededd44149edf1ebe7745d27e2e5280f04e0",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-009",
+      "name": "Molicel INR21700-M65A 6500mAh - 26A",
+      "pricePack": 9.75,
+      "capacity": 6500.0,
+      "dischargeShop": 26.0,
+      "stock": "out_of_stock",
+      "brand": "Molicel",
+      "model": "INR-21700-M65A",
+      "minCapacity": 6400.0,
+      "packSize": 1,
+      "price": 9.75,
+      "weight": 74.5,
+      "voltage": 3.6,
+      "height": 70.75,
+      "diameter": 21.4,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-inr21700-m65a-6500mah-26a.html",
+      "chargeStandard": 6.5,
+      "chargeMax": 6.5,
+      "chargeFast": null,
+      "dischargeSheet": 26,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 14.5,
+      "notes": [
+        "Vorläufige Spezifikation 0.1; 80 °C Entladeabschaltung empfohlen; Zelloberfläche beim Laden ≤70 °C."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-inr21700-m65a-6500mah-26a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1790/product/6040/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097328478400",
+      "stockCheckedAt": "2026-10-01T20:46:14.703Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-inr21700-m65a-6500mah-26a.html",
+      "modelKey": "molicel:inr21700m65a",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:14.703Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-009.jpg",
+      "visualEvidenceSha256": "68043e7b7f955a813058b6669be17ad865f0c63f70850198c5bc9af969ed7572",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-010",
+      "name": "Reliance INR21700-RH60 6000mAh - 20A",
+      "pricePack": 5.49,
+      "capacity": 6000.0,
+      "dischargeShop": 20.0,
+      "stock": "out_of_stock",
+      "brand": "Reliance",
+      "model": "INR21700-RH60",
+      "minCapacity": 5850.0,
+      "packSize": 1,
+      "price": 5.49,
+      "weight": 71.0,
+      "voltage": 3.6,
+      "height": 70.9,
+      "diameter": 21.6,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rh60-6000mah-20a.html",
+      "chargeStandard": 3,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 20,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "80 °C Entladeabschaltung."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/reliance-inr21700-rh60-6000mah-20a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1787/product/6035/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097327322308",
+      "stockCheckedAt": "2026-10-01T20:46:15.738Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/reliance-inr21700-rh60-6000mah-20a.html",
+      "modelKey": "reliance:inr21700rh60",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:15.738Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-010.jpg",
+      "visualEvidenceSha256": "56a1d8cdf467d4e0401acca6bf8c5eccb1bcba5385222da7197b8eab6db9329b",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-011",
+      "name": "Molicel INR21700-P42A 4200mAh - 45A - Malaysia",
+      "pricePack": 2.99,
+      "capacity": 4200.0,
+      "dischargeShop": 45.0,
+      "stock": "in_stock",
+      "brand": "Molicel",
+      "model": "INR-21700-P42A",
+      "minCapacity": 4000.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.2,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/catalog/product/view/id/5985/s/molicel-inr21700-p42a-4200mah-45a-malaysia/category/104/",
+      "chargeStandard": 4.2,
+      "chargeMax": 8.4,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Einseitiges Datenblatt nennt nur Standardladestrom. Zusätzliche Spezifikation ergänzt Maximum."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/catalog/product/view/id/5985/s/molicel-inr21700-p42a-4200mah-45a-malaysia/category/104/"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1170/product/3427/",
+          "section": "Lade- und Entladespezifikationen"
+        },
+        {
+          "label": "Ausführliche P42A-Spezifikation",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1588/product/5985/",
+          "section": "Rated specifications: maximum charging current"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.74
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 2.67
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.63
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.59
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317198173",
+      "stockCheckedAt": "2026-10-01T20:46:39.643Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/catalog/product/view/id/5985/s/molicel-inr21700-p42a-4200mah-45a-malaysia/category/104/",
+      "modelKey": "molicel:inr21700p42a",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:39.643Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-011.jpg",
+      "visualEvidenceSha256": "92fbbd907f0894c6186f210385bb9178b419580c36f36fdc0a17576c8c6485c6",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-012",
+      "name": "Tenpower INR21700-30SG 3000mAh - 30A",
+      "pricePack": 2.25,
+      "capacity": 3000.0,
+      "dischargeShop": 30.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-30SG",
+      "minCapacity": 2900.0,
+      "packSize": 1,
+      "price": 2.25,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.3,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg.html",
+      "chargeStandard": 1.5,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 30,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 15,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/404/product/6118/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.15
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 2.05
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 1.95
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 1.86
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097321030025",
+      "stockCheckedAt": "2026-10-01T20:46:40.934Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-30sg.html",
+      "modelKey": "tenpower:inr2170030sg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:40.934Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-012.jpg",
+      "visualEvidenceSha256": "cdd80d3d4df4e1a11517a7c27eb8b7b7fc56d8efa203739323b3f5e5227c51f8",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-013",
+      "name": "** INR21700-H51 5000mAh - 25A",
+      "pricePack": 2.95,
+      "capacity": 5000.0,
+      "dischargeShop": 25.0,
+      "stock": "out_of_stock",
+      "brand": "LG",
+      "model": "INR21700-H51",
+      "minCapacity": 4900.0,
+      "packSize": 1,
+      "price": 2.95,
+      "weight": 70.5,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.27,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-h51-5000mah-25a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-h51-5000mah-25a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.75
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097325290289",
+      "stockCheckedAt": "2026-10-01T20:46:42.311Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-h51-5000mah-25a.html",
+      "modelKey": "lg:inr21700h51",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:42.311Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-013.jpg",
+      "visualEvidenceSha256": "3907662efea730a4f36286b2f56cdebe44bb6e5108cf1cb196e280fcaf75b15f",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-014",
+      "name": "** INR21700-M50L ( M50LT ) 4930mAh - 14.4A KLARVERPACKUNG",
+      "pricePack": 1.75,
+      "capacity": 4930.0,
+      "dischargeShop": 14.4,
+      "stock": "out_of_stock",
+      "brand": "LG",
+      "model": "INR21700-M50L",
+      "minCapacity": 4770.0,
+      "packSize": 1,
+      "price": 1.75,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 71.4,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "NKON-Quellenwiderspruch: Beschreibung 4800 mAh, Spezifikationstabelle 4930 mAh. Tabellenwert verwendet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316632692",
+      "stockCheckedAt": "2026-10-01T20:46:43.417Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html",
+      "modelKey": "lg:inr21700m50l",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:43.417Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-014.jpg",
+      "visualEvidenceSha256": "dd205e021f992db8e9acc1de18003f37d9c6c16ce1764d3ad9cdb22fd3b7183f",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-015",
+      "name": "Tenpower INR21700-50SG 5000mAh - 20A",
+      "pricePack": 3.15,
+      "capacity": 5000.0,
+      "dischargeShop": 20.0,
+      "stock": "orderable",
+      "brand": "Tenpower",
+      "model": "INR21700-50SG",
+      "minCapacity": 4900.0,
+      "packSize": 1,
+      "price": 3.15,
+      "weight": 71.0,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.35,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": "09-10-2026",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50sg-5000mah-20a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 20,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Standard 2500 mA; maximal 6 A.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 09-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50sg-5000mah-20a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/802/product/5884/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.04
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.74
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.66
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317178120",
+      "stockCheckedAt": "2026-10-01T20:46:44.518Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50sg-5000mah-20a.html",
+      "modelKey": "tenpower:inr2170050sg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:44.518Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-015.jpg",
+      "visualEvidenceSha256": "ffdaa0abcc1e21bfc14a88a3bdcf059c8828cf328eca0ccbb80f3588e066f523",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-016",
+      "name": "Tenpower INR21700-50XG 5000mAh - 40A",
+      "pricePack": 4.18,
+      "capacity": 5000.0,
+      "dischargeShop": 40.0,
+      "stock": "orderable",
+      "brand": "Tenpower",
+      "model": "INR21700-50XG",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 4.18,
+      "weight": 75.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.5,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": "30-10-2026",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-5000mah-40a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 15,
+      "chargeFast": null,
+      "dischargeSheet": 40,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Entladebedingungen und Temperaturgrenzen im Datenblatt beachten.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 30-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-5000mah-40a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/801/product/5883/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 390,
+          "pricePack": 4.14
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317932937",
+      "stockCheckedAt": "2026-10-01T20:46:45.896Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50xg-5000mah-40a.html",
+      "modelKey": "tenpower:inr2170050xg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:45.896Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-016.jpg",
+      "visualEvidenceSha256": "950fdb952400aba86fb02bdf4ce3a3ba522b9df4f7eebf0babc5f31332289b55",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-017",
+      "name": "EVE INR21700-58E 5700mAh - 16.8A",
+      "pricePack": 3.45,
+      "capacity": 5700.0,
+      "dischargeShop": 16.8,
+      "stock": "out_of_stock",
+      "brand": "EVE",
+      "model": "INR21700-58E",
+      "minCapacity": 5600.0,
+      "packSize": 1,
+      "price": 3.45,
+      "weight": 71.0,
+      "voltage": 3.6,
+      "height": 70.8,
+      "diameter": 21.5,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-58e-5700mah-16-8a.html",
+      "chargeStandard": 1.12,
+      "chargeMax": 5.6,
+      "chargeFast": null,
+      "dischargeSheet": 16.8,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Datenblatt bezieht sich auf 5600 mAh; Shop nennt 5700 mAh. Maximalwerte nicht für Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-58e-5700mah-16-8a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/806/product/5882/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.25
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.95
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.85
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097324499478",
+      "stockCheckedAt": "2026-10-01T20:46:47.252Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-58e-5700mah-16-8a.html",
+      "modelKey": "eve:inr2170058e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:47.252Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-017.jpg",
+      "visualEvidenceSha256": "c0d6fc75723c1662f0248ca2479fc6b67764dbc64ed57c34c78b3e3beca7ad2f",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-018",
+      "name": "Tenpower INR21700-40XG 4000mAh - 45A",
+      "pricePack": 3.15,
+      "capacity": 4000.0,
+      "dischargeShop": 45.0,
+      "stock": "orderable",
+      "brand": "Tenpower",
+      "model": "INR21700-40XG",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 3.15,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.5,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": "09-10-2026",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40xg-4000mah-45a.html",
+      "chargeStandard": 2,
+      "chargeMax": 12,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Entladebedingungen und Temperaturgrenzen im Datenblatt beachten.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 28-09-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-40xg-4000mah-45a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/732/product/5845/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.95
+        },
+        {
+          "minPacks": 20,
+          "pricePack": 2.85
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.65
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.55
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097325727747",
+      "stockCheckedAt": "2026-10-01T20:46:48.660Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-40xg-4000mah-45a.html",
+      "modelKey": "tenpower:inr2170040xg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:48.660Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-018.jpg",
+      "visualEvidenceSha256": "fbb6d4c288cfbd74d2471192b2e2bc876bd96a1c431b94f58874275fb727688e",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-019",
+      "name": "Molicel INR21700-P45B 4500mAh - 45A - Teilweise umhüllt",
+      "pricePack": 4.15,
+      "capacity": 4500.0,
+      "dischargeShop": 45.0,
+      "stock": "out_of_stock",
+      "brand": "Molicel",
+      "model": "INR21700-P45B",
+      "minCapacity": 4350.0,
+      "packSize": 1,
+      "price": 4.15,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.2,
+      "diameter": 21.7,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Keine Isolierung",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html",
+      "chargeStandard": 4.5,
+      "chargeMax": 13.5,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 7,
+      "notes": [
+        "70 °C Ladeabschaltung / 80 °C Entladeabschaltung; Version 1.2."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1172/product/4875/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097323491442",
+      "stockCheckedAt": "2026-10-01T20:46:50.034Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html",
+      "modelKey": "molicel:inr21700p45b",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:50.034Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-019.jpg",
+      "visualEvidenceSha256": "272da5f4f9f1e6cfdede93ab4faa65e85f997de49197a87e69850c2c39ceb0f8",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-020",
+      "name": "Ampace INR21700-JP50 5000mAh - 60A",
+      "pricePack": 3.95,
+      "capacity": 5000.0,
+      "dischargeShop": 60.0,
+      "stock": "orderable",
+      "brand": "Ampace",
+      "model": "Ampace INR21700-JP50",
+      "minCapacity": 4900.0,
+      "packSize": 1,
+      "price": 3.95,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 70.45,
+      "diameter": 21.35,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": "30-10-2026",
+      "url": "https://www.nkon.nl/de/ampace-inr21700-jp50-5000mah-60a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 15,
+      "chargeFast": null,
+      "dischargeSheet": 60,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 4,
+      "notes": [
+        "40 A ohne / 60 A mit 80 °C Abschaltung. Maximaler Ladestrom laut Herstellerseite 15 A.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 30-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/ampace-inr21700-jp50-5000mah-60a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/678/product/5803/",
+          "section": "Lade- und Entladespezifikationen"
+        },
+        {
+          "label": "Aktuelle Herstellerparameter",
+          "url": "https://en.ampace.com/products/power-tools-product-matrix/jp/69"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316441485",
+      "stockCheckedAt": "2026-10-01T20:46:51.231Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/ampace-inr21700-jp50-5000mah-60a.html",
+      "modelKey": "ampace:inr21700jp50",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:46:51.231Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-020.jpg",
+      "visualEvidenceSha256": "966d32b7d04ce4f4cf237de62535d1d8db231484ae0de2b7a0686724c25b1690",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-021",
+      "name": "BAK N21700CG 5000mAh - 10.2A - KEIN WICKELN",
+      "pricePack": 2.85,
+      "capacity": 5000.0,
+      "dischargeShop": 10.2,
+      "stock": "out_of_stock",
+      "brand": "BAK",
+      "model": "N21700CG-50",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 2.85,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.45,
+      "diameter": 21.25,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Keine Isolierung",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "C-Raten aus 5 Ah umgerechnet. Datenblatt 15 A; Shop 10,2 A. Revision prüfen."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/259/product/5797/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.8
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 1.5
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097330398321",
+      "stockCheckedAt": "2026-10-01T20:47:33.934Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html",
+      "modelKey": "bak:n21700cg50",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:33.934Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-021.jpg",
+      "visualEvidenceSha256": "02296be6a80a6a2c4962f4ff713cb66d4d8bcf49d7af8dcc990b1d52f187fa10",
+      "shopReviewFindings": [
+        "NKON nennt ein storniertes Automobilprojekt und fehlende Isolierung. Neuheit wird auf der Angebotsseite nicht ausdrücklich zugesichert."
+      ]
+    },
+    {
+      "id": "cell-022",
+      "name": "DMEGC INR21700-50E 5000mAh - 15A",
+      "pricePack": 2.65,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "in_stock",
+      "brand": "DMEGC",
+      "model": "INR21700-50E",
+      "minCapacity": 4900.0,
+      "packSize": 1,
+      "price": 2.65,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 70.55,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/dmegc-inr21700-50e-5000mah-15a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "0,5 C / 1 C aus 5 Ah umgerechnet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/dmegc-inr21700-50e-5000mah-15a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/577/product/5787/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.43
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.22
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.17
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097327528540",
+      "stockCheckedAt": "2026-10-01T20:47:37.526Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/dmegc-inr21700-50e-5000mah-15a.html",
+      "modelKey": "dmegc:inr2170050e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:37.526Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-022.jpg",
+      "visualEvidenceSha256": "986e945d153cde8964b6cfd960ef647242e4dc0dc44fa01ae04b49dfb1ae839a",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-023",
+      "name": "EVE INR21700-40PL 4000mAh - 70A - renoviert",
+      "pricePack": 2.75,
+      "capacity": 4000.0,
+      "dischargeShop": 70.0,
+      "stock": "in_stock",
+      "brand": "EVE",
+      "model": "INR21700-40PL",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 2.75,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.1,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html",
+      "chargeStandard": 2,
+      "chargeMax": 8,
+      "chargeFast": null,
+      "dischargeSheet": 70,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "75 °C Abschaltung empfohlen; 80 °C absoluter Grenzwert.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/278/product/5779/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.45
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097340496482",
+      "stockCheckedAt": "2026-10-01T20:47:38.867Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html",
+      "modelKey": "eve:inr2170040pl",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:38.867Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-023.jpg",
+      "visualEvidenceSha256": "2083503127c25ff78a70c766df830e270d2883143b969c93e701776b3a66285f",
+      "shopReviewFindings": [
+        "Titel und Tabelle nennen 70 A, die Kurzbeschreibung 50 A. Tabellenwert bleibt gespeichert; Messbedingungen und Datenblatt separat beachten."
+      ]
+    },
+    {
+      "id": "cell-024",
+      "name": "EVE INR21700-40P 4000mAh - 50A transparente Verpackung - renoviert",
+      "pricePack": 1.45,
+      "capacity": 4000.0,
+      "dischargeShop": 50.0,
+      "stock": "out_of_stock",
+      "brand": "EVE",
+      "model": "INR21700-40P",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 1.45,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.15,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert, Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html",
+      "chargeStandard": 2,
+      "chargeMax": null,
+      "chargeFast": 6,
+      "dischargeSheet": 50,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "6 A ist als Schnellladeprofil angegeben, nicht ausdrücklich als Maximum; 80 °C Entladeabschaltung.",
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/71/product/5495/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.39
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 1.33
+        },
+        {
+          "minPacks": 400,
+          "pricePack": 1.27
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097327085098",
+      "stockCheckedAt": "2026-10-01T20:47:40.297Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html",
+      "modelKey": "eve:inr2170040p",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:40.297Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-024.jpg",
+      "visualEvidenceSha256": "71afaa35b4af72e5bca44efc0c7d0f8203eb10138e7930905188eeb0d2f6cd38",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-025",
+      "name": "Ampace INR21700-JP40 4000mAh - 70A",
+      "pricePack": 3.25,
+      "capacity": 4000.0,
+      "dischargeShop": 70.0,
+      "stock": "in_stock",
+      "brand": "Ampace",
+      "model": "INR21700-JP40",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 3.25,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.4,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/ampace-inr21700-jp40-4000mah-70a.html",
+      "chargeStandard": 2,
+      "chargeMax": 8,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Verlinkte Spezifikation nennt 45 A; aktuelle Herstellerseite 40 A Full-Discharge / 60 A Maximum. Shop 70 A. Revisionen unterscheiden sich.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 2-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/ampace-inr21700-jp40-4000mah-70a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/537/product/5765/",
+          "section": "Lade- und Entladespezifikationen"
+        },
+        {
+          "label": "Aktuelle Herstellerparameter",
+          "url": "https://en.ampace.com/products/power-tools-product-matrix/jp/68"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.67
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 2.48
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.37
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.27
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097331840898",
+      "stockCheckedAt": "2026-10-01T20:47:45.260Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/ampace-inr21700-jp40-4000mah-70a.html",
+      "modelKey": "ampace:inr21700jp40",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:45.260Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-025.jpg",
+      "visualEvidenceSha256": "cb1364c4b08f9a960a01dd0e9bad143c360ee0ea1c1e00f151af714972a567d0",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-026",
+      "name": "Reliance INR21700-RS50 5000mAh - 70A",
+      "pricePack": 4.65,
+      "capacity": 5000.0,
+      "dischargeShop": 70.0,
+      "stock": "orderable",
+      "brand": "Reliance",
+      "model": "INR21700-RS50",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 4.65,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.3,
+      "diameter": 21.35,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": "10-10-2026",
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rs50-4950mah-70a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 15,
+      "chargeFast": null,
+      "dischargeSheet": 70,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "80 °C Entladeabschaltung; temperaturabhängige Ladegrenzen siehe Spezifikation.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 10-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/reliance-inr21700-rs50-4950mah-70a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1494/product/5764/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 50,
+          "pricePack": 4.25
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 4.15
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 4.05
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097319430493",
+      "stockCheckedAt": "2026-10-01T20:47:50.055Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/reliance-inr21700-rs50-4950mah-70a.html",
+      "modelKey": "reliance:inr21700rs50",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:50.055Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-026.jpg",
+      "visualEvidenceSha256": "9bd5b960fe3e4ab7e16bb66766e0c2e026d5f30ff46047f3d42cb045acf1a192",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-027",
+      "name": "Tenpower INR21700-30SG 3000mAh - 30A - renoviert",
+      "pricePack": 1.55,
+      "capacity": 3000.0,
+      "dischargeShop": 30.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-30SG",
+      "minCapacity": 2900.0,
+      "packSize": 1,
+      "price": 1.55,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.3,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html",
+      "chargeStandard": 1.5,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 30,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 15,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/404/product/6118/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.23
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 1.13
+        },
+        {
+          "minPacks": 300,
+          "pricePack": 1.07
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097330145154",
+      "stockCheckedAt": "2026-10-01T20:47:54.822Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html",
+      "modelKey": "tenpower:inr2170030sg",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:47:54.822Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-027.jpg",
+      "visualEvidenceSha256": "3353dc726e5d496b38462cd4246df0ef2567f07666ff1092614b8c3c156aa3da",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-028",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+      "pricePack": 1.75,
+      "capacity": 4000.0,
+      "dischargeShop": 35.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "Tenpower INR21700-40TG",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 1.75,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.0,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html",
+      "chargeStandard": 2,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 35,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4.1.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/243/product/5756/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.29
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 1.19
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097319150162",
+      "stockCheckedAt": "2026-10-01T20:48:26.459Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html",
+      "modelKey": "tenpower:inr2170040tg",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:48:26.459Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-028.jpg",
+      "visualEvidenceSha256": "9ede0553deefbd11a0f18e84c0ae27f1ca45a5eaa4be662843784b961d7eccb1",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-029",
+      "name": "Tenpower INR21700-50ME 5000mAh - 15A - Renoviert",
+      "pricePack": 1.45,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-50ME",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 1.45,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.7,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 1.35
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097335778791",
+      "stockCheckedAt": "2026-10-01T20:48:31.055Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html",
+      "modelKey": "tenpower:inr2170050me",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:48:31.055Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-029.jpg",
+      "visualEvidenceSha256": "d49ce2a19fc3834e6f29bca21afb5dffce95ae92485513d62d10bc68a9b33c84",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-030",
+      "name": "** INR21700-M58T 5570mAh - 12.5A (mixed batch)",
+      "pricePack": 2.99,
+      "capacity": 5570.0,
+      "dischargeShop": 12.5,
+      "stock": "in_stock",
+      "brand": "LG",
+      "model": "INR21700-M58T",
+      "minCapacity": 5520.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 71.2,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "mixed",
+      "terminal": "Mischcharge",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 260,
+          "pricePack": 2.85
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "mixed",
+      "conditionEvidence": "NKON kennzeichnet das Angebot als Mischcharge; individuelle Vorgeschichte nicht belegt.",
+      "ean": "6097320763795",
+      "stockCheckedAt": "2026-10-01T20:48:36.156Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html",
+      "modelKey": "lg:inr21700m58t",
+      "offerVariant": "Mixed Batch",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:48:36.156Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-030.jpg",
+      "visualEvidenceSha256": "bef5b283476a8ee540b5838cadbd8a095cf90883922cd73431eb346065584b6e",
+      "shopReviewFindings": [
+        "NKON-Beschreibung nennt 21,8 mm Durchmesser, die Tabelle 21,3 mm. Tabellenwert bleibt gespeichert."
+      ]
+    },
+    {
+      "id": "cell-031",
+      "name": "2x Keeppower 21700 6000mAh (protected) - 10A - USB-C - 3.6V",
+      "pricePack": 20.95,
+      "capacity": 6000.0,
+      "dischargeShop": 10.0,
+      "stock": "out_of_stock",
+      "brand": "Keeppower",
+      "model": "P2160TC",
+      "minCapacity": 5800.0,
+      "packSize": 2,
+      "price": 10.475,
+      "weight": 77.0,
+      "voltage": 3.6,
+      "height": 77.0,
+      "diameter": 22.0,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/2x-keeppower-21700-6000mah-protected-10a-usb-c-3-6v.html",
+      "chargeStandard": 1.2,
+      "chargeMax": 4.2,
+      "chargeFast": null,
+      "dischargeSheet": 10,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 45,
+      "notes": [
+        "Externer Li-Ion-Lader; USB-C-Ladung separat. Standardstrom im PDF als 1200mAh geschrieben (Einheitenfehler)."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/2x-keeppower-21700-6000mah-protected-10a-usb-c-3-6v.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1131/product/5669/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317781771",
+      "stockCheckedAt": "2026-10-01T20:49:06.816Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/2x-keeppower-21700-6000mah-protected-10a-usb-c-3-6v.html",
+      "modelKey": "keeppower:p2160tc",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:06.816Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-031.jpg",
+      "visualEvidenceSha256": "25466782fe8ae4a0a8733dc0b34e8bafc426c69c4f5ad7c1e8cff58564eccc74",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-032",
+      "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A (mixed batch)",
+      "pricePack": 2.39,
+      "capacity": 5330.0,
+      "dischargeShop": 10.7,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-58E",
+      "minCapacity": 5170.0,
+      "packSize": 1,
+      "price": 2.39,
+      "weight": 74.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.78,
+      "protected": false,
+      "condition": "mixed",
+      "terminal": "Mischcharge, Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html",
+      "chargeStandard": 1.066,
+      "chargeMax": 5.33,
+      "chargeFast": null,
+      "dischargeSheet": 10.66,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "C-Raten aus 5330 mAh umgerechnet; Maximalwerte nicht für Zyklenlebensdauer. Batch-/Revisionszuordnung beachten.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1583/product/5661/"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "mixed",
+      "conditionEvidence": "NKON kennzeichnet das Angebot als Mischcharge; individuelle Vorgeschichte nicht belegt.",
+      "ean": "6097328218211",
+      "stockCheckedAt": "2026-10-01T20:49:11.021Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html",
+      "modelKey": "samsung:inr2170058e",
+      "offerVariant": "Mixed Batch",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:11.021Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-032.jpg",
+      "visualEvidenceSha256": "3eb385eb9de29dd36983fe04136f76c8638b104770c5ca6d480e328240808795",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-033",
+      "name": "BAK N21700CG 5000mAh - 10.2A - CLEAR WRAP",
+      "pricePack": 1.95,
+      "capacity": 5000.0,
+      "dischargeShop": 10.2,
+      "stock": "out_of_stock",
+      "brand": "BAK",
+      "model": "N21700CG-50",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 1.95,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.45,
+      "diameter": 21.25,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-clear-wrap.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "C-Raten aus 5 Ah umgerechnet. Datenblatt 15 A; Shop 10,2 A. Revision prüfen."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-clear-wrap.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/259/product/5797/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.7
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 1.6
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316383396",
+      "stockCheckedAt": "2026-10-01T20:49:13.960Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-clear-wrap.html",
+      "modelKey": "bak:n21700cg50",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:13.960Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-033.jpg",
+      "visualEvidenceSha256": "af8f1bef88378ebe916591906def321dd36301be5dc9e0b35cd72696571bb580",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-034",
+      "name": "EVE INR21700-50PL 5000mAh - 125A (neue Version)",
+      "pricePack": 3.95,
+      "capacity": 5000.0,
+      "dischargeShop": 125.0,
+      "stock": "orderable",
+      "brand": "EVE",
+      "model": "INR21700-50PL",
+      "minCapacity": 4800.0,
+      "packSize": 1,
+      "price": 3.95,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.15,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": "28-10-2026",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 10,
+      "chargeFast": null,
+      "dischargeSheet": 125,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "75 °C Abschaltung empfohlen; 80 °C maximal. Revision A, neue Version.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 28-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/796/product/5643/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.73
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 3.52
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 3.42
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097330621696",
+      "stockCheckedAt": "2026-10-01T20:49:17.011Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html",
+      "modelKey": "eve:inr2170050pl",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:17.011Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-034.jpg",
+      "visualEvidenceSha256": "904f92f067b5f3376bca4a489db3536be5d22c5c34a95b6d0d2acd2f5c601658",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-035",
+      "name": "BAK N21700CH-58E - 5750mAh - 11.2A",
+      "pricePack": 3.45,
+      "capacity": 5750.0,
+      "dischargeShop": 11.2,
+      "stock": "in_stock",
+      "brand": "BAK",
+      "model": "N21700CH-58E",
+      "minCapacity": 5600.0,
+      "packSize": 1,
+      "price": 3.45,
+      "weight": 75.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.7,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700ch-58e-5750mah-11-2a.html",
+      "chargeStandard": 2.8,
+      "chargeMax": 5.6,
+      "chargeFast": null,
+      "dischargeSheet": 11.2,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximalwerte bei 25 °C; nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700ch-58e-5750mah-11-2a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/669/product/5642/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.29
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 3.09
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.99
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.89
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097323274250",
+      "stockCheckedAt": "2026-10-01T20:49:20.720Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700ch-58e-5750mah-11-2a.html",
+      "modelKey": "bak:n21700ch58e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:20.720Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-035.jpg",
+      "visualEvidenceSha256": "d206791f7aae16803eeb79a75aa234763a385bd1c8fb41e6544de672d54538d8",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-036",
+      "name": "XTAR 21700 6000mAh (protected) - 10A",
+      "pricePack": 15.75,
+      "capacity": 6000.0,
+      "dischargeShop": 10.0,
+      "stock": "out_of_stock",
+      "brand": "Xtar",
+      "model": "XTAR 21700",
+      "minCapacity": 5950.0,
+      "packSize": 1,
+      "price": 15.75,
+      "weight": 76.0,
+      "voltage": 3.6,
+      "height": 74.8,
+      "diameter": 21.8,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 13.95
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6952918302391",
+      "stockCheckedAt": "2026-10-01T20:49:23.610Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html",
+      "modelKey": "xtar:21700",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:23.610Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-036.jpg",
+      "visualEvidenceSha256": "47b50da12f7fd4c62c431d20c0cc013237af3bd0821d5499553d5df423691cb9",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-037",
+      "name": "** INR21700-M58T 5570mAh - 12.5A",
+      "pricePack": 3.25,
+      "capacity": 5570.0,
+      "dischargeShop": 12.5,
+      "stock": "out_of_stock",
+      "brand": "LG",
+      "model": "INR21700-M58T",
+      "minCapacity": 5520.0,
+      "packSize": 1,
+      "price": 3.25,
+      "weight": 71.2,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 30,
+          "pricePack": 2.87
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.74
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.54
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097322012099",
+      "stockCheckedAt": "2026-10-01T20:49:26.571Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html",
+      "modelKey": "lg:inr21700m58t",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:26.571Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-037.jpg",
+      "visualEvidenceSha256": "51e7705edaaf7822fa30e67508f117564794b31cae7d8a1f46c85878a7a9aaf1",
+      "shopReviewFindings": [
+        "Der sichtbare Titel lässt LG weg; die Tabelle nennt LG und INR21700-M58T. Angebotsidentität stimmt überein."
+      ]
+    },
+    {
+      "id": "cell-038",
+      "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A - Reclaimed",
+      "pricePack": 2.15,
+      "capacity": 5330.0,
+      "dischargeShop": 10.7,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-58E",
+      "minCapacity": 5170.0,
+      "packSize": 1,
+      "price": 2.15,
+      "weight": 74.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.78,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html",
+      "chargeStandard": 2.665,
+      "chargeMax": 5.33,
+      "chargeFast": null,
+      "dischargeSheet": 10.66,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "C-Raten aus 5330 mAh umgerechnet; Maximalwerte nicht für Zyklenlebensdauer. Batch-/Revisionszuordnung beachten.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/205/product/5601/"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 20,
+          "pricePack": 1.85
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 1.77
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097341158129",
+      "stockCheckedAt": "2026-10-01T20:49:31.423Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html",
+      "modelKey": "samsung:inr2170058e",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:31.423Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-038.jpg",
+      "visualEvidenceSha256": "cd88af28fca275520f400c224e65c0ea74839da615b3eabe39c3d27a7710d6e2",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-039",
+      "name": "EVE INR21700-40PL 4000mAh - 70A",
+      "pricePack": 3.95,
+      "capacity": 4000.0,
+      "dischargeShop": 70.0,
+      "stock": "in_stock",
+      "brand": "EVE",
+      "model": "INR21700-40PL",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 3.95,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.1,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a.html",
+      "chargeStandard": 2,
+      "chargeMax": 8,
+      "chargeFast": null,
+      "dischargeSheet": 70,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "75 °C Abschaltung empfohlen; 80 °C absoluter Grenzwert."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/278/product/5779/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.15
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.85
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.65
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097319062052",
+      "stockCheckedAt": "2026-10-01T20:49:33.836Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a.html",
+      "modelKey": "eve:inr2170040pl",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:33.836Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-039.jpg",
+      "visualEvidenceSha256": "a4354249d20718dea97f22ee8030207575afba12038c35c1727b421e19518a71",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-040",
+      "name": "Samsung INR21700-58E (CC5563F101) 5330mAh - 10.7A",
+      "pricePack": 3.15,
+      "capacity": 5330.0,
+      "dischargeShop": 10.7,
+      "stock": "in_stock",
+      "brand": "Samsung",
+      "model": "INR21700-58E",
+      "minCapacity": 5170.0,
+      "packSize": 1,
+      "price": 3.15,
+      "weight": 74.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.78,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-5330mah-10-7a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-58e-5330mah-10-7a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.98
+        },
+        {
+          "minPacks": 11,
+          "pricePack": 2.38
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097321530549",
+      "stockCheckedAt": "2026-10-01T20:49:36.869Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-58e-5330mah-10-7a.html",
+      "modelKey": "samsung:inr2170058e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:49:36.869Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-040.jpg",
+      "visualEvidenceSha256": "48d0e9c3b781abac96005270153e1c5bb2f70733631c401e13d2460d685312a1",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-041",
+      "name": "Samsung INR21700-45T (CC4503F101) 4500mAh - 50A",
+      "pricePack": 3.59,
+      "capacity": 4500.0,
+      "dischargeShop": 50.0,
+      "stock": "orderable",
+      "brand": "Samsung",
+      "model": "INR21700-45T",
+      "minCapacity": 4400.0,
+      "packSize": 1,
+      "price": 3.59,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.35,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": "25-09-2026",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html",
+      "chargeStandard": 2.25,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 50,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "35 A ohne / 50 A mit 80 °C Abschaltung. 9 A nur für Step-Charge, nicht kontinuierlich.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 25-09-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/209/product/5568/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.39
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 3.29
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 3.19
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097327479491",
+      "stockCheckedAt": "2026-10-01T20:50:14.654Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html",
+      "modelKey": "samsung:inr2170045t",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:14.654Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-041.jpg",
+      "visualEvidenceSha256": "f6c16455a961ebb3ae6f958c88ec9db520f261babc08ce9723917364a17f809c",
+      "shopReviewFindings": [
+        "NKON nennt den bereits vergangenen 25.09.2026 als Versanddatum und zeigt weiterhin Vorbestellung. Termin ist keine aktuelle Lieferzusage."
+      ]
+    },
+    {
+      "id": "cell-042",
+      "name": "** INR21700-M52VT 5200mAh - 15A",
+      "pricePack": 2.65,
+      "capacity": 5200.0,
+      "dischargeShop": 15.0,
+      "stock": "in_stock",
+      "brand": "LG",
+      "model": "INR21700-M52VT",
+      "minCapacity": 5050.0,
+      "packSize": 1,
+      "price": 2.65,
+      "weight": 67.4,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.27,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-m52vt-5200mah-15a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 03-09-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-m52vt-5200mah-15a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.45
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.35
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.25
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097328014011",
+      "stockCheckedAt": "2026-10-01T20:50:17.824Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-m52vt-5200mah-15a.html",
+      "modelKey": "lg:inr21700m52vt",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:17.824Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-042.jpg",
+      "visualEvidenceSha256": "8ab84f5c636803dfacea9c14b0d4663b6a01966750eb683176cb1e2b491e91cc",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-043",
+      "name": "BAK N21700-45D 4500mah - 60A",
+      "pricePack": 3.99,
+      "capacity": 4500.0,
+      "dischargeShop": 60.0,
+      "stock": "in_stock",
+      "brand": "BAK",
+      "model": "INR2170-45D",
+      "minCapacity": 4400.0,
+      "packSize": 1,
+      "price": 3.99,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top, Tabless",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700-45d-4400mah-60a.html",
+      "chargeStandard": 2.2,
+      "chargeMax": 13.2,
+      "chargeFast": null,
+      "dischargeSheet": 60,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "30 A ohne / 60 A mit 80 °C Abschaltung."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700-45d-4400mah-60a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/253/product/5554/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.16
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 3.11
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 3.01
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.91
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316721730",
+      "stockCheckedAt": "2026-10-01T20:50:20.902Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700-45d-4400mah-60a.html",
+      "modelKey": "bak:inr217045d",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:20.902Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-043.jpg",
+      "visualEvidenceSha256": "0743b180a511db6637bdd0ec3068e8dc1c61b7a4a122dadd60c62d9c65c61a36",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-044",
+      "name": "Keeppower 21700 5500mAh (protected) - 11A (Button top)",
+      "pricePack": 8.45,
+      "capacity": 5500.0,
+      "dischargeShop": 11.0,
+      "stock": "in_stock",
+      "brand": "Keeppower",
+      "model": "P2155C",
+      "minCapacity": 5400.0,
+      "packSize": 1,
+      "price": 8.45,
+      "weight": 73.0,
+      "voltage": 3.6,
+      "height": 75.0,
+      "diameter": 22.2,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/keeppower-21700-5500mah-protected-11a-button-top.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/keeppower-21700-5500mah-protected-11a-button-top.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097329884828",
+      "stockCheckedAt": "2026-10-01T20:50:24.194Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/keeppower-21700-5500mah-protected-11a-button-top.html",
+      "modelKey": "keeppower:p2155c",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:24.194Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-044.jpg",
+      "visualEvidenceSha256": "1485ff8874aae43e5bfa4b761d957ec85a9e6c4d1a3c986df3f723efa3b6ed54",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-045",
+      "name": "Keeppower 21700 6000mAh (protected) - 12A (Button top)",
+      "pricePack": 10.45,
+      "capacity": 6000.0,
+      "dischargeShop": 12.0,
+      "stock": "in_stock",
+      "brand": "Keeppower",
+      "model": "P2160C",
+      "minCapacity": 5900.0,
+      "packSize": 1,
+      "price": 10.45,
+      "weight": 75.0,
+      "voltage": 3.6,
+      "height": 74.6,
+      "diameter": 22.2,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/keeppower-21700-6000mah-protected-12a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/keeppower-21700-6000mah-protected-12a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097338662691",
+      "stockCheckedAt": "2026-10-01T20:50:27.379Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/keeppower-21700-6000mah-protected-12a.html",
+      "modelKey": "keeppower:p2160c",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:27.379Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-045.jpg",
+      "visualEvidenceSha256": "3913f6e2a9752a69cf3b8cb2388edb4454296cc9fe1b4cf14c8ac6d33fa07e46",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-046",
+      "name": "BAK N21700CD-53E 5300mAh - 10.3A",
+      "pricePack": 3.95,
+      "capacity": 5300.0,
+      "dischargeShop": 10.3,
+      "stock": "in_stock",
+      "brand": "BAK",
+      "model": "N21700CD-53E",
+      "minCapacity": 5150.0,
+      "packSize": 1,
+      "price": 3.95,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.5,
+      "diameter": 21.25,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700cd-53e-5300mah-10-3a.html",
+      "chargeStandard": 2.575,
+      "chargeMax": 5.15,
+      "chargeFast": null,
+      "dischargeSheet": 10.3,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximalwerte bei 25 °C; nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700cd-53e-5300mah-10-3a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/251/product/5519/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.19
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 2.99
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.69
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.39
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097317868885",
+      "stockCheckedAt": "2026-10-01T20:50:31.467Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700cd-53e-5300mah-10-3a.html",
+      "modelKey": "bak:n21700cd53e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:31.467Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-046.jpg",
+      "visualEvidenceSha256": "2ce248a8f4a50de702cb9b3f77358277d4bc3a278ebb7c352fb0d45d9e2666c7",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-047",
+      "name": "Molicel INR21700-P50B 5000mAh - 50A",
+      "pricePack": 6.75,
+      "capacity": 5000.0,
+      "dischargeShop": 50.0,
+      "stock": "in_stock",
+      "brand": "Molicel",
+      "model": "INR21700-P50B",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 6.75,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.2,
+      "diameter": 21.7,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/",
+      "chargeStandard": 5,
+      "chargeMax": 25,
+      "chargeFast": null,
+      "dischargeSheet": 60,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 6.5,
+      "notes": [
+        "70 °C Ladeabschaltung / 80 °C Entladeabschaltung; Datenblatt Version 1.1."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1169/product/5518/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 5.92
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 5.61
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 5.51
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 5.41
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097326477405",
+      "stockCheckedAt": "2026-10-01T20:50:34.570Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/",
+      "modelKey": "molicel:inr21700p50b",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:34.570Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-047.jpg",
+      "visualEvidenceSha256": "5336e3ed4b07e59bf29f51b3a408f7f868f806ae575240b73e066a439196d9bb",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-048",
+      "name": "** INR21700-M58T 5570mAh - 12.5A - Reclaimed",
+      "pricePack": 2.65,
+      "capacity": 5570.0,
+      "dischargeShop": 12.5,
+      "stock": "in_stock",
+      "brand": "LG",
+      "model": "INR21700-M58T",
+      "minCapacity": 5520.0,
+      "packSize": 1,
+      "price": 2.65,
+      "weight": 73.2,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-reclaimed.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-reclaimed.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.35
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.25
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.19
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097318243292",
+      "stockCheckedAt": "2026-10-01T20:50:38.514Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-reclaimed.html",
+      "modelKey": "lg:inr21700m58t",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:38.514Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-048.jpg",
+      "visualEvidenceSha256": "c9c3ac585c969484538211352b175fa5e8c996c3f316855d71a4a7fe377b4772",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-049",
+      "name": "EVE INR21700-50E 5000mAh - 15A",
+      "pricePack": 2.95,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "out_of_stock",
+      "brand": "EVE",
+      "model": "INR21700-50E",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 2.95,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.15,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a.html",
+      "chargeStandard": 1,
+      "chargeMax": 2.5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Herstellerdatenblatt: Standard 1000 mA; maximal 2500 mA."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/275/product/5496/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.74
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 2.54
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.34
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.24
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097348416468",
+      "stockCheckedAt": "2026-10-01T20:50:41.479Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a.html",
+      "modelKey": "eve:inr2170050e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:41.479Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-049.jpg",
+      "visualEvidenceSha256": "6e29f1924f81e02c21ceb2bdbfc514a5d2ec9ae781486fc3ea23f960a97ac984",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-050",
+      "name": "EVE INR21700-40P 4000mAh - 50A",
+      "pricePack": 2.55,
+      "capacity": 4000.0,
+      "dischargeShop": 50.0,
+      "stock": "in_stock",
+      "brand": "EVE",
+      "model": "INR21700-40P",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 2.55,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.15,
+      "diameter": 21.15,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a.html",
+      "chargeStandard": 2,
+      "chargeMax": null,
+      "chargeFast": 6,
+      "dischargeSheet": 50,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "6 A ist als Schnellladeprofil angegeben, nicht ausdrücklich als Maximum; 80 °C Entladeabschaltung.",
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/71/product/5495/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.53
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.43
+        },
+        {
+          "minPacks": 400,
+          "pricePack": 2.33
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 2.23
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097350229278",
+      "stockCheckedAt": "2026-10-01T20:50:46.333Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a.html",
+      "modelKey": "eve:inr2170040p",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:50:46.333Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-050.jpg",
+      "visualEvidenceSha256": "fb635756fe4599deaf9ac4f141d3f107ddde131e6cbf5fcc2b4ba9c630c6d1cf",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-051",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A - Reclaimed",
+      "pricePack": 1.65,
+      "capacity": 4000.0,
+      "dischargeShop": 35.0,
+      "stock": "out_of_stock",
+      "brand": "Tenpower",
+      "model": "INR21700-40TG",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 1.65,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.0,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html",
+      "chargeStandard": 2,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 35,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4.1.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/243/product/5756/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "6097321591533",
+      "stockCheckedAt": "2026-10-01T20:51:19.413Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html",
+      "modelKey": "tenpower:inr2170040tg",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:19.413Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-051.jpg",
+      "visualEvidenceSha256": "70e5d6b7388080bac55b429c33819eabc9b882a587f8d595e07c3349e791b202",
+      "shopReviewFindings": [
+        "Angebotsadresse enthält 45 A; Titel, Tabelle und EAN identifizieren das 35-A-Angebot. Die Adresse kann veraltet sein."
+      ]
+    },
+    {
+      "id": "cell-052",
+      "name": "Keeppower 21700 5300mAh (protected) - 10.6A",
+      "pricePack": 6.95,
+      "capacity": 5300.0,
+      "dischargeShop": 10.6,
+      "stock": "in_stock",
+      "brand": "Keeppower",
+      "model": "P2153C",
+      "minCapacity": 5150.0,
+      "packSize": 1,
+      "price": 6.95,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 74.6,
+      "diameter": 21.7,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/keeppower-21700-5300mah-10-6a-protected-li-ion-battery.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/keeppower-21700-5300mah-10-6a-protected-li-ion-battery.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 6.65
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097336820826",
+      "stockCheckedAt": "2026-10-01T20:51:24.442Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/keeppower-21700-5300mah-10-6a-protected-li-ion-battery.html",
+      "modelKey": "keeppower:p2153c",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:24.442Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-052.jpg",
+      "visualEvidenceSha256": "7f80f97a46e1e3db6696ce045b24b1b9ed8f60e70ef4d632356123d28edb5dfd",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-053",
+      "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A",
+      "pricePack": 2.99,
+      "capacity": 4000.0,
+      "dischargeShop": 35.0,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-40T",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.1,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 50,
+          "pricePack": 2.78
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.73
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.43
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.38
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097326669664",
+      "stockCheckedAt": "2026-10-01T20:51:28.270Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a.html",
+      "modelKey": "samsung:inr2170040t",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:28.270Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-053.jpg",
+      "visualEvidenceSha256": "a1a0eab1369060e6604294b319108d40b11efae69fd65763e242c24fedc1bdb1",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-054",
+      "name": "Samsung INR21700-50GB 4900mAh - 9.7A",
+      "pricePack": 2.99,
+      "capacity": 4900.0,
+      "dischargeShop": 9.7,
+      "stock": "in_stock",
+      "brand": "Samsung",
+      "model": "INR21700-50G",
+      "minCapacity": 4753.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.7,
+      "diameter": 21.2,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50gb.html",
+      "chargeStandard": 2.45,
+      "chargeMax": 4.9,
+      "chargeFast": null,
+      "dischargeSheet": 9.7,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-50gb.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1288/product/5397/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.56
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 2.46
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.36
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.26
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097322657658",
+      "stockCheckedAt": "2026-10-01T20:51:31.721Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-50gb.html",
+      "modelKey": "samsung:inr2170050g",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:31.721Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-054.jpg",
+      "visualEvidenceSha256": "02f3f925c245df2e84b4ad87edc2eef154171cb1fe2f3308e1523fa77c57e5e5",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-055",
+      "name": "Samsung INR21700-53G2 5300mAh - 15.9A",
+      "pricePack": 2.69,
+      "capacity": 5300.0,
+      "dischargeShop": 15.9,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-53G2",
+      "minCapacity": 5140.0,
+      "packSize": 1,
+      "price": 2.69,
+      "weight": 71.5,
+      "voltage": 3.6,
+      "height": 70.7,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-53g2-5300mah-15-9a.html",
+      "chargeStandard": 1.749,
+      "chargeMax": 5.3,
+      "chargeFast": null,
+      "dischargeSheet": 15.9,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximalwerte nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-53g2-5300mah-15-9a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/557/product/5396/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 50,
+          "pricePack": 2.64
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.52
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.37
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097348552586",
+      "stockCheckedAt": "2026-10-01T20:51:34.715Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-53g2-5300mah-15-9a.html",
+      "modelKey": "samsung:inr2170053g2",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:34.715Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-055.jpg",
+      "visualEvidenceSha256": "fa874df9ce57a152291a63fc0a78d7e054313dac7c46d5ab445a3e89b83ad1d4",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-056",
+      "name": "Molicel INR21700-P42A 4200mAh - 45A - Renoviert",
+      "pricePack": 2.45,
+      "capacity": 4200.0,
+      "dischargeShop": 45.0,
+      "stock": "out_of_stock",
+      "brand": "Molicel",
+      "model": "INR-21700-P42A",
+      "minCapacity": 4000.0,
+      "packSize": 1,
+      "price": 2.45,
+      "weight": 64.0,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.3,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html",
+      "chargeStandard": 4.2,
+      "chargeMax": 8.4,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Einseitiges Datenblatt nennt nur Standardladestrom. Zusätzliche Spezifikation ergänzt Maximum.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1170/product/3427/",
+          "section": "Lade- und Entladespezifikationen"
+        },
+        {
+          "label": "Ausführliche P42A-Spezifikation",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1588/product/5985/",
+          "section": "Rated specifications: maximum charging current"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 100,
+          "pricePack": 2.35
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.05
+        },
+        {
+          "minPacks": 400,
+          "pricePack": 1.85
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "reclaimed_unknown",
+      "conditionEvidence": "Reclaimed-Angebot ohne eindeutige Angabe zur vorherigen Nutzung. Keine Annahme einer neuwertigen Zelle.",
+      "ean": "6097316413475",
+      "stockCheckedAt": "2026-10-01T20:51:38.333Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html",
+      "modelKey": "molicel:inr21700p42a",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:38.333Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-056.jpg",
+      "visualEvidenceSha256": "7f3aa3b51105e3df7939c92c9c48005f1772d410b5536f9aa1f4b42cd0884466",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-057",
+      "name": "Samsung INR21700-50E 4900 mAh – 9,8 A (Produktionsjahr 2022)",
+      "pricePack": 2.99,
+      "capacity": 4900.0,
+      "dischargeShop": 9.8,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-50E",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html",
+      "chargeStandard": 2.45,
+      "chargeMax": 4.9,
+      "chargeFast": null,
+      "dischargeSheet": 9.8,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/176/product/3073/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097325424400",
+      "stockCheckedAt": "2026-10-01T20:51:41.378Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html",
+      "modelKey": "samsung:inr2170050e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:41.378Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-057.jpg",
+      "visualEvidenceSha256": "720d1ee82f36f8e0e4bade9d56e3b79476a0661450dcd27088ed4a8451f2a4a5",
+      "shopReviewFindings": [
+        "Angebotsadresse nennt Produktionsjahr 2021; Titel, Tabelle und Beschreibung nennen 2022. Jahrgang aus der sichtbaren Produktseite übernommen."
+      ]
+    },
+    {
+      "id": "cell-058",
+      "name": "Tenpower INR21700-50ME 5000mAh - 15A",
+      "pricePack": 2.99,
+      "capacity": 5000.0,
+      "dischargeShop": 15.0,
+      "stock": "orderable",
+      "brand": "Tenpower",
+      "model": "INR21700-50ME",
+      "minCapacity": 4950.0,
+      "packSize": 1,
+      "price": 2.99,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.7,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": "09-10-2026",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 28-09-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein.",
+        "NKON-Quellenwiderspruch: Beschreibung 4000 mAh, Spezifikationstabelle 5000 mAh. Tabellenwert verwendet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.58
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.38
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.23
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.17
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6097316393357",
+      "stockCheckedAt": "2026-10-01T20:51:44.446Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html",
+      "modelKey": "tenpower:inr2170050me",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:44.446Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-058.jpg",
+      "visualEvidenceSha256": "c8e58a7aab33353a9bdc911f5d1b175e5e4ad0977ae08c54d7f8c08b8a44da4f",
+      "shopReviewFindings": [
+        "NKON-Beschreibung nennt 4000 mAh, Titel und Tabelle 5000 mAh (4950 mAh Mindestkapazität). Widerspruch nicht aufgelöst."
+      ]
+    },
+    {
+      "id": "cell-059",
+      "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A erhöht (button top)",
+      "pricePack": 5.75,
+      "capacity": 4000.0,
+      "dischargeShop": 35.0,
+      "stock": "in_stock",
+      "brand": "Samsung",
+      "model": "INR21700-40T",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 5.75,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 71.5,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a-button-top.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a-button-top.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940531151",
+      "stockCheckedAt": "2026-10-01T20:51:47.493Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a-button-top.html",
+      "modelKey": "samsung:inr2170040t",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:47.493Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-059.jpg",
+      "visualEvidenceSha256": "3cfaf7b8a90246112cdb390874fef256e9e88027faffd292e2a77777754cfd4c",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-060",
+      "name": "XTAR 21700 4900 mAh (geschützt) - 10 A",
+      "pricePack": 10.95,
+      "capacity": 4900.0,
+      "dischargeShop": 10.0,
+      "stock": "out_of_stock",
+      "brand": "Xtar",
+      "model": "XTAR 21700",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 10.95,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 74.6,
+      "diameter": 21.0,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6952918343912",
+      "stockCheckedAt": "2026-10-01T20:51:50.589Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html",
+      "modelKey": "xtar:21700",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:51:50.589Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-060.jpg",
+      "visualEvidenceSha256": "14e4129bc2239e8721182f64761310003a03e513e3bfc6993a89abf0b99f30c7",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-061",
+      "name": "Tenpower INR21700-40TG 4000mAh - 35A",
+      "pricePack": 2.45,
+      "capacity": 4000.0,
+      "dischargeShop": 35.0,
+      "stock": "orderable",
+      "brand": "Tenpower",
+      "model": "INR21700-40TG",
+      "minCapacity": 3950.0,
+      "packSize": 1,
+      "price": 2.45,
+      "weight": 67.0,
+      "voltage": 3.6,
+      "height": 70.0,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": "09-10-2026",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a.html",
+      "chargeStandard": 2,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 35,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Hersteller-Produktdatenblatt v1.4.1.",
+        "NKON zeigt Bestellmöglichkeit mit Datum 09-10-2026. Lieferstatus ist ein Snapshot; Datum kann veraltet sein."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/243/product/5756/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.39
+        },
+        {
+          "minPacks": 20,
+          "pricePack": 2.29
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 2.19
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 2.12
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940529738",
+      "stockCheckedAt": "2026-10-01T20:52:22.984Z",
+      "stockEvidence": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a.html",
+      "modelKey": "tenpower:inr2170040tg",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:22.984Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-061.jpg",
+      "visualEvidenceSha256": "b200717a41fc1ab6350bc1ed543a97b1f29162a5624237be81eaaf67a0b30275",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-062",
+      "name": "Molicel INR21700-P45B 4500mAh - 45A (mixed batch)",
+      "pricePack": 4.55,
+      "capacity": 4500.0,
+      "dischargeShop": 45.0,
+      "stock": "out_of_stock",
+      "brand": "Molicel",
+      "model": "INR21700-P45B",
+      "minCapacity": 4350.0,
+      "packSize": 1,
+      "price": 4.55,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.2,
+      "diameter": 21.7,
+      "protected": false,
+      "condition": "mixed",
+      "terminal": "Mischcharge, Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-mixed-batch.html",
+      "chargeStandard": 4.5,
+      "chargeMax": 13.5,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 7,
+      "notes": [
+        "70 °C Ladeabschaltung / 80 °C Entladeabschaltung; Version 1.2.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-mixed-batch.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1172/product/4875/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 4.25
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "mixed",
+      "conditionEvidence": "NKON kennzeichnet das Angebot als Mischcharge; individuelle Vorgeschichte nicht belegt.",
+      "ean": "7417940528847",
+      "stockCheckedAt": "2026-10-01T20:52:26.348Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-mixed-batch.html",
+      "modelKey": "molicel:inr21700p45b",
+      "offerVariant": "Mixed Batch",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:26.348Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-062.jpg",
+      "visualEvidenceSha256": "feb6cac0fc9fe8b867dcbdd58189528a085898afa2621a05f3cebcf72f81042e",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-063",
+      "name": "Samsung INR21700-50S 5000mAh - 35A",
+      "pricePack": 3.75,
+      "capacity": 5000.0,
+      "dischargeShop": 35.0,
+      "stock": "in_stock",
+      "brand": "Samsung",
+      "model": "INR21700-50S",
+      "minCapacity": 4800.0,
+      "packSize": 1,
+      "price": 3.75,
+      "weight": 72.0,
+      "voltage": 3.6,
+      "height": 70.62,
+      "diameter": 21.25,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50s-5000mah-35a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 6,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 14,
+      "notes": [
+        "25 A ohne / 45 A mit 80 °C Abschaltung. Shop 35 A. V1.0 (2021)."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-50s-5000mah-35a.html"
+        },
+        {
+          "label": "Samsung Spezifikation V1.0",
+          "url": "https://www.nkon.nl/en/amfile/file/download/file/167/product/4821/"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.45
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 3.35
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 3.25
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 3.21
+        },
+        {
+          "minPacks": 600,
+          "pricePack": 3.16
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940528540",
+      "stockCheckedAt": "2026-10-01T20:52:31.099Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-50s-5000mah-35a.html",
+      "modelKey": "samsung:inr2170050s",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:31.099Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-063.jpg",
+      "visualEvidenceSha256": "6d72394488da3e01712f40a6a49895a91986dac01c5a1dbe93448a47ac0c4114",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-064",
+      "name": "Samsung INR21700-48X 4800mAh - 9.6A NO WRAP",
+      "pricePack": 0.99,
+      "capacity": 4800.0,
+      "dischargeShop": 9.6,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "Samsung INR21700-48X",
+      "minCapacity": 4650.0,
+      "packSize": 1,
+      "price": 0.99,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 71.0,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940527772",
+      "stockCheckedAt": "2026-10-01T20:52:34.100Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html",
+      "modelKey": "samsung:inr2170048x",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:34.100Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-064.jpg",
+      "visualEvidenceSha256": "b9ad2676362af5c35198a2c1868ae04038c4529ced7623ab2d65e262871e6272",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-065",
+      "name": "** INR21700-M50LT 4930mAh - 14.4A",
+      "pricePack": 2.89,
+      "capacity": 4930.0,
+      "dischargeShop": 14.6,
+      "stock": "in_stock",
+      "brand": "LG",
+      "model": "INR21700-M50LT",
+      "minCapacity": 4770.0,
+      "packSize": 1,
+      "price": 2.89,
+      "weight": 70.0,
+      "voltage": 3.6,
+      "height": 70.65,
+      "diameter": 21.44,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/m50lt.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "NKON-Quellenwiderspruch: Beschreibung 5060 mAh, Spezifikationstabelle 4930 mAh. Tabellenwert verwendet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/m50lt.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 2.64
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 2.39
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.19
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.09
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 1.99
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940527925",
+      "stockCheckedAt": "2026-10-01T20:52:36.998Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/m50lt.html",
+      "modelKey": "lg:inr21700m50lt",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:36.998Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-065.jpg",
+      "visualEvidenceSha256": "f521fd4577fe75d660dc48e151ffc3021b71d242817d442c199561c4d0bfec7b",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-066",
+      "name": "Samsung INR21700-30T 3000mAh - 35A - Reclaimed",
+      "pricePack": 1.49,
+      "capacity": 3000.0,
+      "dischargeShop": 35.0,
+      "stock": "out_of_stock",
+      "brand": "Samsung",
+      "model": "INR21700-30T",
+      "minCapacity": 0.0,
+      "packSize": 1,
+      "price": 1.49,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.1,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "reclaimed",
+      "terminal": "zurückgefordert",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html",
+      "chargeStandard": 1.5,
+      "chargeMax": null,
+      "chargeFast": 4,
+      "dischargeSheet": 35,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 15,
+      "notes": [
+        "4 A als Rated-/Rapid-Charge angegeben, nicht ausdrücklich als Maximum. Ladetemperatur 0–50 °C; Entladung −20–80 °C.",
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet.",
+        "Zustand/Charge des Angebots separat vom Datenblatt einer neuen Zelle bewerten."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html"
+        },
+        {
+          "label": "Samsung 30T Spezifikation V2.0",
+          "url": "https://www.nkon.nl/en/amfile/file/download/file/206/product/2902/"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 1.35
+        },
+        {
+          "minPacks": 100,
+          "pricePack": 1.25
+        },
+        {
+          "minPacks": 200,
+          "pricePack": 1.15
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "unused_pack_reject",
+      "conditionEvidence": "NKON nennt Packausschuss mit Schweißfehlern und gibt an, dass die Zellen nie geladen oder entladen wurden.",
+      "ean": "7417940528601",
+      "stockCheckedAt": "2026-10-01T20:52:40.924Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html",
+      "modelKey": "samsung:inr2170030t",
+      "offerVariant": "Reclaimed",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:40.924Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-066.jpg",
+      "visualEvidenceSha256": "c72d959814fafd8ad50362592bf7da733102fa704b929ec13839e11f2b1481a3",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-067",
+      "name": "BAK N21700CG-50E 5000mAh - 14.7A",
+      "pricePack": 2.49,
+      "capacity": 5000.0,
+      "dischargeShop": 10.2,
+      "stock": "out_of_stock",
+      "brand": "BAK",
+      "model": "N21700CG -50E",
+      "minCapacity": 4900.0,
+      "packSize": 1,
+      "price": 2.49,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.35,
+      "diameter": 21.35,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": 5,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 13,
+      "notes": [
+        "C-Raten aus 5 Ah umgerechnet. Datenblatt 15 A; Shop 14,7 A."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/940/product/4433/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 130,
+          "pricePack": 2.35
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.25
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "stockCheckedAt": "2026-10-01T20:52:43.928Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html",
+      "modelKey": "bak:n21700cg50e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:43.928Z",
+      "ean": "7417940526867",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-067.jpg",
+      "visualEvidenceSha256": "d8890e46fa1e3bdaea47af5f7edfdc2a5fa7ec4ba4f124c7f391ff97ea33a2de",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-068",
+      "name": "** INR21700-M50L 4850mAh - 14.4A - KEIN WICKELN",
+      "pricePack": 5.19,
+      "capacity": 5000.0,
+      "dischargeShop": 14.4,
+      "stock": "in_stock",
+      "brand": "LG",
+      "model": "** INR21700-M50L",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 5.19,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.0,
+      "diameter": 21.0,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/lg-inr21700-m50l-4850mah-7-3a-no-wrap.html",
+      "chargeStandard": null,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": null,
+      "chargeVoltage": null,
+      "cutoffVoltage": null,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/lg-inr21700-m50l-4850mah-7-3a-no-wrap.html"
+        }
+      ],
+      "researchStatus": "Kein passendes Herstellerdatenblatt gefunden",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 130,
+          "pricePack": 1.83
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 1.77
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 1.75
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940526638",
+      "stockCheckedAt": "2026-10-01T20:52:46.746Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/lg-inr21700-m50l-4850mah-7-3a-no-wrap.html",
+      "modelKey": "lg:inr21700m50l",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:46.746Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-068.jpg",
+      "visualEvidenceSha256": "d58dea88d8f3065c0307c8386e8e9869232be8996218a26a0977ab2717fc5163",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-069",
+      "name": "Molicel INR21700-M50A 4800mAh - 15A",
+      "pricePack": 3.25,
+      "capacity": 4800.0,
+      "dischargeShop": 15.0,
+      "stock": "out_of_stock",
+      "brand": "Molicel",
+      "model": "INR-21700-M50A",
+      "minCapacity": 4800.0,
+      "packSize": 1,
+      "price": 3.25,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.2,
+      "diameter": 21.7,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html",
+      "chargeStandard": 2.5,
+      "chargeMax": null,
+      "chargeFast": null,
+      "dischargeSheet": 15,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 15,
+      "notes": [
+        "Maximaler Ladestrom im gefundenen Produktdatenblatt nicht ausdrücklich spezifiziert.",
+        "Maximaler Ladestrom nicht belegt; kein Wert aus Entladestrom abgeleitet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1157/product/4245/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940526355",
+      "stockCheckedAt": "2026-10-01T20:52:49.847Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html",
+      "modelKey": "molicel:inr21700m50a",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:49.847Z",
+      "discontinued": true,
+      "lifecycleEvidence": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+      "visualEvidence": "data/visual-evidence/cell-069.jpg",
+      "visualEvidenceSha256": "2386ef0b922faddd3b6b173d85ae0048691e4e030146a7c196a497122ee27618",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-070",
+      "name": "2x Keeppower 21700 5000mAh (protected) - 8A - USB",
+      "pricePack": 17.95,
+      "capacity": 4900.0,
+      "dischargeShop": 8.0,
+      "stock": "out_of_stock",
+      "brand": "Keeppower",
+      "model": "P2150TC",
+      "minCapacity": 4850.0,
+      "packSize": 2,
+      "price": 8.975,
+      "weight": 75.0,
+      "voltage": 3.6,
+      "height": 76.7,
+      "diameter": 21.4,
+      "protected": true,
+      "condition": "new",
+      "terminal": "Button top, USB",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/2x-keeppower-21700-5000mah-protected-8a-usb.html",
+      "chargeStandard": 0.97,
+      "chargeMax": 4.85,
+      "chargeFast": null,
+      "dischargeSheet": 8,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Externer Li-Ion-Lader. USB-Eingang und interner Ladestrom sind separate Angaben.",
+        "NKON-Quellenwiderspruch: Beschreibung 5000 mAh, Spezifikationstabelle 4900 mAh. Tabellenwert verwendet."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/2x-keeppower-21700-5000mah-protected-8a-usb.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/290/product/4137/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "6970906554058",
+      "stockCheckedAt": "2026-10-01T20:52:52.889Z",
+      "stockEvidence": "Nicht auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/2x-keeppower-21700-5000mah-protected-8a-usb.html",
+      "modelKey": "keeppower:p2150tc",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:52:52.889Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-070.jpg",
+      "visualEvidenceSha256": "bf3b9996a8879db23b7eda1bdf9bf5fe7f1d73ef8b38a1967916bcbb2fa0baeb",
+      "shopReviewFindings": []
+    },
+    {
+      "id": "cell-071",
+      "name": "Molicel INR21700-P42A 4200mAh - 45A",
+      "pricePack": 3.55,
+      "capacity": 4200.0,
+      "dischargeShop": 45.0,
+      "stock": "in_stock",
+      "brand": "Molicel",
+      "model": "INR-21700-P42A",
+      "minCapacity": 4000.0,
+      "packSize": 1,
+      "price": 3.55,
+      "weight": 68.0,
+      "voltage": 3.6,
+      "height": 70.0,
+      "diameter": 21.4,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html",
+      "chargeStandard": 4.2,
+      "chargeMax": 8.4,
+      "chargeFast": null,
+      "dischargeSheet": 45,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": 10,
+      "notes": [
+        "Einseitiges Datenblatt nennt nur Standardladestrom. Zusätzliche Spezifikation ergänzt Maximum."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1170/product/3427/",
+          "section": "Lade- und Entladespezifikationen"
+        },
+        {
+          "label": "Ausführliche P42A-Spezifikation",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/1588/product/5985/",
+          "section": "Rated specifications: maximum charging current"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [],
+      "tierStatus": "not_found",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "7417940523859",
+      "stockCheckedAt": "2026-10-01T20:53:17.503Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html",
+      "modelKey": "molicel:inr21700p42a",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:53:17.503Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-071.jpg",
+      "visualEvidenceSha256": "2d289bbe4d295766b1cd09f7d85f95b7e8648e1a5301b5ce647158cc642b32db",
+      "shopReviewFindings": [
+        "Angebotsadresse nennt 21700A / 30 A; Titel, Tabelle und EAN identifizieren P42A / 45 A. Die Adresse kann veraltet sein."
+      ]
+    },
+    {
+      "id": "cell-072",
+      "name": "Samsung INR21700-50E 4900mAh - 9.8A",
+      "pricePack": 3.45,
+      "capacity": 4900.0,
+      "dischargeShop": 9.8,
+      "stock": "in_stock",
+      "brand": "Samsung",
+      "model": "INR21700-50E",
+      "minCapacity": 4850.0,
+      "packSize": 1,
+      "price": 3.45,
+      "weight": 69.0,
+      "voltage": 3.6,
+      "height": 70.6,
+      "diameter": 21.1,
+      "protected": false,
+      "condition": "new",
+      "terminal": "Flat top",
+      "delivery": null,
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50e.html",
+      "chargeStandard": 2.45,
+      "chargeMax": 4.9,
+      "chargeFast": null,
+      "dischargeSheet": 9.8,
+      "chargeVoltage": 4.2,
+      "cutoffVoltage": 2.5,
+      "resistanceAc": null,
+      "notes": [
+        "Maximaler Ladestrom nicht für zugesicherte Zyklenlebensdauer."
+      ],
+      "sources": [
+        {
+          "label": "NKON Angebot",
+          "url": "https://www.nkon.nl/de/samsung-inr21700-50e.html"
+        },
+        {
+          "label": "Herstellerdatenblatt",
+          "url": "https://www.nkon.nl/de/amfile/file/download/file/176/product/3073/",
+          "section": "Lade- und Entladespezifikationen"
+        }
+      ],
+      "researchStatus": "Herstellerdatenblatt geprüft",
+      "retrievedAt": "2026-10-01",
+      "sourceCrawl": "Visuelle Prüfung am 01.10.2026",
+      "priceTiers": [
+        {
+          "minPacks": 10,
+          "pricePack": 3.21
+        },
+        {
+          "minPacks": 50,
+          "pricePack": 3.11
+        },
+        {
+          "minPacks": 130,
+          "pricePack": 2.98
+        },
+        {
+          "minPacks": 260,
+          "pricePack": 2.88
+        },
+        {
+          "minPacks": 390,
+          "pricePack": 2.78
+        }
+      ],
+      "tierStatus": "published",
+      "conditionCategory": "regular",
+      "conditionEvidence": "Reguläres Angebot; keine Reclaimed- oder Mixed-Batch-Kennzeichnung in der Quelle.",
+      "ean": "8438493108880",
+      "stockCheckedAt": "2026-10-01T20:53:22.060Z",
+      "stockEvidence": "Auf Lager",
+      "stockSource": "NKON-Angebotsseite · visuell geprüft",
+      "offerKey": "https://www.nkon.nl/de/samsung-inr21700-50e.html",
+      "modelKey": "samsung:inr2170050e",
+      "offerVariant": "Neu / regulär",
+      "shopAuditState": "visually_checked",
+      "visualCheck": "verified",
+      "visualCheckedAt": "2026-10-01T20:53:22.060Z",
+      "discontinued": false,
+      "lifecycleEvidence": null,
+      "visualEvidence": "data/visual-evidence/cell-072.jpg",
+      "visualEvidenceSha256": "de10a9c66cabdaca01bcaac476ee54ba8e4522f45e32b215059703b5960cb237",
+      "shopReviewFindings": []
+    }
+  ],
+  "updateNote": "BAK CG-50E als ausverkauft bestätigt; zwei Preisstaffeln korrigiert; 19 eingestellte Angebote markiert. Herstellerwerte unverändert. Shopwidersprüche separat dokumentiert.",
+  "visualAuditSummary": {
+    "date": "2026-10-01",
+    "model": "GPT-6 Luna",
+    "reasoning": "low",
+    "requestedListings": 72,
+    "attemptedListings": 72,
+    "verifiedListings": 72,
+    "blockedListings": 0,
+    "notAttemptedListings": 0,
+    "complete": true
+  }
+}

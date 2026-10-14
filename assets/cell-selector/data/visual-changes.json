@@ -1,0 +1,503 @@
+{
+  "summary": {
+    "totalListings": 72,
+    "visuallyChecked": 72,
+    "complete": true,
+    "unverified": [],
+    "stockCounts": {
+      "in_stock": 26,
+      "out_of_stock": 37,
+      "orderable": 9
+    },
+    "stockChanges": 1,
+    "priceTierChanges": 2,
+    "discontinued": 19,
+    "listingsWithShopUpdates": 21,
+    "listingsWithReviewFindings": 16,
+    "listingsWithAnyChangesOrFindings": 31,
+    "cloudflareHandoffs": 0
+  },
+  "changes": [
+    {
+      "id": "cell-003",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:46:06.743Z",
+      "screenshot": "screenshots/cell-003.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-004",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html",
+      "checkedAt": "2026-10-01T20:46:07.816Z",
+      "screenshot": "screenshots/cell-004.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Short description says capacity 4000 mAh, while title, specification table (typical capacity 5000 mAh) and source record identify 5000 mAh. Preserve this conflict; do not resolve from the screenshot."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-006",
+      "url": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html",
+      "checkedAt": "2026-10-01T20:46:10.333Z",
+      "screenshot": "screenshots/cell-006.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Specification table shows minimum capacity 5500 mAh but typical capacity 5400 mAh; title and short description say 5500 mAh. Record the conflict."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-007",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html",
+      "checkedAt": "2026-10-01T20:46:11.432Z",
+      "screenshot": "screenshots/cell-007.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "The exact offer URL slug contains 50xg, while the visible product title and model field say 60XG. Visible identity otherwise matches the expected 60XG offer; URL slug may be legacy."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-008",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html",
+      "checkedAt": "2026-10-01T20:46:12.858Z",
+      "screenshot": "screenshots/cell-008.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-014",
+      "url": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html",
+      "checkedAt": "2026-10-01T20:46:43.417Z",
+      "screenshot": "screenshots/cell-014.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "Listing explicitly says discontinued and will not be restocked; dataset currently represents this only as out_of_stock."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-019",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html",
+      "checkedAt": "2026-10-01T20:46:50.034Z",
+      "screenshot": "screenshots/cell-019.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "Listing explicitly says discontinued and will not be restocked; dataset currently represents this only as out_of_stock."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-021",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html",
+      "checkedAt": "2026-10-01T20:47:33.934Z",
+      "screenshot": "screenshots/cell-021.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Catalog classifies this as new/regular, but the offer page does not explicitly say new; it says cells came from a cancelled automotive project and are supplied without a wrap. Preserve the catalog condition as unconfirmed by the page."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-023",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:47:38.867Z",
+      "screenshot": "screenshots/cell-023.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Title and specification table identify INR21700-40PL at 70A, matching the expected record; the short description instead states maximum discharge current 50A. Keep the page's conflicting values visible."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-024",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html",
+      "checkedAt": "2026-10-01T20:47:40.297Z",
+      "screenshot": "screenshots/cell-024.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-027",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html",
+      "checkedAt": "2026-10-01T20:47:54.822Z",
+      "screenshot": "screenshots/cell-027.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-028",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html",
+      "checkedAt": "2026-10-01T20:48:26.459Z",
+      "screenshot": "screenshots/cell-028.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-029",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:48:31.055Z",
+      "screenshot": "screenshots/cell-029.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-030",
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html",
+      "checkedAt": "2026-10-01T20:48:36.156Z",
+      "screenshot": "screenshots/cell-030.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Short description states diameter 21.8 mm, while specification table states 21.3 mm and the expected record also has 21.3 mm. Keep the page conflict visible."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-032",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html",
+      "checkedAt": "2026-10-01T20:49:11.021Z",
+      "screenshot": "screenshots/cell-032.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-034",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html",
+      "checkedAt": "2026-10-01T20:49:17.011Z",
+      "screenshot": "screenshots/cell-034.jpg",
+      "updates": {
+        "priceTiers": {
+          "before": [
+            {
+              "minPacks": 10,
+              "pricePack": 3.69
+            },
+            {
+              "minPacks": 130,
+              "pricePack": 3.49
+            },
+            {
+              "minPacks": 390,
+              "pricePack": 3.39
+            }
+          ],
+          "after": [
+            {
+              "minPacks": 10,
+              "pricePack": 3.73
+            },
+            {
+              "minPacks": 130,
+              "pricePack": 3.52
+            },
+            {
+              "minPacks": 390,
+              "pricePack": 3.42
+            }
+          ]
+        }
+      },
+      "reviewFindings": [
+        "Displayed tier prices are €3.73/10, €3.52/130, and €3.42/390; source record lists €3.69, €3.49, and €3.39 respectively."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-036",
+      "url": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html",
+      "checkedAt": "2026-10-01T20:49:23.610Z",
+      "screenshot": "screenshots/cell-036.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-037",
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html",
+      "checkedAt": "2026-10-01T20:49:26.571Z",
+      "screenshot": "screenshots/cell-037.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "Visible product title begins with literal '**' and omits the LG brand; the specification table identifies brand LG and model INR21700-M58T, matching the record."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-038",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:49:31.423Z",
+      "screenshot": "screenshots/cell-038.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-041",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html",
+      "checkedAt": "2026-10-01T20:50:14.654Z",
+      "screenshot": "screenshots/cell-041.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "The expected shipping date 25-09-2026 is already past at the 2026-10-01 visual check; the page still labels the item preorder."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-047",
+      "url": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/",
+      "checkedAt": "2026-10-01T20:50:34.570Z",
+      "screenshot": "screenshots/cell-047.jpg",
+      "updates": {
+        "priceTiers": {
+          "before": [
+            {
+              "minPacks": 10,
+              "pricePack": 5.79
+            },
+            {
+              "minPacks": 50,
+              "pricePack": 5.49
+            },
+            {
+              "minPacks": 100,
+              "pricePack": 5.39
+            },
+            {
+              "minPacks": 200,
+              "pricePack": 5.29
+            }
+          ],
+          "after": [
+            {
+              "minPacks": 10,
+              "pricePack": 5.92
+            },
+            {
+              "minPacks": 50,
+              "pricePack": 5.61
+            },
+            {
+              "minPacks": 100,
+              "pricePack": 5.51
+            },
+            {
+              "minPacks": 200,
+              "pricePack": 5.41
+            }
+          ]
+        }
+      },
+      "reviewFindings": [
+        "All four displayed quantity-tier prices differ from the stored tiers: page 10/50/100/200 units = EUR 5.92/5.61/5.51/5.41; stored tiers = EUR 5.79/5.49/5.39/5.29."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-051",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:51:19.413Z",
+      "screenshot": "screenshots/cell-051.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "The requested offer URL slug contains 45A, while page title, specification table and EAN identify the 35A INR21700-40TG. The fetched page identity otherwise matches the expected record."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-056",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:51:38.333Z",
+      "screenshot": "screenshots/cell-056.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-057",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html",
+      "checkedAt": "2026-10-01T20:51:41.378Z",
+      "screenshot": "screenshots/cell-057.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "The URL slug says productiejaar-2021, but the page title, specification table and short description say production year 2022 (matching the expected record). The URL may be stale; keep the year conflict visible."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-058",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html",
+      "checkedAt": "2026-10-01T20:51:44.446Z",
+      "screenshot": "screenshots/cell-058.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "The short description says capacity 4000 mAh, while the title and specification table say 5000 mAh (typical; 4950 mAh minimum), matching the expected record. Preserve this internal conflict."
+      ],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-060",
+      "url": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html",
+      "checkedAt": "2026-10-01T20:51:50.589Z",
+      "screenshot": "screenshots/cell-060.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-064",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html",
+      "checkedAt": "2026-10-01T20:52:34.100Z",
+      "screenshot": "screenshots/cell-064.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-066",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html",
+      "checkedAt": "2026-10-01T20:52:40.924Z",
+      "screenshot": "screenshots/cell-066.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-067",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html",
+      "checkedAt": "2026-10-01T20:52:43.928Z",
+      "screenshot": "screenshots/cell-067.jpg",
+      "updates": {
+        "stock": {
+          "before": "unknown",
+          "after": "out_of_stock"
+        },
+        "ean": {
+          "before": null,
+          "after": "7417940526867"
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": null
+    },
+    {
+      "id": "cell-069",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html",
+      "checkedAt": "2026-10-01T20:52:49.847Z",
+      "screenshot": "screenshots/cell-069.jpg",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "identityEANMatches": true
+    },
+    {
+      "id": "cell-071",
+      "url": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html",
+      "checkedAt": "2026-10-01T20:53:17.503Z",
+      "screenshot": "screenshots/cell-071.jpg",
+      "updates": {},
+      "reviewFindings": [
+        "URL slug says \"21700a-4200mah-30a\" but the page title/specs identify INR21700-P42A at 45A; the live EAN (7417940523859) and model match the expected P42A offer."
+      ],
+      "identityEANMatches": true
+    }
+  ],
+  "note": "Updates are shop-data corrections. reviewFindings are unresolved source inconsistencies and do not authorize replacing manufacturer specifications. Visual provenance metadata updated for all 72 offers."
+}
