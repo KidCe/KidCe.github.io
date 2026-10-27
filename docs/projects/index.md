@@ -18,9 +18,9 @@ Projects beyond regular quad builds: electronics, experimental aircraft and 3D-p
 
 <a class="build-card" href="tinywhoop-led-gate/">
   <span class="eyebrow">RACE INFRASTRUCTURE · PROTOTYPE DEVELOPMENT</span>
-  <h2>Tinywhoop LED Gate</h2>
-  <p>Tested U-profile prototypes, a V-profile study and a planned square-tube gate with printed connectors and diffusers.</p>
-  <span>View the concept →</span>
+  <h2>Modular Tinywhoop LED Gate</h2>
+  <p>Square-tube LED gate with printed corners and clip-on diffusers, an interactive 3D assembly guide and a 20-gate cost estimate.</p>
+  <span>View project →</span>
 </a>
 
 <a class="build-card" href="35-inch-1s-endurance-drone/">

@@ -13,8 +13,19 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
+  # Follows the visitor's system theme on first visit; a manual toggle is remembered.
+  # Dark is listed first, so it is the default when the browser reports no preference.
   palette:
-    scheme: fpv-light
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: fpv-light
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -87,7 +98,7 @@ nav:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
       - HDZero Monitor Favorites: projects/hdzero-monitor-favorites.md
-      - Tinywhoop LED Gate: projects/tinywhoop-led-gate.md
+      - Modular Tinywhoop LED Gate: projects/tinywhoop-led-gate.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
       - 3D Printing:
           - Flashforge Creator 5:

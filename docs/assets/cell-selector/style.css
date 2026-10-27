@@ -195,3 +195,23 @@
 #fpv-nkon-tool #scaleReferenceHint{display:flex;justify-content:space-between;color:#929ca7;font-size:10px}
 #fpv-nkon-tool .display-settings>summary{font-size:11px;color:#929ca7;font-weight:400}
 #fpv-nkon-tool .display-settings>#axisBtn{margin:4px 0;font-size:12px;min-height:32px}
+#fpv-nkon-tool .compare .dark-button{background:#1b1e23;border-color:#343b43;color:#e9edf2}
+/* Dark mode: follows the Wiki's Material "slate" scheme; the chart panel is already dark. */
+[data-md-color-scheme=slate] #fpv-nkon-tool{--ink:#e7e8ea;--muted:#a7abb2;--line:#2e333a;--panel:#1d2026}
+[data-md-color-scheme=slate] #fpv-nkon-tool button{background:#191c21}
+[data-md-color-scheme=slate] #fpv-nkon-tool button:hover{background:#23272d}
+[data-md-color-scheme=slate] #fpv-nkon-tool input[type=checkbox]{accent-color:#e7e8ea}
+[data-md-color-scheme=slate] #fpv-nkon-tool .quantity-control input,[data-md-color-scheme=slate] #fpv-nkon-tool .sheet-quantity input,[data-md-color-scheme=slate] #fpv-nkon-tool .range-values input,[data-md-color-scheme=slate] #fpv-nkon-tool .extra-filters select,[data-md-color-scheme=slate] #fpv-nkon-tool #sort{background:#101216;color:var(--ink)}
+[data-md-color-scheme=slate] #fpv-nkon-tool .filters,[data-md-color-scheme=slate] #fpv-nkon-tool .offer-card,[data-md-color-scheme=slate] #fpv-nkon-tool dialog{background:#191c21}
+[data-md-color-scheme=slate] #fpv-nkon-tool .range-track input::-webkit-slider-runnable-track{background:#3a3f47}
+[data-md-color-scheme=slate] #fpv-nkon-tool .range-track input::-webkit-slider-thumb{border-color:#e7e8ea;background:#191c21}
+[data-md-color-scheme=slate] #fpv-nkon-tool .range-track input::-moz-range-thumb{border-color:#e7e8ea;background:#191c21}
+[data-md-color-scheme=slate] #fpv-nkon-tool .details-button,[data-md-color-scheme=slate] #fpv-nkon-tool .cell-actions button,[data-md-color-scheme=slate] #fpv-nkon-tool .status,[data-md-color-scheme=slate] #fpv-nkon-tool .status.out_of_stock{color:#a7abb2}
+[data-md-color-scheme=slate] #fpv-nkon-tool .cell-actions button[data-favorite][aria-pressed=true]{color:#f0d578;background:#292516;border-color:#736234}
+[data-md-color-scheme=slate] #fpv-nkon-tool .cell-actions button[data-emphasize][aria-pressed=true]{color:#a1e1eb;background:#132e35;border-color:#497a87}
+[data-md-color-scheme=slate] #fpv-nkon-tool .spec-track{background:#2a2e35}
+[data-md-color-scheme=slate] #fpv-nkon-tool .spec-track.missing{background:repeating-linear-gradient(135deg,#2a2e35,#2a2e35 3px,#3a3f47 3px,#3a3f47 4px)}
+[data-md-color-scheme=slate] #fpv-nkon-tool .extra-specs{border-top-color:#2a2e35}
+[data-md-color-scheme=slate] #fpv-nkon-tool .detail-grid>div{background:#20242a}
+[data-md-color-scheme=slate] #fpv-nkon-tool .discontinued-note{background:#3a2a20}
+[data-md-color-scheme=slate] #fpv-nkon-tool .primary{background:#e7e8ea;color:#111317}

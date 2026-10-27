@@ -20,7 +20,9 @@
   --md-default-fg-color: var(--fpv-ink);
 }
 
-[data-md-color-scheme="fpv-dark"] {
+/* Dark mode builds on Material's slate scheme so tables, admonitions and code keep dark defaults. */
+[data-md-color-scheme="slate"] {
+  --md-hue: 220;
   --md-primary-fg-color: #111317;
   --md-primary-bg-color: #fff;
   --md-accent-fg-color: var(--fpv-orange-bright);
@@ -28,7 +30,15 @@
   --md-default-fg-color: #e7e8ea;
   --md-default-fg-color--light: #a7abb2;
   --md-code-bg-color: #191c21;
+  --md-typeset-a-color: var(--fpv-orange-bright);
+  --fpv-chart-qualifying: #a7abb2;
 }
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) { border-color: var(--md-default-fg-color--light); color: var(--md-default-fg-color); }
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary):hover { border-color: var(--fpv-orange-bright); color: var(--fpv-orange-bright); }
+/* Details inside the tool's dark chart panel keep the panel's light text in both schemes. */
+#fpv-nkon-tool .compare details { color: inherit; }
+/* The NKON tool brings its own dark palette (tools/nkon-cell-selector/dist/style.css). */
+[data-md-color-scheme="slate"] #fpv-nkon-tool { --md-admonition-fg-color: inherit; --md-admonition-bg-color: transparent; color-scheme: dark; }
 
 .md-header { border-bottom: 1px solid rgba(127,127,127,.18); box-shadow: none; }
 .md-tabs { background: var(--md-primary-fg-color); }
