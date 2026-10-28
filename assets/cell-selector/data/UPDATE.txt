@@ -1,0 +1,91 @@
+# Updating the NKON 21700 snapshot
+
+Each record identifies an exact offer, not a unique cell model. Manufacturer
+facts, shop specs, stock and quantity prices remain separate. Missing values
+are null (unknown), never zero or estimated values.
+
+## Reproducible update without an LLM
+
+Python 3, requests and beautifulsoup4 are required. From this directory:
+
+    python -m pip install requests beautifulsoup4
+    python update_nkon.py --snapshot cells.json --output cells-new.json
+
+The updater validates complete category pagination and every exact offer.
+Existing manufacturer data are retained only when offer identity matches.
+New models and new datasheet revisions need separate review. Validate and
+review the candidate before replacing cells.json and syncing Wiki assets.
+
+Cloudflare, HTTP 403/429, missing pages, changed layout, redirected existing
+offers or mismatched EAN/model/condition stop the whole update before writing.
+No valid snapshot is replaced by partial data and no challenge is bypassed.
+The original 1 October 2026 live HTTP attempt was blocked; the live path remains
+incompletely validated. Parser and stop-condition tests are included.
+
+## Saved HTML
+
+    python update_nkon.py --snapshot cells.json --html-dir saved-pages --output cells-new.json
+
+saved-pages/manifest.json maps each exact category/product URL to a saved HTML
+filename. Include every category page and every product page, for example:
+
+    {
+      "https://www.nkon.nl/de/rechargeable/li-ion/21700-20700-size.html": "category-1.html",
+      "https://www.nkon.nl/de/rechargeable/li-ion/21700-20700-size.html?p=2": "category-2.html",
+      "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html": "bak-50d2.html"
+    }
+
+This is only an example, not a complete catalog manifest.
+
+## Identity and conventions
+
+- offerKey identifies the normalized exact URL; EAN/GTIN is listing-specific.
+  modelKey only groups a family. New, reclaimed, mixed, origin, year, protection,
+  wrap and pack variants remain separate. A URL slug alone cannot prove a model
+  change; visible model, EAN and condition must be checked together.
+- pricePack includes VAT; price is normalized per cell. priceTiers start at
+  minPacks offer units. Desired cell quantities round up to whole packs. One
+  effective price drives price filter, list, radar and Wh/€. Shipping and optional
+  tabs are excluded. Missing tiers mean not found, not proven absence of discounts.
+- stock is in_stock, orderable, out_of_stock or unknown. Missing/contradictory
+  availability is not treated as available. Delivery dates may be outdated.
+- discontinued means an explicit no-restocking claim. It remains out_of_stock
+  regardless of a conflicting delivery date or buy button.
+- dischargeShop and dischargeSheet are separate. chargeStandard, chargeMax and
+  chargeFast are distinct. Manufacturer conditions/revisions remain in notes
+  and sources, with independent assessment needed for reclaimed/mixed cells.
+- Wh/€ and Wh/kg use shop capacity and nominal voltage; they are not load tests.
+- Shop contradictions remain review findings, without invented resolutions.
+
+## Preserved condition categories
+
+- regular: no reclaimed/mixed claim; no invented usage guarantee.
+- unused_pack_reject: explicitly never charged/discharged, with pack weld faults.
+- unused_reclaimed: explicitly unused, without established welding defects.
+- used_reclaimed: prior use or capacity loss; no remaining-capacity promise.
+- reclaimed_unknown: prior use unknown; no assumption of a new cell.
+- mixed: mixed batch, individual history not established.
+
+Original source explanations remain verbatim in the snapshot.
+
+## Evidence and dated replays
+
+The visual audit of 1 October 2026 checked 72/72 exact offers. Historical counts:
+26 in stock, nine orderable, 37 sold out, including 19 discontinued. The ZIP shared
+again through Google Drive is the same audit, not a new live verification.
+
+visual-audit.json, visual-changes.json and visual-evidence/ preserve the evidence.
+audit.json is the older index audit. HTTP/HTML updates clear visual verification
+claims for refreshed offers. From the Wiki repository root:
+
+    python tools/nkon-cell-selector/scripts/import_visual_audit.py --audit-dir path/to/unpacked-audit
+    python tools/nkon-cell-selector/scripts/validate_snapshot.py
+    python tools/nkon-cell-selector/scripts/sync_wiki.py
+    python tools/nkon-cell-selector/scripts/sync_wiki.py --check
+    python -m mkdocs build --strict
+
+Visual import requires full exact-offer coverage, identity checks, the original
+snapshot digest and every screenshot digest. build_snapshot.py reproduces the
+historical seed, applying the older index review before the newer visual replay.
+audit_snapshot.py replays the dated audit. Neither refreshes live stock.
+See tools/nkon-cell-selector/README.md for setup, testing and publishing.

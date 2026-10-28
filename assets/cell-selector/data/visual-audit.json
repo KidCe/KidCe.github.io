@@ -1,0 +1,5442 @@
+{
+  "schemaVersion": 1,
+  "sourceDatabaseUrl": "https://nkon-cell-selector.kidce.chatgpt.site/data/cells.json",
+  "sourceSha256": "5007a829873ac305b057d2f34a4ef3b32f2f91147e2e24965efa93517c9c8ef0",
+  "method": "Exact offer URLs in one visible persistent Chrome profile; centrally serialized navigation, one dedicated tab per GPT-6 Luna low agent; individual full-page screenshots inspected by agents. No search-index stock substituted. No purchases or CAPTCHA automation.",
+  "summary": {
+    "totalListings": 72,
+    "visuallyChecked": 72,
+    "complete": true,
+    "unverified": [],
+    "stockCounts": {
+      "in_stock": 26,
+      "out_of_stock": 37,
+      "orderable": 9
+    },
+    "stockChanges": 1,
+    "priceTierChanges": 2,
+    "discontinued": 19,
+    "listingsWithShopUpdates": 21,
+    "listingsWithReviewFindings": 16,
+    "listingsWithAnyChangesOrFindings": 31,
+    "cloudflareHandoffs": 0
+  },
+  "listings": [
+    {
+      "id": "cell-001",
+      "url": "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-inr21700-50d2-5000mah-60a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:45:19.216Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:45:19.216000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "BAK INR21700-50D2 5000mAh - 60A",
+        "ean": "6097316313362",
+        "model": "INR2170-50D2",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.85,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.65
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.59
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.39
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 3.28
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK INR21700-50D2 5000mAh - 60A",
+        "brand": "BAK",
+        "model": "INR2170-50D2",
+        "ean": "6097316313362",
+        "variant": "Regular / new offer; no reclaimed or mixed-batch label visible",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.85,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.65
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.59
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.39
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 3.28
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-001.jpg",
+      "screenshotSha256": "68177a7246ae1e3e7c52906cb4aa031d15c2b04273731b66d540ef9bd1219741",
+      "visibleText": "evidence/cell-001.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The screenshot shows the currently published offer and visible price breaks; it does not establish origin or manufacturing year."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-002",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a-clear-wrap-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a-clear-wrap-reclaimed.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:05.277Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:05.277000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A - Clear Wrap Reclaimed",
+        "ean": "6097324567528",
+        "model": "INR21700-30SG",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.75,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 1.55
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A - Clear Wrap Reclaimed",
+        "brand": "Tenpower",
+        "model": "INR21700-30SG",
+        "ean": "6097324567528",
+        "variant": "Reclaimed; flat top listed as zurückgefordert; product text says pack-reject cells with welding defects, never charged or discharged",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 1.75,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 1.55
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-002.jpg",
+      "screenshotSha256": "df0abfd107862abfc6ff950fc51bfccbd7e47f9ea6aa6c681b57898fa9da370c",
+      "visibleText": "evidence/cell-002.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-003",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a-reclaimed.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:06.743Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:06.743000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "EVE INR21700-50E 5000mAh - 15A - Renoviert",
+        "ean": "6097318729772",
+        "model": "INR21700-50E",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.25
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-50E 5000mAh - 15A - Renoviert",
+        "brand": "EVE",
+        "model": "INR21700-50E",
+        "ean": "6097318729772",
+        "variant": "Reclaimed; battery version listed as zurückgefordert; product text says pack-reject cells with welding defects, never charged or discharged",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.25
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-003.jpg",
+      "screenshotSha256": "da93a239d4f33122c03dc62acbe2b080293450dd9c8dbd100aa3da6eae8fd4b6",
+      "visibleText": "evidence/cell-003.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-004",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-mixed-batch.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:07.816Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:07.816000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A (mixed batch)",
+        "ean": "6097320756711",
+        "model": "INR21700-50ME",
+        "stock": "in_stock",
+        "offerVariant": "Mixed Batch",
+        "condition": "mixed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.25
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A (mixed batch)",
+        "brand": "Tenpower",
+        "model": "INR21700-50ME",
+        "ean": "6097320756711",
+        "variant": "Mixed batch; battery version listed as Mischcharge, Flat top",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.25
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-004.jpg",
+      "screenshotSha256": "18e16ce4d74409fecd08a419150aea84972a926c624b2695c23227c75cdf04a4",
+      "visibleText": "evidence/cell-004.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Short description says capacity 4000 mAh, while title, specification table (typical capacity 5000 mAh) and source record identify 5000 mAh. Preserve this conflict; do not resolve from the screenshot."
+      ],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-005",
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rs60-6000mah-50a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/reliance-inr21700-rs60-6000mah-50a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:09.225Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:09.225000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Reliance INR21700-RS60 6000mAh - 50A",
+        "ean": "6097315772771",
+        "model": "INR21700-RS60",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 17.99,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Reliance INR21700-RS60 6000mAh - 50A",
+        "brand": "Reliance",
+        "model": "INR21700-RS60",
+        "ean": "6097315772771",
+        "variant": "Regular offer; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 17.99,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-005.jpg",
+      "screenshotSha256": "4e806ccd7c689d50c9bbb6796b3596cbb1182c093cc7a91a49d17e96752aa285",
+      "visibleText": "evidence/cell-005.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-006",
+      "url": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/lishen-inr21700-55e2-5500mah-11a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:10.333Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:10.333000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Lishen INR21700-55E2 5500mAh - 11A (TerraE label)",
+        "ean": "6097330531520",
+        "model": "INR21700-55E2",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.25,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Lishen INR21700-55E2 5500mAh - 11A (TerraE label)",
+        "brand": "Lishen",
+        "model": "INR21700-55E2",
+        "ean": "6097330531520",
+        "variant": "TerraE label; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.25,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-006.jpg",
+      "screenshotSha256": "d963cbb975e72ca19be747b3abdb72b3ac4c3bcf467f99482085d332e8e6ab8c",
+      "visibleText": "evidence/cell-006.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Specification table shows minimum capacity 5500 mAh but typical capacity 5400 mAh; title and short description say 5500 mAh. Record the conflict."
+      ],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-007",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50xg-6000mah-60a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:11.432Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:11.432000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Tenpower INR21700-60XG 6000mAh - 60A",
+        "ean": "6097317536579",
+        "model": "INR21700-60XG",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 5.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 5.25
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 4.95
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-60XG 6000mAh - 60A",
+        "brand": "Tenpower",
+        "model": "INR21700-60XG",
+        "ean": "6097317536579",
+        "variant": "Regular offer; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 5.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 5.25
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 4.95
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-007.jpg",
+      "screenshotSha256": "9f4549b13d2ca4acca021bc621bcca2ba559d25f1b273f0d3474bc46784730b7",
+      "visibleText": "evidence/cell-007.txt",
+      "updates": {},
+      "reviewFindings": [
+        "The exact offer URL slug contains 50xg, while the visible product title and model field say 60XG. Visible identity otherwise matches the expected 60XG offer; URL slug may be legacy."
+      ],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-008",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-50g-grey.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:12.858Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:12.858000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-50G 4850mAh - 9.7A",
+        "ean": "6097332054096",
+        "model": "INR21700-50G",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.75,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Samsung INR21700-50G 4850mAh - 9.7A",
+        "brand": "Samsung",
+        "model": "INR21700-50G",
+        "ean": "6097332054096",
+        "variant": "Regular offer; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.75,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-008.jpg",
+      "screenshotSha256": "efa91dfe9da0b420d1381eed0ddeededd44149edf1ebe7745d27e2e5280f04e0",
+      "visibleText": "evidence/cell-008.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-009",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-m65a-6500mah-26a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-inr21700-m65a-6500mah-26a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:14.703Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:14.703000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Molicel INR21700-M65A 6500mAh - 26A",
+        "ean": "6097328478400",
+        "model": "INR-21700-M65A",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 9.75,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Molicel INR21700-M65A 6500mAh - 26A",
+        "brand": "Molicel",
+        "model": "INR-21700-M65A",
+        "ean": "6097328478400",
+        "variant": "Regular offer; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 9.75,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-009.jpg",
+      "screenshotSha256": "68043e7b7f955a813058b6669be17ad865f0c63f70850198c5bc9af969ed7572",
+      "visibleText": "evidence/cell-009.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-010",
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rh60-6000mah-20a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/reliance-inr21700-rh60-6000mah-20a.html",
+      "group": 1,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:15.738Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:15.738000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Reliance INR21700-RH60 6000mAh - 20A",
+        "ean": "6097327322308",
+        "model": "INR21700-RH60",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 5.49,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Reliance INR21700-RH60 6000mAh - 20A",
+        "brand": "Reliance",
+        "model": "INR21700-RH60",
+        "ean": "6097327322308",
+        "variant": "Regular offer; Flat top",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows out-of-stock and availability notification form, with no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 5.49,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-010.jpg",
+      "screenshotSha256": "56a1d8cdf467d4e0401acca6bf8c5eccb1bcba5385222da7197b8eab6db9329b",
+      "visibleText": "evidence/cell-010.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Screenshot and visible text establish this published offer only; origin and manufacturing year are not shown unless explicitly stated in the variant."
+      ],
+      "agentResult": "agent-group-01.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-011",
+      "url": "https://www.nkon.nl/de/catalog/product/view/id/5985/s/molicel-inr21700-p42a-4200mah-45a-malaysia/category/104/",
+      "resolvedUrl": "https://www.nkon.nl/de/catalog/product/view/id/5985/s/molicel-inr21700-p42a-4200mah-45a-malaysia/category/104/",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:39.643Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:39.643000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A - Malaysia",
+        "ean": "6097317198173",
+        "model": "INR-21700-P42A",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.67
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.63
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.59
+          }
+        ]
+      },
+      "observed": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A - Malaysia",
+        "brand": "Molicel",
+        "model": "INR-21700-P42A",
+        "ean": "6097317198173",
+        "variant": "Molicel INR21700-P42A 4200mAh - 45A - Malaysia",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.67
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.63
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.59
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-011.jpg",
+      "screenshotSha256": "92fbbd907f0894c6186f210385bb9178b419580c36f36fdc0a17576c8c6485c6",
+      "visibleText": "evidence/cell-011.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-012",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-30sg.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:40.934Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:40.934000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A",
+        "ean": "6097321030025",
+        "model": "INR21700-30SG",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.25,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.15
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.05
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 1.95
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 1.86
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A",
+        "brand": "Tenpower",
+        "model": "INR21700-30SG",
+        "ean": "6097321030025",
+        "variant": "Tenpower INR21700-30SG 3000mAh - 30A",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.25,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.15
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.05
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 1.95
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 1.86
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-012.jpg",
+      "screenshotSha256": "cdd80d3d4df4e1a11517a7c27eb8b7b7fc56d8efa203739323b3f5e5227c51f8",
+      "visibleText": "evidence/cell-012.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-013",
+      "url": "https://www.nkon.nl/de/inr21700-h51-5000mah-25a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-h51-5000mah-25a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:42.311Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:42.311000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "** INR21700-H51 5000mAh - 25A",
+        "ean": "6097325290289",
+        "model": "INR21700-H51",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.75
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-H51 5000mAh - 25A",
+        "brand": "LG",
+        "model": "INR21700-H51",
+        "ean": "6097325290289",
+        "variant": "** INR21700-H51 5000mAh - 25A",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.75
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-013.jpg",
+      "screenshotSha256": "3907662efea730a4f36286b2f56cdebe44bb6e5108cf1cb196e280fcaf75b15f",
+      "visibleText": "evidence/cell-013.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-014",
+      "url": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-m50l-m50lt-4930mah-14-4a-clear-wrap.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:43.417Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:43.417000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "** INR21700-M50L ( M50LT ) 4930mAh - 14.4A KLARVERPACKUNG",
+        "ean": "6097316632692",
+        "model": "INR21700-M50L",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.75,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "** INR21700-M50L ( M50LT ) 4930mAh - 14.4A KLARVERPACKUNG",
+        "brand": "LG",
+        "model": "INR21700-M50L",
+        "ean": "6097316632692",
+        "variant": "** INR21700-M50L ( M50LT ) 4930mAh - 14.4A KLARVERPACKUNG",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.75,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-014.jpg",
+      "screenshotSha256": "dd205e021f992db8e9acc1de18003f37d9c6c16ce1764d3ad9cdb22fd3b7183f",
+      "visibleText": "evidence/cell-014.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "Listing explicitly says discontinued and will not be restocked; dataset currently represents this only as out_of_stock."
+      ],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-015",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50sg-5000mah-20a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50sg-5000mah-20a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:44.518Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:44.518000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Tenpower INR21700-50SG 5000mAh - 20A",
+        "ean": "6097317178120",
+        "model": "INR21700-50SG",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "09-10-2026",
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.04
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.66
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-50SG 5000mAh - 20A",
+        "brand": "Tenpower",
+        "model": "INR21700-50SG",
+        "ean": "6097317178120",
+        "variant": "Tenpower INR21700-50SG 5000mAh - 20A",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "09-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "Vorbestellung",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.04
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.66
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-015.jpg",
+      "screenshotSha256": "ffdaa0abcc1e21bfc14a88a3bdcf059c8828cf328eca0ccbb80f3588e066f523",
+      "visibleText": "evidence/cell-015.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The displayed shipping date is explicitly estimated and may change."
+      ],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-016",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50xg-5000mah-40a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50xg-5000mah-40a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:45.896Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:45.896000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Tenpower INR21700-50XG 5000mAh - 40A",
+        "ean": "6097317932937",
+        "model": "INR21700-50XG",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "30-10-2026",
+        "pricePack": 4.18,
+        "priceTiers": [
+          {
+            "minPacks": 390,
+            "pricePack": 4.14
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-50XG 5000mAh - 40A",
+        "brand": "Tenpower",
+        "model": "INR21700-50XG",
+        "ean": "6097317932937",
+        "variant": "Tenpower INR21700-50XG 5000mAh - 40A",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "30-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "Vorbestellung",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 4.18,
+        "priceTiers": [
+          {
+            "minPacks": 390,
+            "pricePack": 4.14
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-016.jpg",
+      "screenshotSha256": "950fdb952400aba86fb02bdf4ce3a3ba522b9df4f7eebf0babc5f31332289b55",
+      "visibleText": "evidence/cell-016.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The displayed shipping date is explicitly estimated and may change."
+      ],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-017",
+      "url": "https://www.nkon.nl/de/eve-inr21700-58e-5700mah-16-8a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-58e-5700mah-16-8a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:47.252Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:47.252000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "EVE INR21700-58E 5700mAh - 16.8A",
+        "ean": "6097324499478",
+        "model": "INR21700-58E",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.25
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.95
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.85
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-58E 5700mAh - 16.8A",
+        "brand": "EVE",
+        "model": "INR21700-58E",
+        "ean": "6097324499478",
+        "variant": "EVE INR21700-58E 5700mAh - 16.8A",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.25
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.95
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.85
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-017.jpg",
+      "screenshotSha256": "c0d6fc75723c1662f0248ca2479fc6b67764dbc64ed57c34c78b3e3beca7ad2f",
+      "visibleText": "evidence/cell-017.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-018",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40xg-4000mah-45a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-40xg-4000mah-45a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:48.660Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:48.660000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Tenpower INR21700-40XG 4000mAh - 45A",
+        "ean": "6097325727747",
+        "model": "INR21700-40XG",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "09-10-2026",
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.95
+          },
+          {
+            "minPacks": 20,
+            "pricePack": 2.85
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.65
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.55
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-40XG 4000mAh - 45A",
+        "brand": "Tenpower",
+        "model": "INR21700-40XG",
+        "ean": "6097325727747",
+        "variant": "Tenpower INR21700-40XG 4000mAh - 45A",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "09-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "Vorbestellung",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.95
+          },
+          {
+            "minPacks": 20,
+            "pricePack": 2.85
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.65
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.55
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-018.jpg",
+      "screenshotSha256": "fbb6d4c288cfbd74d2471192b2e2bc876bd96a1c431b94f58874275fb727688e",
+      "visibleText": "evidence/cell-018.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The displayed shipping date is explicitly estimated and may change."
+      ],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-019",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-partially-wrapped.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:50.034Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:50.034000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Molicel INR21700-P45B 4500mAh - 45A - Teilweise umhüllt",
+        "ean": "6097323491442",
+        "model": "INR21700-P45B",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 4.15,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Molicel INR21700-P45B 4500mAh - 45A - Teilweise umhüllt",
+        "brand": "Molicel",
+        "model": "INR21700-P45B",
+        "ean": "6097323491442",
+        "variant": "Molicel INR21700-P45B 4500mAh - 45A - Teilweise umhüllt",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 4.15,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-019.jpg",
+      "screenshotSha256": "272da5f4f9f1e6cfdede93ab4faa65e85f997de49197a87e69850c2c39ceb0f8",
+      "visibleText": "evidence/cell-019.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "Listing explicitly says discontinued and will not be restocked; dataset currently represents this only as out_of_stock."
+      ],
+      "uncertainties": [],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-020",
+      "url": "https://www.nkon.nl/de/ampace-inr21700-jp50-5000mah-60a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/ampace-inr21700-jp50-5000mah-60a.html",
+      "group": 2,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:46:51.231Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:46:51.231000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Ampace INR21700-JP50 5000mAh - 60A",
+        "ean": "6097316441485",
+        "model": "Ampace INR21700-JP50",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "30-10-2026",
+        "pricePack": 3.95,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Ampace INR21700-JP50 5000mAh - 60A",
+        "brand": "Ampace",
+        "model": "INR21700-JP50",
+        "ean": "6097316441485",
+        "variant": "Ampace INR21700-JP50 5000mAh - 60A",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "30-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "Vorbestellung",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.95,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-020.jpg",
+      "screenshotSha256": "966d32b7d04ce4f4cf237de62535d1d8db231484ae0de2b7a0686724c25b1690",
+      "visibleText": "evidence/cell-020.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The displayed shipping date is explicitly estimated and may change."
+      ],
+      "agentResult": "agent-group-02.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-021",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-no-wrap.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:33.934Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:33.934000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "BAK N21700CG 5000mAh - 10.2A - KEIN WICKELN",
+        "ean": "6097330398321",
+        "model": "N21700CG-50",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.85,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.8
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 1.5
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700CG 5000mAh - 10.2A - KEIN WICKELN",
+        "brand": "BAK",
+        "model": "N21700CG-50",
+        "ean": "6097330398321",
+        "variant": "No-wrap offer; flat top, explicitly without insulation. Page says it came from a cancelled automotive project; no explicit reclaimed or mixed-batch label.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; out-of-stock page has availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.85,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.8
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 1.5
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-021.jpg",
+      "screenshotSha256": "02296be6a80a6a2c4962f4ff713cb66d4d8bcf49d7af8dcc990b1d52f187fa10",
+      "visibleText": "evidence/cell-021.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Catalog classifies this as new/regular, but the offer page does not explicitly say new; it says cells came from a cancelled automotive project and are supplied without a wrap. Preserve the catalog condition as unconfirmed by the page."
+      ],
+      "uncertainties": [
+        "Production year 2023 is listed; the stated project origin and missing wrap do not establish the cells' use history."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-022",
+      "url": "https://www.nkon.nl/de/dmegc-inr21700-50e-5000mah-15a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/dmegc-inr21700-50e-5000mah-15a.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:37.526Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:37.526000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "DMEGC INR21700-50E 5000mAh - 15A",
+        "ean": "6097327528540",
+        "model": "INR21700-50E",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.22
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.17
+          }
+        ]
+      },
+      "observed": {
+        "name": "DMEGC INR21700-50E 5000mAh - 15A",
+        "brand": "DMEGC",
+        "model": "INR21700-50E",
+        "ean": "6097327528540",
+        "variant": "Regular offer; flat top. No reclaimed or mixed-batch marking visible.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.22
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.17
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-022.jpg",
+      "screenshotSha256": "986e945d153cde8964b6cfd960ef647242e4dc0dc44fa01ae04b49dfb1ae839a",
+      "visibleText": "evidence/cell-022.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Visible title, specification table and prices agree with the expected offer. No production year is shown."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-023",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a-reclaimed.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:38.867Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:38.867000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "EVE INR21700-40PL 4000mAh - 70A - renoviert",
+        "ean": "6097340496482",
+        "model": "INR21700-40PL",
+        "stock": "in_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.45
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-40PL 4000mAh - 70A - renoviert",
+        "brand": "EVE",
+        "model": "INR21700-40PL",
+        "ean": "6097340496482",
+        "variant": "Reclaimed/renoviert; battery version listed as zurückgefordert. Page says pack-reject cells with welding defects that were never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.45
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-023.jpg",
+      "screenshotSha256": "2083503127c25ff78a70c766df830e270d2883143b969c93e701776b3a66285f",
+      "visibleText": "evidence/cell-023.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Title and specification table identify INR21700-40PL at 70A, matching the expected record; the short description instead states maximum discharge current 50A. Keep the page's conflicting values visible."
+      ],
+      "uncertainties": [
+        "Short-description capacity (4000 mAh) and dimensions align with the offer, but its 50A discharge claim conflicts with the title and specification table."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-024",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a-clear-wrap-reclaimed.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:40.297Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:40.297000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "EVE INR21700-40P 4000mAh - 50A transparente Verpackung - renoviert",
+        "ean": "6097327085098",
+        "model": "INR21700-40P",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.39
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.33
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 1.27
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-40P 4000mAh - 50A transparente Verpackung - renoviert",
+        "brand": "EVE",
+        "model": "INR21700-40P",
+        "ean": "6097327085098",
+        "variant": "Reclaimed/renoviert, clear wrap; battery version listed as zurückgefordert, flat top. Page describes pack-reject cells with welding defects, never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.39
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.33
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 1.27
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-024.jpg",
+      "screenshotSha256": "71afaa35b4af72e5bca44efc0c7d0f8203eb10138e7930905188eeb0d2f6cd38",
+      "visibleText": "evidence/cell-024.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Identity, variant, listed EAN and prices agree with the expected record; the shop explicitly says it will not restock this item."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-025",
+      "url": "https://www.nkon.nl/de/ampace-inr21700-jp40-4000mah-70a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/ampace-inr21700-jp40-4000mah-70a.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:45.260Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:45.260000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Ampace INR21700-JP40 4000mAh - 70A",
+        "ean": "6097331840898",
+        "model": "INR21700-JP40",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.25,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.67
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.48
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.37
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.27
+          }
+        ]
+      },
+      "observed": {
+        "name": "Ampace INR21700-JP40 4000mAh - 70A",
+        "brand": "Ampace",
+        "model": "INR21700-JP40",
+        "ean": "6097331840898",
+        "variant": "Regular offer; flat top. No reclaimed or mixed-batch marking visible.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.25,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.67
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.48
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.37
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.27
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-025.jpg",
+      "screenshotSha256": "cb1364c4b08f9a960a01dd0e9bad143c360ee0ea1c1e00f151af714972a567d0",
+      "visibleText": "evidence/cell-025.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Visible product identity and table values match the expected offer. No production year is shown."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-026",
+      "url": "https://www.nkon.nl/de/reliance-inr21700-rs50-4950mah-70a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/reliance-inr21700-rs50-4950mah-70a.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:50.055Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:50.055000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Reliance INR21700-RS50 5000mAh - 70A",
+        "ean": "6097319430493",
+        "model": "INR21700-RS50",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "10-10-2026",
+        "pricePack": 4.65,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 4.25
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 4.15
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 4.05
+          }
+        ]
+      },
+      "observed": {
+        "name": "Reliance INR21700-RS50 5000mAh - 70A",
+        "brand": "Reliance",
+        "model": "INR21700-RS50",
+        "ean": "6097319430493",
+        "variant": "Regular offer; flat top, tabless. Explicitly marked available for pre-order.",
+        "packSize": "one cell",
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "10-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "orderable by pre-order; quantity 1 selected and Vorbestellung button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 4.65,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 4.25
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 4.15
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 4.05
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-026.jpg",
+      "screenshotSha256": "9bd5b960fe3e4ab7e16bb66766e0c2e026d5f30ff46047f3d42cb045acf1a192",
+      "visibleText": "evidence/cell-026.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "The stated 10-10-2026 shipping date is explicitly estimated. The page says it is not yet in stock but is on the way from the supplier."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-027",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-30sg-3000mah-30a.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:47:54.822Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:47:54.822000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A - renoviert",
+        "ean": "6097330145154",
+        "model": "INR21700-30SG",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.55,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.23
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.13
+          },
+          {
+            "minPacks": 300,
+            "pricePack": 1.07
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-30SG 3000mAh - 30A - renoviert",
+        "brand": "Tenpower",
+        "model": "INR21700-30SG",
+        "ean": "6097330145154",
+        "variant": "Reclaimed/renoviert; battery version listed as zurückgefordert. Page says pack-reject cells with welding defects, never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.55,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.23
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.13
+          },
+          {
+            "minPacks": 300,
+            "pricePack": 1.07
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-027.jpg",
+      "screenshotSha256": "3353dc726e5d496b38462cd4246df0ef2567f07666ff1092614b8c3c156aa3da",
+      "visibleText": "evidence/cell-027.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "The title, model and EAN match the expected reclaimed offer. Short description reports height 71.3 mm while the specification table reports 70.3 mm; preserve this internal conflict."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-028",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-40tg-4000mah-35a-clear-wrap-reclaimed.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:48:26.459Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:48:26.459000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+        "ean": "6097319150162",
+        "model": "Tenpower INR21700-40TG",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.29
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.19
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A CLEAR WRAP - Renoviert",
+        "brand": "Tenpower",
+        "model": "INR21700-40TG",
+        "ean": "6097319150162",
+        "variant": "Reclaimed/renoviert, clear wrap; battery version listed as zurückgefordert. Page says pack-reject cells with welding defects, never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.29
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.19
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-028.jpg",
+      "screenshotSha256": "9ede0553deefbd11a0f18e84c0ae27f1ca45a5eaa4be662843784b961d7eccb1",
+      "visibleText": "evidence/cell-028.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "The page identifies the 40TG model, reclaimed variant and clear wrap. Its discontinued notice explicitly says it will not be restocked."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-029",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a-reclaimed.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:48:31.055Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:48:31.055000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A - Renoviert",
+        "ean": "6097335778791",
+        "model": "INR21700-50ME",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.45,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 1.35
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A - Renoviert",
+        "brand": "Tenpower",
+        "model": "INR21700-50ME",
+        "ean": "6097335778791",
+        "variant": "Reclaimed/renoviert; battery version listed as zurückgefordert. Page says pack-reject cells with welding defects, never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; page shows availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.45,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 1.35
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-029.jpg",
+      "screenshotSha256": "d49ce2a19fc3834e6f29bca21afb5dffce95ae92485513d62d10bc68a9b33c84",
+      "visibleText": "evidence/cell-029.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "The page marks the offer as discontinued and not restocked. Short description says capacity 4950 mAh while the specification table gives minimum 4950 mAh and typical 5000 mAh; retain the distinction."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-030",
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-productiejaar-202x.html",
+      "group": 3,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:48:36.156Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:48:36.156000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A (mixed batch)",
+        "ean": "6097320763795",
+        "model": "INR21700-M58T",
+        "stock": "in_stock",
+        "offerVariant": "Mixed Batch",
+        "condition": "mixed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 260,
+            "pricePack": 2.85
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A (mixed batch)",
+        "brand": "LG",
+        "model": "INR21700-M58T",
+        "ean": "6097320763795",
+        "variant": "Mixed batch; battery version listed as Mischcharge. Production year field and short description both state 2024.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 260,
+            "pricePack": 2.85
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-030.jpg",
+      "screenshotSha256": "bef5b283476a8ee540b5838cadbd8a095cf90883922cd73431eb346065584b6e",
+      "visibleText": "evidence/cell-030.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Short description states diameter 21.8 mm, while specification table states 21.3 mm and the expected record also has 21.3 mm. Keep the page conflict visible."
+      ],
+      "uncertainties": [
+        "Production year 2024 is explicitly listed; the URL says productiejaar-202x but should not be treated as the specific year. Offer is explicitly marked mixed batch."
+      ],
+      "agentResult": "agent-group-03.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-031",
+      "url": "https://www.nkon.nl/de/2x-keeppower-21700-6000mah-protected-10a-usb-c-3-6v.html",
+      "resolvedUrl": "https://www.nkon.nl/de/2x-keeppower-21700-6000mah-protected-10a-usb-c-3-6v.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:06.816Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:06.816000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "2x Keeppower 21700 6000mAh (protected) - 10A - USB-C - 3.6V",
+        "ean": "6097317781771",
+        "model": "P2160TC",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 2,
+        "delivery": null,
+        "pricePack": 20.95,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "2x Keeppower 21700 6000mAh (protected) - 10A - USB-C - 3.6V",
+        "brand": "Keeppower",
+        "model": "P2160TC",
+        "ean": "6097317781771",
+        "variant": "New / regular; protected, button top, USB-C charging and powerbank function",
+        "packSize": 2,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 20.95,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-031.jpg",
+      "screenshotSha256": "25466782fe8ae4a0a8733dc0b34e8bafc426c69c4f5ad7c1e8cff58564eccc74",
+      "visibleText": "evidence/cell-031.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-032",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-mixed-batch.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:11.021Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:11.021000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A (mixed batch)",
+        "ean": "6097328218211",
+        "model": "INR21700-58E",
+        "stock": "out_of_stock",
+        "offerVariant": "Mixed Batch",
+        "condition": "mixed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.39,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A (mixed batch)",
+        "brand": "Samsung",
+        "model": "INR21700-58E",
+        "ean": "6097328218211",
+        "variant": "Mixed batch; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.39,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-032.jpg",
+      "screenshotSha256": "3eb385eb9de29dd36983fe04136f76c8638b104770c5ca6d480e328240808795",
+      "visibleText": "evidence/cell-032.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-033",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-clear-wrap.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a-clear-wrap.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:13.960Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:13.960000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "BAK N21700CG 5000mAh - 10.2A - CLEAR WRAP",
+        "ean": "6097316383396",
+        "model": "N21700CG-50",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.7
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 1.6
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700CG 5000mAh - 10.2A - CLEAR WRAP",
+        "brand": "BAK",
+        "model": "N21700CG-50",
+        "ean": "6097316383396",
+        "variant": "New / regular; clear wrap, flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 1.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.7
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 1.6
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-033.jpg",
+      "screenshotSha256": "af8f1bef88378ebe916591906def321dd36301be5dc9e0b35cd72696571bb580",
+      "visibleText": "evidence/cell-033.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-034",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-50pl-5000mah-125a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:17.011Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:17.011000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "EVE INR21700-50PL 5000mAh - 125A (neue Version)",
+        "ean": "6097330621696",
+        "model": "INR21700-50PL",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "28-10-2026",
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.69
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 3.49
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 3.39
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-50PL 5000mAh - 125A (neue Version)",
+        "brand": "EVE",
+        "model": "INR21700-50PL",
+        "ean": "6097330621696",
+        "variant": "New version; flat top, tabless",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "28-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "orderable by preorder; quantity selector and Vorbestellung button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.73
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 3.52
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 3.42
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-034.jpg",
+      "screenshotSha256": "904f92f067b5f3376bca4a489db3536be5d22c5c34a95b6d0d2acd2f5c601658",
+      "visibleText": "evidence/cell-034.txt",
+      "updates": {
+        "priceTiers": {
+          "before": [
+            {
+              "minPacks": 10,
+              "pricePack": 3.69
+            },
+            {
+              "minPacks": 130,
+              "pricePack": 3.49
+            },
+            {
+              "minPacks": 390,
+              "pricePack": 3.39
+            }
+          ],
+          "after": [
+            {
+              "minPacks": 10,
+              "pricePack": 3.73
+            },
+            {
+              "minPacks": 130,
+              "pricePack": 3.52
+            },
+            {
+              "minPacks": 390,
+              "pricePack": 3.42
+            }
+          ]
+        }
+      },
+      "reviewFindings": [
+        "Displayed tier prices are €3.73/10, €3.52/130, and €3.42/390; source record lists €3.69, €3.49, and €3.39 respectively."
+      ],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-035",
+      "url": "https://www.nkon.nl/de/bak-n21700ch-58e-5750mah-11-2a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700ch-58e-5750mah-11-2a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:20.720Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:20.720000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "BAK N21700CH-58E - 5750mAh - 11.2A",
+        "ean": "6097323274250",
+        "model": "N21700CH-58E",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.29
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.09
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.99
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.89
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700CH-58E - 5750mAh - 11.2A",
+        "brand": "BAK",
+        "model": "N21700CH-58E",
+        "ean": "6097323274250",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity selector and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.29
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.09
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.99
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.89
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-035.jpg",
+      "screenshotSha256": "d206791f7aae16803eeb79a75aa234763a385bd1c8fb41e6544de672d54538d8",
+      "visibleText": "evidence/cell-035.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-036",
+      "url": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/xtar-21700-6000mah-protected-10a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:23.610Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:23.610000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "XTAR 21700 6000mAh (protected) - 10A",
+        "ean": "6952918302391",
+        "model": "XTAR 21700",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 15.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 13.95
+          }
+        ]
+      },
+      "observed": {
+        "name": "XTAR 21700 6000mAh (protected) - 10A",
+        "brand": "Xtar",
+        "model": null,
+        "ean": "6952918302391",
+        "variant": "New / regular; protected, button top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 15.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 13.95
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-036.jpg",
+      "screenshotSha256": "47b50da12f7fd4c62c431d20c0cc013237af3bd0821d5499553d5df423691cb9",
+      "visibleText": "evidence/cell-036.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-037",
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:26.571Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:26.571000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A",
+        "ean": "6097322012099",
+        "model": "INR21700-M58T",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.25,
+        "priceTiers": [
+          {
+            "minPacks": 30,
+            "pricePack": 2.87
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.54
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A",
+        "brand": "LG",
+        "model": "INR21700-M58T",
+        "ean": "6097322012099",
+        "variant": "New / regular; flat top; displayed title begins with literal **",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.25,
+        "priceTiers": [
+          {
+            "minPacks": 30,
+            "pricePack": 2.87
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.54
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-037.jpg",
+      "screenshotSha256": "51e7705edaaf7822fa30e67508f117564794b31cae7d8a1f46c85878a7a9aaf1",
+      "visibleText": "evidence/cell-037.txt",
+      "updates": {},
+      "reviewFindings": [
+        "Visible product title begins with literal '**' and omits the LG brand; the specification table identifies brand LG and model INR21700-M58T, matching the record."
+      ],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-038",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-58e-cc5493f101-5330mah-10-7a-reclaimed.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:31.423Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:31.423000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A - Reclaimed",
+        "ean": "6097341158129",
+        "model": "INR21700-58E",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.15,
+        "priceTiers": [
+          {
+            "minPacks": 20,
+            "pricePack": 1.85
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.77
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-58E (CC5493F101) 5330mAh - 10.7A - Reclaimed",
+        "brand": "Samsung",
+        "model": "INR21700-58E",
+        "ean": "6097341158129",
+        "variant": "Reclaimed; battery version listed as zurückgefordert; pack-reject cells with welding defects, never charged or discharged per product text",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.15,
+        "priceTiers": [
+          {
+            "minPacks": 20,
+            "pricePack": 1.85
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.77
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-038.jpg",
+      "screenshotSha256": "cd88af28fca275520f400c224e65c0ea74839da615b3eabe39c3d27a7710d6e2",
+      "visibleText": "evidence/cell-038.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-039",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-40pl-4000mah-70a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:33.836Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:33.836000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "EVE INR21700-40PL 4000mAh - 70A",
+        "ean": "6097319062052",
+        "model": "INR21700-40PL",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.15
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.85
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.65
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-40PL 4000mAh - 70A",
+        "brand": "EVE",
+        "model": "INR21700-40PL",
+        "ean": "6097319062052",
+        "variant": "New / regular; flat top, tabless",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity selector and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.15
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.85
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.65
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-039.jpg",
+      "screenshotSha256": "a4354249d20718dea97f22ee8030207575afba12038c35c1727b421e19518a71",
+      "visibleText": "evidence/cell-039.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-040",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-58e-5330mah-10-7a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-58e-5330mah-10-7a.html",
+      "group": 4,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:49:36.869Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:49:36.869000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-58E (CC5563F101) 5330mAh - 10.7A",
+        "ean": "6097321530549",
+        "model": "INR21700-58E",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.98
+          },
+          {
+            "minPacks": 11,
+            "pricePack": 2.38
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-58E (CC5563F101) 5330mAh - 10.7A",
+        "brand": "Samsung",
+        "model": "INR21700-58E",
+        "ean": "6097321530549",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity selector and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.15,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.98
+          },
+          {
+            "minPacks": 11,
+            "pricePack": 2.38
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-040.jpg",
+      "screenshotSha256": "48d0e9c3b781abac96005270153e1c5bb2f70733631c401e13d2460d685312a1",
+      "visibleText": "evidence/cell-040.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page capture confirms the currently displayed offer; origin and manufacture year are not visible."
+      ],
+      "agentResult": "agent-group-04.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-041",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-45t-4500mah-50a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:14.654Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:14.654000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Samsung INR21700-45T (CC4503F101) 4500mAh - 50A",
+        "ean": "6097327479491",
+        "model": "INR21700-45T",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "25-09-2026",
+        "pricePack": 3.59,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.39
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 3.29
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 3.19
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-45T (CC4503F101) 4500mAh - 50A",
+        "brand": "Samsung",
+        "model": "INR21700-45T",
+        "ean": "6097327479491",
+        "variant": "Samsung INR21700-45T (CC4503F101) 4500mAh - 50A",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "25-09-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "Vorbestellung",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.59,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.39
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 3.29
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 3.19
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-041.jpg",
+      "screenshotSha256": "f6c16455a961ebb3ae6f958c88ec9db520f261babc08ce9723917364a17f809c",
+      "visibleText": "evidence/cell-041.txt",
+      "updates": {},
+      "reviewFindings": [
+        "The expected shipping date 25-09-2026 is already past at the 2026-10-01 visual check; the page still labels the item preorder."
+      ],
+      "uncertainties": [
+        "NKON states the displayed shipping date is estimated.",
+        "Displayed estimated shipping date was already in the past at capture time; order option was still visible."
+      ],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-042",
+      "url": "https://www.nkon.nl/de/inr21700-m52vt-5200mah-15a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-m52vt-5200mah-15a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:17.824Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:17.824000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "** INR21700-M52VT 5200mAh - 15A",
+        "ean": "6097328014011",
+        "model": "INR21700-M52VT",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.45
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.25
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M52VT 5200mAh - 15A",
+        "brand": "LG",
+        "model": "INR21700-M52VT",
+        "ean": "6097328014011",
+        "variant": "** INR21700-M52VT 5200mAh - 15A",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.45
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.25
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-042.jpg",
+      "screenshotSha256": "8ab84f5c636803dfacea9c14b0d4663b6a01966750eb683176cb1e2b491e91cc",
+      "visibleText": "evidence/cell-042.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-043",
+      "url": "https://www.nkon.nl/de/bak-n21700-45d-4400mah-60a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700-45d-4400mah-60a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:20.902Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:20.902000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "BAK N21700-45D 4500mah - 60A",
+        "ean": "6097316721730",
+        "model": "INR2170-45D",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.16
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.11
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 3.01
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.91
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700-45D 4500mah - 60A",
+        "brand": "BAK",
+        "model": "INR2170-45D",
+        "ean": "6097316721730",
+        "variant": "BAK N21700-45D 4500mah - 60A",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.16
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.11
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 3.01
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.91
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-043.jpg",
+      "screenshotSha256": "0743b180a511db6637bdd0ec3068e8dc1c61b7a4a122dadd60c62d9c65c61a36",
+      "visibleText": "evidence/cell-043.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-044",
+      "url": "https://www.nkon.nl/de/keeppower-21700-5500mah-protected-11a-button-top.html",
+      "resolvedUrl": "https://www.nkon.nl/de/keeppower-21700-5500mah-protected-11a-button-top.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:24.194Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:24.194000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Keeppower 21700 5500mAh (protected) - 11A (Button top)",
+        "ean": "6097329884828",
+        "model": "P2155C",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 8.45,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Keeppower 21700 5500mAh (protected) - 11A (Button top)",
+        "brand": "Keeppower",
+        "model": "P2155C",
+        "ean": "6097329884828",
+        "variant": "Keeppower 21700 5500mAh (protected) - 11A (Button top)",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 8.45,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-044.jpg",
+      "screenshotSha256": "1485ff8874aae43e5bfa4b761d957ec85a9e6c4d1a3c986df3f723efa3b6ed54",
+      "visibleText": "evidence/cell-044.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-045",
+      "url": "https://www.nkon.nl/de/keeppower-21700-6000mah-protected-12a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/keeppower-21700-6000mah-protected-12a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:27.379Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:27.379000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Keeppower 21700 6000mAh (protected) - 12A (Button top)",
+        "ean": "6097338662691",
+        "model": "P2160C",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 10.45,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Keeppower 21700 6000mAh (protected) - 12A (Button top)",
+        "brand": "Keeppower",
+        "model": "P2160C",
+        "ean": "6097338662691",
+        "variant": "Keeppower 21700 6000mAh (protected) - 12A (Button top)",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 10.45,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-045.jpg",
+      "screenshotSha256": "3913f6e2a9752a69cf3b8cb2388edb4454296cc9fe1b4cf14c8ac6d33fa07e46",
+      "visibleText": "evidence/cell-045.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-046",
+      "url": "https://www.nkon.nl/de/bak-n21700cd-53e-5300mah-10-3a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700cd-53e-5300mah-10-3a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:31.467Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:31.467000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "BAK N21700CD-53E 5300mAh - 10.3A",
+        "ean": "6097317868885",
+        "model": "N21700CD-53E",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.19
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.99
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.69
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.39
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700CD-53E 5300mAh - 10.3A",
+        "brand": "BAK",
+        "model": "N21700CD-53E",
+        "ean": "6097317868885",
+        "variant": "BAK N21700CD-53E 5300mAh - 10.3A",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.19
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.99
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.69
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.39
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-046.jpg",
+      "screenshotSha256": "2ce248a8f4a50de702cb9b3f77358277d4bc3a278ebb7c352fb0d45d9e2666c7",
+      "visibleText": "evidence/cell-046.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-047",
+      "url": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/",
+      "resolvedUrl": "https://www.nkon.nl/de/catalog/product/view/id/5518/s/molicel-inr21700-p50b-5000mah-50a/category/104/",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:34.570Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:34.570000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Molicel INR21700-P50B 5000mAh - 50A",
+        "ean": "6097326477405",
+        "model": "INR21700-P50B",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 6.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 5.79
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 5.49
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 5.39
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 5.29
+          }
+        ]
+      },
+      "observed": {
+        "name": "Molicel INR21700-P50B 5000mAh - 50A",
+        "brand": "Molicel",
+        "model": "INR21700-P50B",
+        "ean": "6097326477405",
+        "variant": "Molicel INR21700-P50B 5000mAh - 50A",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 6.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 5.92
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 5.61
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 5.51
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 5.41
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-047.jpg",
+      "screenshotSha256": "5336e3ed4b07e59bf29f51b3a408f7f868f806ae575240b73e066a439196d9bb",
+      "visibleText": "evidence/cell-047.txt",
+      "updates": {
+        "priceTiers": {
+          "before": [
+            {
+              "minPacks": 10,
+              "pricePack": 5.79
+            },
+            {
+              "minPacks": 50,
+              "pricePack": 5.49
+            },
+            {
+              "minPacks": 100,
+              "pricePack": 5.39
+            },
+            {
+              "minPacks": 200,
+              "pricePack": 5.29
+            }
+          ],
+          "after": [
+            {
+              "minPacks": 10,
+              "pricePack": 5.92
+            },
+            {
+              "minPacks": 50,
+              "pricePack": 5.61
+            },
+            {
+              "minPacks": 100,
+              "pricePack": 5.51
+            },
+            {
+              "minPacks": 200,
+              "pricePack": 5.41
+            }
+          ]
+        }
+      },
+      "reviewFindings": [
+        "All four displayed quantity-tier prices differ from the stored tiers: page 10/50/100/200 units = EUR 5.92/5.61/5.51/5.41; stored tiers = EUR 5.79/5.49/5.39/5.29."
+      ],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-048",
+      "url": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/inr21700-m58t-5570mah-12-5a-reclaimed.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:38.514Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:38.514000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A - Reclaimed",
+        "ean": "6097318243292",
+        "model": "INR21700-M58T",
+        "stock": "in_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.25
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.19
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M58T 5570mAh - 12.5A - Reclaimed",
+        "brand": "LG",
+        "model": "INR21700-M58T",
+        "ean": "6097318243292",
+        "variant": "Reclaimed",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.65,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.25
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.19
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-048.jpg",
+      "screenshotSha256": "c9c3ac585c969484538211352b175fa5e8c996c3f316855d71a4a7fe377b4772",
+      "visibleText": "evidence/cell-048.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-049",
+      "url": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-50e-5000mah-15a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:41.479Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:41.479000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "EVE INR21700-50E 5000mAh - 15A",
+        "ean": "6097348416468",
+        "model": "INR21700-50E",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.54
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.34
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.24
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-50E 5000mAh - 15A",
+        "brand": "EVE",
+        "model": "INR21700-50E",
+        "ean": "6097348416468",
+        "variant": "EVE INR21700-50E 5000mAh - 15A",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "Restock notification only; no purchase button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.74
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.54
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.34
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.24
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-049.jpg",
+      "screenshotSha256": "6e29f1924f81e02c21ceb2bdbfc514a5d2ec9ae781486fc3ea23f960a97ac984",
+      "visibleText": "evidence/cell-049.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-050",
+      "url": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/eve-inr21700-40p-4000mah-50a.html",
+      "group": 5,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:50:46.333Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:50:46.333000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "EVE INR21700-40P 4000mAh - 50A",
+        "ean": "6097350229278",
+        "model": "INR21700-40P",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.55,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.53
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 2.33
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.23
+          }
+        ]
+      },
+      "observed": {
+        "name": "EVE INR21700-40P 4000mAh - 50A",
+        "brand": "EVE",
+        "model": "INR21700-40P",
+        "ean": "6097350229278",
+        "variant": "EVE INR21700-40P 4000mAh - 50A",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.55,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.53
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 2.33
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 2.23
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-050.jpg",
+      "screenshotSha256": "fb635756fe4599deaf9ac4f141d3f107ddde131e6cbf5fcc2b4ba9c630c6d1cf",
+      "visibleText": "evidence/cell-050.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-05.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-051",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a-reclaimed.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:19.413Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:19.413000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A - Reclaimed",
+        "ean": "6097321591533",
+        "model": "INR21700-40TG",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.65,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A - Reclaimed",
+        "brand": "Tenpower",
+        "model": "INR21700-40TG",
+        "ean": "6097321591533",
+        "variant": "Reclaimed; battery version listed as zurückgefordert; page says pack-reject cells with welding defects, never charged or discharged.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form is shown and no add-to-cart button is visible",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.65,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-051.jpg",
+      "screenshotSha256": "70e5d6b7388080bac55b429c33819eabc9b882a587f8d595e07c3349e791b202",
+      "visibleText": "evidence/cell-051.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "The requested offer URL slug contains 45A, while page title, specification table and EAN identify the 35A INR21700-40TG. The fetched page identity otherwise matches the expected record."
+      ],
+      "uncertainties": [
+        "Page identifies the requested reclaimed model and explicitly says the product will not be restocked."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-052",
+      "url": "https://www.nkon.nl/de/keeppower-21700-5300mah-10-6a-protected-li-ion-battery.html",
+      "resolvedUrl": "https://www.nkon.nl/de/keeppower-21700-5300mah-10-6a-protected-li-ion-battery.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:24.442Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:24.442000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Keeppower 21700 5300mAh (protected) - 10.6A",
+        "ean": "6097336820826",
+        "model": "P2153C",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 6.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 6.65
+          }
+        ]
+      },
+      "observed": {
+        "name": "Keeppower 21700 5300mAh (protected) - 10.6A",
+        "brand": "Keeppower",
+        "model": "P2153C",
+        "ean": "6097336820826",
+        "variant": "Protected cell; button top; specification table says protection circuit present.",
+        "packSize": "one protected cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 6.95,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 6.65
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-052.jpg",
+      "screenshotSha256": "7f80f97a46e1e3db6696ce045b24b1b9ed8f60e70ef4d632356123d28edb5dfd",
+      "visibleText": "evidence/cell-052.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Visible identity, protected/button-top variant, listed EAN and price match the expected offer."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-053",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:28.270Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:28.270000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A",
+        "ean": "6097326669664",
+        "model": "INR21700-40T",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 2.78
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.73
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.38
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A",
+        "brand": "Samsung",
+        "model": "INR21700-40T",
+        "ean": "6097326669664",
+        "variant": "Regular flat-top offer; page identifies 40T5 revision and production year 2024.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; out-of-stock page shows availability notification form and no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 2.78
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.73
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.43
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.38
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-053.jpg",
+      "screenshotSha256": "a1a0eab1369060e6604294b319108d40b11efae69fd65763e242c24fedc1bdb1",
+      "visibleText": "evidence/cell-053.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page title and table identify INR21700-40T (40T5), EAN and 2024 production year; no discontinuation notice is visible."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-054",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50gb.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-50gb.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:31.721Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:31.721000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Samsung INR21700-50GB 4900mAh - 9.7A",
+        "ean": "6097322657658",
+        "model": "INR21700-50G",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.56
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.46
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.36
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.26
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-50GB 4900mAh - 9.7A",
+        "brand": "Samsung",
+        "model": "INR21700-50G",
+        "ean": "6097322657658",
+        "variant": "Flat top; title calls it 50GB while model field identifies INR21700-50G.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.56
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.46
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.36
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.26
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-054.jpg",
+      "screenshotSha256": "02f3f925c245df2e84b4ad87edc2eef154171cb1fe2f3308e1523fa77c57e5e5",
+      "visibleText": "evidence/cell-054.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Title, specification model, 4900mAh typical capacity, EAN, stock and tier prices match the expected offer. The page also offers optional solder tabs as separately priced add-ons; none is selected."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-055",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-53g2-5300mah-15-9a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-53g2-5300mah-15-9a.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:34.715Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:34.715000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Samsung INR21700-53G2 5300mAh - 15.9A",
+        "ean": "6097348552586",
+        "model": "INR21700-53G2",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.69,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 2.64
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.52
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.37
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-53G2 5300mAh - 15.9A",
+        "brand": "Samsung",
+        "model": "INR21700-53G2",
+        "ean": "6097348552586",
+        "variant": "Regular flat-top offer; production year field states 2024.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown and no add-to-cart button visible",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.69,
+        "priceTiers": [
+          {
+            "minPacks": 50,
+            "pricePack": 2.64
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.52
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.37
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-055.jpg",
+      "screenshotSha256": "fa874df9ce57a152291a63fc0a78d7e054313dac7c46d5ab445a3e89b83ad1d4",
+      "visibleText": "evidence/cell-055.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Identity, EAN, capacity, discharge current, year and visible prices match the expected offer; no discontinued notice is visible."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-056",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-inr21700-p42a-4200mah-45a-reclaimed.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:38.333Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:38.333000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A - Renoviert",
+        "ean": "6097316413475",
+        "model": "INR-21700-P42A",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.45,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.05
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 1.85
+          }
+        ]
+      },
+      "observed": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A - Renoviert",
+        "brand": "Molicel",
+        "model": "INR-21700-P42A",
+        "ean": "6097316413475",
+        "variant": "Reclaimed/renoviert; battery version listed as zurückgefordert.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown and no add-to-cart button visible",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.45,
+        "priceTiers": [
+          {
+            "minPacks": 100,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.05
+          },
+          {
+            "minPacks": 400,
+            "pricePack": 1.85
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-056.jpg",
+      "screenshotSha256": "7f3aa3b51105e3df7939c92c9c48005f1772d410b5536f9aa1f4b42cd0884466",
+      "visibleText": "evidence/cell-056.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "The page explicitly marks the offer as reclaimed and says it will not be restocked."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-057",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-50e-productiejaar-2021.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:41.378Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:41.378000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Samsung INR21700-50E 4900 mAh – 9,8 A (Produktionsjahr 2022)",
+        "ean": "6097325424400",
+        "model": "INR21700-50E",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.99,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Samsung INR21700-50E 4900 mAh – 9,8 A (Produktionsjahr 2022)",
+        "brand": "Samsung",
+        "model": "INR21700-50E",
+        "ean": "6097325424400",
+        "variant": "Flat top; page title, specification table and short description state production year 2022.",
+        "packSize": "one cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown and no add-to-cart button visible",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 2.99,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-057.jpg",
+      "screenshotSha256": "720d1ee82f36f8e0e4bade9d56e3b79476a0661450dcd27088ed4a8451f2a4a5",
+      "visibleText": "evidence/cell-057.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [
+        "The URL slug says productiejaar-2021, but the page title, specification table and short description say production year 2022 (matching the expected record). The URL may be stale; keep the year conflict visible."
+      ],
+      "uncertainties": [
+        "The visible offer is for the 2022 production year and says it will not be restocked; the URL slug conflicts with the visible product data."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-058",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-50me-5000mah-15a.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:44.446Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:44.446000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A",
+        "ean": "6097316393357",
+        "model": "INR21700-50ME",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "09-10-2026",
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.58
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.38
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.23
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.17
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-50ME 5000mAh - 15A",
+        "brand": "Tenpower",
+        "model": "INR21700-50ME",
+        "ean": "6097316393357",
+        "variant": "Regular flat-top offer; no reclaimed/mixed-batch marking visible.",
+        "packSize": "one cell",
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "09-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "orderable by pre-order; quantity 1 selected and Vorbestellung button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.99,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.58
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.38
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.23
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.17
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-058.jpg",
+      "screenshotSha256": "c8e58a7aab33353a9bdc911f5d1b175e5e4ad0977ae08c54d7f8c08b8a44da4f",
+      "visibleText": "evidence/cell-058.txt",
+      "updates": {},
+      "reviewFindings": [
+        "The short description says capacity 4000 mAh, while the title and specification table say 5000 mAh (typical; 4950 mAh minimum), matching the expected record. Preserve this internal conflict."
+      ],
+      "uncertainties": [
+        "Page says stock is inbound from the supplier and the displayed 09-10-2026 ship date is estimated."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-059",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a-button-top.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-40t5-4000mah-35a-button-top.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:47.493Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:47.493000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A erhöht (button top)",
+        "ean": "7417940531151",
+        "model": "INR21700-40T",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 5.75,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Samsung INR21700-40T (40T5) 4000mAh - 35A erhöht (button top)",
+        "brand": "Samsung",
+        "model": "INR21700-40T",
+        "ean": "7417940531151",
+        "variant": "Button-top/raised terminal; page title calls this 40T5; battery version field says Button top.",
+        "packSize": "one cell",
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; quantity 1 selected and add-to-cart button visible",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 5.75,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-059.jpg",
+      "screenshotSha256": "3cfaf7b8a90246112cdb390874fef256e9e88027faffd292e2a77777754cfd4c",
+      "visibleText": "evidence/cell-059.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "EAN, Samsung INR21700-40T model, 40T5 title, raised button-top variant and price match the expected offer. No production year is shown."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-060",
+      "url": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/xtar-21700-4900-mah-protected-10a.html",
+      "group": 6,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:51:50.589Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:51:50.589000+02:00",
+      "browserTab": "501072605",
+      "expected": {
+        "name": "XTAR 21700 4900 mAh (geschützt) - 10 A",
+        "ean": "6952918343912",
+        "model": "XTAR 21700",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 10.95,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "XTAR 21700 4900 mAh (geschützt) - 10 A",
+        "brand": "Xtar",
+        "model": null,
+        "ean": "6952918343912",
+        "variant": "Protected cell; button top; specification table says protection circuit present.",
+        "packSize": "one protected cell",
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown and no add-to-cart button visible",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 10.95,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-060.jpg",
+      "screenshotSha256": "14e4129bc2239e8721182f64761310003a03e513e3bfc6993a89abf0b99f30c7",
+      "visibleText": "evidence/cell-060.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page lists EAN 6952918343912, 4900mAh typical (4850mAh minimum), 10A continuous discharge and integrated protection; no explicit model name is listed."
+      ],
+      "agentResult": "agent-group-06.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-061",
+      "url": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/tenpower-inr21700-40tg-45a.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:22.984Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:22.984000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A",
+        "ean": "7417940529738",
+        "model": "INR21700-40TG",
+        "stock": "orderable",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": "09-10-2026",
+        "pricePack": 2.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.39
+          },
+          {
+            "minPacks": 20,
+            "pricePack": 2.29
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.19
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.12
+          }
+        ]
+      },
+      "observed": {
+        "name": "Tenpower INR21700-40TG 4000mAh - 35A",
+        "brand": "Tenpower",
+        "model": "INR21700-40TG",
+        "ean": "7417940529738",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "orderable",
+        "literalStatus": "Dieses Produkt ist vorbestellbar, wir haben es noch nicht auf Lager, aber es ist von unserem Lieferanten zu uns unterwegs. Das Versanddatum ist ein geschätztes Datum. Wenn Sie diesen Artikel und weitere Artikel ab Lager bestellen, versenden wir in einer Lieferung",
+        "delivery": "09-10-2026",
+        "deliveryIsEstimate": true,
+        "orderability": "orderable as preorder; explicit Vorbestellung button",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.39
+          },
+          {
+            "minPacks": 20,
+            "pricePack": 2.29
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 2.19
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 2.12
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-061.jpg",
+      "screenshotSha256": "b200717a41fc1ab6350bc1ed543a97b1f29162a5624237be81eaaf67a0b30275",
+      "visibleText": "evidence/cell-061.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Expected date is explicitly described as an estimate. URL slug contains 45A, but visible product title, model, EAN, and specification table identify the 35A INR21700-40TG; no identity conflict inferred."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-062",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-mixed-batch.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-inr21700-p45b-4500mah-45a-mixed-batch.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:26.348Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:26.348000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Molicel INR21700-P45B 4500mAh - 45A (mixed batch)",
+        "ean": "7417940528847",
+        "model": "INR21700-P45B",
+        "stock": "out_of_stock",
+        "offerVariant": "Mixed Batch",
+        "condition": "mixed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 4.55,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 4.25
+          }
+        ]
+      },
+      "observed": {
+        "name": "Molicel INR21700-P45B 4500mAh - 45A (mixed batch)",
+        "brand": "Molicel",
+        "model": "INR21700-P45B",
+        "ean": "7417940528847",
+        "variant": "Mixed batch; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 4.55,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 4.25
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-062.jpg",
+      "screenshotSha256": "feb6cac0fc9fe8b867dcbdd58189528a085898afa2621a05f3cebcf72f81042e",
+      "visibleText": "evidence/cell-062.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page confirms this is explicitly marked mixed batch; individual cell history is not shown."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-063",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50s-5000mah-35a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-50s-5000mah-35a.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:31.099Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:31.099000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-50S 5000mAh - 35A",
+        "ean": "7417940528540",
+        "model": "INR21700-50S",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.45
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.35
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.25
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 3.21
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 3.16
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-50S 5000mAh - 35A",
+        "brand": "Samsung",
+        "model": "INR21700-50S",
+        "ean": "7417940528540",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; add-to-cart controls shown",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.75,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.45
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.35
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 3.25
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 3.21
+          },
+          {
+            "minPacks": 600,
+            "pricePack": 3.16
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-063.jpg",
+      "screenshotSha256": "6d72394488da3e01712f40a6a49895a91986dac01c5a1dbe93448a47ac0c4114",
+      "visibleText": "evidence/cell-063.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-064",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-48x-4650mah-9-6a.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:34.100Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:34.100000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-48X 4800mAh - 9.6A NO WRAP",
+        "ean": "7417940527772",
+        "model": "Samsung INR21700-48X",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 0.99,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Samsung INR21700-48X 4800mAh - 9.6A NO WRAP",
+        "brand": "Samsung",
+        "model": "Samsung INR21700-48X",
+        "ean": "7417940527772",
+        "variant": "No wrap; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; discontinued notice shown; no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 0.99,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-064.jpg",
+      "screenshotSha256": "b9ad2676362af5c35198a2c1868ae04038c4529ced7623ab2d65e262871e6272",
+      "visibleText": "evidence/cell-064.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "No-wrap confirmation checkbox is shown."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-065",
+      "url": "https://www.nkon.nl/de/m50lt.html",
+      "resolvedUrl": "https://www.nkon.nl/de/m50lt.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:36.998Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:36.998000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "** INR21700-M50LT 4930mAh - 14.4A",
+        "ean": "7417940527925",
+        "model": "INR21700-M50LT",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.89,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.64
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.39
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.19
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.09
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 1.99
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M50LT 4930mAh - 14.4A",
+        "brand": "LG (page spec table)",
+        "model": "INR21700-M50LT",
+        "ean": "7417940527925",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; add-to-cart controls shown",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.89,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 2.64
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 2.39
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.19
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.09
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 1.99
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-065.jpg",
+      "screenshotSha256": "f521fd4577fe75d660dc48e151ffc3021b71d242817d442c199561c4d0bfec7b",
+      "visibleText": "evidence/cell-065.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Title starts with literal **; EAN and exact model corroborate the source offer."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-066",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-30t-3000mah-35a-reclaimed.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:40.924Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:40.924000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Samsung INR21700-30T 3000mAh - 35A - Reclaimed",
+        "ean": "7417940528601",
+        "model": "INR21700-30T",
+        "stock": "out_of_stock",
+        "offerVariant": "Reclaimed",
+        "condition": "reclaimed",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 1.49,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.35
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.25
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 1.15
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-30T 3000mAh - 35A Reclaimed",
+        "brand": "Samsung",
+        "model": "INR21700-30T",
+        "ean": "7417940528601",
+        "variant": "Reclaimed cells; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; discontinued notice shown; no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 1.49,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 1.35
+          },
+          {
+            "minPacks": 100,
+            "pricePack": 1.25
+          },
+          {
+            "minPacks": 200,
+            "pricePack": 1.15
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-066.jpg",
+      "screenshotSha256": "c72d959814fafd8ad50362592bf7da733102fa704b929ec13839e11f2b1481a3",
+      "visibleText": "evidence/cell-066.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page describes reclaimed cells and welding defects; states cells have never been charged or discharged."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-067",
+      "url": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/bak-n21700cg-5000mah-10-2a.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:43.928Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:43.928000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "BAK N21700CG-50E 5000mAh - 14.7A",
+        "ean": null,
+        "model": "N21700CG -50E",
+        "stock": "unknown",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 2.49,
+        "priceTiers": [
+          {
+            "minPacks": 130,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.25
+          }
+        ]
+      },
+      "observed": {
+        "name": "BAK N21700CG-50E 5000mAh - 14.7A",
+        "brand": "BAK",
+        "model": "N21700CG -50E",
+        "ean": "7417940526867",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 2.49,
+        "priceTiers": [
+          {
+            "minPacks": 130,
+            "pricePack": 2.35
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.25
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": null,
+      "screenshot": "screenshots/cell-067.jpg",
+      "screenshotSha256": "d8890e46fa1e3bdaea47af5f7edfdc2a5fa7ec4ba4f124c7f391ff97ea33a2de",
+      "visibleText": "evidence/cell-067.txt",
+      "updates": {
+        "stock": {
+          "before": "unknown",
+          "after": "out_of_stock"
+        },
+        "ean": {
+          "before": null,
+          "after": "7417940526867"
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "The capture resolves previously unknown availability as out of stock; EAN and model corroborate identity."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-068",
+      "url": "https://www.nkon.nl/de/lg-inr21700-m50l-4850mah-7-3a-no-wrap.html",
+      "resolvedUrl": "https://www.nkon.nl/de/lg-inr21700-m50l-4850mah-7-3a-no-wrap.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:46.746Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:46.746000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "** INR21700-M50L 4850mAh - 14.4A - KEIN WICKELN",
+        "ean": "7417940526638",
+        "model": "** INR21700-M50L",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 5.19,
+        "priceTiers": [
+          {
+            "minPacks": 130,
+            "pricePack": 1.83
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 1.77
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 1.75
+          }
+        ]
+      },
+      "observed": {
+        "name": "** INR21700-M50L 4850mAh - 14.4A - KEIN WICKELN",
+        "brand": "LG (page spec table)",
+        "model": "INR21700-M50L",
+        "ean": "7417940526638",
+        "variant": "No wrap; flat top",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "orderable; add-to-cart controls shown",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 5.19,
+        "priceTiers": [
+          {
+            "minPacks": 130,
+            "pricePack": 1.83
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 1.77
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 1.75
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-068.jpg",
+      "screenshotSha256": "d58dea88d8f3065c0307c8386e8e9869232be8996218a26a0977ab2717fc5163",
+      "visibleText": "evidence/cell-068.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page title contains literal **; EAN, model in title/URL, no-wrap identity and flat-top description corroborate the source offer. Product text warns it is not intended for vape use."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-069",
+      "url": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-inr21700-m50a-4800mah-15a.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:49.847Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:49.847000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "Molicel INR21700-M50A 4800mAh - 15A",
+        "ean": "7417940526355",
+        "model": "INR-21700-M50A",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.25,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Molicel INR21700-M50A 4800mAh - 15A",
+        "brand": "Molicel",
+        "model": "INR-21700-M50A",
+        "ean": "7417940526355",
+        "variant": "New / regular; flat top",
+        "packSize": 1,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; discontinued notice shown; no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": true,
+        "discontinuedNotice": "Dieses Produkt wurde eingestellt und wird nicht mehr aufgefüllt. Wir entschuldigen uns für die Unannehmlichkeiten.",
+        "pricePack": 3.25,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-069.jpg",
+      "screenshotSha256": "2386ef0b922faddd3b6b173d85ae0048691e4e030146a7c196a497122ee27618",
+      "visibleText": "evidence/cell-069.txt",
+      "updates": {
+        "discontinued": {
+          "before": null,
+          "after": true
+        }
+      },
+      "reviewFindings": [],
+      "uncertainties": [
+        "Page notes lot sizes average 1000 cells, so an order may span multiple lots."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-070",
+      "url": "https://www.nkon.nl/de/2x-keeppower-21700-5000mah-protected-8a-usb.html",
+      "resolvedUrl": "https://www.nkon.nl/de/2x-keeppower-21700-5000mah-protected-8a-usb.html",
+      "group": 7,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:52:52.889Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:52:52.889000+02:00",
+      "browserTab": "501072599",
+      "expected": {
+        "name": "2x Keeppower 21700 5000mAh (protected) - 8A - USB",
+        "ean": "6970906554058",
+        "model": "P2150TC",
+        "stock": "out_of_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 2,
+        "delivery": null,
+        "pricePack": 17.95,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "2x Keeppower 21700 5000mAh (protected) - 8A - USB",
+        "brand": "Keeppower",
+        "model": "P2150TC",
+        "ean": "6970906554058",
+        "variant": "Protected, button top, USB charging",
+        "packSize": 2,
+        "stock": "out_of_stock",
+        "literalStatus": "Nicht auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "unorderable; availability notification form shown, no add-to-cart button",
+        "orderButtonVisible": false,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 17.95,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-070.jpg",
+      "screenshotSha256": "bf3b9996a8879db23b7eda1bdf9bf5fe7f1d73ef8b38a1967916bcbb2fa0baeb",
+      "visibleText": "evidence/cell-070.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [
+        "Price is for the two-cell pack; no volume tiers shown."
+      ],
+      "agentResult": "agent-group-07.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-071",
+      "url": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html",
+      "resolvedUrl": "https://www.nkon.nl/de/molicel-21700a-4200mah-30a.html",
+      "group": 8,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:53:17.503Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:53:17.503000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A",
+        "ean": "7417940523859",
+        "model": "INR-21700-P42A",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.55,
+        "priceTiers": []
+      },
+      "observed": {
+        "name": "Molicel INR21700-P42A 4200mAh - 45A",
+        "brand": "Molicel",
+        "model": "INR-21700-P42A",
+        "ean": "7417940523859",
+        "variant": "Neu / regulär",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.55,
+        "priceTiers": [],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-071.jpg",
+      "screenshotSha256": "2d289bbe4d295766b1cd09f7d85f95b7e8648e1a5301b5ce647158cc642b32db",
+      "visibleText": "evidence/cell-071.txt",
+      "updates": {},
+      "reviewFindings": [
+        "URL slug says \"21700a-4200mah-30a\" but the page title/specs identify INR21700-P42A at 45A; the live EAN (7417940523859) and model match the expected P42A offer."
+      ],
+      "uncertainties": [
+        "The URL appears to retain an outdated 30A slug; live page title, model, EAN and discharge rating agree on the P42A 45A listing."
+      ],
+      "agentResult": "agent-group-08.json",
+      "identityConfirmed": true
+    },
+    {
+      "id": "cell-072",
+      "url": "https://www.nkon.nl/de/samsung-inr21700-50e.html",
+      "resolvedUrl": "https://www.nkon.nl/de/samsung-inr21700-50e.html",
+      "group": 8,
+      "agentModel": "gpt-6-luna",
+      "reasoningEffort": "low",
+      "status": "visually_checked",
+      "checkedAt": "2026-10-01T20:53:22.060Z",
+      "checkedAtEuropeBerlin": "2026-10-01T22:53:22.060000+02:00",
+      "browserTab": "501072602",
+      "expected": {
+        "name": "Samsung INR21700-50E 4900mAh - 9.8A",
+        "ean": "8438493108880",
+        "model": "INR21700-50E",
+        "stock": "in_stock",
+        "offerVariant": "Neu / regulär",
+        "condition": "new",
+        "packSize": 1,
+        "delivery": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.21
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.11
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.98
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.88
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.78
+          }
+        ]
+      },
+      "observed": {
+        "name": "Samsung INR21700-50E 4900mAh - 9.8A",
+        "brand": "Samsung",
+        "model": "INR21700-50E",
+        "ean": "8438493108880",
+        "variant": "Neu / regulär",
+        "packSize": 1,
+        "stock": "in_stock",
+        "literalStatus": "Auf Lager",
+        "delivery": null,
+        "deliveryIsEstimate": false,
+        "orderability": "In den Einkaufswagen",
+        "orderButtonVisible": true,
+        "discontinued": false,
+        "discontinuedNotice": null,
+        "pricePack": 3.45,
+        "priceTiers": [
+          {
+            "minPacks": 10,
+            "pricePack": 3.21
+          },
+          {
+            "minPacks": 50,
+            "pricePack": 3.11
+          },
+          {
+            "minPacks": 130,
+            "pricePack": 2.98
+          },
+          {
+            "minPacks": 260,
+            "pricePack": 2.88
+          },
+          {
+            "minPacks": 390,
+            "pricePack": 2.78
+          }
+        ],
+        "currency": "EUR",
+        "pricesIncludeVAT": true
+      },
+      "identityEANMatches": true,
+      "screenshot": "screenshots/cell-072.jpg",
+      "screenshotSha256": "de10a9c66cabdaca01bcaac476ee54ba8e4522f45e32b215059703b5960cb237",
+      "visibleText": "evidence/cell-072.txt",
+      "updates": {},
+      "reviewFindings": [],
+      "uncertainties": [],
+      "agentResult": "agent-group-08.json",
+      "identityConfirmed": true
+    }
+  ]
+}
