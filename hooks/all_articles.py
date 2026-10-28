@@ -109,18 +109,24 @@ def collect(files):
         }.get(file.src_uri.split("/")[0], "Article")
         if file.src_uri.startswith("wiki/repairs/"):
             section = "Repairs"
-        articles.append(dict(file=file, published=published, title=_plain(title),
+        updated = _date(settings["updated"], file.src_uri) if settings.get("updated") else published
+        if updated < published:
+            raise PluginError(f"{file.src_uri}: updated date predates publication")
+        articles.append(dict(file=file, published=published, updated=updated, title=_plain(title),
                              summary=_plain(summary), image=image, alt=alt, section=section))
-    # Stable order when multiple articles share a publication day.
-    return sorted(articles, key=lambda a: (-a["published"].toordinal(), a["file"].src_uri))
+    # Most recently revised first; retain publication date and stable ordering on ties.
+    return sorted(articles, key=lambda a: (-a["updated"].toordinal(), -a["published"].toordinal(), a["file"].src_uri))
 
 
 def render(articles, page, files):
-    cards = ['<div class="all-articles" aria-label="All articles, newest first">']
+    cards = ['<div class="all-articles" aria-label="All articles, recently updated first">']
     for article in articles:
         href = get_relative_url(article["file"].url, page.file.url)
         cover = get_relative_url(files.get_file_from_path(article["image"]).url, page.file.url)
         published = article["published"]
+        updated = article["updated"]
+        display_date = updated if updated > published else published
+        label = "Updated" if updated > published else "Published"
         cards.append(
             '<article class="article-row">'
             f'<a class="article-row__image no-lightbox" href="{escape(href, quote=True)}" '
@@ -129,7 +135,7 @@ def render(articles, page, files):
             f'alt="{escape(str(article["alt"]), quote=True)}" loading="lazy" decoding="async"></a>'
             '<div class="article-row__copy">'
             f'<p class="article-row__meta"><span>{escape(str(article["section"]))}</span> · '
-            f'<time datetime="{published.isoformat()}">{published.strftime("%d %b %Y")}</time></p>'
+            f'{label} <time datetime="{display_date.isoformat()}">{display_date.strftime("%d %b %Y")}</time></p>'
             f'<h2><a href="{escape(href, quote=True)}">{escape(article["title"])}</a></h2>'
             f'<p>{escape(article["summary"])}</p>'
             f'<a class="article-row__link" href="{escape(href, quote=True)}">Read article →</a>'
@@ -171,3 +177,4 @@ def on_page_markdown(markdown, *, page, config, files):
                 items.append(f"<li><time datetime='{changed.isoformat()}'>{changed.strftime('%d %b %Y')}</time> — {escape(str(change['summary']))}</li>")
             markdown += '\n\n<section class="article-changes" aria-label="Article changes"><h2>Article changes</h2><ul>' + "".join(items) + '</ul></section>\n'
     return markdown
+

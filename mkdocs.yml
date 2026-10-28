@@ -7,6 +7,7 @@ repo_name: KidCe/KidCe.github.io
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: assets/images/logo.svg
   favicon: assets/images/favicon.svg
@@ -98,7 +99,13 @@ nav:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
       - HDZero Monitor Favorites: projects/hdzero-monitor-favorites.md
-      - Modular Tinywhoop LED Gate: projects/tinywhoop-led-gate.md
+      - Modular Tinywhoop LED Gate:
+          - projects/tinywhoop-led-gate/index.md
+          - GateLink wireless control: projects/tinywhoop-gate/gatelink.md
+          - Race-event data: projects/tinywhoop-gate/race-data.md
+          - Project log: projects/tinywhoop-gate/log.md
+          - Cost estimate: projects/tinywhoop-gate/cost.md
+          - Earlier concepts: projects/tinywhoop-gate/archive.md
       - 3.5-inch 1S Endurance Drone: projects/35-inch-1s-endurance-drone.md
       - 3D Printing:
           - Flashforge Creator 5:

@@ -1,9 +1,15 @@
 ---
 article:
   published: 2026-08-31
+  image: assets/images/projects/flashforge-creator-5/mainsail-mesh-controls.png
+  image_alt: Mainsail interface showing bed mesh control macros
 ---
 
 # Print Workflow Adaptive Mesh and OrcaSlicer
+
+![Mainsail interface with bed mesh macros](../../../../../assets/images/projects/flashforge-creator-5/mainsail-mesh-controls.png)
+
+*Example local Mainsail interface; configuration and available macros vary.*
 
 This note owns print-start, layer metadata, adaptive-mesh, and OrcaSlicer routing information for the Flashforge Creator 5 project, consolidated on 2026-08-27. It keeps snippets and repository status in one place so slicer commands are not copied into several guides. The procedures are community-derived unless a separate physical result is recorded.
 

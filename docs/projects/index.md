@@ -17,6 +17,7 @@ Projects beyond regular quad builds: electronics, experimental aircraft and 3D-p
 </a>
 
 <a class="build-card" href="tinywhoop-led-gate/">
+  <img class="gate-card-image" src="../assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png" alt="Blender render of a single and conceptual double Tinywhoop gate">
   <span class="eyebrow">RACE INFRASTRUCTURE · PROTOTYPE DEVELOPMENT</span>
   <h2>Modular Tinywhoop LED Gate</h2>
   <p>Square-tube LED gate with printed corners and clip-on diffusers, an interactive 3D assembly guide and a 20-gate cost estimate.</p>

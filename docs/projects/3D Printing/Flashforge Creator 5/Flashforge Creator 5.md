@@ -1,9 +1,15 @@
 ---
 article:
   published: 2026-08-31
+  image: assets/media/projects/3D Printing/Flashforge Creator 5/Knowledge Base/Assets/FCC/c5p-mainboard-fcc-page11.jpg
+  image_alt: Creator 5 Pro mainboard shown in FCC documentation
 ---
 
 # Flashforge Creator 5
+
+![Creator 5 Pro mainboard from FCC documentation](../../../assets/media/projects/3D%20Printing/Flashforge%20Creator%205/Knowledge%20Base/Assets/FCC/c5p-mainboard-fcc-page11.jpg)
+
+*Mainboard image from FCC documentation; see Device evidence for context.*
 
 Hardware, firmware, modification and recovery documentation for the Flashforge Creator 5 and Creator 5 Pro. Most physical findings come from one Creator 5 Pro; model and firmware compatibility are stated on the individual pages.
 
