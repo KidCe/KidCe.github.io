@@ -60,6 +60,107 @@
       },
       "behavior": {}
     },
+    "CR5.1": {
+      "id": "CR5.1",
+      "group": "corner",
+      "physical_code": "CR5.1",
+      "interface": "sq15-corner-v1",
+      "kind": "assembly-part",
+      "display": {
+        "label": "Corner CR5.1 (rev4 sockets and dovetail, 2.5 mm deeper node pocket, snap pockets)",
+        "short": "Corner CR5.1",
+        "kind": "print",
+        "colour": "#3b6fb6",
+        "revision": "CR5.1 (manifest): rev4 interface unchanged; physical code on the rear face",
+        "status": "CAD only; no documented print or fit test",
+        "note": "Sockets, dovetail tails and M3S pilot holes as corner rev4. Node pocket 2.5 mm deeper for solder joints; one snap pocket per arm for the CC1.1 cap (not shown).",
+        "label_anchor": {
+          "instance": "corner_TL",
+          "local": [
+            13.0,
+            13.0,
+            11.75
+          ]
+        }
+      },
+      "downloads": {
+        "stl": "downloads/CR5.1-dd4070c0a9fe.stl",
+        "step": "downloads/CR5.1-c56a0ceca23a.step"
+      },
+      "hashes": {
+        "stl": "dd4070c0a9fe9c8c691a3b553ac5a166792b0d9df85a1773d728eedd7eb2d07a",
+        "step": "c56a0ceca23af4d4d3493e91393cd1b4513349a038f437d2f5ad301d6bd34d51"
+      },
+      "behavior": {}
+    },
+    "DF6.1": {
+      "id": "DF6.1",
+      "group": "diffuser_end",
+      "physical_code": "DF6.1",
+      "interface": "sq15-diffuser_end-v2",
+      "kind": "assembly-part",
+      "display": {
+        "label": "Diffuser DF6.1 end piece (198.6 mm, square end, folded 40-degree lead-in)",
+        "short": "Diffuser DF6.1 end",
+        "kind": "print",
+        "colour": "#cfe3f5",
+        "opacity": 0.62,
+        "revision": "DF6.1 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+        "status": "CAD only; not printed yet. Predecessor DF5 printed 2026-10-28: too tight behind the tube.",
+        "note": "Two per rail, the second one turned end for end. Bars sit between the LEDs at 16.667 mm pitch. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+        "label_anchor": {
+          "instance": "diff_top_1",
+          "local": [
+            0.0,
+            8.39,
+            99.3
+          ]
+        }
+      },
+      "downloads": {
+        "stl": "downloads/DF6.1-0269ff2b32fd.stl",
+        "step": "downloads/DF6.1-f842af9dea7a.step"
+      },
+      "hashes": {
+        "stl": "0269ff2b32fd658408290dfecf1e9595322600bf6bf3b6ade80e644f1bc3d2a0",
+        "step": "f842af9dea7a8c5d542358e27c121b80dd2647e94b6a5e01cdb1d3a637cae2b2"
+      },
+      "behavior": {}
+    },
+    "DF6.2": {
+      "id": "DF6.2",
+      "group": "diffuser_mid",
+      "physical_code": "DF6.2",
+      "interface": "sq15-diffuser_mid-v2",
+      "kind": "assembly-part",
+      "display": {
+        "label": "Diffuser DF6.2 middle piece (198.6 mm, 11 pitch-matched bars, folded 40-degree lead-in)",
+        "short": "Diffuser DF6.2 middle",
+        "kind": "print",
+        "colour": "#a9cdee",
+        "opacity": 0.62,
+        "revision": "DF6.2 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+        "status": "CAD only; not printed yet. Suggested first test: one DF6.2 alone on the tube.",
+        "note": "One per rail between two DF6.1. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+        "label_anchor": {
+          "instance": "diff_top_2",
+          "local": [
+            0.0,
+            8.39,
+            99.3
+          ]
+        }
+      },
+      "downloads": {
+        "stl": "downloads/DF6.2-ac7058653a28.stl",
+        "step": "downloads/DF6.2-a281c55ca4ec.step"
+      },
+      "hashes": {
+        "stl": "ac7058653a283d70c4de120699a6169b8fb080a0ac308931514acde1e9c437e0",
+        "step": "a281c55ca4ec1e0d06d76449cbaed8f37c09a5d8a1e996b4d6d1d1de456a5282"
+      },
+      "behavior": {}
+    },
     "endcap-v2-legacy": {
       "id": "endcap-v2-legacy",
       "group": "endcap",
@@ -157,6 +258,39 @@
       "behavior": {
         "requires_release": true
       }
+    },
+    "FB5.2": {
+      "id": "FB5.2",
+      "group": "foot_bracket",
+      "physical_code": "FB5.2",
+      "interface": "sq15-foot_bracket-v2",
+      "kind": "assembly-part",
+      "display": {
+        "label": "Foot bracket FB5.2 (dovetail receiver, centre snap clip, two M3 holes, two tube sockets)",
+        "short": "Foot bracket FB5.2",
+        "kind": "print",
+        "colour": "#297f78",
+        "revision": "FB5.2 (manifest): groove 0.25 mm/face; CDB2.2 clip on a bridged spring beam",
+        "status": "CAD only; no documented print or fit test. Clip click, hold and release are untested.",
+        "note": "The clip bump catches in the lowest corner pilot hole, which stays without an insert. Cut the 0.3 mm sacrificial print tab after printing. The beam is shown undeformed; spring deflection is not simulated.",
+        "label_anchor": {
+          "instance": "bracket_L",
+          "local": [
+            -27.125,
+            13.5,
+            11.75
+          ]
+        }
+      },
+      "downloads": {
+        "stl": "downloads/FB5.2-8e601741e5ab.stl",
+        "step": "downloads/FB5.2-a24a1c221185.step"
+      },
+      "hashes": {
+        "stl": "8e601741e5ab548ba333aa3e7647865f4cc6c9882176346267445aef84735547",
+        "step": "a24a1c221185afef3fd44dbcd915cf41e8467887c0998e188268ec4818ff36b3"
+      },
+      "behavior": {}
     },
     "foot-v2-legacy": {
       "id": "foot-v2-legacy",
@@ -329,6 +463,138 @@
         "geometry_source": "Original STL, registered in model coordinates",
         "mate": "FB3.1"
       },
+      "CR5.1": {
+        "id": "CR5.1",
+        "group": "corner",
+        "physical_code": "CR5.1",
+        "interface": "sq15-corner-v1",
+        "kind": "assembly-part",
+        "display": {
+          "label": "Corner CR5.1 (rev4 sockets and dovetail, 2.5 mm deeper node pocket, snap pockets)",
+          "short": "Corner CR5.1",
+          "kind": "print",
+          "colour": "#3b6fb6",
+          "revision": "CR5.1 (manifest): rev4 interface unchanged; physical code on the rear face",
+          "status": "CAD only; no documented print or fit test",
+          "note": "Sockets, dovetail tails and M3S pilot holes as corner rev4. Node pocket 2.5 mm deeper for solder joints; one snap pocket per arm for the CC1.1 cap (not shown).",
+          "label_anchor": {
+            "instance": "corner_TL",
+            "local": [
+              13.0,
+              13.0,
+              11.75
+            ]
+          }
+        },
+        "downloads": {
+          "stl": "downloads/CR5.1-dd4070c0a9fe.stl",
+          "step": "downloads/CR5.1-c56a0ceca23a.step"
+        },
+        "hashes": {
+          "stl": "dd4070c0a9fe9c8c691a3b553ac5a166792b0d9df85a1773d728eedd7eb2d07a",
+          "step": "c56a0ceca23af4d4d3493e91393cd1b4513349a038f437d2f5ad301d6bd34d51"
+        },
+        "behavior": {},
+        "family": "corner",
+        "fit": {
+          "sockets": "unchanged from rev4 (cq_corner.sq_section, ribs 0.12 / 0.10)",
+          "dovetail": "unchanged rev4 symmetric tail (FB3.1 / FB5.x fit)",
+          "snap_pocket": "10.8 mm long (along the arm), 0.9 mm deep, z 8.5-11.5, centred at the arm middle (x = 28.15)",
+          "recess": "cq_corner node pocket outline, depth +2.5 mm"
+        },
+        "geometry_source": "Original STL, registered in model coordinates",
+        "mate": "FB5.2"
+      },
+      "DF6.1": {
+        "id": "DF6.1",
+        "group": "diffuser_end",
+        "physical_code": "DF6.1",
+        "interface": "sq15-diffuser_end-v2",
+        "kind": "assembly-part",
+        "display": {
+          "label": "Diffuser DF6.1 end piece (198.6 mm, square end, folded 40-degree lead-in)",
+          "short": "Diffuser DF6.1 end",
+          "kind": "print",
+          "colour": "#cfe3f5",
+          "opacity": 0.62,
+          "revision": "DF6.1 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+          "status": "CAD only; not printed yet. Predecessor DF5 printed 2026-10-28: too tight behind the tube.",
+          "note": "Two per rail, the second one turned end for end. Bars sit between the LEDs at 16.667 mm pitch. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+          "label_anchor": {
+            "instance": "diff_top_1",
+            "local": [
+              0.0,
+              8.39,
+              99.3
+            ]
+          }
+        },
+        "downloads": {
+          "stl": "downloads/DF6.1-0269ff2b32fd.stl",
+          "step": "downloads/DF6.1-f842af9dea7a.step"
+        },
+        "hashes": {
+          "stl": "0269ff2b32fd658408290dfecf1e9595322600bf6bf3b6ade80e644f1bc3d2a0",
+          "step": "f842af9dea7a8c5d542358e27c121b80dd2647e94b6a5e01cdb1d3a637cae2b2"
+        },
+        "behavior": {},
+        "family": "diffuser_end",
+        "fit": {
+          "pinch_per_side_mm": 0.15,
+          "rear_clear_mm": 0.65,
+          "rear_lip_gap_mm": 0.15,
+          "rear_meaning": "rear lip kink 0.15 mm off the tube rear face (DF5: pressed 0.10 mm in); side wall 0.2 mm longer than DF5",
+          "lead_in": "after the hook a hairpin, then a 40-degree flare outward-rearward (3.5 mm in x), folded back onto itself (0.95 mm leg spacing) so the outer end is a rounded fold; the tube corners land on the flare and spread the arms",
+          "flare_behind_gate_rear_plane_mm": 0.3,
+          "corbels": "as DF5 (edge |x| 7.9, 4.0 mm)"
+        },
+        "geometry_source": "Original STL, registered in model coordinates"
+      },
+      "DF6.2": {
+        "id": "DF6.2",
+        "group": "diffuser_mid",
+        "physical_code": "DF6.2",
+        "interface": "sq15-diffuser_mid-v2",
+        "kind": "assembly-part",
+        "display": {
+          "label": "Diffuser DF6.2 middle piece (198.6 mm, 11 pitch-matched bars, folded 40-degree lead-in)",
+          "short": "Diffuser DF6.2 middle",
+          "kind": "print",
+          "colour": "#a9cdee",
+          "opacity": 0.62,
+          "revision": "DF6.2 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+          "status": "CAD only; not printed yet. Suggested first test: one DF6.2 alone on the tube.",
+          "note": "One per rail between two DF6.1. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+          "label_anchor": {
+            "instance": "diff_top_2",
+            "local": [
+              0.0,
+              8.39,
+              99.3
+            ]
+          }
+        },
+        "downloads": {
+          "stl": "downloads/DF6.2-ac7058653a28.stl",
+          "step": "downloads/DF6.2-a281c55ca4ec.step"
+        },
+        "hashes": {
+          "stl": "ac7058653a283d70c4de120699a6169b8fb080a0ac308931514acde1e9c437e0",
+          "step": "a281c55ca4ec1e0d06d76449cbaed8f37c09a5d8a1e996b4d6d1d1de456a5282"
+        },
+        "behavior": {},
+        "family": "diffuser_mid",
+        "fit": {
+          "pinch_per_side_mm": 0.15,
+          "rear_clear_mm": 0.65,
+          "rear_lip_gap_mm": 0.15,
+          "rear_meaning": "rear lip kink 0.15 mm off the tube rear face (DF5: pressed 0.10 mm in); side wall 0.2 mm longer than DF5",
+          "lead_in": "after the hook a hairpin, then a 40-degree flare outward-rearward (3.5 mm in x), folded back onto itself (0.95 mm leg spacing) so the outer end is a rounded fold; the tube corners land on the flare and spread the arms",
+          "flare_behind_gate_rear_plane_mm": 0.3,
+          "corbels": "as DF5"
+        },
+        "geometry_source": "Original STL, registered in model coordinates"
+      },
       "endcap-v2-legacy": {
         "id": "endcap-v2-legacy",
         "group": "endcap",
@@ -470,6 +736,69 @@
         },
         "geometry_source": "Original STL, registered in model coordinates",
         "mate": "corner-rev4-legacy"
+      },
+      "FB5.2": {
+        "id": "FB5.2",
+        "group": "foot_bracket",
+        "physical_code": "FB5.2",
+        "interface": "sq15-foot_bracket-v2",
+        "kind": "assembly-part",
+        "display": {
+          "label": "Foot bracket FB5.2 (dovetail receiver, centre snap clip, two M3 holes, two tube sockets)",
+          "short": "Foot bracket FB5.2",
+          "kind": "print",
+          "colour": "#297f78",
+          "revision": "FB5.2 (manifest): groove 0.25 mm/face; CDB2.2 clip on a bridged spring beam",
+          "status": "CAD only; no documented print or fit test. Clip click, hold and release are untested.",
+          "note": "The clip bump catches in the lowest corner pilot hole, which stays without an insert. Cut the 0.3 mm sacrificial print tab after printing. The beam is shown undeformed; spring deflection is not simulated.",
+          "label_anchor": {
+            "instance": "bracket_L",
+            "local": [
+              -27.125,
+              13.5,
+              11.75
+            ]
+          }
+        },
+        "downloads": {
+          "stl": "downloads/FB5.2-8e601741e5ab.stl",
+          "step": "downloads/FB5.2-a24a1c221185.step"
+        },
+        "hashes": {
+          "stl": "8e601741e5ab548ba333aa3e7647865f4cc6c9882176346267445aef84735547",
+          "step": "a24a1c221185afef3fd44dbcd915cf41e8467887c0998e188268ec4818ff36b3"
+        },
+        "behavior": {},
+        "family": "foot_bracket",
+        "fit": {
+          "dovetail_groove_clearance_mm": 0.25,
+          "clip": {
+            "origin": "CDB2.2 (owner pick 2026-10-26: CDB2.3 too tight, CDB2.2 good)",
+            "interference_i_mm": 0.55,
+            "bump_height_mm": 1.126,
+            "lead_in_deg": 30,
+            "retention_flank_deg": 45.0,
+            "beam": "cantilever along z, RECTANGULAR section y 2.0-14.0 (flat bottom/top; stiffness = CDB2.2 at the bump), thickness 2.3 -> 1.5 mm tapered, keyhole R 0.6 at the root",
+            "cavity": "flat floor 0.8 below and flat bridged ceiling 0.8 above the beam; back relief 0.6 -> 2.0 mm towards the free end; end gap 0.8 mm",
+            "sacrificial_tab": "0.3 mm thick at the beam bottom, across the end gap 0.3 mm into the end wall: the first beam layer bridges root wall -> end wall. CUT IT with a knife after printing",
+            "print_reason": "owner 2026-10-26: FB5.1 clip started with a bad overhang (45-degree V underside) and closed with a bad overhang (gable ridge)",
+            "deflection_vs_back_gap": {
+              "tail_at_lips_bump_0.55": {
+                "free_end_deflection_mm": 0.701,
+                "min_back_gap_mm": 0.6
+              },
+              "tail_on_back_face_bump_1.126": {
+                "free_end_deflection_mm": 1.436,
+                "min_back_gap_mm": 0.5
+              }
+            },
+            "catch": "corner rev4 lowest Ruthex pilot hole (y 6), WITHOUT insert"
+          },
+          "free_lift_in_seat_mm": 0.261,
+          "friction_zone": "last ~3.5 mm before the seat (rigid sweep)"
+        },
+        "geometry_source": "Original STL, registered in model coordinates",
+        "mate": "CR5.1"
       },
       "foot-v2-legacy": {
         "id": "foot-v2-legacy",
@@ -668,58 +997,6 @@
           "colour": "#297f78",
           "status": "Full-part experiment; assembly integration pending. none yet",
           "note": "FB3.1 base (groove 0.25 with floor, foot sockets, upper two M3 holes/head seats) without the lowest M3 hole; CDB2.2 spring beam + bump in the groove back wall; deeper back relief so the beam no longer bottoms out Requires the lowest corner pilot hole to remain without an insert. Do not substitute into the three-screw assembly scene until its hardware and retention profile are integrated."
-        },
-        "mate": "corner-rev4-legacy"
-      },
-      "FB5.2": {
-        "id": "FB5.2",
-        "physical_code": "FB5.2",
-        "group": "coupon_FB",
-        "family": "FB",
-        "kind": "inspection-only",
-        "geometry_source": "STEP inspection mesh; print STL chamfers may differ",
-        "hashes": {
-          "stl": "8e601741e5ab548ba333aa3e7647865f4cc6c9882176346267445aef84735547",
-          "step": "a24a1c221185afef3fd44dbcd915cf41e8467887c0998e188268ec4818ff36b3"
-        },
-        "downloads": {
-          "stl": "downloads/FB5.2-8e601741e5ab.stl",
-          "step": "downloads/FB5.2-a24a1c221185.step"
-        },
-        "fit": {
-          "dovetail_groove_clearance_mm": 0.25,
-          "clip": {
-            "origin": "CDB2.2 (owner pick 2026-10-26: CDB2.3 too tight, CDB2.2 good)",
-            "interference_i_mm": 0.55,
-            "bump_height_mm": 1.126,
-            "lead_in_deg": 30,
-            "retention_flank_deg": 45.0,
-            "beam": "cantilever along z, RECTANGULAR section y 2.0-14.0 (flat bottom/top; stiffness = CDB2.2 at the bump), thickness 2.3 -> 1.5 mm tapered, keyhole R 0.6 at the root",
-            "cavity": "flat floor 0.8 below and flat bridged ceiling 0.8 above the beam; back relief 0.6 -> 2.0 mm towards the free end; end gap 0.8 mm",
-            "sacrificial_tab": "0.3 mm thick at the beam bottom, across the end gap 0.3 mm into the end wall: the first beam layer bridges root wall -> end wall. CUT IT with a knife after printing",
-            "print_reason": "owner 2026-10-26: FB5.1 clip started with a bad overhang (45-degree V underside) and closed with a bad overhang (gable ridge)",
-            "deflection_vs_back_gap": {
-              "tail_at_lips_bump_0.55": {
-                "free_end_deflection_mm": 0.701,
-                "min_back_gap_mm": 0.6
-              },
-              "tail_on_back_face_bump_1.126": {
-                "free_end_deflection_mm": 1.436,
-                "min_back_gap_mm": 0.5
-              }
-            },
-            "catch": "corner rev4 lowest Ruthex pilot hole (y 6), WITHOUT insert"
-          },
-          "free_lift_in_seat_mm": 0.261,
-          "friction_zone": "last ~3.5 mm before the seat (rigid sweep)"
-        },
-        "display": {
-          "short": "FB5.2",
-          "label": "FB5.2 · SQ15 foot bracket (dovetail receiver for corner rev4, front/rear 15 mm foot tube sockets, M3 holes)",
-          "revision": "FB5.2",
-          "colour": "#297f78",
-          "status": "Full-part experiment; assembly integration pending. none yet",
-          "note": "FB3.1 base (groove 0.25 with floor, foot sockets, upper two M3 holes/head seats) without the lowest M3 hole; CDB2.2 bump on a rectangular bridged spring beam with sacrificial tab; deep back relief (FB5.1) so the beam no longer bottoms out Assembly hardware and retention profile not integrated; inspect individually only."
         },
         "mate": "corner-rev4-legacy"
       },
@@ -1525,7 +1802,7 @@
         }
       }
     },
-    "default_part": "FB4.1",
+    "default_part": "FB5.2",
     "note": "Counterparts share model coordinates. Separation is schematic inspection, not a validated insertion or spring simulation. Test coupons never replace full assembly parts."
   },
   "builds": {
@@ -1662,6 +1939,39 @@
       "scene": "scene.json",
       "steps": "steps.json",
       "motions": "motions.json"
+    },
+    "sq15-v04-df6-fb52-axial": {
+      "id": "sq15-v04-df6-fb52-axial",
+      "label": "Development / CR5.1 + FB5.2 clip + DF6 diffusers · axial guide",
+      "channel": "development",
+      "parts": {
+        "corner": "CR5.1",
+        "foot_bracket": "FB5.2",
+        "endcap": "endcap-v2-legacy",
+        "diffuser_end": "DF6.1",
+        "diffuser_mid": "DF6.2"
+      },
+      "note": "Newest CAD revisions as of 2026-10-29: corner CR5.1, foot bracket FB5.2 with centre snap clip, DF6 diffuser rail set. None of the three is printed and fit-tested yet.",
+      "compatible_foot_brackets": [
+        "FB5.2"
+      ],
+      "assumptions": {
+        "frame_tube_len_mm": 600.0,
+        "foot_overhang_mm": 250.0,
+        "note": "tube lengths / gate size and foot overhang are NOT decided; illustrative"
+      },
+      "status": "CAD assembly; CR5.1, FB5.2 and DF6 not yet printed",
+      "limitations": [
+        "DF6, FB5.2 and CR5.1 are CAD revisions without a documented print or fit test.",
+        "LED strip start position at the tube end is assumed (bars between LEDs).",
+        "Clip beams and diffuser arms are shown undeformed; no spring or snap simulation.",
+        "Tube length and foot overhang are illustrative.",
+        "Motion paths explain joints; no full collision sweep or force simulation."
+      ],
+      "scene": "scene-axial-v3.json",
+      "steps": "steps-axial-v3.json",
+      "motions": "motions-axial-v3.json",
+      "based_on": "sq15-fb41-experiment-axial"
     },
     "sq15-v2-reconstruction-axial": {
       "id": "sq15-v2-reconstruction-axial",
@@ -9246,6 +9556,2450 @@
         "diffuser_end": "sq15-diffuser_end-v1",
         "diffuser_mid": "sq15-diffuser_mid-v1"
       }
+    },
+    "scene-axial-v3.json": {
+      "schema": 2,
+      "params": {
+        "W": 13.15,
+        "corner_top": 23.503553390593275,
+        "tube_centre_z": 11.503553390593273,
+        "node_pitch": 626.3,
+        "foot_socket_centre": [
+          -30.0,
+          -5.999999999999998
+        ],
+        "seated_foot_tube_centre_y": -5.586446609406725,
+        "floor_y": -23.341000000000015,
+        "foot_tube_len": 300.0
+      },
+      "assumptions": {
+        "frame_tube_len_mm": 600.0,
+        "foot_overhang_mm": 250.0,
+        "note": "tube lengths / gate size and foot overhang are NOT decided; illustrative"
+      },
+      "catalogue": {
+        "corner": {
+          "label": "Corner CR5.1 (rev4 sockets and dovetail, 2.5 mm deeper node pocket, snap pockets)",
+          "short": "Corner CR5.1",
+          "kind": "print",
+          "colour": "#3b6fb6",
+          "revision": "CR5.1 (manifest): rev4 interface unchanged; physical code on the rear face",
+          "status": "CAD only; no documented print or fit test",
+          "note": "Sockets, dovetail tails and M3S pilot holes as corner rev4. Node pocket 2.5 mm deeper for solder joints; one snap pocket per arm for the CC1.1 cap (not shown).",
+          "label_anchor": {
+            "instance": "corner_TL",
+            "local": [
+              13.0,
+              13.0,
+              11.75
+            ]
+          }
+        },
+        "foot_bracket": {
+          "label": "Foot bracket FB5.2 (dovetail receiver, centre snap clip, two M3 holes, two tube sockets)",
+          "short": "Foot bracket FB5.2",
+          "kind": "print",
+          "colour": "#297f78",
+          "revision": "FB5.2 (manifest): groove 0.25 mm/face; CDB2.2 clip on a bridged spring beam",
+          "status": "CAD only; no documented print or fit test. Clip click, hold and release are untested.",
+          "note": "The clip bump catches in the lowest corner pilot hole, which stays without an insert. Cut the 0.3 mm sacrificial print tab after printing. The beam is shown undeformed; spring deflection is not simulated.",
+          "label_anchor": {
+            "instance": "bracket_L",
+            "local": [
+              -27.125,
+              13.5,
+              11.75
+            ]
+          }
+        },
+        "endcap": {
+          "label": "Foot end cap v2 (9.69 mm sole, unchanged foot_socket_cutter)",
+          "short": "End cap v2",
+          "kind": "print",
+          "colour": "#e08a1e",
+          "revision": "v2 sole9p69 - unmarked; no physical code",
+          "status": "Owner PASS 2026-10-25: insertion, retention on lifting, roof clearance, >=5 mm lowest-corner gap on tested setup; load and foot length not recorded",
+          "label_anchor": {
+            "instance": "cap_L_front",
+            "local": [
+              0.0,
+              15.047276496887207,
+              11.5
+            ]
+          }
+        },
+        "diffuser_end": {
+          "label": "Diffuser DF6.1 end piece (198.6 mm, square end, folded 40-degree lead-in)",
+          "short": "Diffuser DF6.1 end",
+          "kind": "print",
+          "colour": "#cfe3f5",
+          "opacity": 0.62,
+          "revision": "DF6.1 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+          "status": "CAD only; not printed yet. Predecessor DF5 printed 2026-10-28: too tight behind the tube.",
+          "note": "Two per rail, the second one turned end for end. Bars sit between the LEDs at 16.667 mm pitch. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+          "label_anchor": {
+            "instance": "diff_top_1",
+            "local": [
+              0.0,
+              8.39,
+              99.3
+            ]
+          }
+        },
+        "diffuser_mid": {
+          "label": "Diffuser DF6.2 middle piece (198.6 mm, 11 pitch-matched bars, folded 40-degree lead-in)",
+          "short": "Diffuser DF6.2 middle",
+          "kind": "print",
+          "colour": "#a9cdee",
+          "opacity": 0.62,
+          "revision": "DF6.2 (manifest): pinch 0.15 mm/side, rear lip 0.15 mm off the tube; no physical code (thin walls)",
+          "status": "CAD only; not printed yet. Suggested first test: one DF6.2 alone on the tube.",
+          "note": "One per rail between two DF6.1. The clip is shown undeformed: designed pinch preload appears as tube overlap. This is not a flexible simulation.",
+          "label_anchor": {
+            "instance": "diff_top_2",
+            "local": [
+              0.0,
+              8.39,
+              99.3
+            ]
+          }
+        },
+        "tube_frame": {
+          "label": "Aluminium square frame tube 15x15x1 (illustrative, assumed 600 mm length)",
+          "short": "Frame tube (assumed 600)",
+          "kind": "alu",
+          "colour": "#9aa1aa",
+          "illustrative": true,
+          "revision": "Illustration: 14.8 mm outside, r0.8; not measured stock",
+          "status": "Length and gate size undecided; 600 mm is rail-set design input",
+          "label_anchor": {
+            "instance": "tube_right",
+            "local": [
+              0.0,
+              0.0,
+              420.0
+            ]
+          }
+        },
+        "tube_foot": {
+          "label": "Aluminium foot tube (illustrative, assumed 300 mm = 30 socket + 250 exposed + 20 cap)",
+          "short": "Foot tube (assumed)",
+          "kind": "alu",
+          "colour": "#7d858f",
+          "illustrative": true,
+          "revision": "Illustrative geometry; not a printed part",
+          "status": "Foot length undecided; 250 mm overhang is a calculation assumption",
+          "label_anchor": {
+            "instance": "foot_R_front",
+            "local": [
+              0.0,
+              0.0,
+              150.0
+            ]
+          }
+        },
+        "led": {
+          "label": "LED strip 10 mm (illustration only)",
+          "short": "LED strip (illustration)",
+          "kind": "led",
+          "colour": "#2e7d32",
+          "illustrative": true,
+          "revision": "Illustration; not a verified component",
+          "status": "Type, pads and corner routing undecided",
+          "label_anchor": {
+            "instance": "led_left",
+            "local": [
+              240.0,
+              0.0,
+              1.5
+            ]
+          }
+        },
+        "insert": {
+          "label": "M3 short heat-set insert (optional installation)",
+          "short": "Ruthex M3S (optional)",
+          "kind": "insert",
+          "colour": "#d6a845",
+          "illustrative": true,
+          "optional_m3": true,
+          "revision": "Dimension-based display model",
+          "status": "Optional installation; shown throughout its assembly step.",
+          "label_anchor": {
+            "instance": "insert_L_3",
+            "local": [
+              2.0,
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Dimension-based M3 short brass insert display model: open threaded bore, opposed diagonal knurl bands and central relief. Knurl teeth are illustrative rather than vendor manufacturing geometry; installation remains untested."
+        },
+        "screw": {
+          "label": "M3 socket-head screw (optional installation)",
+          "short": "M3 screw (optional)",
+          "kind": "screw",
+          "colour": "#aeb8c2",
+          "illustrative": true,
+          "optional_m3": true,
+          "revision": "Dimension-based display model",
+          "status": "Optional installation; shown throughout its assembly step.",
+          "label_anchor": {
+            "instance": "screw_L_3",
+            "local": [
+              1.5,
+              0.0,
+              0.0
+            ]
+          },
+          "note": "Dimension-based display model with a recessed hex socket and helical thread. The 6 mm under-head length is illustrative, not an approved screw-length selection."
+        }
+      },
+      "instances": [
+        {
+          "id": "corner_BL",
+          "mesh": "corner",
+          "group": "corner",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                -65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "corner_BR",
+          "mesh": "corner",
+          "group": "corner",
+          "matrix": [
+            [
+              6.123233995736766e-17,
+              -1.0,
+              0.0,
+              626.3
+            ],
+            [
+              1.0,
+              6.123233995736766e-17,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "corner_TL",
+          "mesh": "corner",
+          "group": "corner",
+          "matrix": [
+            [
+              6.123233995736766e-17,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              6.123233995736766e-17,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                -65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": [
+            {
+              "step": 3,
+              "keyframes": [
+                [
+                  0,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  0.5,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "corner_TR",
+          "mesh": "corner",
+          "group": "corner",
+          "matrix": [
+            [
+              -1.0,
+              -1.2246467991473532e-16,
+              0.0,
+              626.3
+            ],
+            [
+              1.2246467991473532e-16,
+              -1.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": [
+            {
+              "step": 3,
+              "keyframes": [
+                [
+                  0,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  0.5,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tube_bottom",
+          "mesh": "tube_600",
+          "group": "tube_frame",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              13.15
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "tube_top",
+          "mesh": "tube_600",
+          "group": "tube_frame",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              13.15
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 2,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": [
+            {
+              "step": 3,
+              "keyframes": [
+                [
+                  0,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  0.5,
+                  [
+                    0,
+                    200,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tube_left",
+          "mesh": "tube_600",
+          "group": "tube_frame",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              13.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 3,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": [
+            {
+              "step": 3,
+              "keyframes": [
+                [
+                  0,
+                  [
+                    0,
+                    90,
+                    0
+                  ]
+                ],
+                [
+                  0.5,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tube_right",
+          "mesh": "tube_600",
+          "group": "tube_frame",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              13.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 3,
+          "offsets": [
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": [
+            {
+              "step": 3,
+              "keyframes": [
+                [
+                  0,
+                  [
+                    0,
+                    90,
+                    0
+                  ]
+                ],
+                [
+                  0.5,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diff_bottom_1",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              -1.0,
+              213.55
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_bottom_2",
+          "mesh": "diffuser_mid",
+          "group": "diffuser_mid",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              213.85
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_bottom_3",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              412.75
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_top_1",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              -1.0,
+              213.55
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_top_2",
+          "mesh": "diffuser_mid",
+          "group": "diffuser_mid",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              213.85
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_top_3",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              412.75
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_left_1",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              213.55
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_left_2",
+          "mesh": "diffuser_mid",
+          "group": "diffuser_mid",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              213.85
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_left_3",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              412.75
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_right_1",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              213.55
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_right_2",
+          "mesh": "diffuser_mid",
+          "group": "diffuser_mid",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              213.85
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "diff_right_3",
+          "mesh": "diffuser_end",
+          "group": "diffuser_end",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              412.75
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.503553390593273
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 5,
+          "offsets": [
+            [
+              5,
+              [
+                0.0,
+                0.0,
+                70.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "bracket_L",
+          "mesh": "foot_bracket",
+          "group": "foot_bracket",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [],
+          "guide_tracks": []
+        },
+        {
+          "id": "bracket_R",
+          "mesh": "foot_bracket",
+          "group": "foot_bracket",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              626.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              23.503553390593275
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [],
+          "guide_tracks": []
+        },
+        {
+          "id": "foot_L_front",
+          "mesh": "tube_foot",
+          "group": "tube_foot",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -30.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.586446609406725
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              27.503553390593275
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                60.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "foot_L_rear",
+          "mesh": "tube_foot",
+          "group": "tube_foot",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              -30.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.586446609406725
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              -4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                -60.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "cap_L_front",
+          "mesh": "endcap",
+          "group": "endcap",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -30.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -23.341000000000015
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              307.50355339059325
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                110.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "cap_L_rear",
+          "mesh": "endcap",
+          "group": "endcap",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              -30.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -23.341000000000015
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              -284.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                -110.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "foot_R_front",
+          "mesh": "tube_foot",
+          "group": "tube_foot",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              656.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.586446609406725
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              27.503553390593275
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                60.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "foot_R_rear",
+          "mesh": "tube_foot",
+          "group": "tube_foot",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              656.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -5.586446609406725
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              -4.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                -60.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "cap_R_front",
+          "mesh": "endcap",
+          "group": "endcap",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              656.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -23.341000000000015
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              307.50355339059325
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                110.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "cap_R_rear",
+          "mesh": "endcap",
+          "group": "endcap",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              656.3
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -23.341000000000015
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              -284.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 6,
+          "offsets": [
+            [
+              6,
+              [
+                0.0,
+                0.0,
+                -110.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "led_bottom",
+          "mesh": "led",
+          "group": "led",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              13.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              18.903553390593274
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 4,
+          "offsets": [
+            [
+              4,
+              [
+                0.0,
+                0.0,
+                35.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "led_top",
+          "mesh": "led",
+          "group": "led",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              13.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              626.3
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              18.903553390593274
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 4,
+          "offsets": [
+            [
+              4,
+              [
+                0.0,
+                0.0,
+                35.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "led_left",
+          "mesh": "led",
+          "group": "led",
+          "matrix": [
+            [
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              13.15
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              18.903553390593274
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 4,
+          "offsets": [
+            [
+              4,
+              [
+                0.0,
+                0.0,
+                35.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "led_right",
+          "mesh": "led",
+          "group": "led",
+          "matrix": [
+            [
+              0.0,
+              -1.0,
+              0.0,
+              626.3
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              13.15
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              18.903553390593274
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 4,
+          "offsets": [
+            [
+              4,
+              [
+                0.0,
+                0.0,
+                35.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "insert_L_2",
+          "mesh": "insert",
+          "group": "insert",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -17.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              21.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 1,
+          "offsets": [
+            [
+              1,
+              [
+                -18.0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                -65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "screw_L_2",
+          "mesh": "screw",
+          "group": "screw",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -18.849999999999998
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              21.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 8,
+          "offsets": [
+            [
+              8,
+              [
+                -30.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "insert_L_3",
+          "mesh": "insert",
+          "group": "insert",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -17.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              36.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 1,
+          "offsets": [
+            [
+              1,
+              [
+                -18.0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                -65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "screw_L_3",
+          "mesh": "screw",
+          "group": "screw",
+          "matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -18.849999999999998
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              36.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 8,
+          "offsets": [
+            [
+              8,
+              [
+                -30.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "insert_R_2",
+          "mesh": "insert",
+          "group": "insert",
+          "matrix": [
+            [
+              -1.0,
+              -6.123233995736766e-17,
+              0.0,
+              643.4499999999999
+            ],
+            [
+              6.123233995736766e-17,
+              -1.0,
+              0.0,
+              21.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 1,
+          "offsets": [
+            [
+              1,
+              [
+                18.0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "screw_R_2",
+          "mesh": "screw",
+          "group": "screw",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              645.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              21.0
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              11.75177669529664
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 8,
+          "offsets": [
+            [
+              8,
+              [
+                30.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "insert_R_3",
+          "mesh": "insert",
+          "group": "insert",
+          "matrix": [
+            [
+              -1.0,
+              -6.123233995736766e-17,
+              0.0,
+              643.4499999999999
+            ],
+            [
+              6.123233995736766e-17,
+              -1.0,
+              0.0,
+              36.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              11.751776695296638
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 1,
+          "offsets": [
+            [
+              1,
+              [
+                18.0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              7,
+              [
+                0.0,
+                110.0,
+                0.0
+              ]
+            ],
+            [
+              2,
+              [
+                65,
+                0,
+                0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        },
+        {
+          "id": "screw_R_3",
+          "mesh": "screw",
+          "group": "screw",
+          "matrix": [
+            [
+              -1.0,
+              0.0,
+              1.2246467991473532e-16,
+              645.15
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              36.0
+            ],
+            [
+              -1.2246467991473532e-16,
+              0.0,
+              -1.0,
+              11.75177669529664
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "appear": 8,
+          "offsets": [
+            [
+              8,
+              [
+                30.0,
+                0.0,
+                0.0
+              ]
+            ]
+          ],
+          "guide_tracks": []
+        }
+      ],
+      "views": {
+        "iso": {
+          "pos": [
+            1133.15,
+            733.15,
+            1350
+          ],
+          "target": [
+            313.15,
+            273.15,
+            12
+          ]
+        },
+        "front": {
+          "pos": [
+            313.15,
+            293.15,
+            1900
+          ],
+          "target": [
+            313.15,
+            293.15,
+            12
+          ]
+        },
+        "corner": {
+          "pos": [
+            -170,
+            110,
+            230
+          ],
+          "target": [
+            -12,
+            8,
+            14
+          ]
+        },
+        "foot": {
+          "pos": [
+            -620,
+            260,
+            520
+          ],
+          "target": [
+            -30,
+            -10,
+            12
+          ]
+        },
+        "diffuser": {
+          "pos": [
+            150,
+            90,
+            160
+          ],
+          "target": [
+            60,
+            0,
+            18
+          ]
+        },
+        "top": {
+          "pos": [
+            313.15,
+            1400,
+            40
+          ],
+          "target": [
+            313.15,
+            0,
+            12
+          ]
+        }
+      },
+      "interfaces": {
+        "corner": "sq15-corner-v1",
+        "endcap": "sq15-endcap-v1",
+        "foot_bracket": "sq15-foot_bracket-v2",
+        "diffuser_end": "sq15-diffuser_end-v2",
+        "diffuser_mid": "sq15-diffuser_mid-v2"
+      },
+      "guide_version": "axial-3"
     }
   },
   "guide_upgrades": {
@@ -9969,6 +12723,404 @@
         ],
         "view": "corner"
       }
+    ],
+    "steps-axial-v3.json": [
+      {
+        "n": 1,
+        "title": "Fit optional Ruthex inserts into lower corners",
+        "optional": true,
+        "text": "If M3 locking is wanted, heat-set two M3S inserts into the upper two outside pilot holes of each lower corner before building the frame. Leave the lowest pilot hole empty: the FB5.2 clip catches in it. Insert dimensions are symbolic here.",
+        "arrows": [],
+        "view": "corner",
+        "role": "inserts",
+        "camera": {
+          "target": [
+            -20,
+            130,
+            12
+          ],
+          "radius": 90
+        },
+        "handle": {
+          "origin": [
+            -55,
+            130,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      },
+      {
+        "n": 2,
+        "title": "Build upper and lower horizontal beam assemblies",
+        "optional": false,
+        "text": "Fit two corner connectors onto each horizontal SQ15 tube, one from each end. The four connectors move only along the horizontal tube axes. Keep the upper and lower beam assemblies separate; vertical tubes are added in the next step. Tube length 600 mm is illustrative.",
+        "arrows": [
+          {
+            "from": [
+              -65,
+              110,
+              45
+            ],
+            "to": [
+              0,
+              110,
+              45
+            ]
+          },
+          {
+            "from": [
+              -65,
+              936.3,
+              45
+            ],
+            "to": [
+              0,
+              936.3,
+              45
+            ]
+          },
+          {
+            "from": [
+              691.3,
+              110,
+              45
+            ],
+            "to": [
+              626.3,
+              110,
+              45
+            ]
+          },
+          {
+            "from": [
+              691.3,
+              936.3,
+              45
+            ],
+            "to": [
+              626.3,
+              936.3,
+              45
+            ]
+          }
+        ],
+        "view": "corner",
+        "role": "horizontal-beams",
+        "camera": {
+          "target": [
+            313.15,
+            523.15,
+            12
+          ],
+          "radius": 630
+        },
+        "handle": {
+          "origin": [
+            0,
+            110,
+            45
+          ],
+          "vector": [
+            -65,
+            0,
+            0
+          ]
+        },
+        "duration_ms": 3000
+      },
+      {
+        "n": 3,
+        "title": "Insert vertical tubes, then close the frame",
+        "optional": false,
+        "text": "First lower both vertical tubes axially into the lower beam assembly. Then lower the complete upper beam assembly onto their free ends. The upper horizontal tube and both upper connectors move together; there is no diagonal connector movement.",
+        "arrows": [],
+        "view": "corner",
+        "role": "vertical-frame",
+        "camera": {
+          "target": [
+            313.15,
+            155,
+            12
+          ],
+          "radius": 400
+        },
+        "handle": {
+          "origin": [
+            278.15,
+            155,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        },
+        "duration_ms": 4600,
+        "phases": [
+          {
+            "from": 0,
+            "to": 0.5,
+            "label": "1 / 2 · Insert both vertical tubes into the lower connectors",
+            "members": [
+              "tube_left",
+              "tube_right"
+            ],
+            "camera": {
+              "target": [
+                313.15,
+                165,
+                12
+              ],
+              "radius": 400
+            },
+            "handle": {
+              "origin": [
+                0,
+                123.15,
+                45
+              ],
+              "vector": [
+                0,
+                90,
+                0
+              ]
+            },
+            "arrows": [
+              {
+                "from": [
+                  0,
+                  213.15,
+                  45
+                ],
+                "to": [
+                  0,
+                  123.15,
+                  45
+                ]
+              },
+              {
+                "from": [
+                  626.3,
+                  213.15,
+                  45
+                ],
+                "to": [
+                  626.3,
+                  123.15,
+                  45
+                ]
+              }
+            ]
+          },
+          {
+            "from": 0.5,
+            "to": 1,
+            "label": "2 / 2 · Lower the upper beam assembly onto both vertical tubes",
+            "members": [
+              "tube_top",
+              "corner_TL",
+              "corner_TR"
+            ],
+            "camera": {
+              "target": [
+                313.15,
+                805,
+                12
+              ],
+              "radius": 400
+            },
+            "handle": {
+              "origin": [
+                0,
+                736.3,
+                45
+              ],
+              "vector": [
+                0,
+                200,
+                0
+              ]
+            },
+            "arrows": [
+              {
+                "from": [
+                  0,
+                  936.3,
+                  45
+                ],
+                "to": [
+                  0,
+                  736.3,
+                  45
+                ]
+              },
+              {
+                "from": [
+                  626.3,
+                  936.3,
+                  45
+                ],
+                "to": [
+                  626.3,
+                  736.3,
+                  45
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title": "LED strips on tube front faces (illustration)",
+        "optional": false,
+        "text": "Orientation only: the strip is on the +Z/front face. Strip type, pads, wiring and corner routing are not decided. This is not an electrical installation instruction.",
+        "arrows": [],
+        "view": "diffuser",
+        "role": "led",
+        "camera": {
+          "target": [
+            80,
+            110,
+            25
+          ],
+          "radius": 125
+        },
+        "handle": {
+          "origin": [
+            45,
+            110,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      },
+      {
+        "n": 5,
+        "title": "Clip DF6 diffusers on from the front",
+        "optional": false,
+        "text": "Per tube: DF6.1 end, DF6.2 middle, DF6.1 end, each 198.6 mm, with two 0.3 mm joints; turn the second end piece end for end. Press from the front: the folded 40-degree flares behind the tube guide the arms over the tube corners. All bars sit between LEDs at 16.667 mm pitch, assuming the strip starts flush at the tube end. Undeformed CAD shows intended pinch preload; DF6 is not printed yet.",
+        "arrows": [],
+        "view": "diffuser",
+        "role": "diffusers",
+        "camera": {
+          "target": [
+            80,
+            110,
+            25
+          ],
+          "radius": 125
+        },
+        "handle": {
+          "origin": [
+            45,
+            110,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      },
+      {
+        "n": 6,
+        "title": "Build feet: tubes into foot brackets, then end caps",
+        "optional": false,
+        "text": "Insert front and rear foot tubes 30 mm to the 4 mm stop in each selected foot brackets. Push each v2 end cap 20 mm onto the free tube end. No glue. Foot overhang 250 mm is only an assumption; no approved foot length is implied.",
+        "arrows": [],
+        "view": "foot",
+        "role": "feet",
+        "camera": {
+          "target": [
+            -30,
+            -5,
+            100
+          ],
+          "radius": 170
+        },
+        "handle": {
+          "origin": [
+            -65,
+            -5,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      },
+      {
+        "n": 7,
+        "title": "Lower the gate vertically into the feet",
+        "optional": false,
+        "text": "Lower the frame vertically so both lower-corner dovetails enter the open-top FB5.2 grooves and reach the closed 45-degree floor. The centre clip bump should click into the lowest corner pilot hole. Click, hold and release are not physically tested; spring deflection is not simulated.",
+        "arrows": [],
+        "view": "corner",
+        "role": "gate-seat",
+        "camera": {
+          "target": [
+            -20,
+            38,
+            12
+          ],
+          "radius": 90
+        },
+        "handle": {
+          "origin": [
+            -55,
+            38,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      },
+      {
+        "n": 8,
+        "title": "Optional M3 locking screws",
+        "optional": true,
+        "text": "If additional locking is required, fit two M3 screws from the outside of each FB5.2 into the upper corner inserts. Screws are symbolic; final length and Ruthex installation remain untested.",
+        "arrows": [],
+        "view": "corner",
+        "role": "locking",
+        "camera": {
+          "target": [
+            -25,
+            20,
+            12
+          ],
+          "radius": 90
+        },
+        "handle": {
+          "origin": [
+            -60,
+            20,
+            45
+          ],
+          "vector": [
+            0,
+            110,
+            0
+          ]
+        }
+      }
     ]
   },
   "motion_sets": {
@@ -10262,12 +13414,309 @@
         "view": "foot",
         "note": ""
       }
+    ],
+    "motions-axial-v3.json": [
+      {
+        "id": "screws",
+        "label": "Remove optional M3 screws",
+        "members": [
+          "screw_L_2",
+          "screw_L_3",
+          "screw_R_2",
+          "screw_R_3"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            45,
+            0,
+            0
+          ]
+        ],
+        "requires": {},
+        "focus": [
+          -20,
+          20,
+          12
+        ],
+        "view": "corner",
+        "note": "Symbolic hardware. Left screws move outward to -X; right screws to +X.",
+        "member_directions": {
+          "screw_L_2": -1,
+          "screw_L_3": -1,
+          "screw_R_2": 1,
+          "screw_R_3": 1
+        }
+      },
+      {
+        "id": "release",
+        "label": "Release both latch hooks",
+        "members": [],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "requires": {},
+        "focus": [
+          -24,
+          43,
+          12
+        ],
+        "view": "corner",
+        "note": "FB4.1 only: acknowledge pressing both hooks outward before lifting. Spring deformation and forces are not simulated."
+      },
+      {
+        "id": "gate",
+        "label": "Lift gate out of feet",
+        "members": [
+          "corner_BL",
+          "corner_BR",
+          "corner_TL",
+          "corner_TR",
+          "tube_bottom",
+          "tube_top",
+          "tube_left",
+          "tube_right",
+          "diff_bottom_1",
+          "diff_bottom_2",
+          "diff_bottom_3",
+          "diff_top_1",
+          "diff_top_2",
+          "diff_top_3",
+          "diff_left_1",
+          "diff_left_2",
+          "diff_left_3",
+          "diff_right_1",
+          "diff_right_2",
+          "diff_right_3",
+          "led_bottom",
+          "led_top",
+          "led_left",
+          "led_right",
+          "insert_L_2",
+          "insert_L_3",
+          "insert_R_2",
+          "insert_R_3"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            110,
+            0
+          ]
+        ],
+        "requires": {
+          "screws": 0.98,
+          "release": 0.98
+        },
+        "focus": [
+          -20,
+          35,
+          12
+        ],
+        "view": "corner",
+        "note": "The frame and attached parts move together. The FB5.2 clip release is shown as a plain lift; release force is not simulated."
+      },
+      {
+        "id": "diffusers",
+        "label": "Remove diffuser segments",
+        "members": [
+          "diff_bottom_1",
+          "diff_bottom_2",
+          "diff_bottom_3",
+          "diff_top_1",
+          "diff_top_2",
+          "diff_top_3",
+          "diff_left_1",
+          "diff_left_2",
+          "diff_left_3",
+          "diff_right_1",
+          "diff_right_2",
+          "diff_right_3"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            90
+          ]
+        ],
+        "requires": {
+          "gate": 0.98
+        },
+        "focus": [
+          60,
+          110,
+          20
+        ],
+        "view": "diffuser",
+        "note": "Rigid illustrative clip motion for the DF6 rail set; designed preload is not elastic simulation."
+      },
+      {
+        "id": "top",
+        "label": "Lift upper rail with both corners",
+        "members": [
+          "corner_TL",
+          "corner_TR",
+          "tube_top",
+          "led_top"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            80,
+            0
+          ]
+        ],
+        "requires": {
+          "gate": 0.98,
+          "diffusers": 0.98
+        },
+        "focus": [
+          10,
+          736,
+          12
+        ],
+        "view": "corner",
+        "note": "Both upper corner sockets disengage axially from the upright tubes. A schematic path, without a collision sweep."
+      },
+      {
+        "id": "right-corner",
+        "label": "Remove right upper corner",
+        "members": [
+          "corner_TR"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            75,
+            0,
+            0
+          ],
+          [
+            75,
+            85,
+            0
+          ]
+        ],
+        "requires": {
+          "top": 0.98
+        },
+        "focus": [
+          626,
+          816,
+          12
+        ],
+        "view": "corner",
+        "note": "Slide axially off the horizontal tube, then move clear. Two-stage explanatory path."
+      },
+      {
+        "id": "top-tube",
+        "label": "Pull upper tube from left corner",
+        "members": [
+          "tube_top",
+          "led_top"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            100,
+            0,
+            0
+          ]
+        ],
+        "requires": {
+          "top": 0.98,
+          "right-corner": 0.98
+        },
+        "focus": [
+          70,
+          816,
+          12
+        ],
+        "view": "corner",
+        "note": "Pull to +X after the right corner has cleared. Attached LED illustration follows the tube."
+      },
+      {
+        "id": "cap",
+        "label": "Pull front-left end cap off",
+        "members": [
+          "cap_L_front"
+        ],
+        "path": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            65
+          ]
+        ],
+        "requires": {},
+        "focus": [
+          -30,
+          -5,
+          275
+        ],
+        "view": "foot",
+        "note": ""
+      }
     ]
   },
   "meshes": {
     "corner-rev4-legacy": {
       "vertices": 3565,
       "triangles": 7138
+    },
+    "CR5.1": {
+      "vertices": 4648,
+      "triangles": 9304
+    },
+    "DF6.1": {
+      "vertices": 7696,
+      "triangles": 15436
+    },
+    "DF6.2": {
+      "vertices": 7676,
+      "triangles": 15392
     },
     "endcap-v2-legacy": {
       "vertices": 452,
@@ -10280,6 +13729,10 @@
     "FB4.1": {
       "vertices": 3541,
       "triangles": 7090
+    },
+    "FB5.2": {
+      "vertices": 4891,
+      "triangles": 9790
     },
     "foot-v2-legacy": {
       "vertices": 2130,
@@ -10308,10 +13761,6 @@
     "FB5.1": {
       "vertices": 6809,
       "triangles": 6756
-    },
-    "FB5.2": {
-      "vertices": 7663,
-      "triangles": 7710
     },
     "SDB1.1": {
       "vertices": 4947,
@@ -10395,7 +13844,7 @@
     }
   },
   "channels": {
-    "development": "sq15-fb41-experiment-axial",
+    "development": "sq15-v04-df6-fb52-axial",
     "reference": "sq15-v01-axial",
     "recommended": null
   },
@@ -11008,5 +14457,5 @@
     }
   ],
   "disclosure": "Implementation and documentation produced with substantial OpenAI Codex assistance under owner direction.",
-  "default_build": "sq15-v01-axial"
+  "default_build": "sq15-v04-df6-fb52-axial"
 }
