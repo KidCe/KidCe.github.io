@@ -1,11 +1,13 @@
 ---
 article:
   published: 2026-10-02
-  updated: 2026-10-31
+  updated: 2026-11-03
   summary: Modular LED race gate for Tinywhoops from 15 x 15 mm aluminum tubes and printed parts, with an interactive 3D assembly guide and a cost estimate for 20 gates.
   image: assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png
   image_alt: Blender render of a single and conceptual stacked double LED gate
   changes:
+    - date: 2026-11-03
+      summary: The assembly and part explorers now show corner CR6.5 and foot bracket FB6.3 with the 60° zero-play snap catch, plus the printed CR6.4 and FB6.2 pair. Test coupons are no longer listed in the part explorer.
     - date: 2026-10-31
       summary: The assembly and part explorers now show the newest CAD revisions, corner CR5.1, foot bracket FB5.2 with a snap clip and the DF6 diffuser rail set, with their STL/STEP print files.
     - date: 2026-10-27
@@ -67,9 +69,9 @@ The gate combines a mechanical frame, lighting and a wireless control concept. A
 
 <div class="tg-viewer" id="tg-viewer">
 <div class="tg-viewer__start">
-<img src="../../assets/images/projects/tinywhoop-led-gate/assembly-explorer.jpg" alt="CAD overview of the assembled SQ15 square-tube single gate with CR5.1 corners, DF6 diffuser rail sets, FB5.2 foot brackets and end caps" width="1640" height="1050">
-<p>Starts with the newest CAD parts: corner CR5.1, foot bracket FB5.2 and DF6 diffusers. The 3D viewer loads about 4 MB.</p>
-<p><a href="../../assets/tinywhoopgate/viewer/index.html#build=sq15-v04-df6-fb52-axial">Open the large viewer</a> · <a href="../../assets/tinywhoopgate/viewer/TinywhoopGate-viewer-offline.zip" download>Offline package (33 MB)</a></p>
+<img src="../../assets/images/projects/tinywhoop-led-gate/assembly-explorer.jpg" alt="CAD overview of the assembled SQ15 square-tube single gate with CR6.5 corners, DF6 diffuser rail sets, FB6.3 foot brackets and end caps" width="1640" height="1050">
+<p>Starts with the newest CAD parts: corner CR6.5, foot bracket FB6.3 and DF6 diffusers. The 3D viewer loads about 4 MB.</p>
+<p><a href="../../assets/tinywhoopgate/viewer/index.html#build=sq15-v05-cr65-fb63-axial">Open the large viewer</a> · <a href="../../assets/tinywhoopgate/viewer/TinywhoopGate-viewer-offline.zip" download>Offline package (26 MB)</a></p>
 </div>
 </div>
 
@@ -81,7 +83,7 @@ The gate combines a mechanical frame, lighting and a wireless control concept. A
   function open(parts) {
     var frame = document.createElement("iframe");
     frame.title = parts ? "Tinywhoop gate part explorer" : "Tinywhoop gate interactive assembly guide";
-    frame.src = base + (parts ? "parts.html" : "index.html#build=sq15-v04-df6-fb52-axial");
+    frame.src = base + (parts ? "parts.html" : "index.html#build=sq15-v05-cr65-fb63-axial");
     frame.allow = "fullscreen";
     frame.setAttribute("allowfullscreen", "");
     document.getElementById("tg-viewer").replaceChildren(frame);
@@ -95,7 +97,7 @@ The gate combines a mechanical frame, lighting and a wireless control concept. A
 - **Take it apart:** drag the orange handle of a joint or use the slider.
 - **Individual parts:** each revision on its own, with its counterpart and the original STL/STEP print files.
 
-The default build shows CAD revisions that are not printed and fit-tested yet: the DF6 diffusers (a folded 40° lead-in behind the tube and a little more room at the rear lip), the FB5.2 foot bracket (a snap clip catches in the lowest corner pilot hole, so only two optional M3 screws remain) and the CR5.1 corner. Older builds, including the FB3.1 reference and the FB4.1 latch experiment, stay selectable under Build version. Frame and leg lengths in the model are placeholders.
+The default build shows the current corner CR6.5 and foot bracket FB6.3: a clip bump with a 60° retention flank catches in a pocket in each corner tail, with zero vertical play. This pair is not printed yet; the 60° catch was tested only on small test pieces. The predecessor pair CR6.4 + FB6.2 (55° catch) was printed and fits, but holds more softly; it is selectable under Build version as the printed pair. The DF6 diffusers are not fit-tested yet. Older builds, including CR5.1 + FB5.2, the FB3.1 reference and the FB4.1 latch experiment, stay selectable. Frame and leg lengths in the model are placeholders.
 
 
 
