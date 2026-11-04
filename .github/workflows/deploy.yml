@@ -23,11 +23,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Skip scheduled run when GateLink main is already live
         id: gate
+        env:
+          GATELINK_TOKEN: ${{ secrets.GATELINK_TOKEN }}
         run: |
+          gh="https://github.com"; [ -n "$GATELINK_TOKEN" ] && gh="https://x-access-token:$GATELINK_TOKEN@github.com"
           live="$(git fetch -q --depth 1 origin gh-pages && git show FETCH_HEAD:assets/tinywhoopgate/gatelink-sim/VERSION 2>/dev/null || true)"
-          head="$(git ls-remote https://github.com/KidCe/GateLink refs/heads/main | cut -f1)"
+          head="$(git ls-remote "$gh/KidCe/GateLink" refs/heads/main 2>/dev/null | cut -f1 || true)"
           echo "live=$live head=$head"
-          if [ "${{ github.event_name }}" = "schedule" ] && [ -n "$head" ] && [ "$live" = "$head" ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ -z "$head" ] || [ "$live" = "$head" ]; }; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
       - name: Set up Node
         if: steps.gate.outputs.skip != '1'
         uses: actions/setup-node@v4
@@ -37,6 +40,8 @@ jobs:
         if: steps.gate.outputs.skip != '1'
         # keeps the committed copy when the build fails, so the site still deploys
         continue-on-error: true
+        env:
+          GATELINK_TOKEN: ${{ secrets.GATELINK_TOKEN }}
         run: bash tools/build_gatelink_sim.sh
       - name: Set up Python
         if: steps.gate.outputs.skip != '1'
