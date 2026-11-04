@@ -15,7 +15,7 @@
         <link rel="prev" href="../../tinywhoop-led-gate/">
       
       
-        <link rel="next" href="../race-data/">
+        <link rel="next" href="../simulator/">
       
       
         
@@ -1108,6 +1108,8 @@
       
         
       
+        
+      
     
     
     
@@ -1254,6 +1256,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GateLink simulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -3154,7 +3184,7 @@
 <p><strong>Control path:</strong> PC → USB gateway → LoRa → gate node → WLED → LEDs.</p>
 <p>The node can also return status to the gateway over the radio link.</p>
 <h2 id="try-the-simulator">Try the simulator<a class="headerlink" href="#try-the-simulator" title="Permanent link">¶</a></h2>
-<p><a href="../../../assets/tinywhoopgate/gatelink-sim/?demo=1">Open the 3D GateLink simulator in offline mode</a>. Explore a virtual gate, packet inspector and race-event sequence. The 144-LED layout and selected effects are approximations; the final wiring is undecided.</p>
+<p><a href="../simulator/">Open the 3D GateLink simulator in offline mode</a> (always the current GateLink code). Explore a virtual gate, packet inspector and race-event sequence. The 144-LED layout and selected effects are approximations; the final wiring is undecided.</p>
 <p>In the <strong>Presets</strong> tab you can build a gate's WLED presets with built-in symmetry (corners to rail centres, centres to corners, waterfall, fountain), map race states and race events to them, export a standard <code>presets.json</code>, and send the whole configuration to a gate over the radio link. In a race, only preset numbers then travel over the air. In offline mode the transfer runs against the emulated gateway; on hardware it needs GateLink usermod build 8, which is not flashed yet.</p>
 <p><a href="../../../assets/tinywhoopgate/gatelink-sim/?demo=1"><img alt="Blender illustration of a single gate and a conceptual double gate with simulated RGB effects" src="../../../assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png"></a></p>
 <p><em>CAD illustration of possible RGB effects, not a screenshot of the simulator. The current simulator models one virtual gate.</em></p>
@@ -3213,13 +3243,13 @@
         
         
           
-          <a href="../race-data/" class="md-footer__link md-footer__link--next" aria-label="Next: Race-event data">
+          <a href="../simulator/" class="md-footer__link md-footer__link--next" aria-label="Next: GateLink simulator">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Race-event data
+                GateLink simulator
               </div>
             </div>
             <div class="md-footer__button md-icon">
