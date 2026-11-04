@@ -102,6 +102,7 @@ nav:
       - Modular Tinywhoop LED Gate:
           - projects/tinywhoop-led-gate/index.md
           - GateLink wireless control: projects/tinywhoop-gate/gatelink.md
+          - GateLink simulator: projects/tinywhoop-gate/simulator.md
           - Race-event data: projects/tinywhoop-gate/race-data.md
           - Project log: projects/tinywhoop-gate/log.md
           - Cost estimate: projects/tinywhoop-gate/cost.md

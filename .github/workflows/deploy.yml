@@ -4,6 +4,9 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+  # GateLink simulator: rebuild from KidCe/GateLink main whenever it changed (checked every 20 min)
+  schedule:
+    - cron: "*/20 * * * *"
 
 permissions:
   contents: write
@@ -18,12 +21,32 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Skip scheduled run when GateLink main is already live
+        id: gate
+        run: |
+          live="$(git fetch -q --depth 1 origin gh-pages && git show FETCH_HEAD:assets/tinywhoopgate/gatelink-sim/VERSION 2>/dev/null || true)"
+          head="$(git ls-remote https://github.com/KidCe/GateLink refs/heads/main | cut -f1)"
+          echo "live=$live head=$head"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -n "$head" ] && [ "$live" = "$head" ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+      - name: Set up Node
+        if: steps.gate.outputs.skip != '1'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build GateLink simulator from GateLink main
+        if: steps.gate.outputs.skip != '1'
+        # keeps the committed copy when the build fails, so the site still deploys
+        continue-on-error: true
+        run: bash tools/build_gatelink_sim.sh
       - name: Set up Python
+        if: steps.gate.outputs.skip != '1'
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
           cache: pip
       - name: Install dependencies
+        if: steps.gate.outputs.skip != '1'
         run: pip install -r requirements.txt
       - name: Build and deploy website
+        if: steps.gate.outputs.skip != '1'
         run: mkdocs gh-deploy --force --strict

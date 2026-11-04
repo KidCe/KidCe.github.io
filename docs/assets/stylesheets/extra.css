@@ -197,3 +197,6 @@
 .batch-track { height:.7rem; position:relative; background:var(--md-default-fg-color--lightest); border-radius:1rem; }
 .batch-track i { position:absolute; left:var(--start); width:var(--size); height:100%; background:#5798d8; border-radius:1rem; }
 .batch-row strong { white-space:nowrap; }
+
+/* GateLink simulator page: the simulator embedded full width */
+.gatelink-sim { width: 100%; height: min(88vh, 900px); min-height: 560px; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; background: #0b0e14; display: block; margin: 1em 0; }

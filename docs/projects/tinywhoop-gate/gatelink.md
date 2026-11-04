@@ -10,7 +10,7 @@ The node can also return status to the gateway over the radio link.
 
 ## Try the simulator
 
-[Open the 3D GateLink simulator in offline mode](../../assets/tinywhoopgate/gatelink-sim/index.html?demo=1). Explore a virtual gate, packet inspector and race-event sequence. The 144-LED layout and selected effects are approximations; the final wiring is undecided.
+[Open the 3D GateLink simulator in offline mode](simulator.md) (always the current GateLink code). Explore a virtual gate, packet inspector and race-event sequence. The 144-LED layout and selected effects are approximations; the final wiring is undecided.
 
 In the **Presets** tab you can build a gate's WLED presets with built-in symmetry (corners to rail centres, centres to corners, waterfall, fountain), map race states and race events to them, export a standard `presets.json`, and send the whole configuration to a gate over the radio link. In a race, only preset numbers then travel over the air. In offline mode the transfer runs against the emulated gateway; on hardware it needs GateLink usermod build 8, which is not flashed yet.
 
