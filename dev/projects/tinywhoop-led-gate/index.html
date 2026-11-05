@@ -129,7 +129,7 @@
             
   
     <strong>DEV preview</strong> · latest unreleased work from the
-    <code>dev</code> branch (24c16a54, 2026-11-05 15:45).
+    <code>dev</code> branch (6cc3ba73, 2026-11-05 16:06).
     <a href="https://kidce.github.io/">Open the live wiki</a>
   
 
@@ -3091,10 +3091,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#current-status-27-october-2026" class="md-nav__link">
+  <a href="#current-status-5-november-2026" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Current status · 27 October 2026
+        Current status · 5 November 2026
       
     </span>
   </a>
@@ -3155,8 +3155,8 @@
 
 <p>A modular Tinywhoop racing gate made from aluminum tubes and printed parts. Around the frame, the project explores wireless LED control with GateLink, race-event integration and interactive 3D assembly tools.</p>
 <p><a href="#project-explorer">Explore the project in 3D</a> · <a href="../tinywhoop-gate/gatelink/">Discover GateLink</a></p>
-<h2 id="current-status-27-october-2026">Current status · 27 October 2026<a class="headerlink" href="#current-status-27-october-2026" title="Permanent link">¶</a></h2>
-<p>This is the previously published status snapshot. Physical inventory and test evidence are being reconciled; the full illuminated single and double gate still need validation.</p>
+<h2 id="current-status-5-november-2026">Current status · 5 November 2026<a class="headerlink" href="#current-status-5-november-2026" title="Permanent link">¶</a></h2>
+<p>The full illuminated single gate and the towers still need validation; physical inventory is being reconciled.</p>
 <table>
 <thead>
 <tr>
@@ -3173,18 +3173,28 @@
 </tr>
 <tr>
 <td>Corners</td>
-<td>Printed 90° corner rev4</td>
-<td>Tube sockets fit; frame stands without screws</td>
+<td>90° corner CR6.7 with a 45° inner fill, printed on that fill</td>
+<td>CAD only; predecessor CR6.4 printed and fits FB6.2</td>
+</tr>
+<tr>
+<td>Corner cover</td>
+<td>CC2.3, one countersunk M3 from the front</td>
+<td>CAD only</td>
 </tr>
 <tr>
 <td>Diffuser</td>
-<td>Clip-on SQ8W segments, 0.15 mm pinch per side</td>
-<td>Clip fit chosen from printed test pieces</td>
+<td>Clip-on DF6 rail set, three pieces per rail</td>
+<td>CAD only; predecessor DF5 printed, too tight behind the tube</td>
 </tr>
 <tr>
 <td>Feet</td>
-<td>Foot bracket FB3.1, end cap v2, 250 mm legs</td>
-<td>End cap fit OK; bracket and leg length still open</td>
+<td>Foot bracket FB6.3 with a 60° clip catch, end cap v2, 330 mm legs</td>
+<td>FB6.2 (55° catch) printed and fits; end cap fit OK; FB6.3 and leg length open</td>
+</tr>
+<tr>
+<td>Towers</td>
+<td>T piece TE1.3 + T cover CT1.1, shared middle rails</td>
+<td>CAD only; double and triple tower in the explorer</td>
 </tr>
 <tr>
 <td>LEDs</td>
@@ -3193,7 +3203,7 @@
 </tr>
 </tbody>
 </table>
-<p>Not tested yet: a complete gate with lighting, its stability and the final leg length. All images on this page are CAD views.</p>
+<p>Not tested yet: a complete gate with lighting, the towers, their stability and the final leg length. All images on this page are CAD views.</p>
 <h2 id="one-project-several-connected-pieces">One project, several connected pieces<a class="headerlink" href="#one-project-several-connected-pieces" title="Permanent link">¶</a></h2>
 <p>The gate combines a mechanical frame, lighting and a wireless control concept. A USB gateway sends short GateLink radio commands to a gate node; the node runs WLED and produces LED effects locally. Race-event data could feed the gateway through a future bridge.</p>
 <p><strong><a href="../tinywhoop-gate/gatelink/">GateLink and wireless nodes</a> · <a href="../tinywhoop-gate/race-data/">Race-event data</a> · <a href="../tinywhoop-gate/log/">Project log</a> · <a href="../tinywhoop-gate/cost/">Cost estimate</a> · <a href="../tinywhoop-gate/archive/">Earlier concepts</a></strong></p>
@@ -3245,6 +3255,12 @@
 </ul>
 <p>The <strong>controller box GC0.1</strong> is a placeholder, not a designed part. It sits behind the lower rail at the lower-left corner and stays below the diffuser, so it does not reach into the gate opening, and it is held by two M3 screws in the two free lower-face pilots of the corner, which stays unchanged. Inside: Module 1 Seeed XIAO ESP32-S3 (WLED with the GateLink usermod, drives the LEDs), Module 2 Seeed XIAO ESP32-C5 (lap tracker), Module 3 Seeed Wio-SX1262 LoRa (GateLink radio) and a placeholder battery pack. Prices were checked on 5 November 2026; mass is the solid CAD volume and print times are estimates scaled from slicer results. The GateLink code repositories are private for now. Planned: the <a href="../tinywhoop-gate/simulator/">GateLink simulator</a> will also flash real gate controllers.</p>
 <p>The default build shows the newest corner CR6.7 (CR6.5 catch plus an inner fill with a cover pilot) and foot bracket FB6.3: a clip bump with a 60° retention flank catches in a pocket in each corner tail, with zero vertical play. This pair is not printed yet; the 60° catch was tested only on small test pieces. The predecessor pair CR6.4 + FB6.2 (55° catch) was printed and fits, but holds more softly; it is selectable under Build version as the printed pair. The DF6 diffusers are not fit-tested yet. Older builds, including CR5.1 + FB5.2, the FB3.1 reference and the FB4.1 latch experiment, stay selectable. Frame and leg lengths in the model are placeholders.</p>
+<p><strong>Double and triple gates.</strong> Two kinds of multi-gate builds are selectable, both on 330 mm feet:</p>
+<ul>
+<li><strong>Fixed towers</strong> (<a href="../../assets/tinywhoopgate/viewer/#build=sq15-teetower-double-330-te13">double</a>, <a href="../../assets/tinywhoopgate/viewer/#build=sq15-teetower-triple-330-te13">triple</a>): the squares share their middle rails. At each inner junction a T piece TE1.3 replaces the two top corners of the square below. TE1.3 is the corner mirrored at the rail axis, with 45° inner fills and the same dovetail, catch pockets and insert positions as the corner, so single-gate add-ons fit. One print serves both sides. A T cover CT1.1 matches the corner cover CC2.3 and is fixed with two countersunk M3 screws. The tower is assembled once and stays together. Not printed yet.</li>
+<li><strong>Stacked gates</strong> (<a href="../../assets/tinywhoopgate/viewer/#build=sq15-double-330">double</a>, <a href="../../assets/tinywhoopgate/viewer/#build=sq15-triple-330">triple</a>): independent single gates stand corner on corner. There is no connector part at that junction, so the stacking is illustrative only.</li>
+</ul>
+<p>Stability of the towers (about 1.3 m and 1.9 m tall) is not verified.</p>
 <p>Design and documentation prepared with substantial OpenAI Codex and Claude assistance under the project owner’s direction.</p>
 <p><a href="../tinywhoop-gate/diffuser-foot-review/">Local review draft: diffuser and FB5.2 images</a></p>
 <section class="article-changes" aria-label="Article changes"><h2>Article changes</h2><ul><li><time datetime="2026-11-05">05 Nov 2026</time> — The assembly explorer is now an interactive project documentation. Every part can be clicked for material, PETG mass, print time, price, sourcing links, firmware and how it connects to other parts, with a product structure, bill of materials, focus and exploded views. A placeholder GateLink controller box with the XIAO ESP32-S3, XIAO ESP32-C5 and Wio-SX1262 sits at the lower-left corner. "Start assembly fresh" replaces "Take it apart".</li><li><time datetime="2026-11-03">03 Nov 2026</time> — The assembly and part explorers now show corner CR6.5 and foot bracket FB6.3 with the 60° zero-play snap catch, plus the printed CR6.4 and FB6.2 pair. Test coupons are no longer listed in the part explorer.</li><li><time datetime="2026-10-31">31 Oct 2026</time> — The assembly and part explorers now show the newest CAD revisions, corner CR5.1, foot bracket FB5.2 with a snap clip and the DF6 diffuser rail set, with their STL/STEP print files.</li><li><time datetime="2026-10-27">27 Oct 2026</time> — Restructured around the current square-tube design with project status, interactive assembly guide and a 20-gate cost estimate; earlier U and V concepts moved to the archive.</li></ul></section>
