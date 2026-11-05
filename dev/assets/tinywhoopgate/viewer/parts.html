@@ -80,13 +80,28 @@ body:not(.sideClosed) .floatbar{bottom:10px}
 .infoGrip.dragging::after{background:var(--accent)}
 .infoBody{padding-top:2px}
 }
-.skipIntro{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:3;padding:8px 18px;border-radius:18px;background:var(--info-bg);box-shadow:0 4px 16px var(--shadow);font-weight:650}
-@media(max-width:800px){.skipIntro{left:auto;right:12px;transform:none;bottom:max(14px,env(safe-area-inset-bottom))}}
+.skipIntro{position:absolute;left:50%;top:14px;transform:translateX(-50%);z-index:3;padding:8px 18px;border-radius:18px;background:var(--info-bg);box-shadow:0 4px 16px var(--shadow);font-weight:650}
+@media(max-width:800px){.skipIntro{top:auto;left:auto;right:12px;transform:none;bottom:max(14px,env(safe-area-inset-bottom))}}
 .buildLine{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.buildLine strong{color:var(--ink);font-size:13px;line-height:1.35}
 .badge.kind-latest{background:#e5f4ec;color:#1f6f43}:root[data-theme=dark] .badge.kind-latest{background:#173826;color:#93d8ae}.badge.kind-variant{background:var(--soft);color:var(--text)}
 .vbanner{background:var(--soft);border:1px solid var(--line-strong);border-radius:8px;padding:9px 10px;margin-bottom:10px;font-size:12px}.vbanner.warn{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
 .vbanner button{display:block;width:100%;margin-top:7px;font-weight:650;background:var(--accent);border-color:var(--accent);color:#fff}
 #versionsBox select{margin-bottom:4px}
+
+/* View controls (Nikos 2026-11-05 23:44): icon buttons, folds, floating desktop bar. */
+.iconbtn{display:inline-flex;flex-direction:column;align-items:center;gap:1px;min-width:54px;padding:6px 6px 4px;line-height:1.1}
+.iconbtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.iconbtn small{font-size:9.5px;letter-spacing:.02em;color:inherit;opacity:.85}
+.viewbtns{gap:4px;margin-bottom:4px}
+details.fold{border-top:0;padding:4px 0 8px}details.fold>summary{font-size:13px;letter-spacing:.04em;color:var(--ink);padding:6px 0}
+#projectPanel{padding-top:8px}
+.olderLink{margin:2px 0 6px}.olderLink .link{font-size:12px}
+.viewbar{position:absolute;left:14px;bottom:14px;z-index:3;display:flex;align-items:center;gap:4px;padding:5px;background:var(--info-bg);border:1px solid var(--line-strong);border-radius:12px;box-shadow:0 6px 20px var(--shadow)}
+.viewbar .iconbtn{border:0;background:transparent;min-width:52px}.viewbar .iconbtn:hover{background:var(--accent-soft)}.viewbar .iconbtn.active{background:var(--accent);color:#fff}
+.vbx{display:flex;flex-direction:column;align-items:stretch;margin:0 6px 0 4px;font-weight:400;width:130px}.vbx small{font-size:9.5px;color:var(--muted);text-align:center}
+#viewSection .iconbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+@media(min-width:801px){#viewSection .viewbtns,#viewSection label[for=explosion],#viewSection #explosion{display:none}#viewSection{padding:10px 0}}
+@media(max-width:800px){.viewbar{display:none}}
 </style><script>(()=>{let s=null,o=null;try{o=localStorage.getItem("tg-viewer-theme")}catch(e){}if(o==="light"||o==="dark"){document.documentElement.dataset.theme=o;return}try{if(parent!==window)s=parent.document.body.getAttribute("data-md-color-scheme")}catch(e){}try{s=s||JSON.parse(localStorage.getItem("/.__palette")||"null")?.color?.scheme}catch(e){}const d=s?s==="slate":!matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.dataset.theme=d?"dark":"light"})()</script></head>
 <body><aside id="side"><header><span class="eyebrow">TINYWHOOP GATE / PART LIBRARY</span><h1>Part explorer</h1><p>Inspect revisions and their interfaces.</p><p><a href="index.html">← Project explorer</a></p></header>
 <section><label for="family">Part family</label><select id="family"></select><label for="part">Part / revision</label><select id="part"></select><div class="row" style="margin-top:12px"><button id="prevPart">← Previous</button><button id="nextPart">Next →</button><span id="count" class="muted"></span></div><p id="kind" class="badge"></p><p id="partStatus" class="muted"></p><p id="partNote" class="muted"></p><div id="downloads"></div></section>
