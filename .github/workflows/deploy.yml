@@ -1,10 +1,14 @@
 name: Deploy website
 
+# One GitHub Pages site, two builds:
+#   main -> https://kidce.github.io/      (live wiki, only after "wiki push ok")
+#   dev  -> https://kidce.github.io/dev/  (dev preview, always the latest work, no approval needed)
+# Every run builds both branches from their current heads, so a push to either one keeps the other as it is.
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, dev]
   workflow_dispatch:
-  # GateLink simulator: rebuild from KidCe/GateLink main whenever it changed (checked every 20 min)
+  # GateLink simulator: rebuild when GateLink main (live) or dev (preview) changed (checked every 20 min)
   schedule:
     - cron: "*/20 * * * *"
 
@@ -19,30 +23,58 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out main
         uses: actions/checkout@v4
-      - name: Skip scheduled run when GateLink main is already live
+        with:
+          ref: main
+          fetch-depth: 0  # also brings origin/dev and origin/gh-pages
+      - name: Check out dev next to it
+        id: dev
+        run: |
+          if git rev-parse -q --verify origin/dev >/dev/null; then
+            git worktree add -q --detach _dev origin/dev
+            echo "sha=$(git -C _dev rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+            echo "has=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "no dev branch yet, building main only"
+          fi
+      - name: Skip scheduled run when the GateLink simulators are already live
         id: gate
         env:
           GATELINK_TOKEN: ${{ secrets.GATELINK_TOKEN }}
         run: |
           gh="https://github.com"; [ -n "$GATELINK_TOKEN" ] && gh="https://x-access-token:$GATELINK_TOKEN@github.com"
-          live="$(git fetch -q --depth 1 origin gh-pages && git show FETCH_HEAD:assets/tinywhoopgate/gatelink-sim/VERSION 2>/dev/null || true)"
+          live="$(git show origin/gh-pages:assets/tinywhoopgate/gatelink-sim/VERSION 2>/dev/null || true)"
+          live_dev="$(git show origin/gh-pages:dev/assets/tinywhoopgate/gatelink-sim/VERSION 2>/dev/null || true)"
           head="$(git ls-remote "$gh/KidCe/GateLink" refs/heads/main 2>/dev/null | cut -f1 || true)"
-          echo "live=$live head=$head"
-          if [ "${{ github.event_name }}" = "schedule" ] && { [ -z "$head" ] || [ "$live" = "$head" ]; }; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+          head_dev="$(git ls-remote "$gh/KidCe/GateLink" refs/heads/dev 2>/dev/null | cut -f1 || true)"
+          [ -z "$head_dev" ] && head_dev="$head"
+          echo "main: live=$live head=$head | dev: live=$live_dev head=$head_dev"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ -z "$head" ] || { [ "$live" = "$head" ] && { [ "${{ steps.dev.outputs.has }}" != "1" ] || [ "$live_dev" = "$head_dev" ]; }; }; then
+              echo "skip=1" >> "$GITHUB_OUTPUT"
+            fi
+          fi
       - name: Set up Node
         if: steps.gate.outputs.skip != '1'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Build GateLink simulator from GateLink main
+      - name: Build GateLink simulator (main <- GateLink main)
         if: steps.gate.outputs.skip != '1'
         # keeps the committed copy when the build fails, so the site still deploys
         continue-on-error: true
         env:
           GATELINK_TOKEN: ${{ secrets.GATELINK_TOKEN }}
+          GATELINK_REF: main
         run: bash tools/build_gatelink_sim.sh
+      - name: Build GateLink simulator (dev <- GateLink dev, else main)
+        if: steps.gate.outputs.skip != '1' && steps.dev.outputs.has == '1'
+        continue-on-error: true
+        env:
+          GATELINK_TOKEN: ${{ secrets.GATELINK_TOKEN }}
+          GATELINK_REF: dev
+        run: bash _dev/tools/build_gatelink_sim.sh
       - name: Set up Python
         if: steps.gate.outputs.skip != '1'
         uses: actions/setup-python@v5
@@ -52,6 +84,35 @@ jobs:
       - name: Install dependencies
         if: steps.gate.outputs.skip != '1'
         run: pip install -r requirements.txt
-      - name: Build and deploy website
+      - name: Build live wiki (main)
         if: steps.gate.outputs.skip != '1'
-        run: mkdocs gh-deploy --force --strict
+        run: mkdocs build --strict -d "$GITHUB_WORKSPACE/_site"
+      - name: Build dev preview (dev -> /dev/)
+        if: steps.gate.outputs.skip != '1' && steps.dev.outputs.has == '1'
+        # a broken dev build must never take the live wiki down: keep the last good preview instead
+        run: |
+          cd _dev
+          if ! cmp -s requirements.txt ../requirements.txt; then pip install -r requirements.txt; fi
+          cat > mkdocs.dev.yml <<EOF
+          INHERIT: mkdocs.yml
+          site_url: https://kidce.github.io/dev/
+          extra:
+            dev_preview: true
+            dev_commit: ${{ steps.dev.outputs.sha }}
+            dev_built: $(TZ=Europe/Berlin date '+%Y-%m-%d %H:%M')
+          EOF
+          if ! mkdocs build -f mkdocs.dev.yml -d "$GITHUB_WORKSPACE/_site/dev"; then
+            echo "::warning::dev preview build failed, keeping the previous /dev/ from gh-pages"
+            rm -rf "$GITHUB_WORKSPACE/_site/dev"; mkdir -p "$GITHUB_WORKSPACE/_site/dev"
+            (cd "$GITHUB_WORKSPACE" && git archive origin/gh-pages dev 2>/dev/null | tar -x -C _site) || true
+          fi
+      - name: Keep previous dev preview when there is no dev branch
+        if: steps.gate.outputs.skip != '1' && steps.dev.outputs.has != '1'
+        run: git archive origin/gh-pages dev 2>/dev/null | tar -x -C _site || true
+      - name: Deploy to gh-pages
+        if: steps.gate.outputs.skip != '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ghp-import --no-jekyll --push --force \
+            -m "Deployed main $(git rev-parse --short HEAD) + dev ${{ steps.dev.outputs.sha || '-' }}" _site

@@ -2,6 +2,24 @@
 
 A personal FPV website with articles, a wiki and a racing profile. The site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and automatically published to GitHub Pages on every push to `main` or `master`.
 
+## Live wiki and dev preview
+
+One GitHub Pages site serves two builds (`.github/workflows/deploy.yml`):
+
+| Branch | URL | When it updates |
+| --- | --- | --- |
+| `main` | https://kidce.github.io/ | Only after the maintainer approves ("wiki push ok"): merge `dev` into `main` |
+| `dev` | https://kidce.github.io/dev/ | On every push to `dev`, no approval needed |
+
+Work in progress (wiki pages, GateLink simulator, Tinywhoop gate explorer/viewers) is pushed to `dev`
+and is online at `/dev/` about a minute later. The preview shows a "DEV preview" banner and is
+marked `noindex`. Its GateLink simulator is built from GateLink `dev` (or `main` while there is none).
+Every run rebuilds both branches from their current heads, so a push to one never changes the other.
+A failing dev build keeps the previous preview and never blocks the live wiki.
+
+Promote the approved state: `git checkout main && git merge --ff-only origin/dev && git push`
+(or merge only the approved commits). Afterwards bring `dev` up to date with `main` again.
+
 ## AI assistance disclosure
 
 This project was updated with substantial assistance from OpenAI Codex. The repository maintainer directed the work, made the project decisions, and is responsible for reviewing and using the result.

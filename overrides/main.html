@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{#- Dev preview (kidce.github.io/dev/, built from the dev branch): banner + keep it out of search engines -#}
+{% block extrahead %}
+  {{ super() }}
+  {% if config.extra.dev_preview %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+{% endblock %}
+
+{% block announce %}
+  {% if config.extra.dev_preview %}
+    <strong>DEV preview</strong> &middot; latest unreleased work from the
+    <code>dev</code> branch ({{ config.extra.dev_commit }}, {{ config.extra.dev_built }}).
+    <a href="https://kidce.github.io/">Open the live wiki</a>
+  {% endif %}
+{% endblock %}

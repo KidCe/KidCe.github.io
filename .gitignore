@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 node_modules/
 test-results/
+_site/
+_dev/
+mkdocs.dev.yml
