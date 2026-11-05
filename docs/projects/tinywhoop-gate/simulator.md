@@ -10,6 +10,7 @@ The simulator below always shows the current `main` of the GateLink code: the si
 
 **What to try**
 
+- **Track:** click a small track together: single, double and triple gates (T-piece towers, one structure) on a 0.5 m floor raster; the drones of the event fly through them in order. The gates use the current part models of the [assembly explorer](../tinywhoop-led-gate/index.md).
 - **Event:** run a full race with heats, laps and results; every step is a real GateLink command.
 - **Presets:** build a gate's WLED presets with built-in symmetry (corners to rail centres, centres to corners, waterfall, fountain), map race states and race events to them, export `presets.json`, and send the whole configuration to the gate over the radio link.
 - **Packets / Inspector:** every frame on air, byte by byte.

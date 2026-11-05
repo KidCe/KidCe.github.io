@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Builds the GateLink simulator from the latest sources and puts it into the site:
-#   KidCe/GateLink $GATELINK_REF (default main; sim/) + kidce/tinywhoop-led-gate default branch (gate meshes)
+#   KidCe/GateLink $GATELINK_REF (default main; sim/) + the Assembly Explorer of this site (gate models)
+#   + kidce/tinywhoop-led-gate default branch (fallback meshes, three/esbuild location)
 #   -> docs/assets/tinywhoopgate/gatelink-sim/ of the checkout this script lives in
 # Used by .github/workflows/deploy.yml: the live wiki shows GateLink main, the dev preview GateLink dev
 # (falls back to main while GateLink has no dev branch). Needs git, node >= 20, npm.
@@ -21,7 +22,8 @@ mods="$work/TinywhoopGate/tools/assembly_viewer"
 mkdir -p "$mods"
 (cd "$mods" && npm init -y >/dev/null && npm install --silent --no-audit --no-fund esbuild@0.24.0 three@0.169.0)
 
-node "$work/GateLink/sim/tools/build.mjs" --tinywhoop "$work/TinywhoopGate"
+# gate models: the Assembly Explorer published in this same site (newest parts; the page also reloads them live)
+node "$work/GateLink/sim/tools/build.mjs" --tinywhoop "$work/TinywhoopGate" --viewer "$site/docs/assets/tinywhoopgate/viewer/index.html"
 mkdir -p "$out"
 cp "$work/GateLink/sim/dist/gatelink-sim.html" "$out/index.html"
 sha="$(git -C "$work/GateLink" rev-parse HEAD)"
