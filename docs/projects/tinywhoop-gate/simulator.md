@@ -2,11 +2,9 @@
 
 [Project overview](../tinywhoop-led-gate/index.md) · [GateLink wireless control](gatelink.md) · [Project log](log.md)
 
-The simulator below always shows the current `main` of the GateLink code: the site rebuilds it automatically when GateLink changes. It runs offline in the browser with an emulated gateway, so no hardware is needed.
+The simulator below always shows the current `main` of the GateLink code: the site rebuilds it automatically when GateLink changes. It runs offline in the browser with an emulated gateway, so no hardware is needed. Full screen: the button at the top right of the 3D view.
 
-[Open the simulator full screen](../../assets/tinywhoopgate/gatelink-sim/index.html?demo=1){ .md-button }
-
-<iframe class="gatelink-sim" src="../../../assets/tinywhoopgate/gatelink-sim/index.html?demo=1" title="GateLink simulator" loading="lazy" allow="fullscreen"></iframe>
+<iframe class="gatelink-sim" src="../../../assets/tinywhoopgate/gatelink-sim/index.html?demo=1" title="GateLink simulator" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
 
 **What to try**
 
