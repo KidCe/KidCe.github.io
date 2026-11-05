@@ -24,6 +24,27 @@ button.link{border:0;background:none;padding:0;color:var(--accent);text-align:le
 @media(max-width:800px){#info{top:auto;bottom:0;right:0;left:0;width:auto;max-height:58%;border-radius:12px 12px 0 0;padding-bottom:16px}.tiles{grid-template-columns:1fr 1fr}}
 
 .lock{color:var(--muted);font-size:10px;text-decoration:none}.fw b{color:var(--ink)}#software .block{margin-top:14px}
+
+/* Phone layout (Nikos 2026-11-05): step info on top (collapsible), 3D view in the upper half,
+   controls panel docked below and scrollable; floating prev/next/slider while it is closed. */
+.capToggle,.floatbar{display:none}
+@media(max-width:800px){
+body{flex-direction:column}
+main{order:0;flex:1 1 auto;min-height:0;width:100%}
+aside{position:static;order:1;flex:0 0 50%;width:100%;min-width:0;max-width:none;height:auto;border-right:0;border-top:1px solid var(--line-strong);box-shadow:none;padding:14px 16px 24px;overflow:auto}
+body.sideClosed aside{display:none}
+#caption{order:-1;position:relative;min-height:0;padding:8px 44px 8px 12px;border-top:0;border-bottom:1px solid var(--line);font-size:12px}
+#caption strong{font-size:14px;margin:0}
+.capToggle{display:block;position:absolute;top:6px;right:8px;width:30px;height:30px;padding:0;border-radius:50%;font-size:14px;line-height:1}
+body.capClosed #caption span{display:none}body.capClosed #caption strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#showSide{top:10px;left:10px}
+.floatbar{display:flex;align-items:center;gap:8px;position:absolute;left:10px;right:10px;bottom:10px;z-index:3;background:var(--info-bg);border:1px solid var(--line-strong);border-radius:24px;padding:5px 6px;box-shadow:0 4px 16px var(--shadow)}
+.floatbar[hidden]{display:none!important}
+.floatbar button{width:40px;height:36px;border-radius:18px;font-size:16px;padding:0;flex:0 0 auto}
+.floatbar input{flex:1;min-width:0}
+#info{max-height:70%}
+#modelBadge{display:none}
+}
 </style><script>(()=>{let s=null;try{if(parent!==window)s=parent.document.body.getAttribute("data-md-color-scheme")}catch(e){}try{s=s||JSON.parse(localStorage.getItem("/.__palette")||"null")?.color?.scheme}catch(e){}const d=s?s==="slate":!matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.dataset.theme=d?"dark":"light"})()</script></head>
 <body><aside id="side"><header><span class="eyebrow">TINYWHOOP GATE / PART LIBRARY</span><h1>Part explorer</h1><p>Inspect revisions and their interfaces.</p><p><a href="index.html">← Assembly explorer</a></p></header>
 <section><label for="family">Part family</label><select id="family"></select><label for="part">Part / revision</label><select id="part"></select><div class="row" style="margin-top:12px"><button id="prevPart">← Previous</button><button id="nextPart">Next →</button><span id="count" class="muted"></span></div><p id="kind" class="badge"></p><p id="partStatus" class="muted"></p><p id="partNote" class="muted"></p><div id="downloads"></div></section>
