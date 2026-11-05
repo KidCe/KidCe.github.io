@@ -3094,10 +3094,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#assembly-explorer" class="md-nav__link">
+  <a href="#project-explorer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Assembly explorer
+        Project explorer
       
     </span>
   </a>
@@ -3127,7 +3127,7 @@
 
 
 <h1 id="modular-tinywhoop-led-gate">Modular Tinywhoop LED Gate<a class="headerlink" href="#modular-tinywhoop-led-gate" title="Permanent link">¶</a></h1>
-<p class="article-dates">Published: 02 Oct 2026 · Updated: 03 Nov 2026</p>
+<p class="article-dates">Published: 02 Oct 2026 · Updated: 05 Nov 2026</p>
 
 <figure class="tg-hero">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png" data-title="Blender render of a single and conceptual stacked double LED gate with illuminated diffusers" data-desc-position="bottom"><img src="../../assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png" alt="Blender render of a single and conceptual stacked double LED gate with illuminated diffusers"></a>
@@ -3135,7 +3135,7 @@
 </figure>
 
 <p>A modular Tinywhoop racing gate made from aluminum tubes and printed parts. Around the frame, the project explores wireless LED control with GateLink, race-event integration and interactive 3D assembly tools.</p>
-<p><a href="#assembly-explorer">Explore the assembly</a> · <a href="../tinywhoop-gate/gatelink/">Discover GateLink</a></p>
+<p><a href="#project-explorer">Explore the project in 3D</a> · <a href="../tinywhoop-gate/gatelink/">Discover GateLink</a></p>
 <h2 id="current-status-27-october-2026">Current status · 27 October 2026<a class="headerlink" href="#current-status-27-october-2026" title="Permanent link">¶</a></h2>
 <p>This is the previously published status snapshot. Physical inventory and test evidence are being reconciled; the full illuminated single and double gate still need validation.</p>
 <table>
@@ -3179,7 +3179,7 @@
 <p>The gate combines a mechanical frame, lighting and a wireless control concept. A USB gateway sends short GateLink radio commands to a gate node; the node runs WLED and produces LED effects locally. Race-event data could feed the gateway through a future bridge.</p>
 <p><strong><a href="../tinywhoop-gate/gatelink/">GateLink and wireless nodes</a> · <a href="../tinywhoop-gate/race-data/">Race-event data</a> · <a href="../tinywhoop-gate/log/">Project log</a> · <a href="../tinywhoop-gate/cost/">Cost estimate</a> · <a href="../tinywhoop-gate/archive/">Earlier concepts</a></strong></p>
 <p><a href="../../assets/tinywhoopgate/gatelink-sim/">Open the interactive GateLink simulator</a>: choose Offline to explore the virtual gate, lighting and packet flow. LED effects and wiring are approximations, not a physical LED test.</p>
-<h2 id="assembly-explorer">Assembly explorer<a class="headerlink" href="#assembly-explorer" title="Permanent link">¶</a></h2>
+<h2 id="project-explorer">Project explorer<a class="headerlink" href="#project-explorer" title="Permanent link">¶</a></h2>
 <style>
 .tg-viewer{border:1px solid var(--md-default-fg-color--lightest);border-radius:.5rem;overflow:hidden;background:var(--md-code-bg-color)}
 .tg-viewer iframe{display:block;width:100%;height:min(80vh,790px);border:0}
@@ -3189,15 +3189,15 @@
 </style>
 
 <div class="tg-viewer__tabs">
-<button class="md-button md-button--primary" id="tg-open-assembly" type="button">Assembly guide</button>
+<button class="md-button md-button--primary" id="tg-open-assembly" type="button">Project explorer</button>
 <button class="md-button" id="tg-open-parts" type="button">Individual parts</button>
 </div>
 
 <div class="tg-viewer" id="tg-viewer">
 <div class="tg-viewer__start">
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/images/projects/tinywhoop-led-gate/assembly-explorer.jpg" data-title="CAD overview of the assembled SQ15 square-tube single gate with CR6.5 corners, DF6 diffuser rail sets, FB6.3 foot brackets and end caps" data-desc-position="bottom"><img src="../../assets/images/projects/tinywhoop-led-gate/assembly-explorer.jpg" alt="CAD overview of the assembled SQ15 square-tube single gate with CR6.5 corners, DF6 diffuser rail sets, FB6.3 foot brackets and end caps" width="1640" height="1050"></a>
-<p>Starts with the newest CAD parts: corner CR6.5, foot bracket FB6.3 and DF6 diffusers. The 3D viewer loads about 4 MB.</p>
-<p><a href="../../assets/tinywhoopgate/viewer/index.html#build=sq15-v05-cr65-fb63-axial">Open the large viewer</a> · <a href="../../assets/tinywhoopgate/viewer/TinywhoopGate-viewer-offline.zip" download="">Offline package (26 MB)</a></p>
+<p>Starts with the newest CAD parts (corner CR6.7, foot bracket FB6.3, DF6 diffusers) and the placeholder controller box. The 3D viewer loads about 5 MB.</p>
+<p><a href="../../assets/tinywhoopgate/viewer/index.html#build=sq15-v07-cr67-fb63-axial">Open the large viewer</a> · <a href="../../assets/tinywhoopgate/viewer/TinywhoopGate-viewer-offline.zip" download="">Offline package (31 MB)</a></p>
 </div>
 </div>
 
@@ -3209,7 +3209,7 @@
   function open(parts) {
     var frame = document.createElement("iframe");
     frame.title = parts ? "Tinywhoop gate part explorer" : "Tinywhoop gate interactive assembly guide";
-    frame.src = base + (parts ? "parts.html" : "index.html#build=sq15-v05-cr65-fb63-axial");
+    frame.src = base + (parts ? "parts.html" : "index.html#build=sq15-v07-cr67-fb63-axial");
     frame.allow = "fullscreen";
     frame.setAttribute("allowfullscreen", "");
     document.getElementById("tg-viewer").replaceChildren(frame);
@@ -3220,14 +3220,15 @@
 </script>
 
 <ul>
-<li><strong>Assembly guide:</strong> eight steps; the camera moves to each joint. M3 screws and inserts are optional.</li>
-<li><strong>Take it apart:</strong> drag the orange handle of a joint or use the slider.</li>
+<li><strong>Project:</strong> click any part in the model. The details panel shows what it is, its revision, material, PETG mass, estimated print time, price and sourcing links, firmware notes for the microcontrollers, and which parts it connects to. The breadcrumb leads to the parent assemblies (light rail, foot, controller box); <em>Ghost others</em>, <em>Isolate</em> and <em>Exploded view</em> put one assembly in focus. The product structure, a bill of materials with CSV download and links to the GateLink software sit in the side panel.</li>
+<li><strong>Assembly guide:</strong> nine steps; the camera moves to each joint. <em>Start assembly fresh</em> jumps back to step 1. M3 screws and inserts are optional.</li>
 <li><strong>Individual parts:</strong> each revision on its own, with its counterpart and the original STL/STEP print files.</li>
 </ul>
-<p>The default build shows the current corner CR6.5 and foot bracket FB6.3: a clip bump with a 60° retention flank catches in a pocket in each corner tail, with zero vertical play. This pair is not printed yet; the 60° catch was tested only on small test pieces. The predecessor pair CR6.4 + FB6.2 (55° catch) was printed and fits, but holds more softly; it is selectable under Build version as the printed pair. The DF6 diffusers are not fit-tested yet. Older builds, including CR5.1 + FB5.2, the FB3.1 reference and the FB4.1 latch experiment, stay selectable. Frame and leg lengths in the model are placeholders.</p>
+<p>The <strong>controller box GC0.1</strong> is a placeholder, not a designed part. It sits behind the lower rail at the lower-left corner and stays below the diffuser, so it does not reach into the gate opening, and it is held by two M3 screws in the two free lower-face pilots of the corner, which stays unchanged. Inside: Module 1 Seeed XIAO ESP32-S3 (WLED with the GateLink usermod, drives the LEDs), Module 2 Seeed XIAO ESP32-C5 (lap tracker), Module 3 Seeed Wio-SX1262 LoRa (GateLink radio) and a placeholder battery pack. Prices were checked on 5 November 2026; mass is the solid CAD volume and print times are estimates scaled from slicer results. The GateLink code repositories are private for now. Planned: the <a href="../tinywhoop-gate/simulator/">GateLink simulator</a> will also flash real gate controllers.</p>
+<p>The default build shows the newest corner CR6.7 (CR6.5 catch plus an inner fill with a cover pilot) and foot bracket FB6.3: a clip bump with a 60° retention flank catches in a pocket in each corner tail, with zero vertical play. This pair is not printed yet; the 60° catch was tested only on small test pieces. The predecessor pair CR6.4 + FB6.2 (55° catch) was printed and fits, but holds more softly; it is selectable under Build version as the printed pair. The DF6 diffusers are not fit-tested yet. Older builds, including CR5.1 + FB5.2, the FB3.1 reference and the FB4.1 latch experiment, stay selectable. Frame and leg lengths in the model are placeholders.</p>
 <p>Design and documentation prepared with substantial OpenAI Codex and Claude assistance under the project owner’s direction.</p>
 <p><a href="../tinywhoop-gate/diffuser-foot-review/">Local review draft: diffuser and FB5.2 images</a></p>
-<section class="article-changes" aria-label="Article changes"><h2>Article changes</h2><ul><li><time datetime="2026-11-03">03 Nov 2026</time> — The assembly and part explorers now show corner CR6.5 and foot bracket FB6.3 with the 60° zero-play snap catch, plus the printed CR6.4 and FB6.2 pair. Test coupons are no longer listed in the part explorer.</li><li><time datetime="2026-10-31">31 Oct 2026</time> — The assembly and part explorers now show the newest CAD revisions, corner CR5.1, foot bracket FB5.2 with a snap clip and the DF6 diffuser rail set, with their STL/STEP print files.</li><li><time datetime="2026-10-27">27 Oct 2026</time> — Restructured around the current square-tube design with project status, interactive assembly guide and a 20-gate cost estimate; earlier U and V concepts moved to the archive.</li></ul></section>
+<section class="article-changes" aria-label="Article changes"><h2>Article changes</h2><ul><li><time datetime="2026-11-05">05 Nov 2026</time> — The assembly explorer is now an interactive project documentation. Every part can be clicked for material, PETG mass, print time, price, sourcing links, firmware and how it connects to other parts, with a product structure, bill of materials, focus and exploded views. A placeholder GateLink controller box with the XIAO ESP32-S3, XIAO ESP32-C5 and Wio-SX1262 sits at the lower-left corner. "Start assembly fresh" replaces "Take it apart".</li><li><time datetime="2026-11-03">03 Nov 2026</time> — The assembly and part explorers now show corner CR6.5 and foot bracket FB6.3 with the 60° zero-play snap catch, plus the printed CR6.4 and FB6.2 pair. Test coupons are no longer listed in the part explorer.</li><li><time datetime="2026-10-31">31 Oct 2026</time> — The assembly and part explorers now show the newest CAD revisions, corner CR5.1, foot bracket FB5.2 with a snap clip and the DF6 diffuser rail set, with their STL/STEP print files.</li><li><time datetime="2026-10-27">27 Oct 2026</time> — Restructured around the current square-tube design with project status, interactive assembly guide and a 20-gate cost estimate; earlier U and V concepts moved to the archive.</li></ul></section>
 
 
 
