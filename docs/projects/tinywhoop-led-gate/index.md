@@ -31,19 +31,21 @@ A modular Tinywhoop racing gate made from aluminum tubes and printed parts. Arou
 
 [Explore the project in 3D](#project-explorer) · [Discover GateLink](../tinywhoop-gate/gatelink.md)
 
-## Current status · 27 October 2026
+## Current status · 5 November 2026
 
-This is the previously published status snapshot. Physical inventory and test evidence are being reconciled; the full illuminated single and double gate still need validation.
+The full illuminated single gate and the towers still need validation; physical inventory is being reconciled.
 
 | Part | Current version | Status |
 | --- | --- | --- |
 | Frame | 15 × 15 × 1 mm aluminum tube, 600 mm | Gate size not final |
-| Corners | Printed 90° corner rev4 | Tube sockets fit; frame stands without screws |
-| Diffuser | Clip-on SQ8W segments, 0.15 mm pinch per side | Clip fit chosen from printed test pieces |
-| Feet | Foot bracket FB3.1, end cap v2, 250 mm legs | End cap fit OK; bracket and leg length still open |
+| Corners | 90° corner CR6.7 with a 45° inner fill, printed on that fill | CAD only; predecessor CR6.4 printed and fits FB6.2 |
+| Corner cover | CC2.3, one countersunk M3 from the front | CAD only |
+| Diffuser | Clip-on DF6 rail set, three pieces per rail | CAD only; predecessor DF5 printed, too tight behind the tube |
+| Feet | Foot bracket FB6.3 with a 60° clip catch, end cap v2, 330 mm legs | FB6.2 (55° catch) printed and fits; end cap fit OK; FB6.3 and leg length open |
+| Towers | T piece TE1.3 + T cover CT1.1, shared middle rails | CAD only; double and triple tower in the explorer |
 | LEDs | WS2812B strip, 60 LEDs/m | Soldered across the corners; no plug connectors for now |
 
-Not tested yet: a complete gate with lighting, its stability and the final leg length. All images on this page are CAD views.
+Not tested yet: a complete gate with lighting, the towers, their stability and the final leg length. All images on this page are CAD views.
 
 
 ## One project, several connected pieces
@@ -102,6 +104,13 @@ The gate combines a mechanical frame, lighting and a wireless control concept. A
 The **controller box GC0.1** is a placeholder, not a designed part. It sits behind the lower rail at the lower-left corner and stays below the diffuser, so it does not reach into the gate opening, and it is held by two M3 screws in the two free lower-face pilots of the corner, which stays unchanged. Inside: Module 1 Seeed XIAO ESP32-S3 (WLED with the GateLink usermod, drives the LEDs), Module 2 Seeed XIAO ESP32-C5 (lap tracker), Module 3 Seeed Wio-SX1262 LoRa (GateLink radio) and a placeholder battery pack. Prices were checked on 5 November 2026; mass is the solid CAD volume and print times are estimates scaled from slicer results. The GateLink code repositories are private for now. Planned: the [GateLink simulator](../tinywhoop-gate/simulator.md) will also flash real gate controllers.
 
 The default build shows the newest corner CR6.7 (CR6.5 catch plus an inner fill with a cover pilot) and foot bracket FB6.3: a clip bump with a 60° retention flank catches in a pocket in each corner tail, with zero vertical play. This pair is not printed yet; the 60° catch was tested only on small test pieces. The predecessor pair CR6.4 + FB6.2 (55° catch) was printed and fits, but holds more softly; it is selectable under Build version as the printed pair. The DF6 diffusers are not fit-tested yet. Older builds, including CR5.1 + FB5.2, the FB3.1 reference and the FB4.1 latch experiment, stay selectable. Frame and leg lengths in the model are placeholders.
+
+**Double and triple gates.** Two kinds of multi-gate builds are selectable, both on 330 mm feet:
+
+- **Fixed towers** ([double](../../assets/tinywhoopgate/viewer/index.html#build=sq15-teetower-double-330-te13), [triple](../../assets/tinywhoopgate/viewer/index.html#build=sq15-teetower-triple-330-te13)): the squares share their middle rails. At each inner junction a T piece TE1.3 replaces the two top corners of the square below. TE1.3 is the corner mirrored at the rail axis, with 45° inner fills and the same dovetail, catch pockets and insert positions as the corner, so single-gate add-ons fit. One print serves both sides. A T cover CT1.1 matches the corner cover CC2.3 and is fixed with two countersunk M3 screws. The tower is assembled once and stays together. Not printed yet.
+- **Stacked gates** ([double](../../assets/tinywhoopgate/viewer/index.html#build=sq15-double-330), [triple](../../assets/tinywhoopgate/viewer/index.html#build=sq15-triple-330)): independent single gates stand corner on corner. There is no connector part at that junction, so the stacking is illustrative only.
+
+Stability of the towers (about 1.3 m and 1.9 m tall) is not verified.
 
 
 
