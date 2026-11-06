@@ -20,6 +20,7 @@ What I am building and researching, from race infrastructure to printer firmware
 <h2 class="project-list__title">More projects</h2>
 
 <ul class="project-list">
+  <li><div><span class="eyebrow">ELECTRONICS · 3D PRINTING</span><span class="status-chip">Prototype</span></div><h3><a href="macropad/">MacroPAD</a></h3><p>A custom RP2040 macro pad with 25 MX keys, a printed gasket enclosure and space for four scroll wheels. Open the animated 3D preview.</p></li>
   <li><div><span class="eyebrow">ELECTRONICS · OPEN SOURCE</span><span class="status-chip">Done</span></div><h3><a href="addressable-balancer-leds/">Addressable Balancer LEDs</a></h3><p>Addressable LEDs for battery balancer connectors, with source files and documentation on GitHub.</p></li>
   <li><div><span class="eyebrow">HDZERO · UNOFFICIAL FIRMWARE</span><span class="status-chip">Released</span></div><h3><a href="hdzero-monitor-favorites/">HDZero Monitor Favorites</a></h3><p>Eight race-channel favorites, matching scan coverage and a shorter scan trigger for the HDZero Monitor.</p></li>
   <li><div><span class="eyebrow">3D PRINTING · HARDWARE &amp; FIRMWARE</span><span class="status-chip">Knowledge base</span></div><h3><a href="3D%20Printing/Flashforge%20Creator%205/Flashforge%20Creator%205/">Flashforge Creator 5</a></h3><p>A curated knowledge base covering modifications, firmware architecture and recovery evidence for the Creator 5 family.</p></li>

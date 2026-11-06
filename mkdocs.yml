@@ -93,6 +93,7 @@ nav:
   - Home: index.md
   - Projects:
       - Overview: projects/index.md
+      - MacroPAD: projects/macropad/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
       - HDZero Monitor Favorites: projects/hdzero-monitor-favorites.md
       - Modular Tinywhoop LED Gate:
