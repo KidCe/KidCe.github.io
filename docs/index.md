@@ -4,34 +4,30 @@ hide:
   - toc
 ---
 
-<section class="hero">
+<section class="hero hero--project">
   <div class="hero__copy">
-    <span class="eyebrow">FPV · RACING · BUILDING</span>
-    <h1>FPV racing.<br><span>Builds & repairs.</span></h1>
-    <p>Race builds, practical fixes, open-source projects and browser tools from my FPV workbench.</p>
+    <span class="eyebrow">FEATURED PROJECT</span>
+    <span class="status-chip status-chip--live">In development</span>
+    <h1>A modular LED gate for <span>Tinywhoop racing.</span></h1>
+    <p>Aluminium tube, printed corners and wireless GateLink control. Built from standard parts and documented down to every screw.</p>
     <div class="hero__actions">
-      <a class="md-button md-button--primary" href="builds/">Browse the builds</a>
-      <a class="md-button" href="wiki/">Start with the wiki</a>
-      <a class="md-button" href="all-articles/">All Articles</a>
+      <a class="md-button md-button--primary" href="projects/tinywhoop-led-gate/">Open the project</a>
+      <a class="md-button" href="projects/tinywhoop-led-gate/#project-explorer">Try the 3D explorer</a>
+      <a class="md-button" href="projects/">All projects</a>
     </div>
   </div>
-  <div class="hero__visual" aria-hidden="true">
-    <img class="no-lightbox" src="assets/images/hero-drone.png" alt="">
+  <div class="hero__visual hero__visual--render">
+    <a href="projects/tinywhoop-led-gate/" aria-label="Modular Tinywhoop LED Gate"><img class="no-lightbox" src="assets/images/projects/tinywhoop-led-gate/gate-single-double-rgb-metal.png" alt="Blender render of a single and conceptual double Tinywhoop gate"></a>
   </div>
 </section>
 
-<section class="home-overview">
-  <div class="home-overview__copy">
-    <span class="eyebrow">START HERE</span>
-    <h2>A growing FPV workshop</h2>
-    <p>The site is still compact, but the useful parts are already here: real build notes, practical wiki pages, hardware projects, race data and tools that can be opened directly in the browser.</p>
+<section class="home-updates">
+  <div class="section-heading">
+    <span class="eyebrow">LATEST UPDATES</span>
+    <h2>What changed recently</h2>
   </div>
-  <div class="home-signals" aria-label="What is already documented">
-    <div class="home-signal"><strong>2</strong><span>build pages</span></div>
-    <div class="home-signal"><strong>4</strong><span>web tools</span></div>
-    <div class="home-signal"><strong>FPV</strong><span>wiki & repairs</span></div>
-    <div class="home-signal"><strong>DATA</strong><span>race archive</span></div>
-  </div>
+  <!-- latest-updates -->
+  <p class="home-updates__all"><a class="feature-card__link" href="all-articles/">All articles →</a></p>
 </section>
 
 <div class="section-heading">
@@ -90,15 +86,15 @@ hide:
 
 <section class="home-latest">
   <div class="home-latest__copy">
-    <span class="eyebrow">THE ARTICLE SECTION STARTS HERE</span>
-    <h2>A new home for my FPV notes</h2>
-    <p>The articles area begins with a short welcome note: what belongs in a story, what belongs in the wiki and why this site is being built as a practical record of the hobby.</p>
-    <a class="feature-card__link" href="articles/2026/07/14/a-new-home-for-my-fpv-notes/">Read the welcome note →</a>
+    <span class="eyebrow">FROM THE BENCH</span>
+    <h2>Builds, repairs and notes</h2>
+    <p>Quad builds with parts and weights, short wiki pages for the bench and the field, and the first article, a short welcome note on what belongs where.</p>
+    <p><a class="feature-card__link" href="builds/">Open the builds →</a> &nbsp; <a class="feature-card__link" href="wiki/">Browse the wiki →</a> &nbsp; <a class="feature-card__link" href="articles/2026/07/14/a-new-home-for-my-fpv-notes/">Read the welcome note →</a></p>
   </div>
   <div class="home-latest__aside">
     <span class="eyebrow">ON THE TRACK</span>
-    <strong>Race archive</strong>
-    <p>Verified event results, season trends and the Holy*s*quad squad overview are collected in one place.</p>
+    <strong>#97 of 622 in the 2026 GQ</strong>
+    <p>Best three-lap GQ time 34.816 s. Verified results, season trends and the Holy*s*quad squad overview are in the race archive.</p>
     <a class="feature-card__link" href="race-results/">Open the race archive →</a>
   </div>
 </section>

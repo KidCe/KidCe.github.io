@@ -1,4 +1,4 @@
-# Tools and Gadgets
+# Gear & gadgets
 
 Tools and equipment I use for electronics and FPV work, with practical experience and recommendations.
 

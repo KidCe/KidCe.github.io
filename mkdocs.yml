@@ -88,13 +88,6 @@ hooks:
 
 nav:
   - Home: index.md
-  - All Articles: all-articles.md
-  - Articles:
-      - articles/index.md
-  - Builds:
-      - Overview: builds/index.md
-      - Budget Build: builds/budget-build.md
-      - 2026 Racing Setup: builds/2026-racing-setup.md
   - Projects:
       - Overview: projects/index.md
       - Addressable Balancer LEDs: projects/addressable-balancer-leds.md
@@ -130,6 +123,10 @@ nav:
                   - Stock & target architecture: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Architecture/Stock and Target Architecture.md
                   - Vendor firmware & Klipper: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Vendor Firmware and Klipper.md
                   - Open firmware migration: projects/3D Printing/Flashforge Creator 5/Knowledge Base/Firmware/Open Firmware Migration.md
+  - Builds:
+      - Overview: builds/index.md
+      - Budget Build: builds/budget-build.md
+      - 2026 Racing Setup: builds/2026-racing-setup.md
   - Wiki:
       - Overview: wiki/index.md
       - Fundamentals:
@@ -138,20 +135,21 @@ nav:
           - FPV gate padding: wiki/equipment/fpv-gate-padding.md
       - Repairs:
           - IP2368 USB-C PD reset: wiki/repairs/ip2368-usb-c-pd-reset.md
-  - Tools and Gadgets:
-      - Overview: tools-and-gadgets/index.md
-      - Microscope Equipment: tools-and-gadgets/microscope-equipment.md
-  - About:
-      - About me: about-me.md
-      - Race results: race-results.md
-      - My Squad - Holy*s*quad: my-squad.md
-  - Web Tools:
+      - Gear & gadgets:
+          - Overview: tools-and-gadgets/index.md
+          - Microscope Equipment: tools-and-gadgets/microscope-equipment.md
+  - Tools:
       - Index: Web Tools/index.md
       - NKON Cell Selector: tools/cell-selector.md
       - Betaflight RX Monitor: Web Tools/Betaflight RX Monitor.md
       - KAACK Cloud Build: Web Tools/KAACK Cloud Build.md
       - KidCe Configurator: Web Tools/KidCe Configurator.md
       - RatesManager: Web Tools/RatesManager.md
+  - All Articles: all-articles.md
+  - About:
+      - About me: about-me.md
+      - Race results: race-results.md
+      - My Squad - Holy*s*quad: my-squad.md
 
 markdown_extensions:
   - abbr
@@ -186,6 +184,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js
   - assets/javascripts/race-performance-chart.js
+  - assets/javascripts/all-articles-filter.js
   - assets/cell-selector/app.js
 
 extra:

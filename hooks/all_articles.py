@@ -119,23 +119,33 @@ def collect(files):
 
 
 def render(articles, page, files):
-    cards = ['<div class="all-articles" aria-label="All articles, recently updated first">']
+    sections = []
+    for article in articles:
+        if article["section"] not in sections:
+            sections.append(article["section"])
+    cards = []
+    if len(sections) > 1:
+        cards.append('<div class="article-filter" role="group" aria-label="Filter by category">'
+                     '<button type="button" class="article-filter__chip is-active" data-filter="">All</button>'
+                     + "".join(f'<button type="button" class="article-filter__chip" data-filter="{escape(name, quote=True)}">{escape(name)}</button>'
+                               for name in sections) + '</div>')
+    cards.append('<div class="all-articles" aria-label="All articles, recently updated first">')
     for article in articles:
         href = get_relative_url(article["file"].url, page.file.url)
         cover = get_relative_url(files.get_file_from_path(article["image"]).url, page.file.url)
         published = article["published"]
         updated = article["updated"]
-        display_date = updated if updated > published else published
-        label = "Updated" if updated > published else "Published"
+        dates = f'Published <time datetime="{published.isoformat()}">{published.strftime("%d %b %Y")}</time>'
+        if updated > published:
+            dates += f' · Updated <time datetime="{updated.isoformat()}">{updated.strftime("%d %b %Y")}</time>'
         cards.append(
-            '<article class="article-row">'
+            f'<article class="article-row" data-section="{escape(str(article["section"]), quote=True)}">'
             f'<a class="article-row__image no-lightbox" href="{escape(href, quote=True)}" '
             f'aria-label="{escape(article["title"], quote=True)}">'
             f'<img class="no-lightbox" src="{escape(cover, quote=True)}" '
             f'alt="{escape(str(article["alt"]), quote=True)}" loading="lazy" decoding="async"></a>'
             '<div class="article-row__copy">'
-            f'<p class="article-row__meta"><span>{escape(str(article["section"]))}</span> · '
-            f'{label} <time datetime="{display_date.isoformat()}">{display_date.strftime("%d %b %Y")}</time></p>'
+            f'<p class="article-row__meta"><span>{escape(str(article["section"]))}</span> · {dates}</p>'
             f'<h2><a href="{escape(href, quote=True)}">{escape(article["title"])}</a></h2>'
             f'<p>{escape(article["summary"])}</p>'
             f'<a class="article-row__link" href="{escape(href, quote=True)}">Read article →</a>'
@@ -145,8 +155,33 @@ def render(articles, page, files):
     return "\n".join(cards)
 
 
+def render_latest(articles, page, files, limit=3):
+    """Compact list of the most recently updated articles for the home page."""
+    rows = ['<div class="update-list">']
+    for index, article in enumerate(articles[:limit]):
+        href = escape(get_relative_url(article["file"].url, page.file.url), quote=True)
+        shown = article["updated"] if article["updated"] > article["published"] else article["published"]
+        label = "Updated" if article["updated"] > article["published"] else "Published"
+        image = ""
+        if index == 0:
+            cover = get_relative_url(files.get_file_from_path(article["image"]).url, page.file.url)
+            image = (f'<a class="update-item__image no-lightbox" href="{href}" tabindex="-1" aria-hidden="true">'
+                     f'<img class="no-lightbox" src="{escape(cover, quote=True)}" alt="" loading="lazy"></a>')
+        rows.append(
+            f'<article class="update-item{" update-item--lead" if index == 0 else ""}">{image}<div>'
+            f'<p class="update-item__meta"><span>{escape(str(article["section"]))}</span> · {label} '
+            f'<time datetime="{shown.isoformat()}">{shown.strftime("%d %b %Y")}</time></p>'
+            f'<h3><a href="{href}">{escape(article["title"])}</a></h3>'
+            f'<p>{escape(article["summary"])}</p></div></article>'
+        )
+    rows.append("</div>")
+    return "\n".join(rows)
+
+
 @event_priority(-100)
 def on_page_markdown(markdown, *, page, config, files):
+    if page.file.src_uri == "index.md" and "<!-- latest-updates -->" in markdown:
+        return markdown.replace("<!-- latest-updates -->", render_latest(collect(files), page, files))
     if page.file.src_uri == "all-articles.md":
         marker = "<!-- all-articles -->"
         if marker not in markdown:

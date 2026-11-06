@@ -2,7 +2,7 @@
 article:
   published: 2026-10-14
   summary: My KAISI S8 and MaAnt XJ-2 setup, camera tests and recommended microscope reviews.
-  section: Tools and Gadgets
+  section: Gear & gadgets
 ---
 # Microscope Equipment
 
