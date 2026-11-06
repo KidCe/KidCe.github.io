@@ -200,3 +200,72 @@
 
 /* GateLink simulator page: the simulator embedded full width */
 .gatelink-sim { width: 100%; height: min(88vh, 900px); min-height: 560px; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; background: #0b0e14; display: block; margin: 1em 0; }
+
+/* Card grids: plain div cards with one stretched title link (no nested anchors). */
+.md-typeset .build-card { position: relative; }
+.md-typeset .build-card h2 { margin: .8rem 0 .4rem; }
+.md-typeset .build-card h2 a { color: inherit; }
+.md-typeset .build-card .build-card__link::after { content: ""; inset: 0; position: absolute; border-radius: 1rem; }
+.build-card__more { color: var(--fpv-orange); font-size: .7rem; font-weight: 750; }
+.md-typeset .build-card:focus-within { border-color: var(--fpv-orange); }
+.wiki-grid > div h3 { margin-top: 1rem; }
+
+/* Status chips */
+.status-chip { border: 1px solid rgba(127,127,127,.45); border-radius: 99px; color: var(--md-default-fg-color--light); display: inline-block; font-size: .6rem; font-weight: 750; letter-spacing: .08em; padding: .2rem .6rem; text-transform: uppercase; }
+.status-chip--live { border-color: var(--fpv-orange); color: var(--fpv-orange); }
+
+/* Home hero as project highlight */
+.hero--project .hero__copy h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; max-width: 14ch; }
+.hero--project .hero__copy .eyebrow { margin-right: .6rem; }
+.hero__visual--render { filter: none; transform: none; }
+.hero__visual--render img { border: 1px solid rgba(127,127,127,.2); border-radius: 1rem; display: block; }
+
+/* Home: latest updates */
+.home-updates { margin: 0 0 4rem; }
+.update-list { display: grid; gap: 0; }
+.update-item { border-top: 1px solid rgba(127,127,127,.2); padding: 1rem 0; }
+.update-item--lead { align-items: center; display: grid; gap: 1.4rem; grid-template-columns: minmax(11rem, 26%) minmax(0, 1fr); }
+.update-item__image { border-radius: .7rem; display: block; overflow: hidden; background: #15171b; }
+.update-item__image img { display: block; width: 100%; }
+.md-typeset .update-item p { color: var(--md-default-fg-color--light); font-size: .78rem; margin: 0 0 .4rem; }
+.md-typeset .update-item__meta span { color: var(--fpv-orange); font-weight: 750; }
+.md-typeset .update-item h3 { font-size: 1.1rem; margin: 0 0 .3rem; }
+.md-typeset .update-item h3 a { color: var(--md-default-fg-color); }
+.home-updates__all { margin: 1rem 0 0; }
+
+/* Projects page */
+.project-feature { align-items: center; background: var(--md-code-bg-color, #fff); border: 1px solid rgba(227,77,54,.55); border-radius: 1rem; display: grid; gap: 1.6rem; grid-template-columns: minmax(12rem, 40%) minmax(0, 1fr); margin: 1.6rem 0 2.4rem; padding: 1.2rem; }
+.project-feature__image { border-radius: .7rem; display: block; overflow: hidden; }
+.project-feature__image img { display: block; width: 100%; }
+.md-typeset .project-feature h2 { font-size: 1.5rem; margin: .7rem 0 .4rem; }
+.md-typeset .project-feature h2 a { color: var(--md-default-fg-color); }
+.md-typeset .project-feature p { font-size: .8rem; margin: .4rem 0; }
+.project-feature__links { color: var(--md-default-fg-color--light); }
+.md-typeset .project-list__title { color: var(--md-default-fg-color--light); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; }
+.md-typeset .project-list { list-style: none; margin: 0; padding: 0; }
+.project-list li { border-top: 1px solid rgba(127,127,127,.2); margin: 0; padding: 1rem 0; }
+.project-list li > div { align-items: center; display: flex; flex-wrap: wrap; gap: .6rem; }
+.md-typeset .project-list h3 { font-size: 1.1rem; margin: .5rem 0 .2rem; }
+.md-typeset .project-list p { color: var(--md-default-fg-color--light); font-size: .78rem; margin: 0; }
+
+/* All Articles filter */
+.article-filter { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0 0; }
+.article-filter__chip { background: transparent; border: 1px solid rgba(127,127,127,.35); border-radius: 99px; color: var(--md-default-fg-color); cursor: pointer; font: inherit; font-size: .72rem; font-weight: 650; padding: .35rem .9rem; }
+.article-filter__chip.is-active { background: var(--fpv-orange); border-color: var(--fpv-orange); color: #fff; }
+.article-filter__chip:focus-visible { outline: 3px solid var(--fpv-orange); outline-offset: 2px; }
+.article-row[hidden] { display: none; }
+
+@media (max-width: 760px) {
+  .project-feature, .update-item--lead { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .update-item__image { display: none; }
+}
+@media (max-width: 960px) {
+  .hero--project .hero__visual { margin: 0; max-width: none; order: 0; }
+}
+
+/* GateLink race receiver OLED mock-up */
+.gl-oled { background: #1c1f26; border: 1px solid rgba(127,127,127,.35); border-radius: 12px; box-sizing: border-box; margin: 1.2rem 0 .4rem; max-width: 100%; padding: 14px; width: 340px; }
+.gl-oled__screen { background: #000; border-radius: 4px; color: #7fd8ff; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; line-height: 1.45; overflow: hidden; padding: .5rem .6rem; white-space: pre; }
+.gl-oled__bar { background: #7fd8ff; color: #000; display: block; font-weight: 700; margin: -.1rem -.2rem .3rem; padding: 0 .2rem; }
