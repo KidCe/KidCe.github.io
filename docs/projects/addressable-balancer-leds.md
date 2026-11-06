@@ -9,6 +9,12 @@ Addressable Balancer LED is a compact PY32F002B-based electronics and firmware p
 
 [View the project on GitHub](https://github.com/KidCe/adressable-balancer-led){ .md-button .md-button--primary }
 
+## V2 concept review
+
+[Open the render and animation review](addressable-balancer-leds-review.md){ .md-button }
+
+First-prototype animation, possible PCB outlines and LED glow comparisons for the next form factor. This is work in progress.
+
 ## What the project does
 
 - Drives 14 onboard WS2812-compatible LEDs as mirrored 7+7 lighting.
