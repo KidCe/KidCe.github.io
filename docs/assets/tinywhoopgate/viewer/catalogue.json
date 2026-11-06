@@ -1,5 +1,30 @@
 {
   "schema": 2,
+  "build_dates": {
+    "sq15-double-330": "2026-11-03",
+    "sq15-fb41-experiment-axial": "2026-10-31",
+    "sq15-fb41-experiment": "2026-10-31",
+    "sq15-teetower-double-330-te12": "2026-11-04",
+    "sq15-teetower-double-330-te13": "2026-11-04",
+    "sq15-teetower-double-330": "2026-11-04",
+    "sq15-teetower-triple-330-te12": "2026-11-04",
+    "sq15-teetower-triple-330-te13": "2026-11-04",
+    "sq15-teetower-triple-330": "2026-11-04",
+    "sq15-tower-double-330": "2026-11-04",
+    "sq15-tower-triple-330": "2026-11-04",
+    "sq15-triple-330": "2026-11-03",
+    "sq15-v01-axial": "2026-10-31",
+    "sq15-v01": "2026-10-31",
+    "sq15-v04-df6-fb52-axial": "2026-10-31",
+    "sq15-v05-cr64-fb62-axial": "2026-11-03",
+    "sq15-v05-cr65-fb63-axial": "2026-11-03",
+    "sq15-v06-cr66-fb63-axial": "2026-11-04",
+    "sq15-v07-cr67-fb63-axial": "2026-11-04",
+    "sq15-v2-reconstruction-axial": "2026-10-31",
+    "sq15-v2-reconstruction": "2026-10-31",
+    "sq15-v3-reconstruction-axial": "2026-10-31",
+    "sq15-v3-reconstruction": "2026-10-31"
+  },
   "hardware": {
     "schema": 1,
     "screw": {
@@ -56732,7 +56757,19 @@
         "volume_cm3": 15.9,
         "source": "OrcaSlicer estimate 1 h 58 min for two DF5.1 diffuser pieces at 0.25 mm (PROJECT_PLAN, 2026-10-28)"
       },
-      "note": "Rough estimate scaled by solid volume from the referenced slicer result. Not a slicer result for this part."
+      "note": "Per-part slicer estimate where the part was sliced; parts without a slice (placeholders, older revisions) are scaled by solid volume from the referenced slicer result.",
+      "by_part": {
+        "CR6.4": 115,
+        "CR6.7": 118,
+        "FB6.3": 146,
+        "endcap-v2-legacy": 31,
+        "TE1.3": 163,
+        "CT1.1": 71,
+        "CC2.3": 50,
+        "DF6.1": 65,
+        "DF6.2": 67
+      },
+      "by_part_source": "PrusaSlicer 2.8.1 CLI on the released STLs (2026-11-06; PETG, 0.4 mm nozzle, 2 walls, 15 % gyroid, no supports; 0.2 mm layers for solid parts, 0.25 mm for diffusers), calibrated to the owner's OrcaSlicer results: x1.25 so CR6.4 matches its 1 h 55 min, x0.80 so DF5.1 matches its 59 min per piece."
     },
     "tree": [
       {
@@ -57107,10 +57144,10 @@
       "tube_foot": {
         "category": "purchased",
         "material": "Aluminium 15 x 15 x 1 mm square tube",
-        "unit": "piece (~297 mm)",
+        "unit": "piece (330 mm)",
         "price": {
           "value": 0,
-          "note": "Offcut of the same 900 mm piece as a frame tube (cost counted there).",
+          "note": "Ordered at 330 mm (owner, 2026-11-06); cost counted with the frame tube order. Check the order split if the legs were ordered separately.",
           "estimate": false
         },
         "sources": [
@@ -57128,7 +57165,11 @@
             "endcap",
             "end cap on the free end"
           ]
-        ]
+        ],
+        "label": "Aluminium foot tube 15 x 15 x 1 mm, 330 mm (30 in the bracket socket, 280 free, 20 under the cap)",
+        "short": "Foot tube 330 mm",
+        "label_short": "Foot tube 330 mm",
+        "status": "Decided and ordered at 330 mm (owner, 2026-11-06). Older single-gate scenes were modelled with 300 mm and are stretched to 330 mm in the explorer."
       },
       "led": {
         "category": "purchased",
@@ -58213,6 +58254,89 @@
           ],
           "rot": "x_to_y"
         }
+      ],
+      "board_labels": [
+        {
+          "instance": "ctl_s3",
+          "text": "XIAO ESP32-S3",
+          "local": [
+            0,
+            1.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_c5",
+          "text": "XIAO ESP32-C5",
+          "local": [
+            0,
+            1.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_wio",
+          "text": "Wio-SX1262 LoRa",
+          "local": [
+            0,
+            1.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_cell_1",
+          "text": "2 x 18650 cells",
+          "local": [
+            0,
+            9.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_battery_holder",
+          "text": "Cell holder",
+          "local": [
+            -30,
+            5.5,
+            -18
+          ]
+        },
+        {
+          "instance": "ctl_buck",
+          "text": "5 V power stage",
+          "local": [
+            0,
+            2.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_led_connector",
+          "text": "LED output",
+          "local": [
+            0,
+            3.5,
+            0
+          ]
+        },
+        {
+          "instance": "ctl_pcb",
+          "text": "Controller PCB",
+          "local": [
+            55,
+            1,
+            15
+          ]
+        },
+        {
+          "instance": "ctl_switch",
+          "text": "Power switch",
+          "local": [
+            0,
+            4.5,
+            0
+          ]
+        }
       ]
     },
     "software": {
@@ -58256,8 +58380,8 @@
         }
       ],
       "planned": "Planned: the GateLink simulator becomes the flashing platform too, so a configuration can be simulated first and then flashed to real gate controllers from the same page. Not available yet."
-    }
+    },
+    "foot_tube_len_mm": 330
   },
-  "disclosure": "Implementation and documentation produced with substantial OpenAI Codex and Anthropic Claude assistance under owner direction.",
-  "default_build": "sq15-v01-axial"
+  "disclosure": "Implementation and documentation produced with substantial OpenAI Codex and Anthropic Claude assistance under owner direction."
 }
