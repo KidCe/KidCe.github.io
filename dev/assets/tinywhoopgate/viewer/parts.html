@@ -102,6 +102,12 @@ details.fold{border-top:0;padding:4px 0 8px}details.fold>summary{font-size:13px;
 #viewSection .iconbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
 @media(min-width:801px){#viewSection .viewbtns,#viewSection label[for=explosion],#viewSection #explosion{display:none}#viewSection{padding:10px 0}}
 @media(max-width:800px){.viewbar{display:none}}
+
+/* Toolbar round 3 (Nikos 2026-11-06 00:10). */
+.vbx{position:relative}.resetX{position:absolute;right:0;top:-2px;padding:0 5px;font-size:9.5px;line-height:14px;border-radius:7px;background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.gcount{display:flex;align-items:center;gap:4px;margin:2px 0 10px}.gcount .muted{margin-right:4px}.gcount button{width:38px;padding:5px 0;font-weight:700;font-size:13px}
+@media(min-width:801px){#viewSection{display:none}}
+@media(max-width:800px){#viewSection .vbx{flex:1 1 100%;width:auto;margin:6px 0 0}}
 </style><script>(()=>{let s=null,o=null;try{o=localStorage.getItem("tg-viewer-theme")}catch(e){}if(o==="light"||o==="dark"){document.documentElement.dataset.theme=o;return}try{if(parent!==window)s=parent.document.body.getAttribute("data-md-color-scheme")}catch(e){}try{s=s||JSON.parse(localStorage.getItem("/.__palette")||"null")?.color?.scheme}catch(e){}const d=s?s==="slate":!matchMedia("(prefers-color-scheme: light)").matches;document.documentElement.dataset.theme=d?"dark":"light"})()</script></head>
 <body><aside id="side"><header><span class="eyebrow">TINYWHOOP GATE / PART LIBRARY</span><h1>Part explorer</h1><p>Inspect revisions and their interfaces.</p><p><a href="index.html">← Project explorer</a></p></header>
 <section><label for="family">Part family</label><select id="family"></select><label for="part">Part / revision</label><select id="part"></select><div class="row" style="margin-top:12px"><button id="prevPart">← Previous</button><button id="nextPart">Next →</button><span id="count" class="muted"></span></div><p id="kind" class="badge"></p><p id="partStatus" class="muted"></p><p id="partNote" class="muted"></p><div id="downloads"></div></section>
