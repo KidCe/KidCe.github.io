@@ -264,3 +264,8 @@
 @media (max-width: 960px) {
   .hero--project .hero__visual { margin: 0; max-width: none; order: 0; }
 }
+
+/* GateLink race receiver OLED mock-up */
+.gl-oled { background: #1c1f26; border: 1px solid rgba(127,127,127,.35); border-radius: 12px; box-sizing: border-box; margin: 1.2rem 0 .4rem; max-width: 100%; padding: 14px; width: 340px; }
+.gl-oled__screen { background: #000; border-radius: 4px; color: #7fd8ff; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .62rem; line-height: 1.45; overflow: hidden; padding: .5rem .6rem; white-space: pre; }
+.gl-oled__bar { background: #7fd8ff; color: #000; display: block; font-weight: 700; margin: -.1rem -.2rem .3rem; padding: 0 .2rem; }
