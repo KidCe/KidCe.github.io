@@ -74,6 +74,9 @@ plugins:
         background_color: "#15171b"
         color: "#ffffff"
 
+not_in_nav: |
+  projects/tinywhoop-gate/race-data.md
+
 exclude_docs: |
   builds/analog-build.md
   builds/dji-o4-build.md
@@ -96,7 +99,6 @@ nav:
           - projects/tinywhoop-led-gate/index.md
           - GateLink wireless control: projects/tinywhoop-gate/gatelink.md
           - GateLink simulator: projects/tinywhoop-gate/simulator.md
-          - Race-event data: projects/tinywhoop-gate/race-data.md
           - Project log: projects/tinywhoop-gate/log.md
           - Cost estimate: projects/tinywhoop-gate/cost.md
           - Earlier concepts: projects/tinywhoop-gate/archive.md

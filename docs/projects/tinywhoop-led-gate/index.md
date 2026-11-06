@@ -85,9 +85,9 @@ Not tested yet: a complete gate with lighting, the towers, and their stability. 
 
 ## One project, several connected pieces
 
-The gate combines a mechanical frame, lighting and a wireless control concept. A USB gateway sends short GateLink radio commands to a gate node; the node runs WLED and produces LED effects locally. Race-event data could feed the gateway through a future bridge.
+The gate combines a mechanical frame, lighting and a wireless control concept. A USB gateway sends short GateLink radio commands to a gate node; the node runs WLED and produces LED effects locally. Race-event data could feed the gateway through a future bridge, and the same broadcasts could drive small race receivers for pilots ([why LoRa and what travels over the air](../tinywhoop-gate/gatelink.md)).
 
-**[GateLink and wireless nodes](../tinywhoop-gate/gatelink.md) · [Race-event data](../tinywhoop-gate/race-data.md) · [Project log](../tinywhoop-gate/log.md) · [Cost estimate](../tinywhoop-gate/cost.md) · [Earlier concepts](../tinywhoop-gate/archive.md)**
+**[GateLink and wireless nodes](../tinywhoop-gate/gatelink.md) · [GateLink simulator](../tinywhoop-gate/simulator.md) · [Project log](../tinywhoop-gate/log.md) · [Cost estimate](../tinywhoop-gate/cost.md) · [Earlier concepts](../tinywhoop-gate/archive.md)**
 
 [Open the interactive GateLink simulator](../../assets/tinywhoopgate/gatelink-sim/index.html): choose Offline to explore the virtual gate, lighting and packet flow. LED effects and wiring are approximations, not a physical LED test.
 

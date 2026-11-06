@@ -6,6 +6,12 @@
   {% if config.extra.dev_preview %}
     <meta name="robots" content="noindex, nofollow">
   {% endif %}
+  {#- Moved page: front matter `redirect: <relative url>` keeps the old URL working -#}
+  {% if page and page.meta and page.meta.redirect %}
+    <meta http-equiv="refresh" content="0; url={{ page.meta.redirect }}">
+    <link rel="canonical" href="{{ page.meta.redirect }}">
+    <script>location.replace({{ page.meta.redirect | tojson }} + location.search);</script>
+  {% endif %}
 {% endblock %}
 
 {% block announce %}
