@@ -57107,7 +57107,7 @@
           ],
           [
             "diffuser_end",
-            "covered by the diffusers"
+            "covered by the diffusers; each LED sits between two diffuser bars"
           ],
           [
             "ctl_s3",
@@ -57117,7 +57117,8 @@
             "ctl_led_connector",
             "fed from the controller LED output"
           ]
-        ]
+        ],
+        "note": "Shown with its 36 individual 5050 LEDs at 16.667 mm pitch (60 LEDs/m). With the strip starting flush at the tube end, every LED sits midway between two diffuser bars (DF6 bars at 16.667 mm, measured from the STL files: bar pitch 16.666-16.667 mm, first bar 16.64 mm from the tube end), so no bar casts a shadow on an LED. Real strips can be cut only between LEDs, which keeps this phase."
       },
       "insert": {
         "category": "hardware",
